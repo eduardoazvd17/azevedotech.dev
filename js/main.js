@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupBackToTop();
     setupProfileImageFlip();
     setupMobileMenu();
+    setupCopyEmailButtons();
 });
 
 const sectionToPageMap = {
@@ -177,17 +178,7 @@ function setupBackToTop() {
 }
 
 function setupProfileImageFlip() {
-    const profileImg = document.getElementById('profile-img');
-
-    if (profileImg) {
-        profileImg.addEventListener('mouseenter', () => {
-            profileImg.style.transform = 'scaleX(-1)';
-        });
-
-        profileImg.addEventListener('mouseleave', () => {
-            profileImg.style.transform = 'scaleX(1)';
-        });
-    }
+    // Animação de flip removida por preferência do usuário
 }
 
 function setupMobileMenu() {
@@ -216,4 +207,60 @@ function setupMobileMenu() {
 
         checkScroll();
     }
+}
+
+function setupCopyEmailButtons() {
+    const copyButtons = document.querySelectorAll('.copy-email-btn');
+    
+    copyButtons.forEach(button => {
+        button.addEventListener('click', async () => {
+            const email = button.getAttribute('data-email');
+            const icon = button.querySelector('i');
+            
+            try {
+                await navigator.clipboard.writeText(email);
+                
+                // Feedback visual
+                const originalClass = icon.className;
+                button.classList.add('copied');
+                icon.className = 'fas fa-check';
+                
+                // Restaurar após 2 segundos
+                setTimeout(() => {
+                    button.classList.remove('copied');
+                    icon.className = originalClass;
+                }, 2000);
+                
+            } catch (err) {
+                console.error('Erro ao copiar email:', err);
+                
+                // Fallback para navegadores mais antigos
+                const textArea = document.createElement('textarea');
+                textArea.value = email;
+                textArea.style.position = 'fixed';
+                textArea.style.left = '-999999px';
+                document.body.appendChild(textArea);
+                textArea.select();
+                
+                try {
+                    document.execCommand('copy');
+                    
+                    // Feedback visual
+                    const originalClass = icon.className;
+                    button.classList.add('copied');
+                    icon.className = 'fas fa-check';
+                    
+                    setTimeout(() => {
+                        button.classList.remove('copied');
+                        icon.className = originalClass;
+                    }, 2000);
+                    
+                } catch (err) {
+                    console.error('Erro ao copiar email (fallback):', err);
+                }
+                
+                document.body.removeChild(textArea);
+            }
+        });
+    });
 } 

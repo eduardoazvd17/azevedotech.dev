@@ -7,6 +7,11 @@
     .project-card {
         flex: 0 0 calc(50% - 1rem);
     }
+    
+    .profile-picture {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -16,27 +21,36 @@
 
     .container {
         width: 95%;
-        padding: 0 var(--spacing-xs);
+        padding: 0 var(--spacing-md);
     }
 
     .hero-section {
-        padding: var(--spacing-lg) 0;
+        padding: var(--spacing-xl) 0;
         height: auto;
     }
 
     .profile-section {
         flex-direction: column;
         text-align: center;
+        gap: var(--spacing-lg);
     }
 
     .profile-picture {
-        width: 150px;
-        height: 150px;
-        margin: 0 auto var(--spacing-lg);
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;
     }
 
     .profile-info {
         padding: 0;
+    }
+    
+    .profile-info h1 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .profile-info h2 {
+        font-size: var(--font-size-base);
     }
 
     .social-links {
@@ -46,18 +60,17 @@
     #nav-menu {
         position: static;
         z-index: 100;
-        box-shadow: var(--shadow-md);
-        padding: var(--spacing-xs) 0;
+        padding: var(--spacing-sm) 0;
     }
 
     #nav-menu ul {
         justify-content: center;
         flex-wrap: wrap;
-        gap: var(--spacing-md);
+        gap: var(--spacing-sm);
     }
 
     #nav-menu li a {
-        padding: var(--spacing-sm) var(--spacing-xs);
+        padding: var(--spacing-sm) var(--spacing-md);
         font-size: var(--font-size-sm);
     }
 
@@ -66,12 +79,12 @@
     }
 
     .section-title {
-        font-size: var(--font-size-xxl);
-        margin-bottom: var(--spacing-lg);
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--spacing-xl);
     }
 
     .projects-grid {
-        gap: var(--spacing-md);
+        gap: var(--spacing-lg);
     }
 
     .project-card {
@@ -80,6 +93,7 @@
 
     .project-image {
         height: 250px;
+        padding: var(--spacing-md);
     }
 
     .contact-grid {
@@ -108,6 +122,11 @@
         bottom: var(--spacing-lg);
         right: var(--spacing-lg);
     }
+    
+    #language-toggle {
+        width: 56px;
+        height: 56px;
+    }
 
     .footer-content {
         flex-direction: column;
@@ -120,6 +139,31 @@
         padding: 0;
         max-width: 100%;
     }
+    
+    .social-contact-button {
+        max-width: 180px;
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+    
+    .presentation-text {
+        font-size: var(--font-size-base);
+    }
+    
+    .skill-item {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .copy-email-btn {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        font-size: var(--font-size-sm);
+    }
+    
+    .email-box {
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -128,27 +172,27 @@
     }
 
     .profile-info h1 {
-        font-size: var(--font-size-xl);
-    }
-
-    .profile-info h2 {
-        font-size: var(--font-size-base);
-    }
-
-    .social-links a {
-        width: 35px;
-        height: 35px;
         font-size: var(--font-size-lg);
     }
 
+    .profile-info h2 {
+        font-size: var(--font-size-sm);
+    }
+
+    .social-links a {
+        width: 36px;
+        height: 36px;
+        font-size: var(--font-size-base);
+    }
+
     #nav-menu li a {
-        padding: var(--spacing-xs) var(--spacing-xs);
+        padding: var(--spacing-xs);
         font-size: var(--font-size-xs);
     }
 
     .modal-content {
-        width: 90%;
-        padding: var(--spacing-md);
+        width: 95%;
+        padding: var(--spacing-lg);
     }
 
     .container {
@@ -160,6 +204,44 @@
         width: 100%;
         padding: 0;
         max-width: 100%;
+    }
+    
+    .profile-picture {
+        width: 140px;
+        height: 140px;
+    }
+    
+    #language-toggle {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .skill-item {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .copy-email-btn {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        font-size: var(--font-size-xs);
+    }
+    
+    .email-box {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    
+    .email-link {
+        gap: var(--spacing-sm);
+    }
+    
+    .email-link i {
+        font-size: var(--font-size-lg);
+    }
+    
+    .email-text {
+        font-size: var(--font-size-sm);
     }
 }
 

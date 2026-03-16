@@ -12,6 +12,7 @@
     <title>Eduardo Azevedo - Engenheiro de Software | Cross-Platform | Full Stack | Especialista em Flutter</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
@@ -133,6 +134,9 @@
                             </div>
                             <div class="skill-item" data-tooltip="Python">
                                 <img src="icons/python.png" alt="Python">
+                            </div>
+                            <div class="skill-item" data-tooltip="Go">
+                                <img src="icons/go.png" alt="Go">
                             </div>
                             <div class="skill-item" data-tooltip="Codemagic CI/CD">
                                 <img src="icons/codemagic.png" alt="Codemagic CI/CD">
@@ -492,14 +496,24 @@
                         <div class="contact-section">
                             <h3 class="contact-subtitle" data-i18n="sendEmail">Me envie um email:</h3>
                             <div class="email-container">
-                                <a href="mailto:eduardoazvd17@gmail.com" class="email-box">
-                                    <i class="fas fa-envelope"></i>
-                                    <span class="email-text">eduardoazvd17@gmail.com</span>
-                                </a>
-                                <a href="mailto:azevedotechsolutions@gmail.com" class="email-box">
-                                    <i class="fas fa-envelope"></i>
-                                    <span class="email-text">azevedotechsolutions@gmail.com</span>
-                                </a>
+                                <div class="email-box">
+                                    <a href="mailto:eduardoazvd17@gmail.com" class="email-link">
+                                        <i class="fas fa-envelope"></i>
+                                        <span class="email-text">eduardoazvd17@gmail.com</span>
+                                    </a>
+                                    <button class="copy-email-btn" data-email="eduardoazvd17@gmail.com" aria-label="Copiar email">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <div class="email-box">
+                                    <a href="mailto:azevedotechsolutions@gmail.com" class="email-link">
+                                        <i class="fas fa-envelope"></i>
+                                        <span class="email-text">azevedotechsolutions@gmail.com</span>
+                                    </a>
+                                    <button class="copy-email-btn" data-email="azevedotechsolutions@gmail.com" aria-label="Copiar email">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
