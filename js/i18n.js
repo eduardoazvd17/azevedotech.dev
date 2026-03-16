@@ -23,6 +23,7 @@ const translations = {
         'project_repository': 'Repositório',
         'project_download': 'Download',
         'project_android': 'Android',
+        'project_ios': 'iOS',
 
         // More Projects
         'more_projects_title': 'Conheça mais projetos',
@@ -140,6 +141,7 @@ const translations = {
         'project_repository': 'Repository',
         'project_download': 'Download',
         'project_android': 'Android',
+        'project_ios': 'iOS',
 
         // More Projects
         'more_projects_title': 'Explore more projects',
@@ -257,6 +259,7 @@ const translations = {
         'project_repository': 'Repositorio',
         'project_download': 'Descargar',
         'project_android': 'Android',
+        'project_ios': 'iOS',
 
         // More Projects
         'more_projects_title': 'Explora más proyectos',
@@ -503,6 +506,8 @@ function translateSpecificElements(lang) {
                 link.innerHTML = `<i class="fas fa-download"></i> ${translations[lang].project_download}`;
             } else if (linkText.includes('Android')) {
                 link.innerHTML = `<i class="fab fa-android"></i> ${translations[lang].project_android}`;
+            } else if (linkText.includes('iOS')) {
+                link.innerHTML = `<i class="fab fa-apple"></i> ${translations[lang].project_ios}`;
             }
         });
     });
