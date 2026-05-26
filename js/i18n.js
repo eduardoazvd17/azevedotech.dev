@@ -114,7 +114,7 @@ const translations = {
 
         // AutoCarefy
         'autocarefy_title': 'AutoCarefy',
-        'autocarefy_description': 'App para consulta de valores de referência da tabela FIPE, apresentando informações atualizadas sobre preços de veículos.',
+        'autocarefy_description': 'AutoCarefy ajuda você a cuidar do seu carro de forma simples, moderna e inteligente. Controle manutenções, acompanhe revisões, monitore gastos e consulte a tabela FIPE do seu veículo em segundos. Mantenha todas as informações importantes do seu carro organizadas em um só lugar e receba lembretes para nunca esquecer uma manutenção importante.',
     },
 
     // Inglês
@@ -232,7 +232,7 @@ const translations = {
 
         // AutoCarefy
         'autocarefy_title': 'AutoCarefy',
-        'autocarefy_description': 'App for consulting reference values from the FIPE table, presenting updated information about vehicle prices.',
+        'autocarefy_description': 'AutoCarefy helps you take care of your car in a simple, modern, and intelligent way. Control maintenance, track servicing, monitor expenses, and consult your vehicle\'s FIPE table in seconds. Keep all your important car information organized in one place and receive reminders so you never forget important maintenance.',
     },
 
     // Espanhol
@@ -350,7 +350,7 @@ const translations = {
 
         // AutoCarefy
         'autocarefy_title': 'AutoCarefy',
-        'autocarefy_description': 'App para consulta de valores de referencia de la tabla FIPE, presentando información actualizada sobre precios de vehículos.',
+        'autocarefy_description': 'AutoCarefy te ayuda a cuidar tu auto de manera simple, moderna e inteligente. Controla el mantenimiento, realiza seguimiento de revisiones, monitorea gastos y consulta la tabla FIPE de tu vehículo en segundos. Mantén toda la información importante de tu auto organizada en un solo lugar y recibe recordatorios para nunca olvidar un mantenimiento importante.',
     }
 };
 
