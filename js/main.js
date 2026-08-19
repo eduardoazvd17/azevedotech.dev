@@ -72,6 +72,7 @@ function setupTabNavigation() {
 
                 const pageValue = sectionToPageMap[targetId] || 'aboutMe';
                 updateURLParameter('page', pageValue);
+                scrollToContentTop();
             }
         });
     });
@@ -84,9 +85,14 @@ function updateURLParameter(key, value) {
     urlParams.set(key, value);
 
     window.history.pushState({}, '', url.toString());
+}
+
+function scrollToContentTop() {
+    const hero = document.querySelector('.hero-section');
+    const stickyPoint = hero ? hero.offsetHeight : 0;
 
     window.scrollTo({
-        top: 0,
+        top: stickyPoint,
         behavior: 'smooth'
     });
 }

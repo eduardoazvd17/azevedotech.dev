@@ -69,13 +69,26 @@
 
     #nav-menu ul {
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: var(--spacing-sm);
     }
 
     #nav-menu li a {
         padding: var(--spacing-sm) var(--spacing-md);
         font-size: var(--font-size-sm);
+        white-space: nowrap;
+    }
+
+    #nav-menu li a span {
+        display: none;
+    }
+
+    #nav-menu li a.active span {
+        display: inline;
+    }
+
+    #nav-menu li a:not(.active) i {
+        margin-right: 0;
     }
 
     .section {
@@ -123,12 +136,21 @@
     }
 
     .nav-container {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: var(--spacing-md);
     }
 
     .nav-brand-name {
         display: none;
+    }
+
+    .lang-switch {
+        gap: 4px;
+    }
+
+    .lang-btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
     }
 
     .footer-content {
@@ -144,10 +166,10 @@
 
     #nav-menu .container {
         width: 100%;
-        padding: 0;
         max-width: 100%;
+        padding: 0 var(--spacing-md);
     }
-    
+
     .social-contact-button {
         max-width: 180px;
         padding: var(--spacing-md) var(--spacing-lg);
@@ -198,6 +220,11 @@
         font-size: var(--font-size-xs);
     }
 
+    .nav-brand-mark {
+        width: 28px;
+        height: 28px;
+    }
+
     .container {
         width: 98%;
         padding: 0 var(--spacing-xs);
@@ -205,10 +232,10 @@
 
     #nav-menu .container {
         width: 100%;
-        padding: 0;
         max-width: 100%;
+        padding: 0 var(--spacing-sm);
     }
-    
+
     .profile-picture {
         width: 140px;
         height: 140px;
