@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfólio de Eduardo Azevedo, engenheiro de software especializado em Flutter, Dart e desenvolvimento cross-platform. Veja meus projetos e entre em contato.">
+        content="Azevedo Tech Solutions — estúdio de software liderado por Eduardo Azevedo, engenheiro especializado em Flutter, Dart e desenvolvimento cross-platform. Veja os projetos e entre em contato.">
     <meta name="keywords"
-        content="Eduardo Azevedo, Azevedo Tech Solutions, Flutter, Dart, Software Engineer, Engenheiro de Software, Mobile, Desenvolvedor, Developer, Programação, Analista, Full Stack, Backend, Frontend, Full Stack Developer, Mobile Developer, Cross-Platform Developer, Flutter Developer, Dart Developer, Developer, Programação, Firebase, Java, C#, Kotlin, Swift">
+        content="Azevedo Tech Solutions, Eduardo Azevedo, Flutter, Dart, Software Engineer, Engenheiro de Software, Mobile, Desenvolvedor, Developer, Programação, Analista, Full Stack, Backend, Frontend, Full Stack Developer, Mobile Developer, Cross-Platform Developer, Flutter Developer, Dart Developer, Developer, Programação, Firebase, Java, C#, Kotlin, Swift">
     <meta name="author" content="Eduardo Azevedo">
-    <title>Eduardo Azevedo - Engenheiro de Software | Cross-Platform | Full Stack | Especialista em Flutter</title>
+    <title>Azevedo Tech Solutions - Eduardo Azevedo | Engenheiro de Software | Especialista em Flutter</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -28,8 +28,11 @@
                     <img src="images/profile.jpeg" alt="Eduardo Azevedo" id="profile-img">
                 </div>
                 <div class="profile-info">
+                    <span class="hero-kicker">Azevedo Tech Solutions</span>
                     <h1>Eduardo Azevedo Regueira</h1>
                     <h2>Engenheiro de Software | Cross-Platform | Full Stack | Especialista em Flutter</h2>
+                    <p class="hero-tagline" data-i18n="hero_tagline">Soluções mobile e software sob medida, do MVP à
+                        publicação nas lojas.</p>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/eduardoazvd17/" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
@@ -41,13 +44,27 @@
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-value">7+</span>
+                            <span class="hero-stat-label" data-i18n="stat_experience_label">anos de experiência</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-value">12+</span>
+                            <span class="hero-stat-label" data-i18n="stat_projects_label">projetos entregues</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <nav id="nav-menu">
-        <div class="container">
+        <div class="container nav-container">
+            <a href="#about" class="nav-brand" aria-label="Azevedo Tech Solutions">
+                <span class="nav-brand-mark"><i class="fas fa-code"></i></span>
+                <span class="nav-brand-name">Azevedo Tech Solutions</span>
+            </a>
             <ul>
                 <li><a href="#about" class="active" data-section="about"><i class="fas fa-user"></i> <span>Sobre
                             mim</span></a></li>
@@ -56,18 +73,17 @@
                 <li><a href="#contact" data-section="contact"><i class="fas fa-envelope"></i>
                         <span>Contato</span></a></li>
             </ul>
+            <div class="lang-switch">
+                <button class="lang-btn" data-lang="pt" id="lang-pt">PT</button>
+                <button class="lang-btn" data-lang="en" id="lang-en">EN</button>
+            </div>
         </div>
     </nav>
-
-    <div class="settings-fab">
-        <button id="language-toggle" aria-label="Mudar idioma">
-            <i class="fas fa-globe"></i>
-        </button>
-    </div>
 
     <main id="main-content">
         <section id="about" class="section active">
             <div class="container">
+                <span class="section-eyebrow" data-i18n="eyebrow_about">Sobre</span>
                 <h2 class="section-title">Sobre mim</h2>
                 <div class="section-content">
                     <p class="presentation-text">Sou um engenheiro de software com 7 anos de experiência profissional,
@@ -149,6 +165,7 @@
 
         <section id="projects" class="section">
             <div class="container">
+                <span class="section-eyebrow" data-i18n="eyebrow_projects">Portfólio</span>
                 <h2 class="section-title">Meus projetos</h2>
                 <div class="section-content">
                     <div class="projects-showcase">
@@ -158,6 +175,7 @@
                                     <img src="images/autocarefy.png" alt="AutoCarefy App screenshot">
                                 </div>
                                 <div class="project-info">
+                                    <span class="project-badge" data-i18n="badge_mobile">App Mobile</span>
                                     <h3 data-i18n="autocarefy_title">AutoCarefy</h3>
                                     <p data-i18n="autocarefy_description">AutoCarefy ajuda você a cuidar do seu carro
                                         de forma simples, moderna e inteligente. Controle manutenções, acompanhe
@@ -184,6 +202,7 @@
                                     <img src="icons/moverio.png" alt="MoveRio App screenshot">
                                 </div>
                                 <div class="project-info">
+                                    <span class="project-badge" data-i18n="badge_mobile">App Mobile</span>
                                     <h3 data-i18n="moverio_title">MoveRio</h3>
                                     <p data-i18n="moverio_description">Aplicativo gratuito que facilita sua mobilidade
                                         no
@@ -211,6 +230,7 @@
                                     <img src="images/pub_dev.png" alt="easy_binding Library Demo">
                                 </div>
                                 <div class="project-info">
+                                    <span class="project-badge" data-i18n="badge_flutter_package">Pacote Flutter</span>
                                     <h3 data-i18n="easy_binding_title">easy_binding</h3>
                                     <p data-i18n="easy_binding_description">Um pacote Flutter leve para gerenciar o
                                         ciclo
@@ -237,19 +257,13 @@
                                     <img src="images/stackbudget.png" alt="StackBudget App screenshot">
                                 </div>
                                 <div class="project-info">
+                                    <span class="project-badge" data-i18n="badge_mobile">App Mobile</span>
                                     <h3 data-i18n="stackbudget_title">StackBudget</h3>
                                     <p data-i18n="stackbudget_description">Um aplicativo de planejamento financeiro que
                                         permite aos usuários acompanhar seus
                                         gastos mensais de forma organizada e eficiente. Com interface intuitiva e
                                         ferramentas para controle de orçamento, ajudando na gestão financeira pessoal.
                                     </p>
-                                    <div class="project-links">
-                                        <a href="https://play.google.com/store/apps/details?id=com.eduardoazevedo.stackbudget"
-                                            class="project-link" data-link-type="android" target="_blank">
-                                            <i class="fab fa-android"></i>
-                                            <span>Android</span>
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
 
@@ -258,19 +272,13 @@
                                     <img src="images/investhelper.png" alt="InvestHelper App screenshot">
                                 </div>
                                 <div class="project-info">
+                                    <span class="project-badge" data-i18n="badge_mobile">App Mobile</span>
                                     <h3>InvestHelper</h3>
                                     <p>Um app para controlar seus investimentos e ter um panorama completo contendo
                                         todos
                                         os valores necessários para o controle de compra, venda, lucro, preço médio e
                                         preço de compra e venda. Além de gerar relatórios para facilitar a visualização
                                         pelo computador.</p>
-                                    <div class="project-links">
-                                        <a href="https://play.google.com/store/apps/details?id=com.eduardoazevedo.investhelper"
-                                            class="project-link" data-link-type="android" target="_blank">
-                                            <i class="fab fa-android"></i>
-                                            <span>Android</span>
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
 
@@ -279,6 +287,7 @@
                                     <img src="images/fcryptor.png" alt="FCryptor App screenshot">
                                 </div>
                                 <div class="project-info">
+                                    <span class="project-badge" data-i18n="badge_cross_platform">Multiplataforma</span>
                                     <h3>FCryptor</h3>
                                     <p>FCryptor é um aplicativo de criptografia de arquivos multiplataforma desenvolvido
                                         com Flutter. Com suporte para dispositivos móveis, web e desktop, ele oferece
@@ -287,16 +296,6 @@
                                         uma
                                         interface intuitiva.</p>
                                     <div class="project-links">
-                                        <a href="https://play.google.com/store/apps/details?id=com.eduardoazevedo.fcryptor"
-                                            class="project-link" data-link-type="android" target="_blank">
-                                            <i class="fab fa-android"></i>
-                                            <span>Android</span>
-                                        </a>
-                                        <a href="https://fcryptor.eduardoazevedo.com" class="project-link"
-                                            data-link-type="preview" target="_blank">
-                                            <i class="fas fa-eye"></i>
-                                            <span>Website</span>
-                                        </a>
                                         <a href="https://github.com/eduardoazvd17/fcryptor/releases/latest"
                                             class="project-link" data-link-type="download" target="_blank">
                                             <i class="fas fa-download"></i>
@@ -316,6 +315,7 @@
                                     <img src="images/pub_dev.png" alt="slider_bar_chart Library Demo">
                                 </div>
                                 <div class="project-info">
+                                    <span class="project-badge" data-i18n="badge_flutter_package">Pacote Flutter</span>
                                     <h3>slider_bar_chart</h3>
                                     <p>Uma forma simplificada de se criar gráficos de barra no Flutter, permitindo
                                         scroll na horizontal e algumas opções de customização como cores, textos e
@@ -342,6 +342,7 @@
                                     <img src="images/audiotexter.png" alt="AudioTexter App screenshot">
                                 </div>
                                 <div class="project-info">
+                                    <span class="project-badge" data-i18n="badge_mobile">App Mobile</span>
                                     <h3>AudioTexter</h3>
                                     <p>AudioTexter é um aplicativo desenvolvido em Flutter que permite gravar áudios e
                                         transcrevê-los em texto.</p>
@@ -360,17 +361,11 @@
                                     <img src="images/my_finances.png" alt="My Finances App screenshot">
                                 </div>
                                 <div class="project-info">
+                                    <span class="project-badge" data-i18n="badge_web">App Web</span>
                                     <h3>My Finances</h3>
                                     <p>Um aplicativo para controle de finanças no qual te permitirá controlar seus
                                         gastos
                                         mensais, investimentos e salvar anotações importantes.</p>
-                                    <div class="project-links">
-                                        <a href="https://myfinances.eduardoazevedo.com/" class="project-link"
-                                            data-link-type="preview" target="_blank">
-                                            <i class="fas fa-eye"></i>
-                                            <span>Website</span>
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
 
@@ -379,6 +374,7 @@
                                     <img src="images/flutter.png" alt="GitF App screenshot">
                                 </div>
                                 <div class="project-info">
+                                    <span class="project-badge" data-i18n="badge_desktop">App Desktop</span>
                                     <h3>GitF</h3>
                                     <p>Um gerenciador de repositórios Git para iniciantes. Esse projeto foi criado
                                         apenas para testar o desenvolvimento de apps desktop com o Flutter.</p>
@@ -402,6 +398,7 @@
                                     <img src="images/pub_dev.png" alt="credentials_manager Library Demo">
                                 </div>
                                 <div class="project-info">
+                                    <span class="project-badge" data-i18n="badge_flutter_package">Pacote Flutter</span>
                                     <h3>credentials_manager</h3>
                                     <p>Uma biblioteca para gerenciar de forma fácil as credenciais do seu app Flutter
                                         localmente, utilizando autenticação biométrica. Ela foi criada com o intuito de
@@ -428,6 +425,7 @@
                                     <img src="images/pub_dev.png" alt="simple_overlay Library Demo">
                                 </div>
                                 <div class="project-info">
+                                    <span class="project-badge" data-i18n="badge_flutter_package">Pacote Flutter</span>
                                     <h3>simple_overlay</h3>
                                     <p>Uma biblioteca simples e prática para criar sobreposições de forma fácil no seu
                                         app Flutter. Com ele, você pode sobrepor um widget personalizado a qualquer
@@ -476,6 +474,7 @@
 
         <section id="contact" class="section">
             <div class="container">
+                <span class="section-eyebrow" data-i18n="eyebrow_contact">Contato</span>
                 <h2 class="section-title" data-i18n="contact">Contato</h2>
                 <div class="section-content">
                     <p class="contact-intro" data-i18n="contact_intro">Entre em contato para discutir oportunidades de
@@ -527,27 +526,6 @@
         </section>
     </main>
 
-    <div id="language-modal" class="modal">
-        <div class="modal-content">
-            <h3>Mudar idioma</h3>
-            <div class="language-options">
-                <button class="lang-option active" data-lang="pt">
-                    <img src="icons/pt.png" alt="Português" class="lang-flag">
-                    <span class="lang-name">Português</span>
-                </button>
-                <button class="lang-option" data-lang="en">
-                    <img src="icons/en.png" alt="English" class="lang-flag">
-                    <span class="lang-name">Inglês</span>
-                </button>
-                <button class="lang-option" data-lang="es">
-                    <img src="icons/es.png" alt="Español" class="lang-flag">
-                    <span class="lang-name">Espanhol</span>
-                </button>
-            </div>
-            <button class="close-modal">Fechar</button>
-        </div>
-    </div>
-
     <footer>
         <div class="container">
             <div class="back-to-top">
@@ -556,7 +534,21 @@
                 </button>
             </div>
             <div class="footer-content">
-                <p class="copyright">&copy; <span id="current-year"></span> <span id="footer-company"></span></p>
+                <div class="footer-brand">
+                    <span class="footer-brand-mark"><i class="fas fa-code"></i></span>
+                    <p class="copyright">&copy; <span id="current-year"></span> <span id="footer-company"></span></p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:eduardoazvd17@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/eduardoazvd17/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/eduardoazvd17/" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

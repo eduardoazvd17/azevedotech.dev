@@ -77,8 +77,6 @@
     }
 }
 
-/* Pulse suave para FAB - REMOVIDO */
-
 /* Gradiente animado para títulos */
 @keyframes gradientShift {
     0%, 100% {
@@ -96,20 +94,6 @@
 /* Efeito de hover suave para links */
 a {
     position: relative;
-}
-
-/* Animação de entrada para o modal */
-@keyframes modalBackdropFadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.modal.active {
-    animation: modalBackdropFadeIn 0.3s ease-out;
 }
 
 /* Floating animation para profile picture */

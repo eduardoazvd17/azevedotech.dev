@@ -6,11 +6,17 @@ const translations = {
         'nav_projects': 'Meus projetos',
         'nav_contact': 'Contato',
 
+        // Marca / Hero
+        'hero_tagline': 'Soluções mobile e software sob medida, do MVP à publicação nas lojas.',
+        'stat_experience_label': 'anos de experiência',
+        'stat_projects_label': 'projetos entregues',
+
         // Cabeçalho
         'profile_title': 'Engenheiro de Software | Cross-Platform | Full Stack | Especialista em Flutter',
 
         // Sobre mim
         'about': 'Sobre mim',
+        'eyebrow_about': 'Sobre',
         'presentation_text_1': 'Sou um engenheiro de software com 7 anos de experiência profissional, especializado no desenvolvimento de soluções mobile multiplataforma com o framework Flutter. Ao longo da minha carreira, liderei projetos mobile de forma independente, desenvolvi soluções para instituições financeiras e implementei melhorias significativas que otimizaram a performance de aplicativos. Meu foco está na criação de soluções performáticas, inovadoras e escaláveis, sempre priorizando alta qualidade e melhoria contínua da experiência do usuário.',
         'presentation_text_2': 'Possuo ampla experiência em diversas áreas do Flutter, incluindo internacionalização, modularização, gerenciamento de estados e rotas, criação de widgets personalizados, desenvolvimento de packages reutilizáveis, automação de pipelines CI/CD com Codemagic, publicação de aplicativos nas lojas e realização de testes unitários e de widgets. Sigo práticas rigorosas de gerenciamento eficiente de memória para evitar memory leaks, e adoto os princípios SOLID e Clean Code para garantir um código limpo, bem estruturado e de fácil manutenção.',
         'presentation_text_3': 'Valorizo a comunicação clara e o trabalho colaborativo em equipe, sempre buscando contribuir de forma eficiente e construtiva para garantir entregas de alta qualidade e alinhamento entre os times. Acredito que a sinergia entre profissionais é fundamental para o sucesso de qualquer projeto.',
@@ -19,11 +25,19 @@ const translations = {
 
         // Projetos
         'projects': 'Meus projetos',
+        'eyebrow_projects': 'Portfólio',
         'project_preview': 'Website',
         'project_repository': 'Repositório',
         'project_download': 'Download',
         'project_android': 'Android',
         'project_ios': 'iOS',
+
+        // Badges de categoria
+        'badge_mobile': 'App Mobile',
+        'badge_flutter_package': 'Pacote Flutter',
+        'badge_desktop': 'App Desktop',
+        'badge_web': 'App Web',
+        'badge_cross_platform': 'Multiplataforma',
 
         // More Projects
         'more_projects_title': 'Conheça mais projetos',
@@ -50,10 +64,6 @@ const translations = {
         'myfinances_title': 'My Finances',
         'myfinances_description': 'Um aplicativo para controle de finanças no qual te permitirá controlar seus gastos mensais, investimentos e salvar anotações importantes.',
 
-        // NutriUtils
-        'nutriutils_title': 'NutriUtils',
-        'nutriutils_description': 'NutriUtils é a ferramenta essencial para nutricionistas criarem dietas personalizadas e gerenciarem seus pacientes de forma eficiente. Simplifica o planejamento alimentar e o acompanhamento do progresso dos pacientes.',
-
         // GitF
         'gitf_title': 'GitF',
         'gitf_description': 'Um gerenciador de repositórios Git para iniciantes. Esse projeto foi criado apenas para testar o desenvolvimento de apps desktop com o Flutter.',
@@ -66,12 +76,9 @@ const translations = {
         'simple_overlay_title': 'simple_overlay',
         'simple_overlay_description': 'Uma biblioteca simples e prática para criar sobreposições de forma fácil no seu app Flutter. Com ele, você pode sobrepor um widget personalizado a qualquer outro widget. O foco deste pacote é agilizar a criação e gerenciamento do ciclo de vida de um Overlay.',
 
-        // Pokedex
-        'pokedex_title': 'Pokedex',
-        'pokedex_description': 'Um app de Pokémon desenvolvido com flutter. Desafio proposto pela empresa Guarani Sistemas. A aplicação foi desenvolvida utilizando flutter e adotando padrões de código limpo, seguindo a arquitetura Clean com Modular para o gerenciamento de rotas e GetX para gerenciamento de estado e injeção de dependencias, obtendo dados da API "pokeapi.com" utlizando a biblioteca http.',
-
         // Contato
         'contact': 'Contato',
+        'eyebrow_contact': 'Contato',
         'contact_intro': 'Fique a vontade para entrar em contato comigo usando uma das opções abaixo:',
         'contact_social': 'Me encontre nas redes:',
         'contact_email': 'Me envie um e-mail:',
@@ -81,18 +88,6 @@ const translations = {
         'message': 'Mensagem',
         'clear_fields': 'Limpar campos',
         'send': 'Enviar',
-
-        // Configurações
-        'settings': 'Configurações',
-        'change_theme': 'Mudar tema',
-        'theme_system': 'Sistema',
-        'theme_light': 'Claro',
-        'theme_dark': 'Escuro',
-        'change_language': 'Mudar idioma',
-        'language_pt': 'Português',
-        'language_en': 'Inglês',
-        'language_es': 'Espanhol',
-        'close': 'Fechar',
 
         // Rodapé
         'back_to_top': 'Voltar ao topo',
@@ -124,11 +119,17 @@ const translations = {
         'nav_projects': 'My projects',
         'nav_contact': 'Contact',
 
+        // Marca / Hero
+        'hero_tagline': 'Custom mobile and software solutions, from MVP to store publication.',
+        'stat_experience_label': 'years of experience',
+        'stat_projects_label': 'projects delivered',
+
         // Cabeçalho
         'profile_title': 'Software Engineer | Cross-Platform | Full Stack | Flutter Specialist',
 
         // Sobre mim
         'about': 'About me',
+        'eyebrow_about': 'About',
         'presentation_text_1': 'I am a software engineer with 7 years of professional experience, specialized in developing cross-platform mobile solutions with the Flutter framework. Throughout my career, I have led mobile projects independently, developed solutions for financial institutions, and implemented significant improvements that optimized app performance. My focus is on creating high-performance, innovative, and scalable solutions, always prioritizing high quality and continuous improvement of user experience.',
         'presentation_text_2': 'I have extensive experience in various areas of Flutter, including internationalization, modularization, state and route management, creation of custom widgets, development of reusable packages, automation of CI/CD pipelines with Codemagic, publishing applications to stores, and conducting unit and widget tests. I follow rigorous efficient memory management practices to avoid memory leaks, and adopt SOLID principles and Clean Code to ensure clean, well-structured, and easily maintainable code.',
         'presentation_text_3': 'I value clear communication and collaborative teamwork, always seeking to contribute efficiently and constructively to ensure high-quality deliveries and alignment between teams. I believe that synergy between professionals is fundamental to the success of any project.',
@@ -137,11 +138,19 @@ const translations = {
 
         // Projetos
         'projects': 'My projects',
+        'eyebrow_projects': 'Portfolio',
         'project_preview': 'Website',
         'project_repository': 'Repository',
         'project_download': 'Download',
         'project_android': 'Android',
         'project_ios': 'iOS',
+
+        // Badges de categoria
+        'badge_mobile': 'Mobile App',
+        'badge_flutter_package': 'Flutter Package',
+        'badge_desktop': 'Desktop App',
+        'badge_web': 'Web App',
+        'badge_cross_platform': 'Cross-Platform',
 
         // More Projects
         'more_projects_title': 'Explore more projects',
@@ -168,10 +177,6 @@ const translations = {
         'myfinances_title': 'My Finances',
         'myfinances_description': 'A finance control application that allows you to track your monthly expenses, investments, and save important notes.',
 
-        // NutriUtils
-        'nutriutils_title': 'NutriUtils',
-        'nutriutils_description': 'NutriUtils is the essential tool for nutritionists to create personalized diets and efficiently manage their patients. It simplifies meal planning and tracking patient progress.',
-
         // GitF
         'gitf_title': 'GitF',
         'gitf_description': 'A Git repository manager for beginners. This project was created just to test desktop app development with Flutter.',
@@ -184,12 +189,9 @@ const translations = {
         'simple_overlay_title': 'simple_overlay',
         'simple_overlay_description': 'A simple and practical library to easily create overlays in your Flutter app. With it, you can overlay a custom widget on any other widget. The focus of this package is to streamline the creation and lifecycle management of an Overlay.',
 
-        // Pokedex
-        'pokedex_title': 'Pokedex',
-        'pokedex_description': 'A Pokémon app developed with Flutter. Challenge proposed by Guarani Sistemas company. The application was developed using Flutter and adopting clean code patterns, following the Clean architecture with Modular for route management and GetX for state management and dependency injection, obtaining data from the "pokeapi.com" API using the http library.',
-
         // Contato
         'contact': 'Contact',
+        'eyebrow_contact': 'Contact',
         'contact_intro': 'Feel free to contact me using one of the options below:',
         'contact_social': 'Find me on social media:',
         'contact_email': 'Send me an email:',
@@ -199,18 +201,6 @@ const translations = {
         'message': 'Message',
         'clear_fields': 'Clear fields',
         'send': 'Send',
-
-        // Configurações
-        'settings': 'Settings',
-        'change_theme': 'Change theme',
-        'theme_system': 'System',
-        'theme_light': 'Light',
-        'theme_dark': 'Dark',
-        'change_language': 'Change language',
-        'language_pt': 'Portuguese',
-        'language_en': 'English',
-        'language_es': 'Spanish',
-        'close': 'Close',
 
         // Rodapé
         'back_to_top': 'Back to top',
@@ -233,124 +223,6 @@ const translations = {
         // AutoCarefy
         'autocarefy_title': 'AutoCarefy',
         'autocarefy_description': 'AutoCarefy helps you take care of your car in a simple, modern, and intelligent way. Control maintenance, track servicing, monitor expenses, and consult your vehicle\'s FIPE table in seconds. Keep all your important car information organized in one place and receive reminders so you never forget important maintenance.',
-    },
-
-    // Espanhol
-    'es': {
-        // Navegação
-        'nav_about': 'Sobre mí',
-        'nav_projects': 'Mis proyectos',
-        'nav_contact': 'Contacto',
-
-        // Cabeçalho
-        'profile_title': 'Ingeniero de Software | Multiplataforma | Full Stack | Especialista en Flutter',
-
-        // Sobre mim
-        'about': 'Sobre mí',
-        'presentation_text_1': 'Soy un ingeniero de software con 7 años de experiencia profesional, especializado en el desarrollo de soluciones móviles multiplataforma con el framework Flutter. A lo largo de mi carrera, lideré proyectos móviles de forma independiente, desarrollé soluciones para instituciones financieras e implementé mejoras significativas que optimizaron el rendimiento de aplicaciones. Mi enfoque está en crear soluciones performantes, innovadoras y escalables, siempre priorizando alta calidad y mejora continua de la experiencia del usuario.',
-        'presentation_text_2': 'Poseo amplia experiencia en diversas áreas de Flutter, incluyendo internacionalización, modularización, gestión de estados y rutas, creación de widgets personalizados, desarrollo de paquetes reutilizables, automatización de pipelines CI/CD con Codemagic, publicación de aplicaciones en tiendas y realización de pruebas unitarias y de widgets. Sigo prácticas rigurosas de gestión eficiente de memoria para evitar fugas de memoria, y adopto los principios SOLID y Clean Code para garantizar un código limpio, bien estructurado y de fácil mantenimiento.',
-        'presentation_text_3': 'Valoro la comunicación clara y el trabajo colaborativo en equipo, siempre buscando contribuir de manera eficiente y constructiva para garantizar entregas de alta calidad y alineamiento entre los equipos. Creo que la sinergia entre profesionales es fundamental para el éxito de cualquier proyecto.',
-        'presentation_text_4': 'Además de mi experiencia en Flutter, poseo conocimientos sólidos en lenguajes como Java, C#, Kotlin y Swift, lo que me permite actuar con versatilidad en diferentes tecnologías y stacks, atendiendo a diversas demandas en el desarrollo de software.',
-        'skills_title': 'Lenguajes y Tecnologías',
-
-        // Projetos
-        'projects': 'Mis proyectos',
-        'project_preview': 'Sitio web',
-        'project_repository': 'Repositorio',
-        'project_download': 'Descargar',
-        'project_android': 'Android',
-        'project_ios': 'iOS',
-
-        // More Projects
-        'more_projects_title': 'Explora más proyectos',
-        'more_projects_description': '¿Quieres conocer más proyectos en los que trabajé? Visita mi perfil en GitHub para descubrir otros repositorios, contribuciones y proyectos en desarrollo.',
-        'more_projects_link': 'Ver más proyectos',
-
-        // Investhelper
-        'investhelper_title': 'InvestHelper',
-        'investhelper_description': 'Una aplicación para controlar tus inversiones y tener una visión completa que contiene todos los valores necesarios para el control de compras, ventas, ganancias, precio promedio y precio de compra y venta. También genera informes para facilitar la visualización en la computadora.',
-
-        // FCryptor
-        'fcryptor_title': 'FCryptor',
-        'fcryptor_description': 'FCryptor es una aplicación de cifrado de archivos multiplataforma desarrollada con Flutter. Con soporte para dispositivos móviles, web y escritorio, ofrece una manera segura y práctica de proteger tus archivos con cifrado AES-256 y una interfaz intuitiva.',
-
-        // slider_bar_chart
-        'slider_bar_chart_title': 'slider_bar_chart',
-        'slider_bar_chart_description': 'Una forma simplificada de crear gráficos de barras en Flutter, permitiendo desplazamiento horizontal y algunas opciones de personalización como colores, textos y tooltips. Esta biblioteca fue creada para resolver un problema en el que necesitaba un gráfico de barras para mostrar datos de dos fuentes de manera espejada y que permitiera desplazamiento.',
-
-        // AudioTexter
-        'audiotexter_title': 'AudioTexter',
-        'audiotexter_description': 'AudioTexter es una aplicación desarrollada en Flutter que permite grabar audios y transcribirlos a texto.',
-
-        // My Finances
-        'myfinances_title': 'My Finances',
-        'myfinances_description': 'Una aplicación para el control financiero que te permite controlar tus gastos mensuales, inversiones y guardar notas importantes.',
-
-        // NutriUtils
-        'nutriutils_title': 'NutriUtils',
-        'nutriutils_description': 'NutriUtils es la herramienta esencial para que los nutricionistas creen dietas personalizadas y gestionen a sus pacientes de manera eficiente. Simplifica la planificación alimentaria y el seguimiento del progreso de los pacientes.',
-
-        // GitF
-        'gitf_title': 'GitF',
-        'gitf_description': 'Un gestor de repositorios Git para principiantes. Este proyecto fue creado solo para probar el desarrollo de aplicaciones de escritorio con Flutter.',
-
-        // credentials_manager
-        'credentials_manager_title': 'credentials_manager',
-        'credentials_manager_description': 'Una biblioteca para gestionar fácilmente las credenciales de tu aplicación Flutter localmente, utilizando autenticación biométrica. Fue creada para agilizar la solución de un problema donde necesitaba almacenar credenciales de forma segura en un dispositivo, permitiendo al usuario iniciar sesión con esas credenciales usando biometría.',
-
-        // simple_overlay
-        'simple_overlay_title': 'simple_overlay',
-        'simple_overlay_description': 'Una biblioteca simple y práctica para crear superposiciones fácilmente en tu aplicación Flutter. Con ella, puedes superponer un widget personalizado sobre cualquier otro widget. El enfoque de este paquete es agilizar la creación y gestión del ciclo de vida de un Overlay.',
-
-        // Pokedex
-        'pokedex_title': 'Pokedex',
-        'pokedex_description': 'Una aplicación de Pokémon desarrollada con Flutter. Desafío propuesto por la empresa Guarani Sistemas. La aplicación fue desarrollada utilizando Flutter y adoptando patrones de código limpio, siguiendo la arquitectura Clean con Modular para la gestión de rutas y GetX para la gestión de estado e inyección de dependencias, obteniendo datos de la API "pokeapi.com" utilizando la biblioteca http.',
-
-        // Contato
-        'contact': 'Contacto',
-        'contact_intro': 'Siéntete libre de contactarme usando una de las opciones a continuación:',
-        'contact_social': 'Encuéntrame en las redes sociales:',
-        'contact_email': 'Envíame un correo electrónico:',
-        'contactVia': 'Contáctame a través de:',
-        'sendEmail': 'Envíame un email:',
-        'subject': 'Asunto',
-        'message': 'Mensaje',
-        'clear_fields': 'Limpiar campos',
-        'send': 'Enviar',
-
-        // Configurações
-        'settings': 'Configuración',
-        'change_theme': 'Cambiar tema',
-        'theme_system': 'Sistema',
-        'theme_light': 'Claro',
-        'theme_dark': 'Oscuro',
-        'change_language': 'Cambiar idioma',
-        'language_pt': 'Portugués',
-        'language_en': 'Inglés',
-        'language_es': 'Español',
-        'close': 'Cerrar',
-
-        // Rodapé
-        'back_to_top': 'Volver arriba',
-        'copyright': 'Todos los derechos reservados.',
-        'company_name': 'Azevedo Tech Solutions',
-        'company_cnpj': 'CNPJ: 55.705.600/0001-47',
-
-        // MoveRio
-        'moverio_title': 'MoveRio',
-        'moverio_description': 'Aplicación gratuita que facilita tu movilidad en Río de Janeiro. Consulta líneas de autobús, visualiza itinerarios completos, encuentra paradas cercanas, abre rutas en la app de mapas de tu dispositivo y acompaña tu trayecto en tiempo real usando la ubicación de tu dispositivo. Ideal para el día a día de quienes dependen del transporte público.',
-
-        // easy_binding
-        'easy_binding_title': 'easy_binding',
-        'easy_binding_description': 'Un paquete Flutter ligero para gestionar el ciclo de vida de dependencias en rutas. Inspirado en los bindings de GetX, pero agnóstico de framework - funciona con cualquier solución de inyección de dependencias como GetIt, Provider o Riverpod.',
-
-        // StackBudget
-        'stackbudget_title': 'StackBudget',
-        'stackbudget_description': 'Una aplicación de planificación financiera que permite a los usuarios controlar sus gastos mensuales de manera organizada y eficiente. Con interfaz intuitiva y herramientas para control de presupuesto, ayudando en la gestión financiera personal.',
-
-        // AutoCarefy
-        'autocarefy_title': 'AutoCarefy',
-        'autocarefy_description': 'AutoCarefy te ayuda a cuidar tu auto de manera simple, moderna e inteligente. Controla el mantenimiento, realiza seguimiento de revisiones, monitorea gastos y consulta la tabla FIPE de tu vehículo en segundos. Mantén toda la información importante de tu auto organizada en un solo lugar y recibe recordatorios para nunca olvidar un mantenimiento importante.',
     }
 };
 
@@ -374,7 +246,7 @@ function initLanguage() {
     if (urlLang && translations[urlLang]) {
         applyLanguage(urlLang);
     } else if (urlLang && !translations[urlLang]) {
-        applyLanguage('en');
+        applyLanguage('pt');
     } else {
         const savedLang = localStorage.getItem('language');
 
@@ -479,8 +351,6 @@ function translateSpecificElements(lang) {
             projectId = 'myfinances';
         } else if (projectId === 'audiotext' || projectId === 'audiotexter') {
             projectId = 'audiotexter';
-        } else if (projectId === 'nutri utils') {
-            projectId = 'nutriutils';
         } else {
             projectId = projectId.replace(/\s+/g, '_');
         }
@@ -533,30 +403,6 @@ function translateSpecificElements(lang) {
     const sendButton = document.querySelector('.btn-send');
     if (sendButton) sendButton.innerHTML = `<i class="fas fa-paper-plane"></i> ${translations[lang].send}`;
 
-    const themeTitle = document.querySelector('#theme-modal h3');
-    if (themeTitle) themeTitle.textContent = translations[lang].change_theme;
-
-    const languageTitle = document.querySelector('#language-modal h3');
-    if (languageTitle) languageTitle.textContent = translations[lang].change_language;
-
-    document.querySelectorAll('.theme-option span').forEach(span => {
-        const theme = span.parentElement.getAttribute('data-theme');
-        if (theme === 'system') span.textContent = translations[lang].theme_system;
-        if (theme === 'light') span.textContent = translations[lang].theme_light;
-        if (theme === 'dark') span.textContent = translations[lang].theme_dark;
-    });
-
-    document.querySelectorAll('.lang-option .lang-name').forEach(span => {
-        const langCode = span.parentElement.getAttribute('data-lang');
-        if (langCode === 'pt') span.textContent = translations[lang].language_pt;
-        if (langCode === 'en') span.textContent = translations[lang].language_en;
-        if (langCode === 'es') span.textContent = translations[lang].language_es;
-    });
-
-    document.querySelectorAll('.close-modal').forEach(button => {
-        button.textContent = translations[lang].close;
-    });
-
     const backToTopBtn = document.getElementById('back-to-top-btn');
     if (backToTopBtn) backToTopBtn.setAttribute('aria-label', translations[lang].back_to_top);
 
@@ -569,26 +415,15 @@ function translateSpecificElements(lang) {
 }
 
 function updateLanguageButtons(activeLang) {
-    const langButtons = document.querySelectorAll('.lang-option');
-
-    langButtons.forEach(button => {
-        const buttonLang = button.getAttribute('data-lang');
-
-        if (buttonLang === activeLang) {
-            button.classList.add('active');
-        } else {
-            button.classList.remove('active');
-        }
+    document.querySelectorAll('.lang-btn').forEach(button => {
+        button.classList.toggle('active', button.getAttribute('data-lang') === activeLang);
     });
 }
 
 function setupLanguageButtons() {
-    const langButtons = document.querySelectorAll('.lang-option');
-
-    langButtons.forEach(button => {
+    document.querySelectorAll('.lang-btn').forEach(button => {
         button.addEventListener('click', () => {
-            const lang = button.getAttribute('data-lang');
-            applyLanguage(lang);
+            applyLanguage(button.getAttribute('data-lang'));
         });
     });
-} 
+}

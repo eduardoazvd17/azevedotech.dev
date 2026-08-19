@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setupTabNavigation();
-    setupFAB();
-    setupModals();
     setupContactForm();
     setupBackToTop();
     setupProfileImageFlip();
@@ -90,47 +88,6 @@ function updateURLParameter(key, value) {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
-    });
-}
-
-function setupFAB() {
-    const languageToggle = document.getElementById('language-toggle');
-    const languageModal = document.getElementById('language-modal');
-
-    if (languageToggle && languageModal) {
-        languageToggle.addEventListener('click', () => {
-            languageModal.classList.add('active');
-        });
-    }
-}
-
-function setupModals() {
-    const modals = document.querySelectorAll('.modal');
-    const closeButtons = document.querySelectorAll('.close-modal');
-
-    closeButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modal = button.closest('.modal');
-            if (modal) {
-                modal.classList.remove('active');
-            }
-        });
-    });
-
-    modals.forEach(modal => {
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.classList.remove('active');
-            }
-        });
-    });
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            modals.forEach(modal => {
-                modal.classList.remove('active');
-            });
-        }
     });
 }
 
