@@ -14,30 +14,23 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&display=swap"
-		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
 
 	<style>
 		body {
-			background: linear-gradient(180deg, #6A3DE8 0%, #ffffff 100%);
+			background: #0B0C0C;
 			min-height: 100vh;
 			margin: 0;
 			padding: 20px;
-			font-family: 'Inter Tight', sans-serif;
-			color: #2C3E50;
+			font-family: 'Commissioner', sans-serif;
+			color: #FFFFFF;
 			line-height: 1.6;
 		}
 
-		.card {
-			background: rgba(255, 255, 255, 0.97);
-			border-radius: 20px;
-			box-shadow: 0 8px 20px rgba(106, 61, 232, 0.15);
-			margin-top: 60px;
-			border: none;
-		}
-
 		.card-title {
-			font-family: 'Inter Tight', sans-serif;
+			font-family: 'Commissioner', sans-serif;
 			color: #6A3DE8;
 			font-weight: 900;
 			font-size: 2.75rem;
@@ -61,7 +54,7 @@
 		}
 
 		h2.h5 {
-			font-family: 'Inter Tight', sans-serif;
+			font-family: 'Commissioner', sans-serif;
 			color: #6A3DE8;
 			font-weight: 700;
 			margin-top: 2rem;
@@ -69,8 +62,10 @@
 			letter-spacing: 0.3px;
 		}
 
-		.card-body {
-			padding: 2.5rem;
+		.content {
+			padding: 1rem;
+			color: #FFFFFF;
+			margin-top: 60px;
 		}
 
 		.text-center strong {
@@ -80,41 +75,56 @@
 		p {
 			margin-bottom: 1rem;
 			font-weight: 400;
+			color: #FFFFFF;
+		}
+
+		ul {
+			color: #FFFFFF;
 		}
 
 		.contact-section {
-			background: rgba(106, 61, 232, 0.03);
+			background: #18191C;
 			padding: 2rem;
 			border-radius: 15px;
 			margin-top: 3rem;
+			border: 1px solid rgba(106, 61, 232, 0.2);
 		}
 
 		.last-updated {
 			font-weight: 500;
-			color: #666;
+			color: #6A3DE8;
 			letter-spacing: 0.5px;
 		}
 
 		.language-selector {
 			position: absolute;
 			top: 20px;
-			right: 30px;
-			z-index: 1000;
+			right: 20px;
+			display: flex;
+			gap: 10px;
 		}
 
-		.language-selector select {
-			background-color: rgba(255, 255, 255, 0.9);
-			border: 2px solid #6A3DE8;
-			border-radius: 8px;
-			padding: 5px 10px;
-			color: #6A3DE8;
-			font-weight: 500;
+		.lang-btn {
+			background-color: transparent;
+			border: 1px solid #363F3F;
+			color: #EDEFEE;
+			padding: 8px 12px;
+			border-radius: 6px;
 			cursor: pointer;
+			transition: all 0.3s ease;
+			font-family: 'Commissioner', sans-serif;
+			font-size: 14px;
+			font-weight: 500;
 		}
 
-		.language-selector select:focus {
-			outline: none;
-			box-shadow: 0 0 0 2px rgba(106, 61, 232, 0.2);
+		.lang-btn:hover {
+			background-color: #363F3F;
+		}
+
+		.lang-btn.active {
+			background-color: #6A3DE8;
+			color: #FFFFFF;
+			border-color: #6A3DE8;
 		}
 
 		[lang] {
@@ -128,185 +138,202 @@
 		/* Adding styles for the app icon */
 		.app-icon {
 			text-align: center;
-			margin-bottom: 1.5rem;
+			margin-bottom: 3rem;
 		}
 
 		.app-icon img {
-			width: 80px;
+			max-width: 120px;
 			height: auto;
-			border-radius: 8px;
+			border-radius: 24px;
+			transition: transform 0.3s ease;
+		}
+
+		.app-icon img:hover {
+			transform: scale(1.05);
+		}
+
+		@media (max-width: 480px) {
+			.content {
+				padding: 0.5rem;
+				margin-top: 40px;
+			}
+
+			.language-selector {
+				top: 10px;
+				right: 10px;
+			}
+
+			.app-icon img {
+				max-width: 100px;
+			}
 		}
 	</style>
 </head>
 
 <body>
 	<div class="language-selector">
-		<select id="languageSelect" onchange="changeLanguage(this.value)">
-			<option value="en">English</option>
-			<option value="pt">Português</option>
-		</select>
+		<button class="lang-btn" onclick="changeLanguage('pt')" id="lang-pt">PT</button>
+		<button class="lang-btn active" onclick="changeLanguage('en')" id="lang-en">EN</button>
 	</div>
 
 	<section class="container">
 		<div class="row justify-content-center">
-			<div class="col-12 col-md-12 col-lg-8">
-				<div class="card">
-					<div class="card-body">
-						<!-- English Version -->
-						<div lang="en">
-							<div class="app-icon">
-								<img src="../../images/autocarefy.png" alt="Autocarefy Logo">
-							</div>
-							<h1 class="card-title text-center">Terms of Use and<br>Privacy Policy</h1>
-							<div class="card-text">
-								<p class="text-center mb-4 last-updated"><strong>Last Updated: May 26, 2026</strong>
-								</p>
+			<div class="col-12 col-md-12 col-lg-10">
+				<div class="content">
+					<!-- English Version -->
+					<div lang="en">
+						<div class="app-icon">
+							<img src="../../images/autocarefy.png" alt="Autocarefy Logo">
+						</div>
+						<h1 class="card-title text-center">Terms of Use and<br>Privacy Policy</h1>
+						<div class="card-text">
+							<p class="text-center mb-4 last-updated"><strong>Last Updated: May 26, 2026</strong>
+							</p>
 
-								<p>Welcome to Autocarefy!</p>
+							<p>Welcome to Autocarefy!</p>
 
-								<p>By using our application, you agree to the following terms and conditions:</p>
+							<p>By using our application, you agree to the following terms and conditions:</p>
 
-								<h2 class="h5">1. Application Purpose</h2>
-								<p>Autocarefy is a vehicle management platform designed to help you consult FIPE table prices, manage and track vehicle maintenance, generate PDF reports of completed maintenance records, and monitor your vehicle's mileage. The application also offers an optional smart mileage tracking feature: you can link a registered vehicle to a Bluetooth device ID (such as your car's audio system), and whenever the app detects that you are traveling while connected to that Bluetooth device, it will automatically update the vehicle's current mileage using an approximate distance calculation. The application is intended for informational and personal record-keeping purposes only.</p>
+							<h2 class="h5">1. Application Purpose</h2>
+							<p>Autocarefy is a vehicle management platform designed to help you consult FIPE table prices, manage and track vehicle maintenance, generate PDF reports of completed maintenance records, and monitor your vehicle's mileage. The application also offers an optional smart mileage tracking feature: you can link a registered vehicle to a Bluetooth device ID (such as your car's audio system), and whenever the app detects that you are traveling while connected to that Bluetooth device, it will automatically update the vehicle's current mileage using an approximate distance calculation. The application is intended for informational and personal record-keeping purposes only.</p>
 
-								<h2 class="h5">2. User Responsibility</h2>
-								<p>You are solely responsible for the accuracy and completeness of the data entered into
-									Autocarefy. We are not responsible for any errors or incorrect information provided
-									by the user. The FIPE table prices shown are for reference only and may not reflect
-									the actual market value of vehicles.</p>
+							<h2 class="h5">2. User Responsibility</h2>
+							<p>You are solely responsible for the accuracy and completeness of the data entered into
+								Autocarefy. We are not responsible for any errors or incorrect information provided
+								by the user. The FIPE table prices shown are for reference only and may not reflect
+								the actual market value of vehicles.</p>
 
-								<h2 class="h5">3. Data Accuracy</h2>
-								<p>While we strive to provide accurate FIPE table prices and maintenance information, we
-									cannot guarantee the absolute accuracy of all data. Prices may vary based on market
-									conditions, vehicle condition, and other factors. We recommend consulting with
-									automotive professionals for precise valuations and maintenance recommendations.</p>
+							<h2 class="h5">3. Data Accuracy</h2>
+							<p>While we strive to provide accurate FIPE table prices and maintenance information, we
+								cannot guarantee the absolute accuracy of all data. Prices may vary based on market
+								conditions, vehicle condition, and other factors. We recommend consulting with
+								automotive professionals for precise valuations and maintenance recommendations.</p>
 
-								<h2 class="h5">4. Privacy and Data Protection</h2>
-								<p>When using Autocarefy, we collect your email address and password exclusively for
-									user authentication purposes. We use Firebase Authentication to securely manage login and
-									user access, ensuring your credentials are protected with industry-standard security
-									measures. We also collect and store information about your vehicle queries,
-									maintenance records, and preferences entered within the application. We commit to
-									protecting your personal information and using this data only for the purposes
-									described in these terms of use and in accordance with our privacy policy.
-								</p>
+							<h2 class="h5">4. Privacy and Data Protection</h2>
+							<p>When using Autocarefy, we collect your email address and password exclusively for
+								user authentication purposes. We use Firebase Authentication to securely manage login and
+								user access, ensuring your credentials are protected with industry-standard security
+								measures. We also collect and store information about your vehicle queries,
+								maintenance records, and preferences entered within the application. We commit to
+								protecting your personal information and using this data only for the purposes
+								described in these terms of use and in accordance with our privacy policy.
+							</p>
 
-								<h2 class="h5">5. App Permissions</h2>
-								<p>Autocarefy may request the following device permissions. All optional permissions can be denied without affecting the application's core features:</p>
-								<ul>
-									<li><strong>Location (Optional):</strong> Autocarefy may request access to your device's location to calculate the approximate distance traveled when you are in motion. This data is used exclusively for the automatic mileage update feature and only when a vehicle is linked to a Bluetooth device. Location data is processed entirely at runtime, in memory, and is never recorded, stored locally, or sent to our servers. Only the resulting mileage value is saved to your vehicle record.</li>
-									<li><strong>Bluetooth (Optional):</strong> Autocarefy may request Bluetooth access to allow you to link a registered vehicle to a specific Bluetooth device ID (such as your car's audio system). When your device connects to that Bluetooth device and detects that you are traveling, the app automatically updates the linked vehicle's mileage using an approximate distance calculation. Bluetooth data is used solely for this purpose and is never shared with third parties.</li>
-								</ul>
+							<h2 class="h5">5. App Permissions</h2>
+							<p>Autocarefy may request the following device permissions. All optional permissions can be denied without affecting the application's core features:</p>
+							<ul>
+								<li><strong>Location (Optional):</strong> Autocarefy may request access to your device's location to calculate the approximate distance traveled when you are in motion. This data is used exclusively for the automatic mileage update feature and only when a vehicle is linked to a Bluetooth device. Location data is processed entirely at runtime, in memory, and is never recorded, stored locally, or sent to our servers. Only the resulting mileage value is saved to your vehicle record.</li>
+								<li><strong>Bluetooth (Optional):</strong> Autocarefy may request Bluetooth access to allow you to link a registered vehicle to a specific Bluetooth device ID (such as your car's audio system). When your device connects to that Bluetooth device and detects that you are traveling, the app automatically updates the linked vehicle's mileage using an approximate distance calculation. Bluetooth data is used solely for this purpose and is never shared with third parties.</li>
+							</ul>
 
-								<h2 class="h5">6. Data Security</h2>
-								<p>We implement appropriate technical and organizational security measures to protect
-									your data against unauthorized access, misuse, or unauthorized disclosure.</p>
+							<h2 class="h5">6. Data Security</h2>
+							<p>We implement appropriate technical and organizational security measures to protect
+								your data against unauthorized access, misuse, or unauthorized disclosure.</p>
 
-								<h2 class="h5">7. User Consent</h2>
-								<p>By using Autocarefy, you consent to the collection, use, and storage of your personal
-									information in accordance with these terms of use and our privacy policy.</p>
+							<h2 class="h5">7. User Consent</h2>
+							<p>By using Autocarefy, you consent to the collection, use, and storage of your personal
+								information in accordance with these terms of use and our privacy policy.</p>
 
-								<h2 class="h5">8. Data Deletion</h2>
-								<p>You have complete freedom to delete your personal data directly through the
-									application, including the option to delete your account. You can delete any data
-									you wish, including deleting your own account. Contact us if you need assistance or
-									have any questions about the data deletion process.</p>
+							<h2 class="h5">8. Data Deletion</h2>
+							<p>You have complete freedom to delete your personal data directly through the
+								application, including the option to delete your account. You can delete any data
+								you wish, including deleting your own account. Contact us if you need assistance or
+								have any questions about the data deletion process.</p>
 
-								<h2 class="h5">9. Updates to Terms of Use and Privacy Policy</h2>
-								<p>We may revise and update these terms of use and our privacy policy periodically. We
-									will notify users of any significant changes and request your consent when
-									applicable.</p>
+							<h2 class="h5">9. Updates to Terms of Use and Privacy Policy</h2>
+							<p>We may revise and update these terms of use and our privacy policy periodically. We
+								will notify users of any significant changes and request your consent when
+								applicable.</p>
 
-								<p class="mt-4">By clicking "I accept" or continuing to use the application, you agree
-									to these terms of use and our privacy policy. If you do not agree to these terms,
-									please do not use Autocarefy.</p>
+							<p class="mt-4">By clicking "I accept" or continuing to use the application, you agree
+								to these terms of use and our privacy policy. If you do not agree to these terms,
+								please do not use Autocarefy.</p>
 
-								<div class="text-center contact-section">
-									<p><strong>Contact</strong></p>
-									<p>For questions about the Terms of Use or Privacy Policy, please contact us at:</p>
-									<p><strong>azevedotechsolutions@gmail.com</strong></p>
-								</div>
+							<div class="text-center contact-section">
+								<p><strong>Contact</strong></p>
+								<p>For questions about the Terms of Use or Privacy Policy, please contact us at:</p>
+								<p><strong>azevedotechsolutions@gmail.com</strong></p>
 							</div>
 						</div>
+					</div>
 
-						<!-- Portuguese Version -->
-						<div lang="pt">
-							<div class="app-icon">
-								<img src="../../images/autocarefy.png" alt="Autocarefy Logo">
-							</div>
-							<h1 class="card-title text-center">Termos de Uso e<br>Política de Privacidade</h1>
-							<div class="card-text">
-								<p class="text-center mb-4 last-updated"><strong>Última Atualização: 26 de maio de
-										2026</strong></p>
+					<!-- Portuguese Version -->
+					<div lang="pt">
+						<div class="app-icon">
+							<img src="../../images/autocarefy.png" alt="Autocarefy Logo">
+						</div>
+						<h1 class="card-title text-center">Termos de Uso e<br>Política de Privacidade</h1>
+						<div class="card-text">
+							<p class="text-center mb-4 last-updated"><strong>Última Atualização: 26 de maio de
+									2026</strong></p>
 
-								<p>Bem-vindo ao Autocarefy!</p>
+							<p>Bem-vindo ao Autocarefy!</p>
 
-								<p>Ao utilizar nosso aplicativo, você concorda com os seguintes termos e condições:</p>
+							<p>Ao utilizar nosso aplicativo, você concorda com os seguintes termos e condições:</p>
 
-								<h2 class="h5">1. Propósito do Aplicativo</h2>
-								<p>O Autocarefy é uma plataforma de gerenciamento de veículos projetada para auxiliar na consulta de preços da tabela FIPE, gerenciar e acompanhar manutenções de veículos, emitir relatórios em PDF das manutenções realizadas e monitorar a quilometragem do seu veículo. O aplicativo também oferece um recurso opcional de atualização inteligente de quilometragem: você pode vincular um veículo cadastrado ao ID de um dispositivo Bluetooth (como o sistema de áudio do seu carro) e, sempre que o aplicativo detectar que você está em deslocamento conectado a esse dispositivo Bluetooth, ele atualizará automaticamente a quilometragem atual do veículo utilizando um cálculo aproximado de distância percorrida. O aplicativo destina-se apenas a fins informativos e de registro pessoal.</p>
+							<h2 class="h5">1. Propósito do Aplicativo</h2>
+							<p>O Autocarefy é uma plataforma de gerenciamento de veículos projetada para auxiliar na consulta de preços da tabela FIPE, gerenciar e acompanhar manutenções de veículos, emitir relatórios em PDF das manutenções realizadas e monitorar a quilometragem do seu veículo. O aplicativo também oferece um recurso opcional de atualização inteligente de quilometragem: você pode vincular um veículo cadastrado ao ID de um dispositivo Bluetooth (como o sistema de áudio do seu carro) e, sempre que o aplicativo detectar que você está em deslocamento conectado a esse dispositivo Bluetooth, ele atualizará automaticamente a quilometragem atual do veículo utilizando um cálculo aproximado de distância percorrida. O aplicativo destina-se apenas a fins informativos e de registro pessoal.</p>
 
-								<h2 class="h5">2. Responsabilidade do Usuário</h2>
-								<p>Você é o único responsável pela precisão e integridade dos dados inseridos no
-									Autocarefy. Não nos responsabilizamos por quaisquer erros ou informações incorretas
-									fornecidas pelo usuário. Os preços da tabela FIPE mostrados são apenas para
-									referência e podem não refletir o valor real de mercado dos veículos.</p>
+							<h2 class="h5">2. Responsabilidade do Usuário</h2>
+							<p>Você é o único responsável pela precisão e integridade dos dados inseridos no
+								Autocarefy. Não nos responsabilizamos por quaisquer erros ou informações incorretas
+								fornecidas pelo usuário. Os preços da tabela FIPE mostrados são apenas para
+								referência e podem não refletir o valor real de mercado dos veículos.</p>
 
-								<h2 class="h5">3. Precisão dos Dados</h2>
-								<p>Embora nos esforcemos para fornecer preços da tabela FIPE e informações de manutenção
-									precisas, não podemos garantir a absoluta precisão de todos os dados. Os preços
-									podem variar com base nas condições de mercado, estado do veículo e outros fatores.
-									Recomendamos consultar profissionais automotivos para avaliações precisas e
-									recomendações de manutenção.</p>
+							<h2 class="h5">3. Precisão dos Dados</h2>
+							<p>Embora nos esforcemos para fornecer preços da tabela FIPE e informações de manutenção
+								precisas, não podemos garantir a absoluta precisão de todos os dados. Os preços
+								podem variar com base nas condições de mercado, estado do veículo e outros fatores.
+								Recomendamos consultar profissionais automotivos para avaliações precisas e
+								recomendações de manutenção.</p>
 
-								<h2 class="h5">4. Privacidade e Proteção de Dados</h2>
-								<p>Ao utilizar o Autocarefy, coletamos seu endereço de e-mail e senha exclusivamente
-									para fins de autenticação de usuário. Utilizamos o Firebase Authentication para gerenciar
-									de forma segura o login e o acesso dos usuários, garantindo que suas credenciais sejam
-									protegidas com medidas de segurança padrão da indústria. Também coletamos e armazenamos
-									informações sobre suas consultas de veículos, registros de manutenção e preferências
-									inseridas dentro do aplicativo. Comprometemo-nos a proteger suas informações pessoais
-									e a utilizar esses dados apenas para os fins descritos neste termo de uso e em
-									conformidade com nossa política de privacidade.</p>
+							<h2 class="h5">4. Privacidade e Proteção de Dados</h2>
+							<p>Ao utilizar o Autocarefy, coletamos seu endereço de e-mail e senha exclusivamente
+								para fins de autenticação de usuário. Utilizamos o Firebase Authentication para gerenciar
+								de forma segura o login e o acesso dos usuários, garantindo que suas credenciais sejam
+								protegidas com medidas de segurança padrão da indústria. Também coletamos e armazenamos
+								informações sobre suas consultas de veículos, registros de manutenção e preferências
+								inseridas dentro do aplicativo. Comprometemo-nos a proteger suas informações pessoais
+								e a utilizar esses dados apenas para os fins descritos neste termo de uso e em
+								conformidade com nossa política de privacidade.</p>
 
-								<h2 class="h5">5. Permissões do Aplicativo</h2>
-								<p>O Autocarefy pode solicitar as seguintes permissões do dispositivo. Todas as permissões opcionais podem ser negadas sem afetar as funcionalidades principais do aplicativo:</p>
-								<ul>
-									<li><strong>Localização (Opcional):</strong> O Autocarefy pode solicitar acesso à localização do seu dispositivo para calcular a distância aproximada percorrida quando você estiver em deslocamento. Esse recurso é utilizado exclusivamente para a atualização automática de quilometragem e somente quando um veículo estiver vinculado a um dispositivo Bluetooth. Os dados de localização são processados integralmente em tempo de execução, na memória do dispositivo, e nunca são gravados, armazenados localmente ou enviados aos nossos servidores. Apenas o valor de quilometragem resultante do cálculo é salvo no registro do veículo.</li>
-									<li><strong>Bluetooth (Opcional):</strong> O Autocarefy pode solicitar acesso ao Bluetooth para que você possa vincular um veículo cadastrado ao ID de um dispositivo Bluetooth específico (como o sistema de áudio do seu carro). Quando seu dispositivo se conectar a esse Bluetooth e o aplicativo detectar que você está em deslocamento, a quilometragem do veículo vinculado será atualizada automaticamente utilizando um cálculo aproximado de distância percorrida. Os dados de Bluetooth são utilizados exclusivamente para essa finalidade e não são compartilhados com terceiros.</li>
-								</ul>
+							<h2 class="h5">5. Permissões do Aplicativo</h2>
+							<p>O Autocarefy pode solicitar as seguintes permissões do dispositivo. Todas as permissões opcionais podem ser negadas sem afetar as funcionalidades principais do aplicativo:</p>
+							<ul>
+								<li><strong>Localização (Opcional):</strong> O Autocarefy pode solicitar acesso à localização do seu dispositivo para calcular a distância aproximada percorrida quando você estiver em deslocamento. Esse recurso é utilizado exclusivamente para a atualização automática de quilometragem e somente quando um veículo estiver vinculado a um dispositivo Bluetooth. Os dados de localização são processados integralmente em tempo de execução, na memória do dispositivo, e nunca são gravados, armazenados localmente ou enviados aos nossos servidores. Apenas o valor de quilometragem resultante do cálculo é salvo no registro do veículo.</li>
+								<li><strong>Bluetooth (Opcional):</strong> O Autocarefy pode solicitar acesso ao Bluetooth para que você possa vincular um veículo cadastrado ao ID de um dispositivo Bluetooth específico (como o sistema de áudio do seu carro). Quando seu dispositivo se conectar a esse Bluetooth e o aplicativo detectar que você está em deslocamento, a quilometragem do veículo vinculado será atualizada automaticamente utilizando um cálculo aproximado de distância percorrida. Os dados de Bluetooth são utilizados exclusivamente para essa finalidade e não são compartilhados com terceiros.</li>
+							</ul>
 
-								<h2 class="h5">6. Segurança dos Dados</h2>
-								<p>Implementamos medidas de segurança técnicas e organizacionais adequadas para proteger
-									seus dados contra acesso não autorizado, uso indevido ou divulgação não autorizada.
-								</p>
+							<h2 class="h5">6. Segurança dos Dados</h2>
+							<p>Implementamos medidas de segurança técnicas e organizacionais adequadas para proteger
+								seus dados contra acesso não autorizado, uso indevido ou divulgação não autorizada.
+							</p>
 
-								<h2 class="h5">7. Consentimento do Usuário</h2>
-								<p>Ao utilizar o Autocarefy, você consente com a coleta, uso e armazenamento de suas
-									informações pessoais de acordo com os termos deste termo de uso e nossa política de
-									privacidade.</p>
+							<h2 class="h5">7. Consentimento do Usuário</h2>
+							<p>Ao utilizar o Autocarefy, você consente com a coleta, uso e armazenamento de suas
+								informações pessoais de acordo com os termos deste termo de uso e nossa política de
+								privacidade.</p>
 
-								<h2 class="h5">8. Exclusão de Dados</h2>
-								<p>Você tem total liberdade para apagar seus dados pessoais diretamente pelo aplicativo,
-									incluindo a opção de excluir sua conta. Você pode deletar os dados que desejar,
-									inclusive deletar sua própria conta. Entre em contato conosco se precisar de
-									assistência ou tiver alguma dúvida sobre o processo de exclusão de dados.</p>
+							<h2 class="h5">8. Exclusão de Dados</h2>
+							<p>Você tem total liberdade para apagar seus dados pessoais diretamente pelo aplicativo,
+								incluindo a opção de excluir sua conta. Você pode deletar os dados que desejar,
+								inclusive deletar sua própria conta. Entre em contato conosco se precisar de
+								assistência ou tiver alguma dúvida sobre o processo de exclusão de dados.</p>
 
-								<h2 class="h5">9. Atualizações dos Termos de Uso e Política de Privacidade</h2>
-								<p>Podemos revisar e atualizar estes termos de uso e nossa política de privacidade
-									periodicamente. Notificaremos os usuários sobre quaisquer alterações significativas
-									e solicitaremos seu consentimento, quando aplicável.</p>
+							<h2 class="h5">9. Atualizações dos Termos de Uso e Política de Privacidade</h2>
+							<p>Podemos revisar e atualizar estes termos de uso e nossa política de privacidade
+								periodicamente. Notificaremos os usuários sobre quaisquer alterações significativas
+								e solicitaremos seu consentimento, quando aplicável.</p>
 
-								<p class="mt-4">Ao clicar em "Eu aceito" ou continuar a utilizar o aplicativo, você
-									concorda com estes termos de uso e nossa política de privacidade. Se você não
-									concorda com estes termos, por favor, não use o Autocarefy.</p>
+							<p class="mt-4">Ao clicar em "Eu aceito" ou continuar a utilizar o aplicativo, você
+								concorda com estes termos de uso e nossa política de privacidade. Se você não
+								concorda com estes termos, por favor, não use o Autocarefy.</p>
 
-								<div class="text-center contact-section">
-									<p><strong>Contato</strong></p>
-									<p>Para questões sobre os Termos de Uso ou Política de Privacidade, entre em contato
-										conosco em:</p>
-									<p><strong>azevedotechsolutions@gmail.com</strong></p>
-								</div>
+							<div class="text-center contact-section">
+								<p><strong>Contato</strong></p>
+								<p>Para questões sobre os Termos de Uso ou Política de Privacidade, entre em contato
+									conosco em:</p>
+								<p><strong>azevedotechsolutions@gmail.com</strong></p>
 							</div>
 						</div>
 					</div>
@@ -324,6 +351,10 @@
 			if (lang !== 'en' && lang !== 'pt') {
 				lang = 'en';
 			}
+
+			// Update active button
+			document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+			document.getElementById(`lang-${lang}`).classList.add('active');
 
 			// Hide all language versions
 			document.querySelectorAll('[lang]').forEach(elem => {
@@ -352,7 +383,6 @@
 			if (lang !== 'en' && lang !== 'pt') {
 				lang = 'en';
 			}
-			document.getElementById('languageSelect').value = lang;
 			changeLanguage(lang);
 		});
 	</script>
