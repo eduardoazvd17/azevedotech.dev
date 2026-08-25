@@ -107,9 +107,9 @@ const translations = {
         'stackbudget_title': 'StackBudget',
         'stackbudget_description': 'Um aplicativo de planejamento financeiro que permite aos usuários acompanhar seus gastos mensais de forma organizada e eficiente. Com interface intuitiva e ferramentas para controle de orçamento, ajudando na gestão financeira pessoal.',
 
-        // AutoCarefy
-        'autocarefy_title': 'AutoCarefy',
-        'autocarefy_description': 'AutoCarefy ajuda você a cuidar do seu carro de forma simples, moderna e inteligente. Controle manutenções, acompanhe revisões, monitore gastos e consulte a tabela FIPE do seu veículo em segundos. Mantenha todas as informações importantes do seu carro organizadas em um só lugar e receba lembretes para nunca esquecer uma manutenção importante.',
+        // AutoHub
+        'autohub_title': 'AutoHub',
+        'autohub_description': 'AutoHub ajuda você a cuidar do seu carro de forma simples, moderna e inteligente. Controle manutenções, acompanhe revisões, monitore gastos e consulte a tabela FIPE do seu veículo em segundos. Mantenha todas as informações importantes do seu carro organizadas em um só lugar e receba lembretes para nunca esquecer uma manutenção importante.',
     },
 
     // Inglês
@@ -220,9 +220,9 @@ const translations = {
         'stackbudget_title': 'StackBudget',
         'stackbudget_description': 'A financial planning application that allows users to track their monthly expenses in an organized and efficient way. With an intuitive interface and budget control tools, helping with personal financial management.',
 
-        // AutoCarefy
-        'autocarefy_title': 'AutoCarefy',
-        'autocarefy_description': 'AutoCarefy helps you take care of your car in a simple, modern, and intelligent way. Control maintenance, track servicing, monitor expenses, and consult your vehicle\'s FIPE table in seconds. Keep all your important car information organized in one place and receive reminders so you never forget important maintenance.',
+        // AutoHub
+        'autohub_title': 'AutoHub',
+        'autohub_description': 'AutoHub helps you take care of your car in a simple, modern, and intelligent way. Control maintenance, track servicing, monitor expenses, and consult your vehicle\'s FIPE table in seconds. Keep all your important car information organized in one place and receive reminders so you never forget important maintenance.',
     }
 };
 
