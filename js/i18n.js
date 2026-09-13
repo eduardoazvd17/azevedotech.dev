@@ -109,6 +109,10 @@ const translations = {
         // AutoHub
         'autohub_title': 'AutoHub',
         'autohub_description': 'AutoHub ajuda você a cuidar do seu carro de forma simples, moderna e inteligente. Controle manutenções, acompanhe revisões, monitore gastos e consulte a tabela FIPE do seu veículo em segundos. Mantenha todas as informações importantes do seu carro organizadas em um só lugar e receba lembretes para nunca esquecer uma manutenção importante.',
+
+        // Economizze
+        'economizze_title': 'Economizze',
+        'economizze_description': 'Economizze é um aplicativo de planejamento e controle financeiro pessoal que vai além do simples extrato de gastos. Veja quanto você vai receber, quanto já está comprometido com contas e parcelas, e quanto ainda sobra livre para gastar em cada mês. Organize entradas, compromissos recorrentes, parcelamentos e categorias, acompanhe sua visão financeira anual e receba lembretes para nunca perder um vencimento.',
     },
 
     // Inglês
@@ -221,6 +225,10 @@ const translations = {
         // AutoHub
         'autohub_title': 'AutoHub',
         'autohub_description': 'AutoHub helps you take care of your car in a simple, modern, and intelligent way. Control maintenance, track servicing, monitor expenses, and consult your vehicle\'s FIPE table in seconds. Keep all your important car information organized in one place and receive reminders so you never forget important maintenance.',
+
+        // Economizze
+        'economizze_title': 'Economizze',
+        'economizze_description': 'Economizze is a personal finance planning and budgeting app that goes beyond a simple expense tracker. See how much you\'ll receive, how much is already committed to bills and installments, and how much is still free to spend each month. Organize income, recurring commitments, installment purchases, and categories, check your yearly financial overview, and get reminders so you never miss a due date.',
     }
 };
 
