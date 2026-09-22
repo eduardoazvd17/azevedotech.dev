@@ -34,6 +34,7 @@ const translations = {
 
         // Badges de categoria
         'badge_mobile': 'App Mobile',
+        'badge_game': 'Jogo',
         'badge_flutter_package': 'Pacote Flutter',
         'badge_desktop': 'App Desktop',
         'badge_web': 'App Web',
@@ -113,6 +114,10 @@ const translations = {
         // Economizze
         'economizze_title': 'Economizze',
         'economizze_description': 'Economizze é um aplicativo de planejamento e controle financeiro pessoal que vai além do simples extrato de gastos. Veja quanto você vai receber, quanto já está comprometido com contas e parcelas, e quanto ainda sobra livre para gastar em cada mês. Organize entradas, compromissos recorrentes, parcelamentos e categorias, acompanhe sua visão financeira anual e receba lembretes para nunca perder um vencimento.',
+
+        // Rocket Rush
+        'rocket_rush_title': 'Rocket Rush',
+        'rocket_rush_description': 'Rocket Rush é um jogo casual e gratuito em que você pilota um foguete e desafia seus próprios limites em busca da maior pontuação. Faça login, registre seus melhores resultados e dispute posições com jogadores do mundo todo no ranking online.',
     },
 
     // Inglês
@@ -150,6 +155,7 @@ const translations = {
 
         // Badges de categoria
         'badge_mobile': 'Mobile App',
+        'badge_game': 'Game',
         'badge_flutter_package': 'Flutter Package',
         'badge_desktop': 'Desktop App',
         'badge_web': 'Web App',
@@ -229,6 +235,10 @@ const translations = {
         // Economizze
         'economizze_title': 'Economizze',
         'economizze_description': 'Economizze is a personal finance planning and budgeting app that goes beyond a simple expense tracker. See how much you\'ll receive, how much is already committed to bills and installments, and how much is still free to spend each month. Organize income, recurring commitments, installment purchases, and categories, check your yearly financial overview, and get reminders so you never miss a due date.',
+
+        // Rocket Rush
+        'rocket_rush_title': 'Rocket Rush',
+        'rocket_rush_description': 'Rocket Rush is a free casual game where you pilot a rocket and push your limits in pursuit of the highest score. Sign in, save your best results, and compete for the top spots against players from around the world on the online leaderboard.',
     }
 };
 
