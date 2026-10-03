@@ -105,7 +105,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
-    scroll-padding-top: calc(var(--nav-height) + 8px);
+    /* A borda de cima da seção encosta na borda de baixo da barra fixa */
+    scroll-padding-top: var(--nav-height);
 }
 
 body {
@@ -380,6 +381,12 @@ ul {
 .section {
     border-top: 1px solid var(--border);
     padding: var(--spacing-xxl) 0 calc(var(--spacing-xxl) + var(--spacing-md));
+}
+
+/* A última seção precisa de altura para conseguir subir até a barra ao clicar
+   no menu; --footer-height é medido pelo main.js */
+main > .section:last-child {
+    min-height: calc(100svh - var(--nav-height) - var(--footer-height, 0px));
 }
 
 .section > .container {

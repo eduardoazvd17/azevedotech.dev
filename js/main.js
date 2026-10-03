@@ -4,9 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
         currentYearEl.textContent = new Date().getFullYear();
     }
 
+    setupFooterHeight();
     setupScrollSpy();
     setupCopyButtons();
 });
+
+// Expõe a altura do rodapé para o CSS da última seção (ver styles.css).
+function setupFooterHeight() {
+    const footer = document.querySelector('.site-footer');
+    if (!footer) return;
+
+    const update = () => document.documentElement.style.setProperty('--footer-height', `${footer.offsetHeight}px`);
+    update();
+    new ResizeObserver(update).observe(footer);
+}
 
 function setupScrollSpy() {
     const navLinks = document.querySelectorAll('#nav-menu a[data-section]');
