@@ -1,623 +1,287 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Azevedo Tech Solutions — estúdio de software liderado por Eduardo Azevedo, engenheiro especializado em Flutter, Dart e desenvolvimento cross-platform. Veja os projetos e entre em contato.">
+    <meta name="description" content="Eduardo Azevedo — Engenheiro de software, Flutter">
     <meta name="keywords"
-        content="Azevedo Tech Solutions, Eduardo Azevedo, Flutter, Dart, Software Engineer, Engenheiro de Software, Mobile, Desenvolvedor, Developer, Programação, Analista, Full Stack, Backend, Frontend, Full Stack Developer, Mobile Developer, Cross-Platform Developer, Flutter Developer, Dart Developer, Developer, Programação, Firebase, Java, C#, Kotlin, Swift">
+        content="Azevedo Tech Solutions, Eduardo Azevedo, desenvolvimento de aplicativos, Flutter, Android, iOS, Engenheiro de Software, MoveRio, Economizze, AutoHub, Rocket Rush">
     <meta name="author" content="Eduardo Azevedo">
-    <title>Azevedo Tech Solutions - Eduardo Azevedo | Engenheiro de Software | Especialista em Flutter</title>
+    <title>Azevedo Tech Solutions</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="icon" href="icons/icon.png" type="image/png">
     <link rel="apple-touch-icon" href="icons/icon.png" type="image/png">
 </head>
 
 <body>
-    <div class="hero-section">
-        <div class="container">
-            <div class="profile-section">
-                <div class="profile-picture">
-                    <img src="images/profile.jpeg" alt="Eduardo Azevedo" id="profile-img">
-                </div>
-                <div class="profile-info">
-                    <h1>Eduardo Azevedo Regueira</h1>
-                    <h2>Engenheiro de Software | Cross-Platform | Full Stack | Especialista em Flutter</h2>
-                    <p class="hero-tagline" data-i18n="hero_tagline">Soluções mobile e software sob medida, do MVP à
-                        publicação nas lojas.</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/eduardoazvd17/" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/eduardoazvd17/" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:eduardoazvd17@gmail.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="hero-stat">
-                            <span class="hero-stat-value">7+</span>
-                            <span class="hero-stat-label" data-i18n="stat_experience_label">anos de experiência</span>
-                        </div>
-                        <div class="hero-stat">
-                            <span class="hero-stat-value">12+</span>
-                            <span class="hero-stat-label" data-i18n="stat_projects_label">projetos entregues</span>
-                        </div>
-                    </div>
+    <header class="site-header">
+        <div class="container site-header-inner">
+            <a href="#top" class="site-name">Azevedo Tech Solutions</a>
+            <nav class="site-nav" id="nav-menu" aria-label="Seções" data-i18n-aria="nav_label">
+                <a href="#about" data-section="about" data-i18n="nav_about">Sobre</a>
+                <a href="#apps" data-section="apps" data-i18n="nav_apps">Meus apps</a>
+                <a href="#clients" data-section="clients" data-i18n="nav_clients">Projetos</a>
+                <a href="#contact" data-section="contact" data-i18n="nav_contact">Contato</a>
+            </nav>
+            <div class="lang-menu" data-lang-menu></div>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="intro">
+            <div class="container intro-inner">
+                <img class="intro-photo" src="images/profile.jpeg" alt="Eduardo Azevedo">
+                <div>
+                    <h1>Eduardo Azevedo</h1>
+                    <p class="intro-role" data-i18n="intro_role">Engenheiro de software · Especialista em Flutter · Desenvolvedor full stack multiplataforma</p>
+                    <p class="intro-text" data-i18n="intro_text">Desenvolvo soluções de software há mais de 7 anos, da ideia à entrega. Pela Azevedo Tech Solutions, crio soluções sob medida para empresas e publico meus próprios apps.</p>
+                    <ul class="intro-links">
+                        <li><a href="https://www.linkedin.com/in/eduardoazvd17/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://github.com/eduardoazvd17/" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="#contact" data-i18n="intro_contact">Fale comigo</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <nav id="nav-menu">
-        <div class="container nav-container">
-            <a href="#" id="nav-brand-link" class="nav-brand" aria-label="Azevedo Tech Solutions">
-                <span class="nav-brand-mark"><i class="fas fa-code"></i></span>
-                <span class="nav-brand-name">Azevedo Tech Solutions</span>
-            </a>
-            <ul>
-                <li><a href="#about" class="active" data-section="about"><i class="fas fa-user"></i> <span>Sobre
-                            mim</span></a></li>
-                <li><a href="#projects" data-section="projects"><i class="fas fa-code"></i> <span>Meus
-                            projetos</span></a></li>
-                <li><a href="#contact" data-section="contact"><i class="fas fa-envelope"></i>
-                        <span>Contato</span></a></li>
-            </ul>
-            <div class="lang-switch">
-                <button class="lang-btn" data-lang="pt" id="lang-pt">PT</button>
-                <button class="lang-btn" data-lang="en" id="lang-en">EN</button>
-            </div>
-        </div>
-    </nav>
-
-    <main id="main-content">
         <section id="about" class="section">
             <div class="container">
-                <span class="section-eyebrow" data-i18n="eyebrow_about">Sobre</span>
-                <h2 class="section-title">Sobre mim</h2>
-                <div class="section-content">
-                    <p class="presentation-text">Sou um engenheiro de software com 7 anos de experiência profissional,
-                        especializado no desenvolvimento de soluções mobile multiplataforma com o framework Flutter. Ao
-                        longo da minha
-                        carreira, liderei projetos mobile de forma independente, desenvolvi soluções para instituições
-                        financeiras e implementei melhorias significativas que otimizaram a performance de aplicativos.
-                        Meu foco está na criação de soluções performáticas, inovadoras e escaláveis, sempre priorizando
-                        alta qualidade e melhoria contínua da experiência do usuário.</p>
-                    <p class="presentation-text">Possuo ampla experiência em diversas áreas do Flutter, incluindo
-                        internacionalização, modularização, gerenciamento de estados e rotas, criação de widgets
-                        personalizados, desenvolvimento de packages reutilizáveis, automação de pipelines CI/CD com
-                        Codemagic, publicação de aplicativos nas lojas e realização de testes unitários e de widgets.
-                        Sigo práticas rigorosas de gerenciamento eficiente de memória para evitar memory leaks, e adoto
-                        os
-                        princípios SOLID e Clean Code para garantir um código limpo, bem estruturado e de fácil
-                        manutenção.</p>
-                    <p class="presentation-text">Valorizo a comunicação clara e o trabalho colaborativo em equipe,
-                        sempre buscando
-                        contribuir de forma eficiente e construtiva para garantir entregas de alta
-                        qualidade e alinhamento entre os times. Acredito que a sinergia entre profissionais é
-                        fundamental
-                        para o sucesso de qualquer projeto.</p>
-                    <p class="presentation-text">Além da minha expertise em Flutter, possuo conhecimento sólido em
-                        linguagens como Java, C#, Kotlin e
-                        Swift, o que me permite atuar com versatilidade em diferentes tecnologias e stacks, atendendo a
-                        diversas demandas no desenvolvimento de software.</p>
+                <h2 class="section-title" data-i18n="about_title">Sobre</h2>
+                <div class="section-body">
+                    <p data-i18n="about_1">Sou um engenheiro de software com 7 anos de experiência profissional, especializado no desenvolvimento de soluções mobile multiplataforma com o framework Flutter. Ao longo da minha carreira, liderei projetos mobile de forma independente, desenvolvi soluções para instituições financeiras e implementei melhorias significativas que otimizaram a performance de aplicativos. Meu foco está na criação de soluções performáticas, inovadoras e escaláveis, sempre priorizando alta qualidade e melhoria contínua da experiência do usuário.</p>
+                    <p data-i18n="about_2">Possuo ampla experiência em diversas áreas do Flutter, incluindo internacionalização, modularização, gerenciamento de estados e rotas, criação de widgets personalizados, desenvolvimento de packages reutilizáveis, automação de pipelines CI/CD com Codemagic, publicação de aplicativos nas lojas e realização de testes unitários e de widgets. Sigo práticas rigorosas de gerenciamento eficiente de memória para evitar memory leaks, e adoto os princípios SOLID e Clean Code para garantir um código limpo, bem estruturado e de fácil manutenção.</p>
+                    <p data-i18n="about_3">Valorizo a comunicação clara e o trabalho colaborativo em equipe, sempre buscando contribuir de forma eficiente e construtiva para garantir entregas de alta qualidade e alinhamento entre os times. Acredito que a sinergia entre profissionais é fundamental para o sucesso de qualquer projeto.</p>
+                    <p data-i18n="about_4">Além da minha expertise em Flutter, possuo conhecimento sólido em linguagens como Java, C#, Kotlin e Swift, o que me permite atuar com versatilidade em diferentes tecnologias e stacks, atendendo a diversas demandas no desenvolvimento de software.</p>
 
-                    <div class="skills-section">
-                        <h3>Linguagens e Tecnologias</h3>
-                        <div class="skills-container">
-                            <div class="skill-item" data-tooltip="Flutter">
-                                <img src="icons/flutter.png" alt="Flutter">
-                            </div>
-                            <div class="skill-item" data-tooltip="C#">
-                                <img src="icons/csharp.png" alt="C#">
-                            </div>
-                            <div class="skill-item" data-tooltip="Java">
-                                <img src="icons/java.png" alt="Java">
-                            </div>
-                            <div class="skill-item" data-tooltip="Kotlin">
-                                <img src="icons/kotlin.png" alt="Kotlin">
-                            </div>
-                            <div class="skill-item" data-tooltip="Swift">
-                                <img src="icons/swift.png" alt="Swift">
-                            </div>
-                            <div class="skill-item" data-tooltip="Firebase">
-                                <img src="icons/firebase.png" alt="Firebase">
-                            </div>
-                            <div class="skill-item" data-tooltip="JavaScript">
-                                <img src="icons/javascript.png" alt="JavaScript">
-                            </div>
-                            <div class="skill-item" data-tooltip="PHP">
-                                <img src="icons/php.png" alt="PHP">
-                            </div>
-                            <div class="skill-item" data-tooltip="SQL">
-                                <img src="icons/sql.png" alt="SQL">
-                            </div>
-                            <div class="skill-item" data-tooltip="HTML">
-                                <img src="icons/html.png" alt="HTML">
-                            </div>
-                            <div class="skill-item" data-tooltip="CSS">
-                                <img src="icons/css.png" alt="CSS">
-                            </div>
-                            <div class="skill-item" data-tooltip="Python">
-                                <img src="icons/python.png" alt="Python">
-                            </div>
-                            <div class="skill-item" data-tooltip="Go">
-                                <img src="icons/go.png" alt="Go">
-                            </div>
-                            <div class="skill-item" data-tooltip="Codemagic CI/CD">
-                                <img src="icons/codemagic.png" alt="Codemagic CI/CD">
-                            </div>
-                        </div>
+                    <h3 class="subsection-title" data-i18n="skills_title">Linguagens e tecnologias</h3>
+                    <div class="tech-marquee">
+                        <ul class="tech-track">
+                            <li><img src="icons/flutter.png" alt="" loading="lazy"><span>Flutter</span></li>
+                            <li><img src="icons/firebase.png" alt="" loading="lazy"><span>Firebase</span></li>
+                            <li><img src="icons/kotlin.png" alt="" loading="lazy"><span>Kotlin</span></li>
+                            <li><img src="icons/swift.png" alt="" loading="lazy"><span>Swift</span></li>
+                            <li><img src="icons/java.png" alt="" loading="lazy"><span>Java</span></li>
+                            <li><img src="icons/csharp.png" alt="" loading="lazy"><span>C#</span></li>
+                            <li><img src="icons/go.png" alt="" loading="lazy"><span>Go</span></li>
+                            <li><img src="icons/python.png" alt="" loading="lazy"><span>Python</span></li>
+                            <li><img src="icons/javascript.png" alt="" loading="lazy"><span>JavaScript</span></li>
+                            <li><img src="icons/php.png" alt="" loading="lazy"><span>PHP</span></li>
+                            <li><img src="icons/sql.png" alt="" loading="lazy"><span>SQL</span></li>
+                            <li><img src="icons/html.png" alt="" loading="lazy"><span>HTML</span></li>
+                            <li><img src="icons/css.png" alt="" loading="lazy"><span>CSS</span></li>
+                            <li><img src="icons/codemagic.png" alt="" loading="lazy"><span>Codemagic</span></li>
+                            <li aria-hidden="true"><img src="icons/flutter.png" alt="" loading="lazy"><span>Flutter</span></li>
+                            <li aria-hidden="true"><img src="icons/firebase.png" alt="" loading="lazy"><span>Firebase</span></li>
+                            <li aria-hidden="true"><img src="icons/kotlin.png" alt="" loading="lazy"><span>Kotlin</span></li>
+                            <li aria-hidden="true"><img src="icons/swift.png" alt="" loading="lazy"><span>Swift</span></li>
+                            <li aria-hidden="true"><img src="icons/java.png" alt="" loading="lazy"><span>Java</span></li>
+                            <li aria-hidden="true"><img src="icons/csharp.png" alt="" loading="lazy"><span>C#</span></li>
+                            <li aria-hidden="true"><img src="icons/go.png" alt="" loading="lazy"><span>Go</span></li>
+                            <li aria-hidden="true"><img src="icons/python.png" alt="" loading="lazy"><span>Python</span></li>
+                            <li aria-hidden="true"><img src="icons/javascript.png" alt="" loading="lazy"><span>JavaScript</span></li>
+                            <li aria-hidden="true"><img src="icons/php.png" alt="" loading="lazy"><span>PHP</span></li>
+                            <li aria-hidden="true"><img src="icons/sql.png" alt="" loading="lazy"><span>SQL</span></li>
+                            <li aria-hidden="true"><img src="icons/html.png" alt="" loading="lazy"><span>HTML</span></li>
+                            <li aria-hidden="true"><img src="icons/css.png" alt="" loading="lazy"><span>CSS</span></li>
+                            <li aria-hidden="true"><img src="icons/codemagic.png" alt="" loading="lazy"><span>Codemagic</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="section">
+        <section id="apps" class="section">
             <div class="container">
-                <span class="section-eyebrow" data-i18n="eyebrow_projects">Portfólio</span>
-                <h2 class="section-title">Meus projetos</h2>
-                <div class="section-content">
-                    <div class="projects-showcase">
-                        <div class="projects-grid">
-                            <div class="project-card animate-on-scroll" data-project="moverio">
-                                <div class="project-image">
-                                    <img src="icons/moverio.png" alt="MoveRio App screenshot">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_mobile">App Mobile</span>
-                                    <h3 data-i18n="moverio_title">MoveRio</h3>
-                                    <p data-i18n="moverio_description">Aplicativo gratuito que facilita sua mobilidade
-                                        no
-                                        Rio de Janeiro. Consulte linhas de ônibus, visualize itinerários completos,
-                                        encontre pontos de parada próximos, abra rotas no app de mapas do seu
-                                        dispositivo e acompanhe seu trajeto em tempo real usando a localização do seu
-                                        dispositivo. Ideal para o dia a dia de quem depende do transporte público.</p>
-                                    <div class="project-links">
-                                        <a href="https://play.google.com/store/apps/details?id=com.eduardoazevedo.moverio"
-                                            class="project-link" data-link-type="android" target="_blank">
-                                            <i class="fab fa-android"></i>
-                                            <span>Android</span>
-                                        </a>
-                                        <a href="https://apps.apple.com/br/app/moverio-%C3%B4nibus-rj/id6758354578"
-                                            class="project-link" data-link-type="ios" target="_blank">
-                                            <i class="fab fa-apple"></i>
-                                            <span>iOS</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                <h2 class="section-title" data-i18n="apps_title">Meus apps</h2>
+                <div class="section-body">
+                    <p class="section-lede" data-i18n="apps_intro">Aplicativos publicados e mantidos por mim.</p>
 
-                            <div class="project-card animate-on-scroll" data-project="rocketrush">
-                                <div class="project-image">
-                                    <img src="images/rocketrush.png" alt="Rocket Rush game screenshot">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_game">Jogo</span>
-                                    <h3 data-i18n="rocket_rush_title">Rocket Rush</h3>
-                                    <p data-i18n="rocket_rush_description">Rocket Rush é um jogo casual e gratuito em
-                                        que você pilota um foguete e desafia seus próprios limites em busca da maior
-                                        pontuação. Faça login, registre seus melhores resultados e dispute posições com
-                                        jogadores do mundo todo no ranking online.</p>
+                    <div class="projects-list">
+                        <article class="project-card">
+                            <img class="project-card-icon" src="icons/moverio.png" alt="" loading="lazy">
+                            <div class="project-card-body">
+                                <h3><a href="projects/moverio/" class="project-card-link" data-project-page="projects/moverio/">MoveRio</a></h3>
+                                <p class="project-card-meta" data-i18n="moverio_meta">Mobilidade urbana · Android e iOS</p>
+                                <p data-i18n="moverio_description">Linhas, itinerários e pontos de ônibus do Rio de
+                                    Janeiro em um só app. Mostra qual ônibus pegar até o destino, acompanha a viagem
+                                    com alerta de chegada e exibe os ônibus em tempo real.</p>
+                                <div class="project-card-foot">
                                     <div class="project-links">
-                                        <a href="https://rocketrush.web.app" class="project-link"
-                                            data-link-type="preview" target="_blank">
-                                            <i class="fas fa-eye"></i>
-                                            <span>Website</span>
-                                        </a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.eduardoazevedo.moverio" class="project-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+                                        <a href="https://apps.apple.com/br/app/moverio-%C3%B4nibus-rj/id6758354578" class="project-link" target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
                                     </div>
+                                    <a href="projects/moverio/" class="project-more" data-project-page="projects/moverio/"><span data-i18n="project_details">Ver detalhes</span> <span aria-hidden="true">&rarr;</span></a>
                                 </div>
                             </div>
+                        </article>
 
-                            <div class="project-card animate-on-scroll" data-project="economizze">
-                                <div class="project-image">
-                                    <img src="images/economizze.png" alt="Economizze App screenshot">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_mobile">App Mobile</span>
-                                    <h3 data-i18n="economizze_title">Economizze</h3>
-                                    <p data-i18n="economizze_description">Economizze é um aplicativo de planejamento
-                                        e controle financeiro pessoal que vai além do simples extrato de gastos. Veja
-                                        quanto você vai receber, quanto já está comprometido com contas e parcelas, e
-                                        quanto ainda sobra livre para gastar em cada mês. Organize entradas,
-                                        compromissos recorrentes, parcelamentos e categorias, acompanhe sua visão
-                                        financeira anual e receba lembretes para nunca perder um vencimento.</p>
+                        <article class="project-card">
+                            <img class="project-card-icon" src="images/economizze.png" alt="" loading="lazy">
+                            <div class="project-card-body">
+                                <h3><a href="projects/economizze/" class="project-card-link" data-project-page="projects/economizze/">Economizze</a></h3>
+                                <p class="project-card-meta" data-i18n="economizze_meta">Finanças pessoais · Android</p>
+                                <p data-i18n="economizze_description">Planejamento financeiro que mostra quanto você
+                                    vai receber, quanto já está comprometido com contas e parcelas e quanto sobra para
+                                    gastar em cada mês. Dá para dividir as finanças com a família em espaços
+                                    compartilhados.</p>
+                                <div class="project-card-foot">
                                     <div class="project-links">
-                                        <a href="https://play.google.com/store/apps/details?id=dev.azevedotech.economizze"
-                                            class="project-link" data-link-type="android" target="_blank">
-                                            <i class="fab fa-android"></i>
-                                            <span>Android</span>
-                                        </a>
+                                        <a href="https://play.google.com/store/apps/details?id=dev.azevedotech.economizze" class="project-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
                                     </div>
+                                    <a href="projects/economizze/" class="project-more" data-project-page="projects/economizze/"><span data-i18n="project_details">Ver detalhes</span> <span aria-hidden="true">&rarr;</span></a>
                                 </div>
                             </div>
+                        </article>
 
-                            <div class="project-card animate-on-scroll" data-project="autohub">
-                                <div class="project-image">
-                                    <img src="images/autohub.png" alt="AutoHub App screenshot">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_mobile">App Mobile</span>
-                                    <h3 data-i18n="autohub_title">AutoHub</h3>
-                                    <p data-i18n="autohub_description">AutoHub ajuda você a cuidar do seu carro
-                                        de forma simples, moderna e inteligente. Controle manutenções, acompanhe
-                                        revisões, monitore gastos e consulte a tabela FIPE do seu veículo em segundos.
-                                        Mantenha todas as informações importantes do seu carro organizadas em um só
-                                        lugar e receba lembretes para nunca esquecer uma manutenção importante.</p>
+                        <article class="project-card">
+                            <img class="project-card-icon" src="images/autohub.png" alt="" loading="lazy">
+                            <div class="project-card-body">
+                                <h3><a href="projects/autohub/" class="project-card-link" data-project-page="projects/autohub/">AutoHub</a></h3>
+                                <p class="project-card-meta" data-i18n="autohub_meta">Gestão veicular · Android e iOS</p>
+                                <p data-i18n="autohub_description">Manutenções, abastecimentos, lembretes e tabela FIPE
+                                    para cuidar do carro, com um assistente de IA para tirar dúvidas. A quilometragem
+                                    pode se atualizar sozinha pelo Bluetooth do carro.</p>
+                                <div class="project-card-foot">
                                     <div class="project-links">
-                                        <a href="https://play.google.com/store/apps/details?id=com.eduardoazevedo.autocarefy"
-                                            class="project-link" data-link-type="android" target="_blank">
-                                            <i class="fab fa-android"></i>
-                                            <span>Android</span>
-                                        </a>
-                                        <a href="https://apps.apple.com/br/app/autohub-gest%C3%A3o-veicular/id6770298258"
-                                            class="project-link" data-link-type="ios" target="_blank">
-                                            <i class="fab fa-apple"></i>
-                                            <span>iOS</span>
-                                        </a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.eduardoazevedo.autocarefy" class="project-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+                                        <a href="https://apps.apple.com/br/app/autohub-gest%C3%A3o-veicular/id6770298258" class="project-link" target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
                                     </div>
+                                    <a href="projects/autohub/" class="project-more" data-project-page="projects/autohub/"><span data-i18n="project_details">Ver detalhes</span> <span aria-hidden="true">&rarr;</span></a>
                                 </div>
                             </div>
+                        </article>
 
-                            <div class="project-card animate-on-scroll" data-project="easy_binding">
-                                <div class="project-image">
-                                    <img src="images/pub_dev.png" alt="easy_binding Library Demo">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_flutter_package">Pacote Flutter</span>
-                                    <h3 data-i18n="easy_binding_title">easy_binding</h3>
-                                    <p data-i18n="easy_binding_description">Um pacote Flutter leve para gerenciar o
-                                        ciclo
-                                        de vida de dependências em rotas. Inspirado nos bindings do GetX, mas agnóstico
-                                        de framework - funciona com qualquer solução de injeção de dependências como
-                                        GetIt, Provider ou Riverpod.</p>
+                        <article class="project-card">
+                            <img class="project-card-icon" src="images/rocketrush.png" alt="" loading="lazy">
+                            <div class="project-card-body">
+                                <h3><a href="projects/rocketrush/" class="project-card-link" data-project-page="projects/rocketrush/">Rocket Rush</a></h3>
+                                <p class="project-card-meta" data-i18n="rocketrush_meta">Jogo casual · Android e web</p>
+                                <p data-i18n="rocketrush_description">Pilote um foguete, desvie dos obstáculos e junte
+                                    moedas para trocar por novas naves. A melhor pontuação de cada piloto vai para um
+                                    ranking global.</p>
+                                <div class="project-card-foot">
                                     <div class="project-links">
-                                        <a href="https://pub.dev/packages/easy_binding" class="project-link"
-                                            data-link-type="preview" target="_blank">
-                                            <i class="fas fa-eye"></i>
-                                            <span>Website</span>
-                                        </a>
-                                        <a href="https://github.com/eduardoazvd17/easy_binding" class="project-link"
-                                            data-link-type="repository" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                            <span>Repositório</span>
-                                        </a>
+                                        <a href="https://play.google.com/store/apps/details?id=dev.azevedotech.rocketgame" class="project-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
+                                        <a href="https://rocketrush.web.app" class="project-link" target="_blank" rel="noopener"><i class="fas fa-gamepad"></i> <span data-i18n="project_play">Jogar no navegador</span></a>
                                     </div>
+                                    <a href="projects/rocketrush/" class="project-more" data-project-page="projects/rocketrush/"><span data-i18n="project_details">Ver detalhes</span> <span aria-hidden="true">&rarr;</span></a>
                                 </div>
                             </div>
-
-                            <div class="project-card animate-on-scroll" data-project="stackbudget">
-                                <div class="project-image">
-                                    <img src="images/stackbudget.png" alt="StackBudget App screenshot">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_mobile">App Mobile</span>
-                                    <h3 data-i18n="stackbudget_title">StackBudget</h3>
-                                    <p data-i18n="stackbudget_description">Um aplicativo de planejamento financeiro que
-                                        permite aos usuários acompanhar seus
-                                        gastos mensais de forma organizada e eficiente. Com interface intuitiva e
-                                        ferramentas para controle de orçamento, ajudando na gestão financeira pessoal.
-                                    </p>
-                                    <div class="project-links">
-                                        <a href="https://github.com/eduardoazvd17/StackBudget" class="project-link"
-                                            data-link-type="repository" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                            <span>Repositório</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="project-card animate-on-scroll" data-project="investhelper">
-                                <div class="project-image">
-                                    <img src="images/investhelper.png" alt="InvestHelper App screenshot">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_mobile">App Mobile</span>
-                                    <h3>InvestHelper</h3>
-                                    <p>Um app para controlar seus investimentos e ter um panorama completo contendo
-                                        todos
-                                        os valores necessários para o controle de compra, venda, lucro, preço médio e
-                                        preço de compra e venda. Além de gerar relatórios para facilitar a visualização
-                                        pelo computador.</p>
-                                    <div class="project-links">
-                                        <a href="https://github.com/eduardoazvd17/investhelper" class="project-link"
-                                            data-link-type="repository" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                            <span>Repositório</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="project-card animate-on-scroll" data-project="fcryptor">
-                                <div class="project-image">
-                                    <img src="images/fcryptor.png" alt="FCryptor App screenshot">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_cross_platform">Multiplataforma</span>
-                                    <h3>FCryptor</h3>
-                                    <p>FCryptor é um aplicativo de criptografia de arquivos multiplataforma desenvolvido
-                                        com Flutter. Com suporte para dispositivos móveis, web e desktop, ele oferece
-                                        uma
-                                        maneira segura e prática de proteger seus arquivos com criptografia AES-256 e
-                                        uma
-                                        interface intuitiva.</p>
-                                    <div class="project-links">
-                                        <a href="https://github.com/eduardoazvd17/fcryptor/releases/latest"
-                                            class="project-link" data-link-type="download" target="_blank">
-                                            <i class="fas fa-download"></i>
-                                            <span>Download</span>
-                                        </a>
-                                        <a href="https://github.com/eduardoazvd17/fcryptor" class="project-link"
-                                            data-link-type="repository" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                            <span>Repositório</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="project-card animate-on-scroll" data-project="slider_bar_chart">
-                                <div class="project-image">
-                                    <img src="images/pub_dev.png" alt="slider_bar_chart Library Demo">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_flutter_package">Pacote Flutter</span>
-                                    <h3>slider_bar_chart</h3>
-                                    <p>Uma forma simplificada de se criar gráficos de barra no Flutter, permitindo
-                                        scroll na horizontal e algumas opções de customização como cores, textos e
-                                        tooltips. Essa lib foi criada com o intuito de resolver um problema, no qual eu
-                                        precisava de um gráfico de barra para exibir dados de 2 fontes de forma
-                                        espelhada e que habilitasse scroll.</p>
-                                    <div class="project-links">
-                                        <a href="https://pub.dev/packages/slider_bar_chart" class="project-link"
-                                            data-link-type="preview" target="_blank">
-                                            <i class="fas fa-eye"></i>
-                                            <span>Website</span>
-                                        </a>
-                                        <a href="https://github.com/eduardoazvd17/slider_bar_chart" class="project-link"
-                                            data-link-type="repository" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                            <span>Repositório</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="project-card animate-on-scroll" data-project="audiotexter">
-                                <div class="project-image">
-                                    <img src="images/audiotexter.png" alt="AudioTexter App screenshot">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_mobile">App Mobile</span>
-                                    <h3>AudioTexter</h3>
-                                    <p>AudioTexter é um aplicativo desenvolvido em Flutter que permite gravar áudios e
-                                        transcrevê-los em texto.</p>
-                                    <div class="project-links">
-                                        <a href="https://github.com/eduardoazvd17/audiotexter" class="project-link"
-                                            data-link-type="repository" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                            <span>Repositório</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="project-card animate-on-scroll" data-project="myfinances">
-                                <div class="project-image">
-                                    <img src="images/my_finances.png" alt="My Finances App screenshot">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_web">App Web</span>
-                                    <h3>My Finances</h3>
-                                    <p>Um aplicativo para controle de finanças no qual te permitirá controlar seus
-                                        gastos
-                                        mensais, investimentos e salvar anotações importantes.</p>
-                                    <div class="project-links">
-                                        <a href="https://github.com/eduardoazvd17/my_finances" class="project-link"
-                                            data-link-type="repository" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                            <span>Repositório</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="project-card animate-on-scroll" data-project="gitf">
-                                <div class="project-image">
-                                    <img src="images/flutter.png" alt="GitF App screenshot">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_desktop">App Desktop</span>
-                                    <h3>GitF</h3>
-                                    <p>Um gerenciador de repositórios Git para iniciantes. Esse projeto foi criado
-                                        apenas para testar o desenvolvimento de apps desktop com o Flutter.</p>
-                                    <div class="project-links">
-                                        <a href="https://github.com/eduardoazvd17/gitf/releases/latest"
-                                            class="project-link" data-link-type="download" target="_blank">
-                                            <i class="fas fa-download"></i>
-                                            <span>Download</span>
-                                        </a>
-                                        <a href="https://github.com/eduardoazvd17/gitf" class="project-link"
-                                            data-link-type="repository" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                            <span>Repositório</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="project-card animate-on-scroll" data-project="credentials_manager">
-                                <div class="project-image">
-                                    <img src="images/pub_dev.png" alt="credentials_manager Library Demo">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_flutter_package">Pacote Flutter</span>
-                                    <h3>credentials_manager</h3>
-                                    <p>Uma biblioteca para gerenciar de forma fácil as credenciais do seu app Flutter
-                                        localmente, utilizando autenticação biométrica. Ela foi criada com o intuito de
-                                        agilizar a solução de um problema, no qual eu precisava armazenar credenciais de
-                                        forma segura em um dispositivo, permitindo que o usuário fizesse login com essas
-                                        credenciais utilizando a biometria.</p>
-                                    <div class="project-links">
-                                        <a href="https://pub.dev/packages/credentials_manager" class="project-link"
-                                            data-link-type="preview" target="_blank">
-                                            <i class="fas fa-eye"></i>
-                                            <span>Website</span>
-                                        </a>
-                                        <a href="https://github.com/eduardoazvd17/credentials_manager"
-                                            class="project-link" data-link-type="repository" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                            <span>Repositório</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="project-card animate-on-scroll" data-project="simple_overlay">
-                                <div class="project-image">
-                                    <img src="images/pub_dev.png" alt="simple_overlay Library Demo">
-                                </div>
-                                <div class="project-info">
-                                    <span class="project-badge" data-i18n="badge_flutter_package">Pacote Flutter</span>
-                                    <h3>simple_overlay</h3>
-                                    <p>Uma biblioteca simples e prática para criar sobreposições de forma fácil no seu
-                                        app Flutter. Com ele, você pode sobrepor um widget personalizado a qualquer
-                                        outro
-                                        widget. O foco deste pacote é agilizar a criação e gerenciamento do ciclo de
-                                        vida
-                                        de um Overlay.</p>
-                                    <div class="project-links">
-                                        <a href="https://pub.dev/packages/simple_overlay" class="project-link"
-                                            data-link-type="preview" target="_blank">
-                                            <i class="fas fa-eye"></i>
-                                            <span>Website</span>
-                                        </a>
-                                        <a href="https://github.com/eduardoazvd17/simple_overlay" class="project-link"
-                                            data-link-type="repository" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                            <span>Repositório</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="project-card animate-on-scroll" data-project="more-projects">
-                                <div class="project-image">
-                                    <img src="images/github.png" alt="GitHub Logo">
-                                </div>
-                                <div class="project-info">
-                                    <h3 data-i18n="more_projects_title">Conheça mais projetos</h3>
-                                    <p data-i18n="more_projects_description">Quer conhecer mais projetos em que
-                                        trabalhei? Visite meu perfil no GitHub para descobrir outros repositórios,
-                                        contribuições e projetos em desenvolvimento.</p>
-                                    <div class="project-links">
-                                        <a href="https://github.com/eduardoazvd17/" class="project-link"
-                                            data-link-type="repository" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                            <span data-i18n="more_projects_link">Ver mais projetos</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section section--dark">
+        <section id="clients" class="section">
             <div class="container">
-                <span class="section-eyebrow" data-i18n="eyebrow_contact">Contato</span>
-                <h2 class="section-title" data-i18n="contact">Contato</h2>
-                <div class="section-content">
-                    <div class="contact-card">
-                        <div class="contact-section">
-                            <h3 class="contact-subtitle" data-i18n="contact_intro">Fique à vontade para entrar em
-                                contato comigo usando uma das opções abaixo:</h3>
-                            <div class="social-buttons-row">
-                                <a href="https://wa.me/+5521988542950" target="_blank" class="social-contact-button">
-                                    <i class="fab fa-whatsapp"></i>
-                                    <span>WhatsApp</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/eduardoazvd17/" target="_blank"
-                                    class="social-contact-button">
-                                    <i class="fab fa-linkedin"></i>
-                                    <span>LinkedIn</span>
-                                </a>
+                <h2 class="section-title" data-i18n="clients_title">Projetos em que atuei durante a minha carreira</h2>
+                <div class="section-body">
+                    <ul class="client-list">
+                        <li class="client">
+                            <img class="client-logo" src="images/clients/sicoob.png" alt="" loading="lazy">
+                            <div>
+                                <h3><a href="https://www.sicoob.com.br" class="client-link" target="_blank" rel="noopener">Sicoob</a></h3>
+                                <p data-i18n="sicoob_meta">Cooperativa financeira</p>
                             </div>
-                        </div>
+                            <span class="client-site" aria-hidden="true">sicoob.com.br &nearr;</span>
+                        </li>
+                        <li class="client">
+                            <img class="client-logo" src="images/clients/banco-master.png" alt="" loading="lazy">
+                            <div>
+                                <h3><a href="https://www.bancomaster.com.br" class="client-link" target="_blank" rel="noopener">Banco Master</a></h3>
+                                <p data-i18n="master_meta">Banco</p>
+                            </div>
+                            <span class="client-site" aria-hidden="true">bancomaster.com.br &nearr;</span>
+                        </li>
+                        <li class="client">
+                            <img class="client-logo" src="images/clients/talkprocess.svg" alt="" loading="lazy">
+                            <div>
+                                <h3>TalkProcess</h3>
+                                <p data-i18n="talkprocess_meta">Plataforma de gestão de processos</p>
+                            </div>
+                        </li>
+                        <li class="client">
+                            <img class="client-logo" src="images/clients/finep.svg" alt="" loading="lazy">
+                            <div>
+                                <h3><a href="https://www.finep.gov.br" class="client-link" target="_blank" rel="noopener">FINEP</a></h3>
+                                <p data-i18n="finep_meta">Financiadora de Estudos e Projetos</p>
+                            </div>
+                            <span class="client-site" aria-hidden="true">finep.gov.br &nearr;</span>
+                        </li>
+                        <li class="client">
+                            <img class="client-logo client-logo--dark" src="images/clients/ggwpaid.png" alt="" loading="lazy">
+                            <div>
+                                <h3><a href="https://ggwpaid.com" class="client-link" target="_blank" rel="noopener">GGWPaid</a></h3>
+                                <p data-i18n="ggwpaid_meta">Gestão financeira para empresas</p>
+                            </div>
+                            <span class="client-site" aria-hidden="true">ggwpaid.com &nearr;</span>
+                        </li>
+                        <li class="client">
+                            <img class="client-logo client-logo--dark" src="images/clients/cortepro.svg" alt="" loading="lazy">
+                            <div>
+                                <h3><a href="https://www.cortepro.com.br" class="client-link" target="_blank" rel="noopener">CortePro</a></h3>
+                                <p data-i18n="cortepro_meta">Gestão de barbearias</p>
+                            </div>
+                            <span class="client-site" aria-hidden="true">cortepro.com.br &nearr;</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-                        <div class="contact-section">
-                            <h3 class="contact-subtitle" data-i18n="sendEmail">Me envie um email:</h3>
-                            <div class="email-container">
-                                <div class="email-box">
-                                    <a href="mailto:eduardoazvd17@gmail.com" class="email-link">
-                                        <i class="fas fa-envelope"></i>
-                                        <span class="email-text">eduardoazvd17@gmail.com</span>
-                                    </a>
-                                    <button class="copy-email-btn" data-email="eduardoazvd17@gmail.com"
-                                        aria-label="Copiar email">
-                                        <i class="fas fa-copy"></i>
-                                    </button>
-                                </div>
-                                <div class="email-box">
-                                    <a href="mailto:azevedotechsolutions@gmail.com" class="email-link">
-                                        <i class="fas fa-envelope"></i>
-                                        <span class="email-text">azevedotechsolutions@gmail.com</span>
-                                    </a>
-                                    <button class="copy-email-btn" data-email="azevedotechsolutions@gmail.com"
-                                        aria-label="Copiar email">
-                                        <i class="fas fa-copy"></i>
-                                    </button>
-                                </div>
-                            </div>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="contact_title">Contato</h2>
+                <div class="section-body">
+                    <p class="section-lede"><span data-i18n="contact_intro_1">Tem um projeto em mente ou quer conversar sobre uma vaga?</span><br>
+                        <span data-i18n="contact_intro_2">Fale comigo por um destes canais.</span></p>
+
+                    <dl class="contact-channels">
+                        <div>
+                            <dt data-i18n="channel_email">E-mail</dt>
+                            <dd>
+                                <a href="mailto:eduardoazvd17@gmail.com">eduardoazvd17@gmail.com</a>
+                                <button type="button" class="copy-button" data-copy="eduardoazvd17@gmail.com"
+                                    data-i18n="copy">Copiar</button>
+                            </dd>
                         </div>
-                    </div>
+                        <div>
+                            <dt>Azevedo Tech Solutions</dt>
+                            <dd>
+                                <a href="mailto:azevedotechsolutions@gmail.com">azevedotechsolutions@gmail.com</a>
+                                <button type="button" class="copy-button" data-copy="azevedotechsolutions@gmail.com"
+                                    data-i18n="copy">Copiar</button>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt>WhatsApp</dt>
+                            <dd><a href="https://wa.me/5521988542950" target="_blank" rel="noopener">+55 21 98854-2950</a></dd>
+                        </div>
+                        <div>
+                            <dt>LinkedIn</dt>
+                            <dd><a href="https://www.linkedin.com/in/eduardoazvd17/" target="_blank" rel="noopener">in/eduardoazvd17</a></dd>
+                        </div>
+                    </dl>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="back-to-top">
-                <button id="back-to-top-btn" aria-label="Voltar ao topo">
-                    <i class="fas fa-chevron-up"></i>
-                </button>
-            </div>
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="footer-brand-mark"><i class="fas fa-code"></i></span>
-                    <p class="copyright">&copy; <span id="current-year"></span> <span id="footer-company"></span></p>
-                </div>
-                <div class="footer-links">
-                    <a href="mailto:eduardoazvd17@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/eduardoazvd17/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/eduardoazvd17/" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
+    <footer class="site-footer">
+        <div class="container site-footer-inner">
+            <p>&copy; <span id="current-year"></span> Azevedo Tech Solutions · CNPJ 55.705.600/0001-47</p>
+            <a href="#top" data-i18n="back_to_top">Voltar ao topo</a>
         </div>
     </footer>
 
+    <script src="js/lang-menu.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>

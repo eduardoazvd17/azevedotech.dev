@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MoveRio: linhas, itinerários, pontos e ônibus em tempo real no Rio de Janeiro. Disponível para Android e iOS.">
+    <meta name="author" content="Eduardo Azevedo">
+    <title>MoveRio — ônibus do Rio de Janeiro | Azevedo Tech Solutions</title>
+    <link rel="icon" href="../../icons/moverio.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../icons/moverio.png" type="image/png">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+
+<body>
+    <header class="project-topbar">
+        <div class="container project-topbar-inner">
+            <a class="project-back" href="../../" data-keep-lang="../../">
+                <i class="fas fa-arrow-left"></i> <span data-i18n="ui_back">Início</span>
+            </a>
+            <div class="lang-menu" data-lang-menu></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <div class="container project-header-inner">
+                <img class="project-header-icon" src="../../icons/moverio.png" alt="MoveRio">
+                <div>
+                    <p class="project-kicker" data-i18n="kicker">App mobile · Android e iOS</p>
+                    <h1>MoveRio</h1>
+                    <p class="project-lede" data-i18n="tagline">Os ônibus do Rio de Janeiro em um só lugar: linhas, itinerários, pontos e a posição dos ônibus em tempo real.</p>
+                    <div class="project-actions">
+                    <a class="store-button" href="https://play.google.com/store/apps/details?id=com.eduardoazevedo.moverio" target="_blank" rel="noopener">
+                        <i class="fab fa-google-play"></i> <span>Google Play</span>
+                    </a>
+                    <a class="store-button" href="https://apps.apple.com/br/app/moverio-%C3%B4nibus-rj/id6758354578" target="_blank" rel="noopener">
+                        <i class="fab fa-apple"></i> <span>App Store</span>
+                    </a>
+                    <a class="store-button store-button--ghost" href="termsAndPolicy/" data-keep-lang="termsAndPolicy/">
+                        <span data-i18n="ui_terms">Termos de Uso e Política de Privacidade</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_about">Sobre</h2>
+                <div class="project-block-body">
+                    <p data-i18n="about_0">O MoveRio reúne as linhas, os itinerários e os pontos de ônibus do Rio de Janeiro em um único app. Você digita uma linha, um ponto ou um endereço e ele encontra; diz para onde vai e ele mostra qual ônibus pegar, onde embarcar e quanto andar a pé.</p>
+                    <p data-i18n="about_1">Durante a viagem, o app acompanha a sua posição, mostra a próxima parada e avisa quando você chega, mesmo com a tela desligada. Quem assina o MoveRio Pro também vê os ônibus da linha se movendo no mapa.</p>
+                    <p data-i18n="about_2">Não é preciso criar conta. Favoritos e viagens recentes ficam salvos no próprio celular.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_features">Recursos</h2>
+                <div class="project-block-body">
+                    <dl class="feature-list">
+                        <div>
+                            <dt data-i18n="feature_0_title">Busca única</dt>
+                            <dd data-i18n="feature_0_text">Linhas, pontos e endereços no mesmo campo de busca.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_1_title">Melhor ônibus</dt>
+                            <dd data-i18n="feature_1_text">Informe o destino e veja qual linha pegar, onde embarcar e a distância a pé.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_2_title">Acompanhamento da viagem</dt>
+                            <dd data-i18n="feature_2_text">Próxima parada, progresso e alerta de chegada, também em segundo plano.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_3_title">Ônibus em tempo real</dt>
+                            <dd data-i18n="feature_3_text">Posição aproximada dos ônibus da linha no mapa, a partir do GPS da frota.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_4_title">Pontos próximos</dt>
+                            <dd data-i18n="feature_4_text">Mapa com as paradas ao seu redor e as linhas que passam em cada uma.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_5_title">Rota a pé</dt>
+                            <dd data-i18n="feature_5_text">O trajeto até o ponto de embarque desenhado no mapa.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_6_title">Salvos e recentes</dt>
+                            <dd data-i18n="feature_6_text">Lugares favoritos e viagens recentes para repetir com um toque.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_7_title">Mapa orientado</dt>
+                            <dd data-i18n="feature_7_text">A bússola gira o mapa para a direção em que você está virado.</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_plans">Planos</h2>
+                <div class="project-block-body">
+                    <table class="plans-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="ui_plan_feature">Recurso</th>
+                                <th scope="col" data-i18n="ui_plan_free">Grátis</th>
+                                <th scope="col" data-i18n="ui_plan_pro">Pro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row" data-i18n="plan_0">Busca de linhas, pontos e endereços</th>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_1">Melhor ônibus e acompanhamento da viagem</th>
+                            <td data-i18n="plan_1_1">Assistindo a um anúncio</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_2">Rota a pé até o ponto</th>
+                            <td data-i18n="plan_2_1">Assistindo a um anúncio</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_3">Ônibus em tempo real</th>
+                            <td data-i18n="plan_3_1">Assistindo a um anúncio</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_4">Sem anúncios</th>
+                            <td>—</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p class="plans-note" data-i18n="plans_note">O Pro tem plano mensal e anual; o anual sai com 2 meses de desconto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_build">Como foi feito</h2>
+                <div class="project-block-body">
+                    <p data-i18n="build_0">Desenvolvi o app em Flutter, com uma arquitetura organizada por feature. A base de linhas, itinerários e pontos é processada em isolates do Dart, com um índice espacial para achar paradas próximas e calcular o melhor ônibus no próprio aparelho, sem depender do servidor.</p>
+                    <p data-i18n="build_1">A posição dos ônibus vem de uma API própria em Go, que consulta periodicamente o GPS da frota publicado pela Prefeitura do Rio, guarda as posições em SQLite, filtra os veículos pelo trajeto e pelo sentido de cada itinerário e projeta a posição para o momento da consulta. Mapas, busca de endereços e rotas a pé usam o Mapbox.</p>
+                    <ul class="stack-list">
+                        <li>Flutter</li>
+                        <li>Dart</li>
+                        <li>Dart Isolates</li>
+                        <li>Mapbox</li>
+                        <li>Go</li>
+                        <li>SQLite</li>
+                        <li>Docker</li>
+                        <li>Firebase Analytics</li>
+                        <li>Crashlytics</li>
+                        <li>AdMob</li>
+                        <li>In-App Purchase</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_privacy">Privacidade</h2>
+                <div class="project-block-body">
+                    <p data-i18n="privacy">Sem conta e sem cadastro. A localização é usada no aparelho para mostrar pontos próximos e acompanhar a viagem, e não fica guardada em servidor. O app usa o Firebase para estatísticas de uso e relatórios de falha e exibe anúncios no plano gratuito.</p>
+                    <p><a class="text-link" href="termsAndPolicy/" data-keep-lang="termsAndPolicy/"><span data-i18n="ui_terms">Termos de Uso e Política de Privacidade</span><i class="fas fa-arrow-right"></i></a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="project-footer">
+        <div class="container project-footer-inner">
+            <span>&copy; <span id="current-year"></span> Azevedo Tech Solutions</span>
+            <a href="../../" data-keep-lang="../../"><span data-i18n="ui_footer_back">Voltar ao portfólio</span></a>
+        </div>
+    </footer>
+
+    <script>
+        window.PROJECT_I18N = {
+            "pt": {
+                "meta_title": "MoveRio — ônibus do Rio de Janeiro | Azevedo Tech Solutions",
+                "meta_description": "MoveRio: linhas, itinerários, pontos e ônibus em tempo real no Rio de Janeiro. Disponível para Android e iOS.",
+                "ui_terms": "Termos de Uso e Política de Privacidade",
+                "about_0": "O MoveRio reúne as linhas, os itinerários e os pontos de ônibus do Rio de Janeiro em um único app. Você digita uma linha, um ponto ou um endereço e ele encontra; diz para onde vai e ele mostra qual ônibus pegar, onde embarcar e quanto andar a pé.",
+                "about_1": "Durante a viagem, o app acompanha a sua posição, mostra a próxima parada e avisa quando você chega, mesmo com a tela desligada. Quem assina o MoveRio Pro também vê os ônibus da linha se movendo no mapa.",
+                "about_2": "Não é preciso criar conta. Favoritos e viagens recentes ficam salvos no próprio celular.",
+                "feature_0_title": "Busca única",
+                "feature_0_text": "Linhas, pontos e endereços no mesmo campo de busca.",
+                "feature_1_title": "Melhor ônibus",
+                "feature_1_text": "Informe o destino e veja qual linha pegar, onde embarcar e a distância a pé.",
+                "feature_2_title": "Acompanhamento da viagem",
+                "feature_2_text": "Próxima parada, progresso e alerta de chegada, também em segundo plano.",
+                "feature_3_title": "Ônibus em tempo real",
+                "feature_3_text": "Posição aproximada dos ônibus da linha no mapa, a partir do GPS da frota.",
+                "feature_4_title": "Pontos próximos",
+                "feature_4_text": "Mapa com as paradas ao seu redor e as linhas que passam em cada uma.",
+                "feature_5_title": "Rota a pé",
+                "feature_5_text": "O trajeto até o ponto de embarque desenhado no mapa.",
+                "feature_6_title": "Salvos e recentes",
+                "feature_6_text": "Lugares favoritos e viagens recentes para repetir com um toque.",
+                "feature_7_title": "Mapa orientado",
+                "feature_7_text": "A bússola gira o mapa para a direção em que você está virado.",
+                "plan_0": "Busca de linhas, pontos e endereços",
+                "ui_yes": "Incluído",
+                "plan_1": "Melhor ônibus e acompanhamento da viagem",
+                "plan_1_1": "Assistindo a um anúncio",
+                "plan_2": "Rota a pé até o ponto",
+                "plan_2_1": "Assistindo a um anúncio",
+                "plan_3": "Ônibus em tempo real",
+                "plan_3_1": "Assistindo a um anúncio",
+                "plan_4": "Sem anúncios",
+                "ui_plans": "Planos",
+                "ui_plan_feature": "Recurso",
+                "ui_plan_free": "Grátis",
+                "ui_plan_pro": "Pro",
+                "plans_note": "O Pro tem plano mensal e anual; o anual sai com 2 meses de desconto.",
+                "build_0": "Desenvolvi o app em Flutter, com uma arquitetura organizada por feature. A base de linhas, itinerários e pontos é processada em isolates do Dart, com um índice espacial para achar paradas próximas e calcular o melhor ônibus no próprio aparelho, sem depender do servidor.",
+                "build_1": "A posição dos ônibus vem de uma API própria em Go, que consulta periodicamente o GPS da frota publicado pela Prefeitura do Rio, guarda as posições em SQLite, filtra os veículos pelo trajeto e pelo sentido de cada itinerário e projeta a posição para o momento da consulta. Mapas, busca de endereços e rotas a pé usam o Mapbox.",
+                "ui_back": "Início",
+                "kicker": "App mobile · Android e iOS",
+                "tagline": "Os ônibus do Rio de Janeiro em um só lugar: linhas, itinerários, pontos e a posição dos ônibus em tempo real.",
+                "ui_about": "Sobre",
+                "ui_features": "Recursos",
+                "ui_build": "Como foi feito",
+                "ui_privacy": "Privacidade",
+                "privacy": "Sem conta e sem cadastro. A localização é usada no aparelho para mostrar pontos próximos e acompanhar a viagem, e não fica guardada em servidor. O app usa o Firebase para estatísticas de uso e relatórios de falha e exibe anúncios no plano gratuito.",
+                "ui_footer_back": "Voltar ao portfólio"
+            },
+            "en": {
+                "meta_title": "MoveRio — Rio de Janeiro buses | Azevedo Tech Solutions",
+                "meta_description": "MoveRio: bus lines, itineraries, stops and real-time buses in Rio de Janeiro. Available for Android and iOS.",
+                "ui_terms": "Terms of Use and Privacy Policy",
+                "about_0": "MoveRio brings together the bus lines, itineraries and stops of Rio de Janeiro in a single app. Type a line, a stop or an address and it finds it; tell it where you are going and it shows which bus to take, where to board and how far to walk.",
+                "about_1": "During the trip, the app follows your position, shows the next stop and lets you know when you arrive, even with the screen off. MoveRio Pro subscribers also see the line's buses moving on the map.",
+                "about_2": "No account is needed. Favorites and recent trips are saved on the phone itself.",
+                "feature_0_title": "One search field",
+                "feature_0_text": "Lines, stops and addresses in the same search box.",
+                "feature_1_title": "Best bus",
+                "feature_1_text": "Enter a destination and see which line to take, where to board and the walking distance.",
+                "feature_2_title": "Trip tracking",
+                "feature_2_text": "Next stop, progress and an arrival alert, also in the background.",
+                "feature_3_title": "Live buses",
+                "feature_3_text": "Approximate position of the line's buses on the map, based on the fleet's GPS.",
+                "feature_4_title": "Nearby stops",
+                "feature_4_text": "A map of the stops around you and the lines that serve each one.",
+                "feature_5_title": "Walking route",
+                "feature_5_text": "The path to the boarding stop drawn on the map.",
+                "feature_6_title": "Saved and recent",
+                "feature_6_text": "Favorite places and recent trips to repeat with one tap.",
+                "feature_7_title": "Map that turns with you",
+                "feature_7_text": "The compass rotates the map to the direction you are facing.",
+                "plan_0": "Search lines, stops and addresses",
+                "ui_yes": "Included",
+                "plan_1": "Best bus and trip tracking",
+                "plan_1_1": "By watching an ad",
+                "plan_2": "Walking route to the stop",
+                "plan_2_1": "By watching an ad",
+                "plan_3": "Live buses",
+                "plan_3_1": "By watching an ad",
+                "plan_4": "No ads",
+                "ui_plans": "Plans",
+                "ui_plan_feature": "Feature",
+                "ui_plan_free": "Free",
+                "ui_plan_pro": "Pro",
+                "plans_note": "Pro comes in monthly and annual plans; the annual plan includes 2 months off.",
+                "build_0": "I built the app in Flutter, with a feature-based architecture. The database of lines, itineraries and stops is processed in Dart isolates, with a spatial index to find nearby stops and work out the best bus on the device itself, without relying on the server.",
+                "build_1": "Bus positions come from a Go API of my own, which periodically reads the fleet GPS feed published by the City of Rio, stores positions in SQLite, filters vehicles by each itinerary's path and direction and projects their position to the moment of the request. Maps, address search and walking routes use Mapbox.",
+                "ui_back": "Home",
+                "kicker": "Mobile app · Android and iOS",
+                "tagline": "Rio de Janeiro's buses in one place: lines, itineraries, stops and live bus positions.",
+                "ui_about": "About",
+                "ui_features": "Features",
+                "ui_build": "How it was built",
+                "ui_privacy": "Privacy",
+                "privacy": "No account and no sign-up. Location is used on the device to show nearby stops and follow the trip, and is not stored on a server. The app uses Firebase for usage statistics and crash reports and shows ads on the free plan.",
+                "ui_footer_back": "Back to portfolio"
+            },
+            "es": {
+                "meta_title": "MoveRio — autobuses de Río de Janeiro | Azevedo Tech Solutions",
+                "meta_description": "MoveRio: líneas, itinerarios, paradas y autobuses en tiempo real en Río de Janeiro. Disponible para Android e iOS.",
+                "ui_terms": "Términos de Uso y Política de Privacidad",
+                "about_0": "MoveRio reúne las líneas, los itinerarios y las paradas de autobús de Río de Janeiro en una sola app. Escribes una línea, una parada o una dirección y la encuentra; le dices a dónde vas y te muestra qué autobús tomar, dónde subir y cuánto caminar.",
+                "about_1": "Durante el viaje, la app sigue tu posición, muestra la próxima parada y te avisa cuando llegas, incluso con la pantalla apagada. Quien se suscribe a MoveRio Pro también ve los autobuses de la línea moviéndose en el mapa.",
+                "about_2": "No hace falta crear una cuenta. Los favoritos y los viajes recientes se guardan en el propio celular.",
+                "feature_0_title": "Búsqueda única",
+                "feature_0_text": "Líneas, paradas y direcciones en el mismo campo de búsqueda.",
+                "feature_1_title": "Mejor autobús",
+                "feature_1_text": "Indica el destino y mira qué línea tomar, dónde subir y la distancia a pie.",
+                "feature_2_title": "Seguimiento del viaje",
+                "feature_2_text": "Próxima parada, progreso y aviso de llegada, también en segundo plano.",
+                "feature_3_title": "Autobuses en tiempo real",
+                "feature_3_text": "Posición aproximada de los autobuses de la línea en el mapa, según el GPS de la flota.",
+                "feature_4_title": "Paradas cercanas",
+                "feature_4_text": "Un mapa con las paradas a tu alrededor y las líneas que pasan por cada una.",
+                "feature_5_title": "Ruta a pie",
+                "feature_5_text": "El trayecto hasta la parada de embarque dibujado en el mapa.",
+                "feature_6_title": "Guardados y recientes",
+                "feature_6_text": "Lugares favoritos y viajes recientes para repetir con un toque.",
+                "feature_7_title": "Mapa orientado",
+                "feature_7_text": "La brújula gira el mapa hacia la dirección en la que miras.",
+                "plan_0": "Búsqueda de líneas, paradas y direcciones",
+                "ui_yes": "Incluido",
+                "plan_1": "Mejor autobús y seguimiento del viaje",
+                "plan_1_1": "Viendo un anuncio",
+                "plan_2": "Ruta a pie hasta la parada",
+                "plan_2_1": "Viendo un anuncio",
+                "plan_3": "Autobuses en tiempo real",
+                "plan_3_1": "Viendo un anuncio",
+                "plan_4": "Sin anuncios",
+                "ui_plans": "Planes",
+                "ui_plan_feature": "Función",
+                "ui_plan_free": "Gratis",
+                "ui_plan_pro": "Pro",
+                "plans_note": "Pro tiene plan mensual y anual; el anual incluye 2 meses de descuento.",
+                "build_0": "Desarrollé la app en Flutter, con una arquitectura organizada por funcionalidad. La base de líneas, itinerarios y paradas se procesa en isolates de Dart, con un índice espacial para encontrar paradas cercanas y calcular el mejor autobús en el propio dispositivo, sin depender del servidor.",
+                "build_1": "La posición de los autobuses viene de una API propia en Go, que consulta periódicamente el GPS de la flota publicado por la Alcaldía de Río, guarda las posiciones en SQLite, filtra los vehículos por el trayecto y el sentido de cada itinerario y proyecta su posición al momento de la consulta. Los mapas, la búsqueda de direcciones y las rutas a pie usan Mapbox.",
+                "ui_back": "Inicio",
+                "kicker": "App móvil · Android e iOS",
+                "tagline": "Los autobuses de Río de Janeiro en un solo lugar: líneas, itinerarios, paradas y la posición de los autobuses en tiempo real.",
+                "ui_about": "Acerca de",
+                "ui_features": "Funciones",
+                "ui_build": "Cómo se hizo",
+                "ui_privacy": "Privacidad",
+                "privacy": "Sin cuenta y sin registro. La ubicación se usa en el dispositivo para mostrar paradas cercanas y seguir el viaje, y no se guarda en ningún servidor. La app usa Firebase para estadísticas de uso e informes de fallos y muestra anuncios en el plan gratuito.",
+                "ui_footer_back": "Volver al portafolio"
+            }
+        };
+    </script>
+    <script src="../../js/lang-menu.js"></script>
+    <script src="../../js/project.js"></script>
+</body>
+
+</html>

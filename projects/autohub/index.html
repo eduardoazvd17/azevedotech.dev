@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AutoHub: manutenções, abastecimentos, lembretes, tabela FIPE e assistente de IA para o seu carro. Android e iOS.">
+    <meta name="author" content="Eduardo Azevedo">
+    <title>AutoHub — gestão veicular | Azevedo Tech Solutions</title>
+    <link rel="icon" href="../../images/autohub.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../images/autohub.png" type="image/png">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+
+<body>
+    <header class="project-topbar">
+        <div class="container project-topbar-inner">
+            <a class="project-back" href="../../" data-keep-lang="../../">
+                <i class="fas fa-arrow-left"></i> <span data-i18n="ui_back">Início</span>
+            </a>
+            <div class="lang-menu" data-lang-menu></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <div class="container project-header-inner">
+                <img class="project-header-icon" src="../../images/autohub.png" alt="AutoHub">
+                <div>
+                    <p class="project-kicker" data-i18n="kicker">App mobile · Android e iOS</p>
+                    <h1>AutoHub</h1>
+                    <p class="project-lede" data-i18n="tagline">Manutenções, abastecimentos, tabela FIPE e um assistente de IA para cuidar do seu carro.</p>
+                    <div class="project-actions">
+                    <a class="store-button" href="https://play.google.com/store/apps/details?id=com.eduardoazevedo.autocarefy" target="_blank" rel="noopener">
+                        <i class="fab fa-google-play"></i> <span>Google Play</span>
+                    </a>
+                    <a class="store-button" href="https://apps.apple.com/br/app/autohub-gest%C3%A3o-veicular/id6770298258" target="_blank" rel="noopener">
+                        <i class="fab fa-apple"></i> <span>App Store</span>
+                    </a>
+                    <a class="store-button store-button--ghost" href="termsAndPolicy/" data-keep-lang="termsAndPolicy/">
+                        <span data-i18n="ui_terms">Termos de Uso e Política de Privacidade</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_about">Sobre</h2>
+                <div class="project-block-body">
+                    <p data-i18n="about_0">O AutoHub é o caderno de manutenção do carro, só que no celular. Você cadastra o veículo, registra cada troca de óleo, revisão ou abastecimento e cria lembretes por data ou por quilometragem para não perder o próximo serviço.</p>
+                    <p data-i18n="about_1">Quem não quer anotar a quilometragem pode deixar isso com o app: basta vincular o carro ao Bluetooth da central multimídia. Quando o celular conecta e você começa a rodar, o AutoHub estima a distância percorrida e atualiza o odômetro do veículo.</p>
+                    <p data-i18n="about_2">Também dá para consultar o preço na tabela FIPE, exportar o histórico em PDF para mostrar na hora da venda e perguntar ao assistente de IA sobre um barulho, uma luz no painel ou a próxima revisão.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_features">Recursos</h2>
+                <div class="project-block-body">
+                    <dl class="feature-list">
+                        <div>
+                            <dt data-i18n="feature_0_title">Histórico de manutenções</dt>
+                            <dd data-i18n="feature_0_text">Serviços, valores e observações de cada veículo, com busca.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_1_title">Lembretes</dt>
+                            <dd data-i18n="feature_1_text">Avisos por data ou quilometragem para a próxima manutenção.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_2_title">Abastecimentos</dt>
+                            <dd data-i18n="feature_2_text">Registro de cada abastecimento e cálculo do consumo médio.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_3_title">Quilometragem automática</dt>
+                            <dd data-i18n="feature_3_text">O odômetro se atualiza via Bluetooth e localização, sem digitar nada.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_4_title">Tabela FIPE</dt>
+                            <dd data-i18n="feature_4_text">Preço de referência do veículo e histórico das consultas.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_5_title">Assistente de IA</dt>
+                            <dd data-i18n="feature_5_text">Diagnósticos e dúvidas sobre o carro, com base no modelo e no histórico.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_6_title">Relatório em PDF</dt>
+                            <dd data-i18n="feature_6_text">O histórico de manutenções pronto para guardar ou compartilhar.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_7_title">Transferência de veículo</dt>
+                            <dd data-i18n="feature_7_text">Passe o veículo e o histórico para a conta do novo dono.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_8_title">Calculadoras</dt>
+                            <dd data-i18n="feature_8_text">Custo de combustível de uma viagem e preço por quilômetro rodado.</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_plans">Planos</h2>
+                <div class="project-block-body">
+                    <table class="plans-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="ui_plan_feature">Recurso</th>
+                                <th scope="col" data-i18n="ui_plan_free">Grátis</th>
+                                <th scope="col" data-i18n="ui_plan_pro">Pro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row" data-i18n="plan_0">Veículos</th>
+                            <td data-i18n="plan_0_1">1</td>
+                            <td data-i18n="plan_0_2">Ilimitados</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_1">Manutenções, abastecimentos e lembretes</th>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_2">Tabela FIPE e transferência de veículo</th>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_3">Assistente de IA</th>
+                            <td data-i18n="plan_3_1">5 consultas (+1 por mês)</td>
+                            <td data-i18n="plan_3_2">Ilimitado</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_4">Quilometragem automática via Bluetooth</th>
+                            <td>—</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_5">Relatório em PDF</th>
+                            <td>—</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_6">Sem anúncios</th>
+                            <td>—</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p class="plans-note" data-i18n="plans_note">O Pro tem plano mensal e anual; o anual tem 7 dias grátis e sai com 2 meses de desconto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_build">Como foi feito</h2>
+                <div class="project-block-body">
+                    <p data-i18n="build_0">Feito em Flutter com Firebase Authentication e Cloud Firestore, com login por e-mail, Google ou Apple. A quilometragem automática combina um serviço em segundo plano, a detecção da conexão Bluetooth e o GPS do aparelho; no iOS, o trajeto em andamento aparece em uma Live Activity.</p>
+                    <p data-i18n="build_1">O assistente usa a API da OpenAI com o contexto do veículo e das manutenções registradas, com limite de uso por plano e filtros na entrada. Os preços vêm de uma API pública da tabela FIPE, e os relatórios são gerados em PDF no próprio aparelho.</p>
+                    <ul class="stack-list">
+                        <li>Flutter</li>
+                        <li>Dart</li>
+                        <li>Firebase Auth</li>
+                        <li>Cloud Firestore</li>
+                        <li>OpenAI API</li>
+                        <li>Bluetooth</li>
+                        <li>Background Service</li>
+                        <li>Live Activities</li>
+                        <li>PDF</li>
+                        <li>AdMob</li>
+                        <li>In-App Purchase</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_privacy">Privacidade</h2>
+                <div class="project-block-body">
+                    <p data-i18n="privacy">Veículos, manutenções e conversas com a IA ficam na sua conta no Firebase. A localização só é usada pela quilometragem automática, processada em memória e nunca gravada; apenas os quilômetros são salvos. A conta e todos os dados podem ser excluídos pelo próprio app.</p>
+                    <p><a class="text-link" href="termsAndPolicy/" data-keep-lang="termsAndPolicy/"><span data-i18n="ui_terms">Termos de Uso e Política de Privacidade</span><i class="fas fa-arrow-right"></i></a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="project-footer">
+        <div class="container project-footer-inner">
+            <span>&copy; <span id="current-year"></span> Azevedo Tech Solutions</span>
+            <a href="../../" data-keep-lang="../../"><span data-i18n="ui_footer_back">Voltar ao portfólio</span></a>
+        </div>
+    </footer>
+
+    <script>
+        window.PROJECT_I18N = {
+            "pt": {
+                "meta_title": "AutoHub — gestão veicular | Azevedo Tech Solutions",
+                "meta_description": "AutoHub: manutenções, abastecimentos, lembretes, tabela FIPE e assistente de IA para o seu carro. Android e iOS.",
+                "ui_terms": "Termos de Uso e Política de Privacidade",
+                "about_0": "O AutoHub é o caderno de manutenção do carro, só que no celular. Você cadastra o veículo, registra cada troca de óleo, revisão ou abastecimento e cria lembretes por data ou por quilometragem para não perder o próximo serviço.",
+                "about_1": "Quem não quer anotar a quilometragem pode deixar isso com o app: basta vincular o carro ao Bluetooth da central multimídia. Quando o celular conecta e você começa a rodar, o AutoHub estima a distância percorrida e atualiza o odômetro do veículo.",
+                "about_2": "Também dá para consultar o preço na tabela FIPE, exportar o histórico em PDF para mostrar na hora da venda e perguntar ao assistente de IA sobre um barulho, uma luz no painel ou a próxima revisão.",
+                "feature_0_title": "Histórico de manutenções",
+                "feature_0_text": "Serviços, valores e observações de cada veículo, com busca.",
+                "feature_1_title": "Lembretes",
+                "feature_1_text": "Avisos por data ou quilometragem para a próxima manutenção.",
+                "feature_2_title": "Abastecimentos",
+                "feature_2_text": "Registro de cada abastecimento e cálculo do consumo médio.",
+                "feature_3_title": "Quilometragem automática",
+                "feature_3_text": "O odômetro se atualiza via Bluetooth e localização, sem digitar nada.",
+                "feature_4_title": "Tabela FIPE",
+                "feature_4_text": "Preço de referência do veículo e histórico das consultas.",
+                "feature_5_title": "Assistente de IA",
+                "feature_5_text": "Diagnósticos e dúvidas sobre o carro, com base no modelo e no histórico.",
+                "feature_6_title": "Relatório em PDF",
+                "feature_6_text": "O histórico de manutenções pronto para guardar ou compartilhar.",
+                "feature_7_title": "Transferência de veículo",
+                "feature_7_text": "Passe o veículo e o histórico para a conta do novo dono.",
+                "feature_8_title": "Calculadoras",
+                "feature_8_text": "Custo de combustível de uma viagem e preço por quilômetro rodado.",
+                "plan_0": "Veículos",
+                "plan_0_1": "1",
+                "plan_0_2": "Ilimitados",
+                "plan_1": "Manutenções, abastecimentos e lembretes",
+                "ui_yes": "Incluído",
+                "plan_2": "Tabela FIPE e transferência de veículo",
+                "plan_3": "Assistente de IA",
+                "plan_3_1": "5 consultas (+1 por mês)",
+                "plan_3_2": "Ilimitado",
+                "plan_4": "Quilometragem automática via Bluetooth",
+                "plan_5": "Relatório em PDF",
+                "plan_6": "Sem anúncios",
+                "ui_plans": "Planos",
+                "ui_plan_feature": "Recurso",
+                "ui_plan_free": "Grátis",
+                "ui_plan_pro": "Pro",
+                "plans_note": "O Pro tem plano mensal e anual; o anual tem 7 dias grátis e sai com 2 meses de desconto.",
+                "build_0": "Feito em Flutter com Firebase Authentication e Cloud Firestore, com login por e-mail, Google ou Apple. A quilometragem automática combina um serviço em segundo plano, a detecção da conexão Bluetooth e o GPS do aparelho; no iOS, o trajeto em andamento aparece em uma Live Activity.",
+                "build_1": "O assistente usa a API da OpenAI com o contexto do veículo e das manutenções registradas, com limite de uso por plano e filtros na entrada. Os preços vêm de uma API pública da tabela FIPE, e os relatórios são gerados em PDF no próprio aparelho.",
+                "ui_back": "Início",
+                "kicker": "App mobile · Android e iOS",
+                "tagline": "Manutenções, abastecimentos, tabela FIPE e um assistente de IA para cuidar do seu carro.",
+                "ui_about": "Sobre",
+                "ui_features": "Recursos",
+                "ui_build": "Como foi feito",
+                "ui_privacy": "Privacidade",
+                "privacy": "Veículos, manutenções e conversas com a IA ficam na sua conta no Firebase. A localização só é usada pela quilometragem automática, processada em memória e nunca gravada; apenas os quilômetros são salvos. A conta e todos os dados podem ser excluídos pelo próprio app.",
+                "ui_footer_back": "Voltar ao portfólio"
+            },
+            "en": {
+                "meta_title": "AutoHub — vehicle management | Azevedo Tech Solutions",
+                "meta_description": "AutoHub: maintenance, fill-ups, reminders, FIPE prices and an AI assistant for your car. Android and iOS.",
+                "ui_terms": "Terms of Use and Privacy Policy",
+                "about_0": "AutoHub is your car's maintenance logbook, on your phone. Register the vehicle, record every oil change, service or fill-up, and set reminders by date or mileage so you don't miss the next one.",
+                "about_1": "If you'd rather not write down the mileage, the app can do it: just link the car to the Bluetooth of its audio system. When the phone connects and you start driving, AutoHub estimates the distance traveled and updates the vehicle's odometer.",
+                "about_2": "You can also check the FIPE table price, export the history as PDF to show when selling the car, and ask the AI assistant about a noise, a dashboard light or the next service.",
+                "feature_0_title": "Maintenance history",
+                "feature_0_text": "Services, costs and notes for each vehicle, with search.",
+                "feature_1_title": "Reminders",
+                "feature_1_text": "Alerts by date or mileage for the next service.",
+                "feature_2_title": "Fill-ups",
+                "feature_2_text": "A record of every fill-up and the average fuel consumption.",
+                "feature_3_title": "Automatic mileage",
+                "feature_3_text": "The odometer updates through Bluetooth and location, no typing needed.",
+                "feature_4_title": "FIPE table",
+                "feature_4_text": "The vehicle's reference price and a history of lookups.",
+                "feature_5_title": "AI assistant",
+                "feature_5_text": "Diagnostics and questions about the car, based on the model and history.",
+                "feature_6_title": "PDF report",
+                "feature_6_text": "The maintenance history ready to keep or share.",
+                "feature_7_title": "Vehicle transfer",
+                "feature_7_text": "Hand the vehicle and its history over to the new owner's account.",
+                "feature_8_title": "Calculators",
+                "feature_8_text": "Fuel cost of a trip and price per kilometer driven.",
+                "plan_0": "Vehicles",
+                "plan_0_1": "1",
+                "plan_0_2": "Unlimited",
+                "plan_1": "Maintenance, fill-ups and reminders",
+                "ui_yes": "Included",
+                "plan_2": "FIPE table and vehicle transfer",
+                "plan_3": "AI assistant",
+                "plan_3_1": "5 queries (+1 per month)",
+                "plan_3_2": "Unlimited",
+                "plan_4": "Automatic mileage via Bluetooth",
+                "plan_5": "PDF report",
+                "plan_6": "No ads",
+                "ui_plans": "Plans",
+                "ui_plan_feature": "Feature",
+                "ui_plan_free": "Free",
+                "ui_plan_pro": "Pro",
+                "plans_note": "Pro comes in monthly and annual plans; the annual plan has a 7-day free trial and 2 months off.",
+                "build_0": "Built in Flutter with Firebase Authentication and Cloud Firestore, with sign-in by email, Google or Apple. Automatic mileage combines a background service, Bluetooth connection detection and the phone's GPS; on iOS, the trip in progress shows up as a Live Activity.",
+                "build_1": "The assistant uses the OpenAI API with the context of the vehicle and its recorded maintenance, with per-plan usage limits and input filters. Prices come from a public FIPE table API, and reports are generated as PDF on the device.",
+                "ui_back": "Home",
+                "kicker": "Mobile app · Android and iOS",
+                "tagline": "Maintenance, fill-ups, FIPE prices and an AI assistant to take care of your car.",
+                "ui_about": "About",
+                "ui_features": "Features",
+                "ui_build": "How it was built",
+                "ui_privacy": "Privacy",
+                "privacy": "Vehicles, maintenance and AI conversations are stored in your Firebase account. Location is used only by automatic mileage, processed in memory and never recorded; only the kilometers are saved. The account and all its data can be deleted from within the app.",
+                "ui_footer_back": "Back to portfolio"
+            },
+            "es": {
+                "meta_title": "AutoHub — gestión vehicular | Azevedo Tech Solutions",
+                "meta_description": "AutoHub: mantenimientos, cargas de combustible, recordatorios, tabla FIPE y asistente de IA para tu auto. Android e iOS.",
+                "ui_terms": "Términos de Uso y Política de Privacidad",
+                "about_0": "AutoHub es la libreta de mantenimiento del auto, pero en el celular. Registras el vehículo, anotas cada cambio de aceite, revisión o carga de combustible y creas recordatorios por fecha o kilometraje para no perder el próximo servicio.",
+                "about_1": "Si no quieres anotar el kilometraje, la app lo hace por ti: solo vincula el auto al Bluetooth del equipo de audio. Cuando el celular se conecta y empiezas a circular, AutoHub estima la distancia recorrida y actualiza el odómetro del vehículo.",
+                "about_2": "También puedes consultar el precio en la tabla FIPE, exportar el historial en PDF para mostrarlo al vender el auto y preguntar al asistente de IA sobre un ruido, una luz en el tablero o el próximo servicio.",
+                "feature_0_title": "Historial de mantenimientos",
+                "feature_0_text": "Servicios, costos y notas de cada vehículo, con búsqueda.",
+                "feature_1_title": "Recordatorios",
+                "feature_1_text": "Avisos por fecha o kilometraje para el próximo mantenimiento.",
+                "feature_2_title": "Cargas de combustible",
+                "feature_2_text": "Registro de cada carga y cálculo del consumo medio.",
+                "feature_3_title": "Kilometraje automático",
+                "feature_3_text": "El odómetro se actualiza por Bluetooth y ubicación, sin escribir nada.",
+                "feature_4_title": "Tabla FIPE",
+                "feature_4_text": "Precio de referencia del vehículo e historial de consultas.",
+                "feature_5_title": "Asistente de IA",
+                "feature_5_text": "Diagnósticos y dudas sobre el auto, según el modelo y el historial.",
+                "feature_6_title": "Informe en PDF",
+                "feature_6_text": "El historial de mantenimientos listo para guardar o compartir.",
+                "feature_7_title": "Transferencia de vehículo",
+                "feature_7_text": "Pasa el vehículo y su historial a la cuenta del nuevo dueño.",
+                "feature_8_title": "Calculadoras",
+                "feature_8_text": "Costo de combustible de un viaje y precio por kilómetro recorrido.",
+                "plan_0": "Vehículos",
+                "plan_0_1": "1",
+                "plan_0_2": "Ilimitados",
+                "plan_1": "Mantenimientos, cargas y recordatorios",
+                "ui_yes": "Incluido",
+                "plan_2": "Tabla FIPE y transferencia de vehículo",
+                "plan_3": "Asistente de IA",
+                "plan_3_1": "5 consultas (+1 por mes)",
+                "plan_3_2": "Ilimitado",
+                "plan_4": "Kilometraje automático por Bluetooth",
+                "plan_5": "Informe en PDF",
+                "plan_6": "Sin anuncios",
+                "ui_plans": "Planes",
+                "ui_plan_feature": "Función",
+                "ui_plan_free": "Gratis",
+                "ui_plan_pro": "Pro",
+                "plans_note": "Pro tiene plan mensual y anual; el anual tiene 7 días gratis e incluye 2 meses de descuento.",
+                "build_0": "Hecho en Flutter con Firebase Authentication y Cloud Firestore, con inicio de sesión por correo, Google o Apple. El kilometraje automático combina un servicio en segundo plano, la detección de la conexión Bluetooth y el GPS del dispositivo; en iOS, el trayecto en curso aparece en una Live Activity.",
+                "build_1": "El asistente usa la API de OpenAI con el contexto del vehículo y de los mantenimientos registrados, con límite de uso por plan y filtros de entrada. Los precios vienen de una API pública de la tabla FIPE y los informes se generan en PDF en el propio dispositivo.",
+                "ui_back": "Inicio",
+                "kicker": "App móvil · Android e iOS",
+                "tagline": "Mantenimientos, cargas de combustible, tabla FIPE y un asistente de IA para cuidar tu auto.",
+                "ui_about": "Acerca de",
+                "ui_features": "Funciones",
+                "ui_build": "Cómo se hizo",
+                "ui_privacy": "Privacidad",
+                "privacy": "Los vehículos, mantenimientos y conversaciones con la IA se guardan en tu cuenta de Firebase. La ubicación solo la usa el kilometraje automático, se procesa en memoria y nunca se graba; solo se guardan los kilómetros. La cuenta y todos sus datos se pueden eliminar desde la propia app.",
+                "ui_footer_back": "Volver al portafolio"
+            }
+        };
+    </script>
+    <script src="../../js/lang-menu.js"></script>
+    <script src="../../js/project.js"></script>
+</body>
+
+</html>

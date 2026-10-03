@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-	<link rel="shortcut icon" href="../../../images/autohub.png" type="image/x-icon">
-	<meta name="description" content="AutoHub - Terms of Use and Privacy Policy">
-
-	<title>AutoHub - Terms of Use and Privacy Policy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="AutoHub - Termos de Uso e Política de Privacidade / Terms of Use and Privacy Policy / Términos de Uso y Política de Privacidad">
+	<title>AutoHub - Termos de Uso e Política de Privacidade</title>
+	<link rel="icon" href="../../../images/autohub.png" type="image/png">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,242 +18,314 @@
 
 <body>
 	<div class="legal-topbar">
-		<a class="legal-back-link" href="../../../index.html">&larr; azevedotech.dev</a>
-		<div class="language-selector">
-			<button class="lang-btn" onclick="changeLanguage('pt')" id="lang-pt">PT</button>
-			<button class="lang-btn active" onclick="changeLanguage('en')" id="lang-en">EN</button>
-		</div>
+		<a class="legal-back-link" href="../" data-back-label='{"pt": "AutoHub", "en": "AutoHub", "es": "AutoHub"}'>&larr; <span>AutoHub</span></a>
+		<div class="lang-menu" data-lang-menu></div>
 	</div>
 
-	<div class="legal-content">
-		<!-- English Version -->
-		<div lang="en">
+	<main class="legal-content">
+		<article class="legal-doc" data-doc-lang="pt" data-title="AutoHub - Termos de Uso e Política de Privacidade">
 			<div class="app-icon">
-				<img src="../../../images/autohub.png" alt="AutoHub Logo">
-			</div>
-			<h1 class="legal-title">Terms of Use and Privacy Policy</h1>
-			<p class="last-updated">Last Updated: May 26, 2026</p>
-
-			<p>Welcome to AutoHub!</p>
-
-			<p>By using our application, you agree to the following terms and conditions:</p>
-
-			<h2>1. Application Purpose</h2>
-			<p>AutoHub is a vehicle management platform designed to help you consult FIPE table prices, manage and track
-				vehicle maintenance, generate PDF reports of completed maintenance records, and monitor your vehicle's
-				mileage. The application also offers an optional smart mileage tracking feature: you can link a
-				registered vehicle to a Bluetooth device ID (such as your car's audio system), and whenever the app
-				detects that you are traveling while connected to that Bluetooth device, it will automatically update
-				the vehicle's current mileage using an approximate distance calculation. The application is intended for
-				informational and personal record-keeping purposes only.</p>
-
-			<h2>2. User Responsibility</h2>
-			<p>You are solely responsible for the accuracy and completeness of the data entered into
-				AutoHub. We are not responsible for any errors or incorrect information provided
-				by the user. The FIPE table prices shown are for reference only and may not reflect
-				the actual market value of vehicles.</p>
-
-			<h2>3. Data Accuracy</h2>
-			<p>While we strive to provide accurate FIPE table prices and maintenance information, we
-				cannot guarantee the absolute accuracy of all data. Prices may vary based on market
-				conditions, vehicle condition, and other factors. We recommend consulting with
-				automotive professionals for precise valuations and maintenance recommendations.</p>
-
-			<h2>4. Privacy and Data Protection</h2>
-			<p>When using AutoHub, we collect your email address and password exclusively for
-				user authentication purposes. We use Firebase Authentication to securely manage login and
-				user access, ensuring your credentials are protected with industry-standard security
-				measures. We also collect and store information about your vehicle queries,
-				maintenance records, and preferences entered within the application. We commit to
-				protecting your personal information and using this data only for the purposes
-				described in these terms of use and in accordance with our privacy policy.
-			</p>
-
-			<h2>5. App Permissions</h2>
-			<p>AutoHub may request the following device permissions. All optional permissions can be denied without
-				affecting the application's core features:</p>
-			<ul>
-				<li><strong>Location (Optional):</strong> AutoHub may request access to your device's location to
-					calculate the approximate distance traveled when you are in motion. This data is used exclusively
-					for the automatic mileage update feature and only when a vehicle is linked to a Bluetooth device.
-					Location data is processed entirely at runtime, in memory, and is never recorded, stored locally, or
-					sent to our servers. Only the resulting mileage value is saved to your vehicle record.</li>
-				<li><strong>Bluetooth (Optional):</strong> AutoHub may request Bluetooth access to allow you to link a
-					registered vehicle to a specific Bluetooth device ID (such as your car's audio system). When your
-					device connects to that Bluetooth device and detects that you are traveling, the app automatically
-					updates the linked vehicle's mileage using an approximate distance calculation. Bluetooth data is
-					used solely for this purpose and is never shared with third parties.</li>
-			</ul>
-
-			<h2>6. Data Security</h2>
-			<p>We implement appropriate technical and organizational security measures to protect
-				your data against unauthorized access, misuse, or unauthorized disclosure.</p>
-
-			<h2>7. User Consent</h2>
-			<p>By using AutoHub, you consent to the collection, use, and storage of your personal
-				information in accordance with these terms of use and our privacy policy.</p>
-
-			<h2>8. Data Deletion</h2>
-			<p>You have complete freedom to delete your personal data directly through the
-				application, including the option to delete your account. You can delete any data
-				you wish, including deleting your own account. Contact us if you need assistance or
-				have any questions about the data deletion process.</p>
-
-			<h2>9. Updates to Terms of Use and Privacy Policy</h2>
-			<p>We may revise and update these terms of use and our privacy policy periodically. We
-				will notify users of any significant changes and request your consent when
-				applicable.</p>
-
-			<p>By clicking "I accept" or continuing to use the application, you agree
-				to these terms of use and our privacy policy. If you do not agree to these terms,
-				please do not use AutoHub.</p>
-
-			<div class="contact-section">
-				<p><strong>Contact</strong></p>
-				<p>For questions about the Terms of Use or Privacy Policy, please contact us at:</p>
-				<p><strong>azevedotechsolutions@gmail.com</strong></p>
-			</div>
-		</div>
-
-		<!-- Portuguese Version -->
-		<div lang="pt">
-			<div class="app-icon">
-				<img src="../../../images/autohub.png" alt="AutoHub Logo">
+				<img src="../../../images/autohub.png" alt="AutoHub">
 			</div>
 			<h1 class="legal-title">Termos de Uso e Política de Privacidade</h1>
-			<p class="last-updated">Última Atualização: 26 de maio de 2026</p>
+			<p class="last-updated">Última atualização: 3 de outubro de 2026</p>
 
 			<p>Bem-vindo ao AutoHub!</p>
+			<p>Estes Termos de Uso e Política de Privacidade se aplicam ao AutoHub, desenvolvido e publicado pela Azevedo Tech Solutions (CNPJ 55.705.600/0001-47), responsável pelo tratamento dos dados pessoais descritos aqui ("nós"). Ao baixar ou usar o AutoHub, você concorda com este documento. Se não concordar, por favor, não utilize o aplicativo.</p>
 
-			<p>Ao utilizar nosso aplicativo, você concorda com os seguintes termos e condições:</p>
+			<h2>1. Sobre o Aplicativo</h2>
+			<p>O AutoHub é um aplicativo de gestão veicular. Com ele você cadastra seus veículos, registra manutenções e abastecimentos, cria lembretes por data ou quilometragem, consulta a tabela FIPE, usa calculadoras de custo de viagem, exporta o histórico de manutenções em PDF, transfere um veículo para outro usuário e tira dúvidas com um assistente de IA. Opcionalmente, o app pode atualizar a quilometragem sozinho quando o celular se conecta ao Bluetooth do carro. O AutoHub é uma ferramenta de registro e informação e não substitui um mecânico profissional nem uma avaliação oficial do veículo.</p>
 
-			<h2>1. Propósito do Aplicativo</h2>
-			<p>O AutoHub é uma plataforma de gerenciamento de veículos projetada para auxiliar na consulta de preços da
-				tabela FIPE, gerenciar e acompanhar manutenções de veículos, emitir relatórios em PDF das manutenções
-				realizadas e monitorar a quilometragem do seu veículo. O aplicativo também oferece um recurso opcional
-				de atualização inteligente de quilometragem: você pode vincular um veículo cadastrado ao ID de um
-				dispositivo Bluetooth (como o sistema de áudio do seu carro) e, sempre que o aplicativo detectar que
-				você está em deslocamento conectado a esse dispositivo Bluetooth, ele atualizará automaticamente a
-				quilometragem atual do veículo utilizando um cálculo aproximado de distância percorrida. O aplicativo
-				destina-se apenas a fins informativos e de registro pessoal.</p>
+			<h2>2. Conta e Login</h2>
+			<p>Para usar o AutoHub é preciso ter uma conta. Você pode se cadastrar com e-mail e senha ou continuar com Google ou Apple. O login é gerenciado pelo Firebase Authentication; nunca temos acesso à sua senha nem às suas credenciais do Google ou da Apple. Ao usar o Iniciar sessão com a Apple, você pode optar por ocultar seu e-mail real.</p>
 
-			<h2>2. Responsabilidade do Usuário</h2>
-			<p>Você é o único responsável pela precisão e integridade dos dados inseridos no
-				AutoHub. Não nos responsabilizamos por quaisquer erros ou informações incorretas
-				fornecidas pelo usuário. Os preços da tabela FIPE mostrados são apenas para
-				referência e podem não refletir o valor real de mercado dos veículos.</p>
-
-			<h2>3. Precisão dos Dados</h2>
-			<p>Embora nos esforcemos para fornecer preços da tabela FIPE e informações de manutenção
-				precisas, não podemos garantir a absoluta precisão de todos os dados. Os preços
-				podem variar com base nas condições de mercado, estado do veículo e outros fatores.
-				Recomendamos consultar profissionais automotivos para avaliações precisas e
-				recomendações de manutenção.</p>
-
-			<h2>4. Privacidade e Proteção de Dados</h2>
-			<p>Ao utilizar o AutoHub, coletamos seu endereço de e-mail e senha exclusivamente
-				para fins de autenticação de usuário. Utilizamos o Firebase Authentication para gerenciar
-				de forma segura o login e o acesso dos usuários, garantindo que suas credenciais sejam
-				protegidas com medidas de segurança padrão da indústria. Também coletamos e armazenamos
-				informações sobre suas consultas de veículos, registros de manutenção e preferências
-				inseridas dentro do aplicativo. Comprometemo-nos a proteger suas informações pessoais
-				e a utilizar esses dados apenas para os fins descritos neste termo de uso e em
-				conformidade com nossa política de privacidade.</p>
-
-			<h2>5. Permissões do Aplicativo</h2>
-			<p>O AutoHub pode solicitar as seguintes permissões do dispositivo. Todas as permissões opcionais podem ser
-				negadas sem afetar as funcionalidades principais do aplicativo:</p>
+			<h2>3. Informações que Coletamos</h2>
 			<ul>
-				<li><strong>Localização (Opcional):</strong> O AutoHub pode solicitar acesso à localização do seu
-					dispositivo para calcular a distância aproximada percorrida quando você estiver em deslocamento.
-					Esse recurso é utilizado exclusivamente para a atualização automática de quilometragem e somente
-					quando um veículo estiver vinculado a um dispositivo Bluetooth. Os dados de localização são
-					processados integralmente em tempo de execução, na memória do dispositivo, e nunca são gravados,
-					armazenados localmente ou enviados aos nossos servidores. Apenas o valor de quilometragem resultante
-					do cálculo é salvo no registro do veículo.</li>
-				<li><strong>Bluetooth (Opcional):</strong> O AutoHub pode solicitar acesso ao Bluetooth para que você
-					possa vincular um veículo cadastrado ao ID de um dispositivo Bluetooth específico (como o sistema de
-					áudio do seu carro). Quando seu dispositivo se conectar a esse Bluetooth e o aplicativo detectar que
-					você está em deslocamento, a quilometragem do veículo vinculado será atualizada automaticamente
-					utilizando um cálculo aproximado de distância percorrida. Os dados de Bluetooth são utilizados
-					exclusivamente para essa finalidade e não são compartilhados com terceiros.</li>
+				<li><strong>Dados da conta:</strong> e-mail, identificador de usuário e, ao entrar com Google ou Apple, o nome informado por esse serviço.</li>
+				<li><strong>Dados do veículo que você informa:</strong> dados como marca, modelo, ano, placa, apelido e quilometragem, além de manutenções, abastecimentos, lembretes e observações.</li>
+				<li><strong>Histórico FIPE:</strong> os veículos que você consultou na tabela FIPE.</li>
+				<li><strong>Conversas com o assistente de IA:</strong> as perguntas enviadas e as respostas recebidas, salvas na sua conta para consulta posterior.</li>
+				<li><strong>Status da assinatura:</strong> se você tem um plano Pro ativo. Os dados de pagamento são tratados somente pela Apple ou pelo Google; nunca recebemos as informações do seu cartão.</li>
+			</ul>
+			<p>Esses dados são armazenados no Google Firebase (Cloud Firestore), vinculados à sua conta, para que fiquem disponíveis em qualquer dispositivo. Usamos essas informações apenas para oferecer os recursos do app e não as vendemos.</p>
+
+			<h2>4. Assistente de IA</h2>
+			<p>Ao usar o assistente de IA, sua pergunta, os dados do veículo (como marca, modelo, ano e quilometragem) e, quando relevante, o histórico de manutenções são enviados à OpenAI para gerar a resposta. A OpenAI trata esses dados conforme seus termos de API e sua política de privacidade. Não inclua informações pessoais ou sensíveis nas perguntas.</p>
+			<p>As respostas são geradas automaticamente e podem estar incompletas ou erradas. Considere-as uma orientação, não um diagnóstico, e sempre consulte um mecânico qualificado antes de tomar decisões sobre a segurança do veículo. O plano gratuito inclui um número limitado de consultas; assinantes Pro têm consultas ilimitadas. Você pode apagar suas conversas no app a qualquer momento.</p>
+
+			<h2>5. Preços da Tabela FIPE</h2>
+			<p>Os preços FIPE são obtidos de uma API pública da tabela FIPE e exibidos apenas como referência. Eles podem não refletir o valor real de mercado de um veículo específico, que depende do estado de conservação, da quilometragem e da região.</p>
+
+			<h2>6. Quilometragem Automática via Bluetooth (Opcional, Pro)</h2>
+			<p>Você pode vincular um veículo cadastrado a um dispositivo Bluetooth, como a central multimídia do carro. Quando o celular está conectado a esse dispositivo e o app detecta que você está em movimento, o AutoHub usa sua localização, inclusive em segundo plano, para estimar a distância percorrida e atualizar a quilometragem do veículo. No iOS, uma Atividade ao Vivo pode mostrar o trajeto em andamento.</p>
+			<p>Os dados de localização são processados apenas em memória enquanto o trajeto acontece. Eles nunca são gravados, armazenados no dispositivo ou enviados aos nossos servidores; somente a quilometragem resultante é salva no veículo. Você pode desvincular o dispositivo Bluetooth ou desativar o recurso a qualquer momento.</p>
+
+			<h2>7. Permissões do Dispositivo</h2>
+			<p>Todas as permissões abaixo são opcionais e podem ser negadas sem afetar os recursos principais do app:</p>
+			<ul>
+				<li><strong>Localização, inclusive em segundo plano:</strong> usada apenas pelo recurso de quilometragem automática descrito acima.</li>
+				<li><strong>Bluetooth:</strong> usado para detectar quando o celular se conecta ao dispositivo Bluetooth vinculado a um veículo. As informações de Bluetooth não são compartilhadas com terceiros.</li>
+				<li><strong>Notificações:</strong> usadas para lembretes de manutenção, lembretes de atualização de quilometragem e o status do rastreamento automático.</li>
 			</ul>
 
-			<h2>6. Segurança dos Dados</h2>
-			<p>Implementamos medidas de segurança técnicas e organizacionais adequadas para proteger
-				seus dados contra acesso não autorizado, uso indevido ou divulgação não autorizada.
-			</p>
+			<h2>8. Plano Gratuito e Publicidade</h2>
+			<p>O AutoHub pode ser usado gratuitamente com anúncios do Google AdMob, exibidos ao acessar alguns recursos. O AdMob pode coletar o identificador de publicidade do aparelho, o endereço IP e as interações com os anúncios para exibi-los e medi-los, conforme as políticas do Google e as opções de privacidade do seu dispositivo.</p>
 
-			<h2>7. Consentimento do Usuário</h2>
-			<p>Ao utilizar o AutoHub, você consente com a coleta, uso e armazenamento de suas
-				informações pessoais de acordo com os termos deste termo de uso e nossa política de
-				privacidade.</p>
+			<h2>9. Assinatura AutoHub Pro</h2>
+			<p>O AutoHub Pro é uma assinatura opcional, nos planos mensal e anual, que remove os anúncios e libera recursos como veículos ilimitados (o plano gratuito permite um), consultas ilimitadas ao assistente de IA, quilometragem automática via Bluetooth e exportação em PDF. Os recursos e o preço de cada plano, e eventual período de teste gratuito, são exibidos no app antes da compra.</p>
+			<ul>
+				<li>O pagamento é cobrado na sua conta Apple ID ou Google Play ao confirmar a compra.</li>
+				<li>A assinatura é renovada automaticamente ao fim de cada período, a menos que a renovação automática seja desativada pelo menos 24 horas antes do fim do período atual.</li>
+				<li>Se houver teste gratuito, a cobrança acontece ao fim dele, a menos que você cancele antes.</li>
+				<li>Você pode gerenciar ou cancelar a qualquer momento nas configurações da sua conta na App Store ou no Google Play. O cancelamento vale ao fim do período atual, e o acesso Pro continua até lá.</li>
+				<li>Reembolsos são tratados pela Apple ou pelo Google, conforme as políticas de cada loja.</li>
+			</ul>
 
-			<h2>8. Exclusão de Dados</h2>
-			<p>Você tem total liberdade para apagar seus dados pessoais diretamente pelo aplicativo,
-				incluindo a opção de excluir sua conta. Você pode deletar os dados que desejar,
-				inclusive deletar sua própria conta. Entre em contato conosco se precisar de
-				assistência ou tiver alguma dúvida sobre o processo de exclusão de dados.</p>
+			<h2>10. Transferência de Veículo</h2>
+			<p>Você pode transferir um veículo, com seus registros, para outra conta do AutoHub informando o e-mail do destinatário e confirmando com sua senha. Após a transferência, o veículo passa a pertencer à outra conta e você perde o acesso a ele permanentemente. Confira o e-mail antes de confirmar.</p>
 
-			<h2>9. Atualizações dos Termos de Uso e Política de Privacidade</h2>
-			<p>Podemos revisar e atualizar estes termos de uso e nossa política de privacidade
-				periodicamente. Notificaremos os usuários sobre quaisquer alterações significativas
-				e solicitaremos seu consentimento, quando aplicável.</p>
+			<h2>11. Suas Responsabilidades</h2>
+			<p>Você é responsável pela exatidão das informações que cadastra e por manter suas credenciais de acesso seguras. Não use o AutoHub enquanto dirige. Não nos responsabilizamos por decisões tomadas com base em dados informados por você, em preços FIPE ou em respostas do assistente de IA.</p>
 
-			<p>Ao clicar em "Eu aceito" ou continuar a utilizar o aplicativo, você
-				concorda com estes termos de uso e nossa política de privacidade. Se você não
-				concorda com estes termos, por favor, não use o AutoHub.</p>
+			<h2>12. Serviços de Terceiros</h2>
+			<p>O AutoHub utiliza os seguintes provedores, cada um com sua própria política de privacidade:</p>
+			<ul>
+				<li>Google Firebase (Authentication e Cloud Firestore) — contas e armazenamento de dados;</li>
+				<li>Login com Google e Iniciar sessão com a Apple — métodos de login opcionais;</li>
+				<li>OpenAI — respostas do assistente de IA;</li>
+				<li>API pública da tabela FIPE — consulta de preços de veículos;</li>
+				<li>Google AdMob — anúncios no plano gratuito;</li>
+				<li>Apple App Store e Google Play — download, atualizações e pagamento de assinaturas.</li>
+			</ul>
+
+			<h2>13. Segurança dos Dados</h2>
+			<p>Adotamos medidas técnicas e organizacionais, incluindo conexões criptografadas e regras de acesso que restringem os dados de cada usuário à própria conta, para proteger suas informações contra acesso não autorizado, uso indevido ou divulgação.</p>
+
+			<h2>14. Retenção e Exclusão de Dados</h2>
+			<p>Mantemos seus dados enquanto sua conta existir. Você pode editar ou apagar qualquer veículo, registro, consulta FIPE ou conversa com a IA no app. Também pode excluir sua conta em Configurações: isso remove permanentemente a conta e todos os dados associados do nosso banco de dados. Essa ação não pode ser desfeita. Se precisar de ajuda, fale conosco pelo e-mail abaixo.</p>
+
+			<h2>15. Seus Direitos</h2>
+			<p>Nos termos da Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018) e demais leis aplicáveis, você pode solicitar a confirmação de que tratamos seus dados, o acesso a eles, a correção de dados incompletos ou desatualizados, a exclusão, a portabilidade, informações sobre com quem os compartilhamos e revogar seu consentimento a qualquer momento. Para exercer esses direitos, escreva para o e-mail no final desta página.</p>
+
+			<h2>16. Crianças</h2>
+			<p>O AutoHub não é direcionado a menores de 13 anos e não coletamos intencionalmente dados pessoais dessas crianças. Se você é pai, mãe ou responsável e acredita que uma criança nos forneceu dados pessoais, entre em contato e faremos a exclusão.</p>
+
+			<h2>17. Alterações Neste Documento</h2>
+			<p>Podemos atualizar este documento quando o aplicativo mudar ou quando a lei exigir. A data no topo da página indica a revisão mais recente, e alterações relevantes serão comunicadas no aplicativo ou nesta página. Continuar usando o aplicativo após uma atualização significa que você aceita a nova versão.</p>
+
+			<h2>18. Lei Aplicável</h2>
+			<p>Estes termos são regidos pelas leis da República Federativa do Brasil.</p>
 
 			<div class="contact-section">
 				<p><strong>Contato</strong></p>
-				<p>Para questões sobre os Termos de Uso ou Política de Privacidade, entre em contato
-					conosco em:</p>
-				<p><strong>azevedotechsolutions@gmail.com</strong></p>
+				<p>Dúvidas sobre estes Termos de Uso ou esta Política de Privacidade, ou solicitações sobre seus dados:</p>
+				<p><a href="mailto:azevedotechsolutions@gmail.com"><strong>azevedotechsolutions@gmail.com</strong></a></p>
 			</div>
-		</div>
-	</div>
+		</article>
 
-	<script>
-		function changeLanguage(lang) {
-			// Validate language parameter - only accept 'en' or 'pt'
-			if (lang !== 'en' && lang !== 'pt') {
-				lang = 'en';
-			}
+		<article class="legal-doc" data-doc-lang="en" data-title="AutoHub - Terms of Use and Privacy Policy">
+			<div class="app-icon">
+				<img src="../../../images/autohub.png" alt="AutoHub">
+			</div>
+			<h1 class="legal-title">Terms of Use and Privacy Policy</h1>
+			<p class="last-updated">Last updated: October 3, 2026</p>
 
-			// Update active button
-			document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-			document.getElementById(`lang-${lang}`).classList.add('active');
+			<p>Welcome to AutoHub!</p>
+			<p>These Terms of Use and Privacy Policy apply to AutoHub, developed and published by Azevedo Tech Solutions (CNPJ 55.705.600/0001-47), which is responsible for the processing of personal data described here ("we", "us"). By downloading or using AutoHub, you agree to this document. If you do not agree, please do not use the app.</p>
 
-			// Hide all language versions
-			document.querySelectorAll('[lang]').forEach(elem => {
-				elem.classList.remove('active');
-			});
+			<h2>1. About the App</h2>
+			<p>AutoHub is a vehicle management app. With it you can register your vehicles, record maintenance and fuel fill-ups, set reminders by date or mileage, check FIPE table prices, use trip cost calculators, export your maintenance history as PDF, transfer a vehicle to another user and ask an AI assistant about your car. Optionally, the app can update your vehicle's mileage automatically when your phone connects to the car's Bluetooth. AutoHub is a record-keeping and informational tool and does not replace a professional mechanic or an official vehicle appraisal.</p>
 
-			// Show selected language version
-			document.querySelector(`[lang="${lang}"]`).classList.add('active');
+			<h2>2. Account and Sign-In</h2>
+			<p>To use AutoHub you need an account. You can sign up with an email and password or continue with Google or Apple. Sign-in is managed by Firebase Authentication; we never have access to your password or to your Google or Apple credentials. If you use Sign in with Apple, you may choose to hide your real email address.</p>
 
-			// Update URL with language parameter
-			const url = new URL(window.location.href);
-			url.searchParams.set('lang', lang);
-			window.history.replaceState({}, '', url);
-		}
+			<h2>3. Information We Collect</h2>
+			<ul>
+				<li><strong>Account data:</strong> email address, user ID and, when you sign in with Google or Apple, the name provided by that service.</li>
+				<li><strong>Vehicle data you enter:</strong> details such as brand, model, year, license plate, nickname and mileage, plus maintenance records, fuel fill-ups, reminders and notes.</li>
+				<li><strong>FIPE history:</strong> the vehicles you looked up in the FIPE table.</li>
+				<li><strong>AI assistant conversations:</strong> the questions you send and the answers received, saved to your account so you can review them later.</li>
+				<li><strong>Subscription status:</strong> whether you have an active Pro plan. Payment details are handled only by Apple or Google; we never receive your card information.</li>
+			</ul>
+			<p>This data is stored in Google Firebase (Cloud Firestore), linked to your account, so it stays available across devices. We use it only to provide the app's features and we do not sell it.</p>
 
-		// Function to get URL parameter
-		function getUrlParameter(name) {
-			const urlParams = new URLSearchParams(window.location.search);
-			return urlParams.get(name);
-		}
+			<h2>4. AI Assistant</h2>
+			<p>When you use the AI assistant, your question, the vehicle's details (such as brand, model, year and mileage) and, when relevant, its maintenance history are sent to OpenAI to generate the answer. OpenAI processes this data under its API terms and privacy policy. Please do not include personal or sensitive information in your questions.</p>
+			<p>Answers are generated automatically and may be incomplete or wrong. Treat them as guidance, not as a diagnosis, and always consult a qualified mechanic before making decisions about your vehicle's safety. The free plan includes a limited number of queries; Pro subscribers have unlimited queries. You can delete your conversations in the app at any time.</p>
 
-		// Set initial language based on URL parameter or default to English
-		document.addEventListener('DOMContentLoaded', function () {
-			let lang = getUrlParameter('lang') || 'en';
-			// Validate language parameter - only accept 'en' or 'pt'
-			if (lang !== 'en' && lang !== 'pt') {
-				lang = 'en';
-			}
-			changeLanguage(lang);
-		});
-	</script>
+			<h2>5. FIPE Table Prices</h2>
+			<p>FIPE prices are obtained from a public FIPE table API and shown for reference only. They may not reflect the actual market value of a specific vehicle, which depends on its condition, mileage and region.</p>
+
+			<h2>6. Automatic Mileage via Bluetooth (Optional, Pro)</h2>
+			<p>You can link a registered vehicle to a Bluetooth device, such as the car's audio system. When your phone is connected to that device and the app detects that you are moving, AutoHub uses your location, including in the background, to estimate the distance traveled and update the vehicle's mileage. On iOS, a Live Activity may show the trip in progress.</p>
+			<p>Location data is processed only in memory while the trip is running. It is never recorded, stored on the device or sent to our servers; only the resulting mileage is saved to the vehicle. You can unlink the Bluetooth device or turn the feature off at any time.</p>
+
+			<h2>7. Device Permissions</h2>
+			<p>All permissions below are optional and can be denied without affecting the app's main features:</p>
+			<ul>
+				<li><strong>Location, including background location:</strong> used only by the automatic mileage feature described above.</li>
+				<li><strong>Bluetooth:</strong> used to detect when your phone connects to the Bluetooth device linked to a vehicle. Bluetooth information is not shared with third parties.</li>
+				<li><strong>Notifications:</strong> used for maintenance reminders, mileage update reminders and the status of automatic tracking.</li>
+			</ul>
+
+			<h2>8. Free Plan and Advertising</h2>
+			<p>AutoHub can be used for free with ads served by Google AdMob, shown when you access some features. AdMob may collect your device's advertising identifier, IP address and interactions with ads to deliver and measure them, according to Google's policies and the privacy choices on your device.</p>
+
+			<h2>9. AutoHub Pro Subscription</h2>
+			<p>AutoHub Pro is an optional subscription, offered in monthly and annual plans, that removes ads and unlocks features such as unlimited vehicles (the free plan allows one), unlimited AI assistant queries, automatic mileage via Bluetooth and PDF export. The features and price of each plan, and any free trial, are shown in the app before purchase.</p>
+			<ul>
+				<li>Payment is charged to your Apple ID or Google Play account when you confirm the purchase.</li>
+				<li>The subscription renews automatically at the end of each period unless auto-renewal is turned off at least 24 hours before the current period ends.</li>
+				<li>If a free trial is offered, you will be charged when it ends unless you cancel before then.</li>
+				<li>You can manage or cancel it at any time in your App Store or Google Play account settings. Cancellation takes effect at the end of the current period, and you keep Pro access until then.</li>
+				<li>Refunds are handled by Apple or Google according to their own policies.</li>
+			</ul>
+
+			<h2>10. Vehicle Transfer</h2>
+			<p>You can transfer a vehicle, with its records, to another AutoHub account by entering the recipient's email and confirming with your password. After the transfer the vehicle belongs to the other account and you permanently lose access to it. Make sure the email is correct before confirming.</p>
+
+			<h2>11. Your Responsibilities</h2>
+			<p>You are responsible for the accuracy of the information you enter and for keeping your sign-in credentials secure. Do not use AutoHub while driving. We are not responsible for decisions made based on data entered by you, on FIPE prices or on AI assistant answers.</p>
+
+			<h2>12. Third-Party Services</h2>
+			<p>AutoHub relies on the following providers, each with its own privacy policy:</p>
+			<ul>
+				<li>Google Firebase (Authentication and Cloud Firestore) — accounts and data storage;</li>
+				<li>Google Sign-In and Sign in with Apple — optional sign-in methods;</li>
+				<li>OpenAI — AI assistant answers;</li>
+				<li>FIPE table public API — vehicle price lookups;</li>
+				<li>Google AdMob — advertising on the free plan;</li>
+				<li>Apple App Store and Google Play — downloads, updates and subscription payments.</li>
+			</ul>
+
+			<h2>13. Data Security</h2>
+			<p>We use technical and organizational measures, including encrypted connections and access rules that restrict each user's data to their own account, to protect your information against unauthorized access, misuse or disclosure.</p>
+
+			<h2>14. Data Retention and Deletion</h2>
+			<p>We keep your data while your account exists. You can edit or delete any vehicle, record, FIPE query or AI conversation in the app. You can also delete your account in Settings: this permanently removes your account and all associated data from our database. This action cannot be undone. If you need help, contact us at the email below.</p>
+
+			<h2>15. Your Rights</h2>
+			<p>Under Brazil's General Data Protection Law (LGPD, Law No. 13,709/2018) and other applicable laws, you may request confirmation that we process your data, access to it, correction of incomplete or inaccurate data, deletion, portability, information about who we share it with, and withdraw your consent at any time. To exercise these rights, write to the email at the end of this page.</p>
+
+			<h2>16. Children</h2>
+			<p>AutoHub is not directed at children under 13, and we do not knowingly collect personal data from them. If you are a parent or guardian and believe a child has given us personal data, contact us and we will delete it.</p>
+
+			<h2>17. Changes to This Document</h2>
+			<p>We may update this document when the app changes or when required by law. The date at the top of the page shows the latest revision, and significant changes will be announced in the app or on this page. Continuing to use the app after an update means you accept the new version.</p>
+
+			<h2>18. Governing Law</h2>
+			<p>These terms are governed by the laws of the Federative Republic of Brazil.</p>
+
+			<div class="contact-section">
+				<p><strong>Contact</strong></p>
+				<p>Questions about these Terms of Use or this Privacy Policy, or requests about your data:</p>
+				<p><a href="mailto:azevedotechsolutions@gmail.com"><strong>azevedotechsolutions@gmail.com</strong></a></p>
+			</div>
+		</article>
+
+		<article class="legal-doc" data-doc-lang="es" data-title="AutoHub - Términos de Uso y Política de Privacidad">
+			<div class="app-icon">
+				<img src="../../../images/autohub.png" alt="AutoHub">
+			</div>
+			<h1 class="legal-title">Términos de Uso y Política de Privacidad</h1>
+			<p class="last-updated">Última actualización: 3 de octubre de 2026</p>
+
+			<p>¡Bienvenido a AutoHub!</p>
+			<p>Estos Términos de Uso y Política de Privacidad se aplican a AutoHub, desarrollado y publicado por Azevedo Tech Solutions (CNPJ 55.705.600/0001-47), responsable del tratamiento de los datos personales descritos aquí ("nosotros"). Al descargar o usar AutoHub, aceptas este documento. Si no estás de acuerdo, por favor no utilices la aplicación.</p>
+
+			<h2>1. Sobre la Aplicación</h2>
+			<p>AutoHub es una aplicación de gestión vehicular. Con ella registras tus vehículos, anotas mantenimientos y cargas de combustible, creas recordatorios por fecha o kilometraje, consultas la tabla FIPE, usas calculadoras de costo de viaje, exportas el historial de mantenimientos en PDF, transfieres un vehículo a otro usuario y resuelves dudas con un asistente de IA. De forma opcional, la app puede actualizar el kilometraje sola cuando el celular se conecta al Bluetooth del auto. AutoHub es una herramienta de registro e información y no sustituye a un mecánico profesional ni a una tasación oficial del vehículo.</p>
+
+			<h2>2. Cuenta e Inicio de Sesión</h2>
+			<p>Para usar AutoHub necesitas una cuenta. Puedes registrarte con correo y contraseña o continuar con Google o Apple. El inicio de sesión lo gestiona Firebase Authentication; nunca tenemos acceso a tu contraseña ni a tus credenciales de Google o Apple. Si usas Iniciar sesión con Apple, puedes elegir ocultar tu correo real.</p>
+
+			<h2>3. Información que Recopilamos</h2>
+			<ul>
+				<li><strong>Datos de la cuenta:</strong> correo, identificador de usuario y, al entrar con Google o Apple, el nombre que proporciona ese servicio.</li>
+				<li><strong>Datos del vehículo que ingresas:</strong> datos como marca, modelo, año, patente, apodo y kilometraje, además de mantenimientos, cargas de combustible, recordatorios y notas.</li>
+				<li><strong>Historial FIPE:</strong> los vehículos que consultaste en la tabla FIPE.</li>
+				<li><strong>Conversaciones con el asistente de IA:</strong> las preguntas enviadas y las respuestas recibidas, guardadas en tu cuenta para que puedas revisarlas después.</li>
+				<li><strong>Estado de la suscripción:</strong> si tienes un plan Pro activo. Los datos de pago los gestionan solo Apple o Google; nunca recibimos la información de tu tarjeta.</li>
+			</ul>
+			<p>Estos datos se almacenan en Google Firebase (Cloud Firestore), vinculados a tu cuenta, para que estén disponibles en cualquier dispositivo. Los usamos solo para ofrecer las funciones de la app y no los vendemos.</p>
+
+			<h2>4. Asistente de IA</h2>
+			<p>Al usar el asistente de IA, tu pregunta, los datos del vehículo (como marca, modelo, año y kilometraje) y, cuando corresponde, su historial de mantenimientos se envían a OpenAI para generar la respuesta. OpenAI trata estos datos según sus términos de API y su política de privacidad. No incluyas información personal o sensible en tus preguntas.</p>
+			<p>Las respuestas se generan automáticamente y pueden ser incompletas o incorrectas. Tómalas como una orientación, no como un diagnóstico, y consulta siempre a un mecánico calificado antes de tomar decisiones sobre la seguridad del vehículo. El plan gratuito incluye un número limitado de consultas; los suscriptores Pro tienen consultas ilimitadas. Puedes borrar tus conversaciones en la app cuando quieras.</p>
+
+			<h2>5. Precios de la Tabla FIPE</h2>
+			<p>Los precios FIPE se obtienen de una API pública de la tabla FIPE y se muestran solo como referencia. Pueden no reflejar el valor real de mercado de un vehículo concreto, que depende de su estado, su kilometraje y la región.</p>
+
+			<h2>6. Kilometraje Automático por Bluetooth (Opcional, Pro)</h2>
+			<p>Puedes vincular un vehículo registrado a un dispositivo Bluetooth, como el equipo de audio del auto. Cuando el celular está conectado a ese dispositivo y la app detecta que estás en movimiento, AutoHub usa tu ubicación, incluso en segundo plano, para estimar la distancia recorrida y actualizar el kilometraje del vehículo. En iOS, una Actividad en Vivo puede mostrar el trayecto en curso.</p>
+			<p>Los datos de ubicación se procesan solo en memoria mientras dura el trayecto. Nunca se graban, se guardan en el dispositivo ni se envían a nuestros servidores; solo se guarda el kilometraje resultante en el vehículo. Puedes desvincular el dispositivo Bluetooth o desactivar la función en cualquier momento.</p>
+
+			<h2>7. Permisos del Dispositivo</h2>
+			<p>Todos los permisos siguientes son opcionales y pueden denegarse sin afectar las funciones principales de la app:</p>
+			<ul>
+				<li><strong>Ubicación, incluso en segundo plano:</strong> se usa solo para la función de kilometraje automático descrita arriba.</li>
+				<li><strong>Bluetooth:</strong> se usa para detectar cuándo el celular se conecta al dispositivo Bluetooth vinculado a un vehículo. La información de Bluetooth no se comparte con terceros.</li>
+				<li><strong>Notificaciones:</strong> se usan para recordatorios de mantenimiento, recordatorios de actualización de kilometraje y el estado del seguimiento automático.</li>
+			</ul>
+
+			<h2>8. Plan Gratuito y Publicidad</h2>
+			<p>AutoHub puede usarse gratis con anuncios de Google AdMob, que aparecen al acceder a algunas funciones. AdMob puede recopilar el identificador de publicidad del dispositivo, la dirección IP y las interacciones con los anuncios para mostrarlos y medirlos, según las políticas de Google y las opciones de privacidad de tu dispositivo.</p>
+
+			<h2>9. Suscripción AutoHub Pro</h2>
+			<p>AutoHub Pro es una suscripción opcional, en planes mensual y anual, que elimina los anuncios y desbloquea funciones como vehículos ilimitados (el plan gratuito permite uno), consultas ilimitadas al asistente de IA, kilometraje automático por Bluetooth y exportación en PDF. Las funciones y el precio de cada plan, y cualquier período de prueba gratuito, se muestran en la app antes de la compra.</p>
+			<ul>
+				<li>El pago se carga a tu cuenta de Apple ID o Google Play al confirmar la compra.</li>
+				<li>La suscripción se renueva automáticamente al final de cada período, salvo que desactives la renovación automática al menos 24 horas antes de que termine el período actual.</li>
+				<li>Si hay una prueba gratuita, el cobro se realiza al terminar, salvo que canceles antes.</li>
+				<li>Puedes gestionarla o cancelarla en cualquier momento en los ajustes de tu cuenta de App Store o Google Play. La cancelación se aplica al final del período actual y mantienes el acceso Pro hasta entonces.</li>
+				<li>Los reembolsos los gestionan Apple o Google según sus propias políticas.</li>
+			</ul>
+
+			<h2>10. Transferencia de Vehículo</h2>
+			<p>Puedes transferir un vehículo, con sus registros, a otra cuenta de AutoHub indicando el correo del destinatario y confirmando con tu contraseña. Tras la transferencia, el vehículo pertenece a la otra cuenta y pierdes el acceso a él de forma permanente. Verifica el correo antes de confirmar.</p>
+
+			<h2>11. Tus Responsabilidades</h2>
+			<p>Eres responsable de la exactitud de la información que ingresas y de mantener seguras tus credenciales de acceso. No uses AutoHub mientras conduces. No somos responsables de decisiones tomadas con base en datos ingresados por ti, en precios FIPE o en respuestas del asistente de IA.</p>
+
+			<h2>12. Servicios de Terceros</h2>
+			<p>AutoHub utiliza los siguientes proveedores, cada uno con su propia política de privacidad:</p>
+			<ul>
+				<li>Google Firebase (Authentication y Cloud Firestore) — cuentas y almacenamiento de datos;</li>
+				<li>Inicio de sesión con Google e Iniciar sesión con Apple — métodos de acceso opcionales;</li>
+				<li>OpenAI — respuestas del asistente de IA;</li>
+				<li>API pública de la tabla FIPE — consulta de precios de vehículos;</li>
+				<li>Google AdMob — anuncios en el plan gratuito;</li>
+				<li>Apple App Store y Google Play — descargas, actualizaciones y pago de suscripciones.</li>
+			</ul>
+
+			<h2>13. Seguridad de los Datos</h2>
+			<p>Aplicamos medidas técnicas y organizativas, incluidas conexiones cifradas y reglas de acceso que limitan los datos de cada usuario a su propia cuenta, para proteger tu información contra accesos no autorizados, uso indebido o divulgación.</p>
+
+			<h2>14. Conservación y Eliminación de Datos</h2>
+			<p>Conservamos tus datos mientras tu cuenta exista. Puedes editar o borrar cualquier vehículo, registro, consulta FIPE o conversación con la IA en la app. También puedes eliminar tu cuenta en Ajustes: esto borra de forma permanente la cuenta y todos los datos asociados de nuestra base de datos. Esta acción no se puede deshacer. Si necesitas ayuda, escríbenos al correo indicado abajo.</p>
+
+			<h2>15. Tus Derechos</h2>
+			<p>De acuerdo con la Ley General de Protección de Datos de Brasil (LGPD, Ley n.º 13.709/2018) y demás leyes aplicables, puedes solicitar la confirmación de que tratamos tus datos, el acceso a ellos, la corrección de datos incompletos o inexactos, la eliminación, la portabilidad, información sobre con quién los compartimos y retirar tu consentimiento en cualquier momento. Para ejercer estos derechos, escribe al correo indicado al final de esta página.</p>
+
+			<h2>16. Menores de Edad</h2>
+			<p>AutoHub no está dirigido a menores de 13 años y no recopilamos intencionalmente datos personales de ellos. Si eres padre, madre o tutor y crees que un menor nos proporcionó datos personales, contáctanos y los eliminaremos.</p>
+
+			<h2>17. Cambios en Este Documento</h2>
+			<p>Podemos actualizar este documento cuando la aplicación cambie o cuando la ley lo exija. La fecha en la parte superior indica la revisión más reciente, y los cambios relevantes se informarán en la aplicación o en esta página. Seguir usando la aplicación después de una actualización significa que aceptas la nueva versión.</p>
+
+			<h2>18. Ley Aplicable</h2>
+			<p>Estos términos se rigen por las leyes de la República Federativa de Brasil.</p>
+
+			<div class="contact-section">
+				<p><strong>Contacto</strong></p>
+				<p>Preguntas sobre estos Términos de Uso o esta Política de Privacidad, o solicitudes sobre tus datos:</p>
+				<p><a href="mailto:azevedotechsolutions@gmail.com"><strong>azevedotechsolutions@gmail.com</strong></a></p>
+			</div>
+		</article>
+	</main>
+
+	<script src="../../../js/lang-menu.js"></script>
+	<script src="../../../js/legal.js"></script>
 </body>
 
 </html>

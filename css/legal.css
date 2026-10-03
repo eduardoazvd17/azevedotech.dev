@@ -29,46 +29,22 @@ body {
     color: var(--text);
 }
 
-.language-selector {
-    display: flex;
-    gap: var(--spacing-xs);
-}
-
-.lang-btn {
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--text-secondary);
-    padding: 4px 10px;
-    border-radius: var(--border-radius-sm);
-    cursor: pointer;
-    transition: all var(--transition-fast);
-    font-family: var(--font-family);
-    font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-semibold);
-}
-
-.lang-btn:hover {
-    border-color: var(--text);
-    color: var(--text);
-}
-
-.lang-btn.active {
-    background: var(--text);
-    color: var(--bg);
-    border-color: var(--text);
-}
-
 .legal-content {
     max-width: 760px;
     margin: 0 auto;
     padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-xxxl);
 }
 
-[lang] {
+.legal-doc {
     display: none;
 }
 
-[lang].active {
+.legal-doc.active {
+    display: block;
+}
+
+/* Antes do JS escolher o idioma, mostra a primeira versão em vez de uma página vazia */
+.legal-content:not(:has(.legal-doc.active)) .legal-doc:first-of-type {
     display: block;
 }
 

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rocket Rush: pilote um foguete, desvie dos obstáculos, junte moedas e dispute o ranking global.">
+    <meta name="author" content="Eduardo Azevedo">
+    <title>Rocket Rush — jogo casual | Azevedo Tech Solutions</title>
+    <link rel="icon" href="../../images/rocketrush.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../images/rocketrush.png" type="image/png">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+
+<body>
+    <header class="project-topbar">
+        <div class="container project-topbar-inner">
+            <a class="project-back" href="../../" data-keep-lang="../../">
+                <i class="fas fa-arrow-left"></i> <span data-i18n="ui_back">Início</span>
+            </a>
+            <div class="lang-menu" data-lang-menu></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <div class="container project-header-inner">
+                <img class="project-header-icon" src="../../images/rocketrush.png" alt="Rocket Rush">
+                <div>
+                    <p class="project-kicker" data-i18n="kicker">Jogo · Android e web</p>
+                    <h1>Rocket Rush</h1>
+                    <p class="project-lede" data-i18n="tagline">Pilote um foguete, desvie dos obstáculos e suba no ranking global.</p>
+                    <div class="project-actions">
+                    <a class="store-button" href="https://play.google.com/store/apps/details?id=dev.azevedotech.rocketgame" target="_blank" rel="noopener">
+                        <i class="fab fa-google-play"></i> <span>Google Play</span>
+                    </a>
+                    <a class="store-button" href="https://rocketrush.web.app" target="_blank" rel="noopener">
+                        <i class="fas fa-gamepad"></i> <span data-i18n="ui_web">Jogar no navegador</span>
+                    </a>
+                    <a class="store-button store-button--ghost" href="termsAndPolicy/" data-keep-lang="termsAndPolicy/">
+                        <span data-i18n="ui_terms">Termos de Uso e Política de Privacidade</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_about">Sobre</h2>
+                <div class="project-block-body">
+                    <p data-i18n="about_0">Rocket Rush é um jogo casual de partidas rápidas. O foguete sobe sem parar, os obstáculos ficam mais difíceis e cada moeda coletada conta. A pontuação vai para um ranking global, e as moedas compram novas naves na loja.</p>
+                    <p data-i18n="about_1">Dá para controlar arrastando o dedo, inclinando o celular ou pelo teclado, na versão web. Quando a nave é destruída, ela pode ser consertada com moedas ou assistindo a um anúncio para continuar a partida.</p>
+                    <p data-i18n="about_2">O jogo é gratuito e não tem compras dentro do app. Também é possível jogar como convidado, sem conta.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_features">Recursos</h2>
+                <div class="project-block-body">
+                    <dl class="feature-list">
+                        <div>
+                            <dt data-i18n="feature_0_title">Três formas de controle</dt>
+                            <dd data-i18n="feature_0_text">Arrastar, inclinar o celular ou usar as setas do teclado.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_1_title">Ranking global</dt>
+                            <dd data-i18n="feature_1_text">A melhor pontuação de cada piloto, atualizada a cada partida.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_2_title">Moedas e loja</dt>
+                            <dd data-i18n="feature_2_text">As moedas coletadas viram novas naves no inventário.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_3_title">Constelações</dt>
+                            <dd data-i18n="feature_3_text">Os signos do zodíaco marcam a altitude ao longo da subida.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_4_title">Conserto da nave</dt>
+                            <dd data-i18n="feature_4_text">Continue a partida pagando com moedas ou assistindo a um anúncio.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_5_title">Som e vibração</dt>
+                            <dd data-i18n="feature_5_text">Motor sintetizado, trilha nos menus e resposta tátil, tudo ajustável.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_6_title">Versão web</dt>
+                            <dd data-i18n="feature_6_text">O mesmo jogo e o mesmo ranking direto no navegador.</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_build">Como foi feito</h2>
+                <div class="project-block-body">
+                    <p data-i18n="build_0">Feito em Flutter, rodando no Android, no iOS e na web a partir do mesmo código. O áudio usa o flutter_soloud, com o som do motor sintetizado em loops, e o controle por inclinação lê o acelerômetro com sensibilidade ajustável.</p>
+                    <p data-i18n="build_1">Contas, carteira de moedas e ranking ficam no Firebase Authentication e no Cloud Firestore, com regras que impedem um jogador de alterar os dados de outro. A versão web é publicada no Firebase Hosting.</p>
+                    <ul class="stack-list">
+                        <li>Flutter</li>
+                        <li>Dart</li>
+                        <li>Firebase Auth</li>
+                        <li>Cloud Firestore</li>
+                        <li>Firebase Hosting</li>
+                        <li>flutter_soloud</li>
+                        <li>sensors_plus</li>
+                        <li>AdMob</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_privacy">Privacidade</h2>
+                <div class="project-block-body">
+                    <p data-i18n="privacy">No ranking, só o nome de piloto e a pontuação ficam públicos. O acelerômetro é lido no aparelho e nada é enviado. A conta, as moedas e a posição no ranking podem ser excluídas pelo próprio jogo.</p>
+                    <p><a class="text-link" href="termsAndPolicy/" data-keep-lang="termsAndPolicy/"><span data-i18n="ui_terms">Termos de Uso e Política de Privacidade</span><i class="fas fa-arrow-right"></i></a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="project-footer">
+        <div class="container project-footer-inner">
+            <span>&copy; <span id="current-year"></span> Azevedo Tech Solutions</span>
+            <a href="../../" data-keep-lang="../../"><span data-i18n="ui_footer_back">Voltar ao portfólio</span></a>
+        </div>
+    </footer>
+
+    <script>
+        window.PROJECT_I18N = {
+            "pt": {
+                "meta_title": "Rocket Rush — jogo casual | Azevedo Tech Solutions",
+                "meta_description": "Rocket Rush: pilote um foguete, desvie dos obstáculos, junte moedas e dispute o ranking global.",
+                "ui_web": "Jogar no navegador",
+                "ui_terms": "Termos de Uso e Política de Privacidade",
+                "about_0": "Rocket Rush é um jogo casual de partidas rápidas. O foguete sobe sem parar, os obstáculos ficam mais difíceis e cada moeda coletada conta. A pontuação vai para um ranking global, e as moedas compram novas naves na loja.",
+                "about_1": "Dá para controlar arrastando o dedo, inclinando o celular ou pelo teclado, na versão web. Quando a nave é destruída, ela pode ser consertada com moedas ou assistindo a um anúncio para continuar a partida.",
+                "about_2": "O jogo é gratuito e não tem compras dentro do app. Também é possível jogar como convidado, sem conta.",
+                "feature_0_title": "Três formas de controle",
+                "feature_0_text": "Arrastar, inclinar o celular ou usar as setas do teclado.",
+                "feature_1_title": "Ranking global",
+                "feature_1_text": "A melhor pontuação de cada piloto, atualizada a cada partida.",
+                "feature_2_title": "Moedas e loja",
+                "feature_2_text": "As moedas coletadas viram novas naves no inventário.",
+                "feature_3_title": "Constelações",
+                "feature_3_text": "Os signos do zodíaco marcam a altitude ao longo da subida.",
+                "feature_4_title": "Conserto da nave",
+                "feature_4_text": "Continue a partida pagando com moedas ou assistindo a um anúncio.",
+                "feature_5_title": "Som e vibração",
+                "feature_5_text": "Motor sintetizado, trilha nos menus e resposta tátil, tudo ajustável.",
+                "feature_6_title": "Versão web",
+                "feature_6_text": "O mesmo jogo e o mesmo ranking direto no navegador.",
+                "build_0": "Feito em Flutter, rodando no Android, no iOS e na web a partir do mesmo código. O áudio usa o flutter_soloud, com o som do motor sintetizado em loops, e o controle por inclinação lê o acelerômetro com sensibilidade ajustável.",
+                "build_1": "Contas, carteira de moedas e ranking ficam no Firebase Authentication e no Cloud Firestore, com regras que impedem um jogador de alterar os dados de outro. A versão web é publicada no Firebase Hosting.",
+                "ui_back": "Início",
+                "kicker": "Jogo · Android e web",
+                "tagline": "Pilote um foguete, desvie dos obstáculos e suba no ranking global.",
+                "ui_about": "Sobre",
+                "ui_features": "Recursos",
+                "ui_build": "Como foi feito",
+                "ui_privacy": "Privacidade",
+                "privacy": "No ranking, só o nome de piloto e a pontuação ficam públicos. O acelerômetro é lido no aparelho e nada é enviado. A conta, as moedas e a posição no ranking podem ser excluídas pelo próprio jogo.",
+                "ui_footer_back": "Voltar ao portfólio"
+            },
+            "en": {
+                "meta_title": "Rocket Rush — casual game | Azevedo Tech Solutions",
+                "meta_description": "Rocket Rush: pilot a rocket, dodge obstacles, collect coins and climb the global leaderboard.",
+                "ui_web": "Play in the browser",
+                "ui_terms": "Terms of Use and Privacy Policy",
+                "about_0": "Rocket Rush is a casual game of quick rounds. The rocket keeps climbing, obstacles get harder and every coin counts. Your score goes to a global leaderboard, and coins buy new ships in the shop.",
+                "about_1": "You can steer by dragging your finger, tilting the phone or, in the web version, with the keyboard. When the ship is destroyed, you can repair it with coins or by watching an ad to keep the round going.",
+                "about_2": "The game is free and has no in-app purchases. You can also play as a guest, without an account.",
+                "feature_0_title": "Three control modes",
+                "feature_0_text": "Drag, tilt the phone or use the arrow keys.",
+                "feature_1_title": "Global leaderboard",
+                "feature_1_text": "Each pilot's best score, updated after every round.",
+                "feature_2_title": "Coins and shop",
+                "feature_2_text": "Collected coins turn into new ships in your inventory.",
+                "feature_3_title": "Constellations",
+                "feature_3_text": "The zodiac signs mark your altitude along the climb.",
+                "feature_4_title": "Ship repair",
+                "feature_4_text": "Continue the round by paying with coins or watching an ad.",
+                "feature_5_title": "Sound and haptics",
+                "feature_5_text": "Synthesized engine, menu soundtrack and haptic feedback, all adjustable.",
+                "feature_6_title": "Web version",
+                "feature_6_text": "The same game and the same leaderboard right in the browser.",
+                "build_0": "Built in Flutter, running on Android, iOS and the web from the same codebase. Audio uses flutter_soloud, with the engine sound synthesized into loops, and tilt control reads the accelerometer with adjustable sensitivity.",
+                "build_1": "Accounts, the coin wallet and the leaderboard live in Firebase Authentication and Cloud Firestore, with rules that stop a player from changing anyone else's data. The web version is deployed on Firebase Hosting.",
+                "ui_back": "Home",
+                "kicker": "Game · Android and web",
+                "tagline": "Pilot a rocket, dodge obstacles and climb the global leaderboard.",
+                "ui_about": "About",
+                "ui_features": "Features",
+                "ui_build": "How it was built",
+                "ui_privacy": "Privacy",
+                "privacy": "On the leaderboard, only your pilot name and score are public. The accelerometer is read on the device and nothing is sent. The account, coins and leaderboard position can be deleted from within the game.",
+                "ui_footer_back": "Back to portfolio"
+            },
+            "es": {
+                "meta_title": "Rocket Rush — juego casual | Azevedo Tech Solutions",
+                "meta_description": "Rocket Rush: pilota un cohete, esquiva obstáculos, junta monedas y sube en el ranking global.",
+                "ui_web": "Jugar en el navegador",
+                "ui_terms": "Términos de Uso y Política de Privacidad",
+                "about_0": "Rocket Rush es un juego casual de partidas rápidas. El cohete sube sin parar, los obstáculos se vuelven más difíciles y cada moneda cuenta. La puntuación va a un ranking global, y las monedas compran nuevas naves en la tienda.",
+                "about_1": "Puedes controlarlo arrastrando el dedo, inclinando el celular o, en la versión web, con el teclado. Cuando la nave es destruida, puedes repararla con monedas o viendo un anuncio para seguir la partida.",
+                "about_2": "El juego es gratuito y no tiene compras dentro de la app. También puedes jugar como invitado, sin cuenta.",
+                "feature_0_title": "Tres formas de control",
+                "feature_0_text": "Arrastrar, inclinar el celular o usar las flechas del teclado.",
+                "feature_1_title": "Ranking global",
+                "feature_1_text": "La mejor puntuación de cada piloto, actualizada tras cada partida.",
+                "feature_2_title": "Monedas y tienda",
+                "feature_2_text": "Las monedas recogidas se convierten en nuevas naves en tu inventario.",
+                "feature_3_title": "Constelaciones",
+                "feature_3_text": "Los signos del zodíaco marcan la altitud a lo largo del ascenso.",
+                "feature_4_title": "Reparación de la nave",
+                "feature_4_text": "Sigue la partida pagando con monedas o viendo un anuncio.",
+                "feature_5_title": "Sonido y vibración",
+                "feature_5_text": "Motor sintetizado, música en los menús y respuesta háptica, todo ajustable.",
+                "feature_6_title": "Versión web",
+                "feature_6_text": "El mismo juego y el mismo ranking directamente en el navegador.",
+                "build_0": "Hecho en Flutter, funcionando en Android, iOS y la web con el mismo código. El audio usa flutter_soloud, con el sonido del motor sintetizado en loops, y el control por inclinación lee el acelerómetro con sensibilidad ajustable.",
+                "build_1": "Las cuentas, la billetera de monedas y el ranking están en Firebase Authentication y Cloud Firestore, con reglas que impiden que un jugador modifique los datos de otro. La versión web se publica en Firebase Hosting.",
+                "ui_back": "Inicio",
+                "kicker": "Juego · Android y web",
+                "tagline": "Pilota un cohete, esquiva obstáculos y sube en el ranking global.",
+                "ui_about": "Acerca de",
+                "ui_features": "Funciones",
+                "ui_build": "Cómo se hizo",
+                "ui_privacy": "Privacidad",
+                "privacy": "En el ranking, solo tu nombre de piloto y tu puntuación son públicos. El acelerómetro se lee en el dispositivo y no se envía nada. La cuenta, las monedas y la posición en el ranking se pueden eliminar desde el propio juego.",
+                "ui_footer_back": "Volver al portafolio"
+            }
+        };
+    </script>
+    <script src="../../js/lang-menu.js"></script>
+    <script src="../../js/project.js"></script>
+</body>
+
+</html>

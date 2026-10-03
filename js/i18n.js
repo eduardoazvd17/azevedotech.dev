@@ -1,424 +1,176 @@
 const translations = {
-    // Português (padrão)
     'pt': {
-        // Navegação
-        'nav_about': 'Sobre mim',
-        'nav_projects': 'Meus projetos',
+        'meta_description': 'Eduardo Azevedo — Engenheiro de software, Flutter',
+
+        'nav_label': 'Seções',
+        'nav_about': 'Sobre',
+        'nav_apps': 'Meus apps',
+        'nav_clients': 'Projetos',
         'nav_contact': 'Contato',
 
-        // Marca / Hero
-        'hero_tagline': 'Soluções mobile e software sob medida, do MVP à publicação nas lojas.',
-        'stat_experience_label': 'anos de experiência',
-        'stat_projects_label': 'projetos entregues',
+        'intro_role': 'Engenheiro de software · Especialista em Flutter · Desenvolvedor full stack multiplataforma',
+        'intro_text': 'Desenvolvo soluções de software há mais de 7 anos, da ideia à entrega. Pela Azevedo Tech Solutions, crio soluções sob medida para empresas e publico meus próprios apps.',
+        'intro_contact': 'Fale comigo',
 
-        // Cabeçalho
-        'profile_title': 'Engenheiro de Software | Cross-Platform | Full Stack | Especialista em Flutter',
+        'about_title': 'Sobre',
+        'about_1': 'Sou um engenheiro de software com 7 anos de experiência profissional, especializado no desenvolvimento de soluções mobile multiplataforma com o framework Flutter. Ao longo da minha carreira, liderei projetos mobile de forma independente, desenvolvi soluções para instituições financeiras e implementei melhorias significativas que otimizaram a performance de aplicativos. Meu foco está na criação de soluções performáticas, inovadoras e escaláveis, sempre priorizando alta qualidade e melhoria contínua da experiência do usuário.',
+        'about_2': 'Possuo ampla experiência em diversas áreas do Flutter, incluindo internacionalização, modularização, gerenciamento de estados e rotas, criação de widgets personalizados, desenvolvimento de packages reutilizáveis, automação de pipelines CI/CD com Codemagic, publicação de aplicativos nas lojas e realização de testes unitários e de widgets. Sigo práticas rigorosas de gerenciamento eficiente de memória para evitar memory leaks, e adoto os princípios SOLID e Clean Code para garantir um código limpo, bem estruturado e de fácil manutenção.',
+        'about_3': 'Valorizo a comunicação clara e o trabalho colaborativo em equipe, sempre buscando contribuir de forma eficiente e construtiva para garantir entregas de alta qualidade e alinhamento entre os times. Acredito que a sinergia entre profissionais é fundamental para o sucesso de qualquer projeto.',
+        'about_4': 'Além da minha expertise em Flutter, possuo conhecimento sólido em linguagens como Java, C#, Kotlin e Swift, o que me permite atuar com versatilidade em diferentes tecnologias e stacks, atendendo a diversas demandas no desenvolvimento de software.',
+        'skills_title': 'Linguagens e tecnologias',
 
-        // Sobre mim
-        'about': 'Sobre mim',
-        'eyebrow_about': 'Sobre',
-        'presentation_text_1': 'Sou um engenheiro de software com 7 anos de experiência profissional, especializado no desenvolvimento de soluções mobile multiplataforma com o framework Flutter. Ao longo da minha carreira, liderei projetos mobile de forma independente, desenvolvi soluções para instituições financeiras e implementei melhorias significativas que otimizaram a performance de aplicativos. Meu foco está na criação de soluções performáticas, inovadoras e escaláveis, sempre priorizando alta qualidade e melhoria contínua da experiência do usuário.',
-        'presentation_text_2': 'Possuo ampla experiência em diversas áreas do Flutter, incluindo internacionalização, modularização, gerenciamento de estados e rotas, criação de widgets personalizados, desenvolvimento de packages reutilizáveis, automação de pipelines CI/CD com Codemagic, publicação de aplicativos nas lojas e realização de testes unitários e de widgets. Sigo práticas rigorosas de gerenciamento eficiente de memória para evitar memory leaks, e adoto os princípios SOLID e Clean Code para garantir um código limpo, bem estruturado e de fácil manutenção.',
-        'presentation_text_3': 'Valorizo a comunicação clara e o trabalho colaborativo em equipe, sempre buscando contribuir de forma eficiente e construtiva para garantir entregas de alta qualidade e alinhamento entre os times. Acredito que a sinergia entre profissionais é fundamental para o sucesso de qualquer projeto.',
-        'presentation_text_4': 'Além da minha expertise em Flutter, possuo conhecimento sólido em linguagens como Java, C#, Kotlin e Swift, o que me permite atuar com versatilidade em diferentes tecnologias e stacks, atendendo a diversas demandas no desenvolvimento de software.',
-        'skills_title': 'Linguagens e Tecnologias',
+        'apps_title': 'Meus apps',
+        'apps_intro': 'Aplicativos publicados e mantidos por mim.',
+        'project_details': 'Ver detalhes',
+        'project_play': 'Jogar no navegador',
+        'moverio_meta': 'Mobilidade urbana · Android e iOS',
+        'moverio_description': 'Linhas, itinerários e pontos de ônibus do Rio de Janeiro em um só app. Mostra qual ônibus pegar até o destino, acompanha a viagem com alerta de chegada e exibe os ônibus em tempo real.',
+        'economizze_meta': 'Finanças pessoais · Android',
+        'economizze_description': 'Planejamento financeiro que mostra quanto você vai receber, quanto já está comprometido com contas e parcelas e quanto sobra para gastar em cada mês. Dá para dividir as finanças com a família em espaços compartilhados.',
+        'autohub_meta': 'Gestão veicular · Android e iOS',
+        'autohub_description': 'Manutenções, abastecimentos, lembretes e tabela FIPE para cuidar do carro, com um assistente de IA para tirar dúvidas. A quilometragem pode se atualizar sozinha pelo Bluetooth do carro.',
+        'rocketrush_meta': 'Jogo casual · Android e web',
+        'rocketrush_description': 'Pilote um foguete, desvie dos obstáculos e junte moedas para trocar por novas naves. A melhor pontuação de cada piloto vai para um ranking global.',
 
-        // Projetos
-        'projects': 'Meus projetos',
-        'eyebrow_projects': 'Portfólio',
-        'project_preview': 'Website',
-        'project_repository': 'Repositório',
-        'project_download': 'Download',
-        'project_android': 'Android',
-        'project_ios': 'iOS',
+        'clients_title': 'Projetos em que atuei durante a minha carreira',
+        'sicoob_meta': 'Cooperativa financeira',
+        'master_meta': 'Banco',
+        'talkprocess_meta': 'Plataforma de gestão de processos',
+        'finep_meta': 'Financiadora de Estudos e Projetos',
+        'ggwpaid_meta': 'Gestão financeira para empresas',
+        'cortepro_meta': 'Gestão de barbearias',
 
-        // Badges de categoria
-        'badge_mobile': 'App Mobile',
-        'badge_game': 'Jogo',
-        'badge_flutter_package': 'Pacote Flutter',
-        'badge_desktop': 'App Desktop',
-        'badge_web': 'App Web',
-        'badge_cross_platform': 'Multiplataforma',
+        'contact_title': 'Contato',
+        'contact_intro_1': 'Tem um projeto em mente ou quer conversar sobre uma vaga?',
+        'contact_intro_2': 'Fale comigo por um destes canais.',
+        'channel_email': 'E-mail',
+        'copy': 'Copiar',
+        'copied': 'Copiado',
 
-        // More Projects
-        'more_projects_title': 'Conheça mais projetos',
-        'more_projects_description': 'Quer conhecer mais projetos em que trabalhei? Visite meu perfil no GitHub para descobrir outros repositórios, contribuições e projetos em desenvolvimento.',
-        'more_projects_link': 'Ver mais projetos',
-
-        // Investhelper
-        'investhelper_title': 'InvestHelper',
-        'investhelper_description': 'Um app para controlar seus investimentos e ter um panorama completo contendo todos os valores necessários para o controle de compra, venda, lucro, preço médio e preço de compra e venda. Além de gerar relatórios para facilitar a visualização pelo computador.',
-
-        // FCryptor
-        'fcryptor_title': 'FCryptor',
-        'fcryptor_description': 'FCryptor é um aplicativo de criptografia de arquivos multiplataforma desenvolvido com Flutter. Com suporte para dispositivos móveis, web e desktop, ele oferece uma maneira segura e prática de proteger seus arquivos com criptografia AES-256 e uma interface intuitiva.',
-
-        // slider_bar_chart
-        'slider_bar_chart_title': 'slider_bar_chart',
-        'slider_bar_chart_description': 'Uma forma simplificada de se criar gráficos de barra no Flutter, permitindo scroll na horizontal e algumas opções de customização como cores, textos e tooltips. Essa lib foi criada com o intuito de resolver um problema, no qual eu precisava de um gráfico de barra para exibir dados de 2 fontes de forma espelhada e que habilitasse scroll.',
-
-        // AudioTexter
-        'audiotexter_title': 'AudioTexter',
-        'audiotexter_description': 'AudioTexter é um aplicativo desenvolvido em Flutter que permite gravar áudios e transcrevê-los em texto.',
-
-        // My Finances
-        'myfinances_title': 'My Finances',
-        'myfinances_description': 'Um aplicativo para controle de finanças no qual te permitirá controlar seus gastos mensais, investimentos e salvar anotações importantes.',
-
-        // GitF
-        'gitf_title': 'GitF',
-        'gitf_description': 'Um gerenciador de repositórios Git para iniciantes. Esse projeto foi criado apenas para testar o desenvolvimento de apps desktop com o Flutter.',
-
-        // credentials_manager
-        'credentials_manager_title': 'credentials_manager',
-        'credentials_manager_description': 'Uma biblioteca para gerenciar de forma fácil as credenciais do seu app Flutter localmente, utilizando autenticação biométrica. Ela foi criada com o intuito de agilizar a solução de um problema, no qual eu precisava armazenar credenciais de forma segura em um dispositivo, permitindo que o usuário fizesse login com essas credenciais utilizando a biometria.',
-
-        // simple_overlay
-        'simple_overlay_title': 'simple_overlay',
-        'simple_overlay_description': 'Uma biblioteca simples e prática para criar sobreposições de forma fácil no seu app Flutter. Com ele, você pode sobrepor um widget personalizado a qualquer outro widget. O foco deste pacote é agilizar a criação e gerenciamento do ciclo de vida de um Overlay.',
-
-        // Contato
-        'contact': 'Contato',
-        'eyebrow_contact': 'Contato',
-        'contact_intro': 'Fique a vontade para entrar em contato comigo usando uma das opções abaixo:',
-        'contact_social': 'Me encontre nas redes:',
-        'contact_email': 'Me envie um e-mail:',
-        'sendEmail': 'Me envie um email:',
-        'subject': 'Assunto',
-        'message': 'Mensagem',
-        'clear_fields': 'Limpar campos',
-        'send': 'Enviar',
-
-        // Rodapé
         'back_to_top': 'Voltar ao topo',
-        'copyright': 'Todos os direitos reservados.',
-        'company_name': 'Azevedo Tech Solutions',
-        'company_cnpj': 'CNPJ: 55.705.600/0001-47',
-
-        // MoveRio
-        'moverio_title': 'MoveRio',
-        'moverio_description': 'Aplicativo gratuito que facilita sua mobilidade no Rio de Janeiro. Consulte linhas de ônibus, visualize itinerários completos, encontre pontos de parada próximos, abra rotas no app de mapas do seu dispositivo e acompanhe seu trajeto em tempo real usando a localização do seu dispositivo. Ideal para o dia a dia de quem depende do transporte público.',
-
-        // easy_binding
-        'easy_binding_title': 'easy_binding',
-        'easy_binding_description': 'Um pacote Flutter leve para gerenciar o ciclo de vida de dependências em rotas. Inspirado nos bindings do GetX, mas agnóstico de framework - funciona com qualquer solução de injeção de dependências como GetIt, Provider ou Riverpod.',
-
-        // StackBudget
-        'stackbudget_title': 'StackBudget',
-        'stackbudget_description': 'Um aplicativo de planejamento financeiro que permite aos usuários acompanhar seus gastos mensais de forma organizada e eficiente. Com interface intuitiva e ferramentas para controle de orçamento, ajudando na gestão financeira pessoal.',
-
-        // AutoHub
-        'autohub_title': 'AutoHub',
-        'autohub_description': 'AutoHub ajuda você a cuidar do seu carro de forma simples, moderna e inteligente. Controle manutenções, acompanhe revisões, monitore gastos e consulte a tabela FIPE do seu veículo em segundos. Mantenha todas as informações importantes do seu carro organizadas em um só lugar e receba lembretes para nunca esquecer uma manutenção importante.',
-
-        // Economizze
-        'economizze_title': 'Economizze',
-        'economizze_description': 'Economizze é um aplicativo de planejamento e controle financeiro pessoal que vai além do simples extrato de gastos. Veja quanto você vai receber, quanto já está comprometido com contas e parcelas, e quanto ainda sobra livre para gastar em cada mês. Organize entradas, compromissos recorrentes, parcelamentos e categorias, acompanhe sua visão financeira anual e receba lembretes para nunca perder um vencimento.',
-
-        // Rocket Rush
-        'rocket_rush_title': 'Rocket Rush',
-        'rocket_rush_description': 'Rocket Rush é um jogo casual e gratuito em que você pilota um foguete e desafia seus próprios limites em busca da maior pontuação. Faça login, registre seus melhores resultados e dispute posições com jogadores do mundo todo no ranking online.',
     },
 
-    // Inglês
     'en': {
-        // Navegação
-        'nav_about': 'About me',
-        'nav_projects': 'My projects',
+        'meta_description': 'Eduardo Azevedo — Software engineer, Flutter',
+
+        'nav_label': 'Sections',
+        'nav_about': 'About',
+        'nav_apps': 'My apps',
+        'nav_clients': 'Projects',
         'nav_contact': 'Contact',
 
-        // Marca / Hero
-        'hero_tagline': 'Custom mobile and software solutions, from MVP to store publication.',
-        'stat_experience_label': 'years of experience',
-        'stat_projects_label': 'projects delivered',
+        'intro_role': 'Software engineer · Flutter specialist · Cross-platform full stack developer',
+        'intro_text': 'I have been building software solutions for more than 7 years, from idea to delivery. Through Azevedo Tech Solutions, I create custom solutions for businesses and publish my own apps.',
+        'intro_contact': 'Get in touch',
 
-        // Cabeçalho
-        'profile_title': 'Software Engineer | Cross-Platform | Full Stack | Flutter Specialist',
+        'about_title': 'About',
+        'about_1': 'I am a software engineer with 7 years of professional experience, specialized in developing cross-platform mobile solutions with the Flutter framework. Throughout my career, I have led mobile projects independently, developed solutions for financial institutions, and implemented significant improvements that optimized app performance. My focus is on creating high-performance, innovative, and scalable solutions, always prioritizing high quality and continuous improvement of user experience.',
+        'about_2': 'I have extensive experience in various areas of Flutter, including internationalization, modularization, state and route management, creation of custom widgets, development of reusable packages, automation of CI/CD pipelines with Codemagic, publishing applications to stores, and conducting unit and widget tests. I follow rigorous efficient memory management practices to avoid memory leaks, and adopt SOLID principles and Clean Code to ensure clean, well-structured, and easily maintainable code.',
+        'about_3': 'I value clear communication and collaborative teamwork, always seeking to contribute efficiently and constructively to ensure high-quality deliveries and alignment between teams. I believe that synergy between professionals is fundamental to the success of any project.',
+        'about_4': 'Beyond my expertise in Flutter, I have solid knowledge in languages such as Java, C#, Kotlin, and Swift, which allows me to work with versatility across different technologies and stacks, meeting various demands in software development.',
+        'skills_title': 'Languages and technologies',
 
-        // Sobre mim
-        'about': 'About me',
-        'eyebrow_about': 'About',
-        'presentation_text_1': 'I am a software engineer with 7 years of professional experience, specialized in developing cross-platform mobile solutions with the Flutter framework. Throughout my career, I have led mobile projects independently, developed solutions for financial institutions, and implemented significant improvements that optimized app performance. My focus is on creating high-performance, innovative, and scalable solutions, always prioritizing high quality and continuous improvement of user experience.',
-        'presentation_text_2': 'I have extensive experience in various areas of Flutter, including internationalization, modularization, state and route management, creation of custom widgets, development of reusable packages, automation of CI/CD pipelines with Codemagic, publishing applications to stores, and conducting unit and widget tests. I follow rigorous efficient memory management practices to avoid memory leaks, and adopt SOLID principles and Clean Code to ensure clean, well-structured, and easily maintainable code.',
-        'presentation_text_3': 'I value clear communication and collaborative teamwork, always seeking to contribute efficiently and constructively to ensure high-quality deliveries and alignment between teams. I believe that synergy between professionals is fundamental to the success of any project.',
-        'presentation_text_4': 'Beyond my expertise in Flutter, I have solid knowledge in languages such as Java, C#, Kotlin, and Swift, which allows me to work with versatility across different technologies and stacks, meeting various demands in software development.',
-        'skills_title': 'Languages and Technologies',
+        'apps_title': 'My apps',
+        'apps_intro': 'Apps I have published and maintain.',
+        'project_details': 'View details',
+        'project_play': 'Play in the browser',
+        'moverio_meta': 'Urban mobility · Android and iOS',
+        'moverio_description': 'Rio de Janeiro\'s bus lines, itineraries and stops in a single app. It shows which bus takes you to your destination, follows the trip with an arrival alert and displays buses in real time.',
+        'economizze_meta': 'Personal finance · Android',
+        'economizze_description': 'Finance planning that shows how much you will receive, how much is already committed to bills and installments, and how much is left to spend each month. You can share your finances with your family in shared spaces.',
+        'autohub_meta': 'Vehicle management · Android and iOS',
+        'autohub_description': 'Maintenance, fill-ups, reminders and FIPE prices to take care of your car, with an AI assistant for questions. Mileage can update itself through the car\'s Bluetooth.',
+        'rocketrush_meta': 'Casual game · Android and web',
+        'rocketrush_description': 'Pilot a rocket, dodge obstacles and collect coins to trade for new ships. Each pilot\'s best score goes to a global leaderboard.',
 
-        // Projetos
-        'projects': 'My projects',
-        'eyebrow_projects': 'Portfolio',
-        'project_preview': 'Website',
-        'project_repository': 'Repository',
-        'project_download': 'Download',
-        'project_android': 'Android',
-        'project_ios': 'iOS',
+        'clients_title': 'Projects I have worked on throughout my career',
+        'sicoob_meta': 'Financial cooperative',
+        'master_meta': 'Bank',
+        'talkprocess_meta': 'Process management platform',
+        'finep_meta': 'Brazilian Innovation Agency',
+        'ggwpaid_meta': 'Financial management for businesses',
+        'cortepro_meta': 'Barbershop management',
 
-        // Badges de categoria
-        'badge_mobile': 'Mobile App',
-        'badge_game': 'Game',
-        'badge_flutter_package': 'Flutter Package',
-        'badge_desktop': 'Desktop App',
-        'badge_web': 'Web App',
-        'badge_cross_platform': 'Cross-Platform',
+        'contact_title': 'Contact',
+        'contact_intro_1': 'Have a project in mind or want to talk about a role?',
+        'contact_intro_2': 'Reach me through any of these channels.',
+        'channel_email': 'Email',
+        'copy': 'Copy',
+        'copied': 'Copied',
 
-        // More Projects
-        'more_projects_title': 'Explore more projects',
-        'more_projects_description': 'Want to know more about the projects I worked on? Visit my GitHub profile to discover other repositories, contributions, and projects in development.',
-        'more_projects_link': 'See more projects',
-
-        // Investhelper
-        'investhelper_title': 'InvestHelper',
-        'investhelper_description': 'An app to control your investments and have a complete overview containing all the necessary values for controlling purchases, sales, profits, average price, and buy/sell prices. It also generates reports to facilitate visualization on the computer.',
-
-        // FCryptor
-        'fcryptor_title': 'FCryptor',
-        'fcryptor_description': 'FCryptor is a cross-platform file encryption application developed with Flutter. With support for mobile devices, web, and desktop, it offers a secure and practical way to protect your files with AES-256 encryption and an intuitive interface.',
-
-        // slider_bar_chart
-        'slider_bar_chart_title': 'slider_bar_chart',
-        'slider_bar_chart_description': 'A simplified way to create bar charts in Flutter, allowing horizontal scrolling and some customization options such as colors, texts, and tooltips. This library was created to solve a problem where I needed a bar chart to display data from two sources in a mirrored way and that enabled scrolling.',
-
-        // AudioTexter
-        'audiotexter_title': 'AudioTexter',
-        'audiotexter_description': 'AudioTexter is an application developed in Flutter that allows you to record audio and transcribe it into text.',
-
-        // My Finances
-        'myfinances_title': 'My Finances',
-        'myfinances_description': 'A finance control application that allows you to track your monthly expenses, investments, and save important notes.',
-
-        // GitF
-        'gitf_title': 'GitF',
-        'gitf_description': 'A Git repository manager for beginners. This project was created just to test desktop app development with Flutter.',
-
-        // credentials_manager
-        'credentials_manager_title': 'credentials_manager',
-        'credentials_manager_description': 'A library to easily manage your Flutter app credentials locally, using biometric authentication. It was created to expedite the solution to a problem where I needed to securely store credentials on a device, allowing the user to log in with those credentials using biometrics.',
-
-        // simple_overlay
-        'simple_overlay_title': 'simple_overlay',
-        'simple_overlay_description': 'A simple and practical library to easily create overlays in your Flutter app. With it, you can overlay a custom widget on any other widget. The focus of this package is to streamline the creation and lifecycle management of an Overlay.',
-
-        // Contato
-        'contact': 'Contact',
-        'eyebrow_contact': 'Contact',
-        'contact_intro': 'Feel free to contact me using one of the options below:',
-        'contact_social': 'Find me on social media:',
-        'contact_email': 'Send me an email:',
-        'sendEmail': 'Send me an email:',
-        'subject': 'Subject',
-        'message': 'Message',
-        'clear_fields': 'Clear fields',
-        'send': 'Send',
-
-        // Rodapé
         'back_to_top': 'Back to top',
-        'copyright': 'All rights reserved.',
-        'company_name': 'Azevedo Tech Solutions',
-        'company_cnpj': 'CNPJ: 55.705.600/0001-47',
+    },
 
-        // MoveRio
-        'moverio_title': 'MoveRio',
-        'moverio_description': 'Free app that facilitates your mobility in Rio de Janeiro. Check bus lines, view complete itineraries, find nearby bus stops, open routes on your device\'s map app, and track your route in real-time using your device\'s location. Ideal for everyday use by those who depend on public transportation.',
+    'es': {
+        'meta_description': 'Eduardo Azevedo — Ingeniero de software, Flutter',
 
-        // easy_binding
-        'easy_binding_title': 'easy_binding',
-        'easy_binding_description': 'A lightweight Flutter package for managing dependencies lifecycle in routes. Inspired by GetX bindings but framework-agnostic - works with any dependency injection solution like GetIt, Provider, or Riverpod.',
+        'nav_label': 'Secciones',
+        'nav_about': 'Sobre mí',
+        'nav_apps': 'Mis apps',
+        'nav_clients': 'Proyectos',
+        'nav_contact': 'Contacto',
 
-        // StackBudget
-        'stackbudget_title': 'StackBudget',
-        'stackbudget_description': 'A financial planning application that allows users to track their monthly expenses in an organized and efficient way. With an intuitive interface and budget control tools, helping with personal financial management.',
+        'intro_role': 'Ingeniero de software · Especialista en Flutter · Desarrollador full stack multiplataforma',
+        'intro_text': 'Desarrollo soluciones de software desde hace más de 7 años, de la idea a la entrega. Con Azevedo Tech Solutions, creo soluciones a medida para empresas y publico mis propias apps.',
+        'intro_contact': 'Escríbeme',
 
-        // AutoHub
-        'autohub_title': 'AutoHub',
-        'autohub_description': 'AutoHub helps you take care of your car in a simple, modern, and intelligent way. Control maintenance, track servicing, monitor expenses, and consult your vehicle\'s FIPE table in seconds. Keep all your important car information organized in one place and receive reminders so you never forget important maintenance.',
+        'about_title': 'Sobre mí',
+        'about_1': 'Soy ingeniero de software con 7 años de experiencia profesional, especializado en el desarrollo de soluciones móviles multiplataforma con el framework Flutter. A lo largo de mi carrera he liderado proyectos móviles de forma independiente, he desarrollado soluciones para instituciones financieras y he implementado mejoras significativas que optimizaron el rendimiento de aplicaciones. Mi foco está en crear soluciones eficientes, innovadoras y escalables, priorizando siempre la calidad y la mejora continua de la experiencia del usuario.',
+        'about_2': 'Tengo amplia experiencia en diversas áreas de Flutter, como internacionalización, modularización, gestión de estado y rutas, creación de widgets personalizados, desarrollo de paquetes reutilizables, automatización de pipelines CI/CD con Codemagic, publicación de aplicaciones en las tiendas y pruebas unitarias y de widgets. Sigo prácticas rigurosas de gestión de memoria para evitar memory leaks y aplico los principios SOLID y Clean Code para mantener un código limpio, bien estructurado y fácil de mantener.',
+        'about_3': 'Valoro la comunicación clara y el trabajo colaborativo en equipo, buscando siempre contribuir de forma eficiente y constructiva para garantizar entregas de alta calidad y alineación entre los equipos. Creo que la sinergia entre profesionales es fundamental para el éxito de cualquier proyecto.',
+        'about_4': 'Además de mi experiencia en Flutter, tengo conocimientos sólidos en lenguajes como Java, C#, Kotlin y Swift, lo que me permite trabajar con versatilidad en distintas tecnologías y stacks, atendiendo diversas demandas del desarrollo de software.',
+        'skills_title': 'Lenguajes y tecnologías',
 
-        // Economizze
-        'economizze_title': 'Economizze',
-        'economizze_description': 'Economizze is a personal finance planning and budgeting app that goes beyond a simple expense tracker. See how much you\'ll receive, how much is already committed to bills and installments, and how much is still free to spend each month. Organize income, recurring commitments, installment purchases, and categories, check your yearly financial overview, and get reminders so you never miss a due date.',
+        'apps_title': 'Mis apps',
+        'apps_intro': 'Aplicaciones publicadas y mantenidas por mí.',
+        'project_details': 'Ver detalles',
+        'project_play': 'Jugar en el navegador',
+        'moverio_meta': 'Movilidad urbana · Android e iOS',
+        'moverio_description': 'Líneas, itinerarios y paradas de autobús de Río de Janeiro en una sola app. Muestra qué autobús tomar hasta tu destino, sigue el viaje con aviso de llegada y muestra los autobuses en tiempo real.',
+        'economizze_meta': 'Finanzas personales · Android',
+        'economizze_description': 'Planificación financiera que muestra cuánto vas a recibir, cuánto ya está comprometido con cuentas y cuotas y cuánto te queda para gastar cada mes. Puedes compartir tus finanzas con tu familia en espacios compartidos.',
+        'autohub_meta': 'Gestión vehicular · Android e iOS',
+        'autohub_description': 'Mantenimientos, cargas de combustible, recordatorios y tabla FIPE para cuidar tu auto, con un asistente de IA para resolver dudas. El kilometraje puede actualizarse solo con el Bluetooth del auto.',
+        'rocketrush_meta': 'Juego casual · Android y web',
+        'rocketrush_description': 'Pilota un cohete, esquiva obstáculos y junta monedas para cambiarlas por nuevas naves. La mejor puntuación de cada piloto va a un ranking global.',
 
-        // Rocket Rush
-        'rocket_rush_title': 'Rocket Rush',
-        'rocket_rush_description': 'Rocket Rush is a free casual game where you pilot a rocket and push your limits in pursuit of the highest score. Sign in, save your best results, and compete for the top spots against players from around the world on the online leaderboard.',
+        'clients_title': 'Proyectos en los que trabajé a lo largo de mi carrera',
+        'sicoob_meta': 'Cooperativa financiera',
+        'master_meta': 'Banco',
+        'talkprocess_meta': 'Plataforma de gestión de procesos',
+        'finep_meta': 'Agencia brasileña de innovación',
+        'ggwpaid_meta': 'Gestión financiera para empresas',
+        'cortepro_meta': 'Gestión de barberías',
+
+        'contact_title': 'Contacto',
+        'contact_intro_1': '¿Tienes un proyecto en mente o quieres hablar sobre una vacante?',
+        'contact_intro_2': 'Escríbeme por cualquiera de estos canales.',
+        'channel_email': 'Correo',
+        'copy': 'Copiar',
+        'copied': 'Copiado',
+
+        'back_to_top': 'Volver arriba',
     }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    initLanguage();
-    setupLanguageButtons();
+    LangMenu.init({ fallback: 'en', onChange: applyLanguage });
 });
 
-function initLanguage() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const urlLang = urlParams.get('lang');
-
-    if (urlLang && translations[urlLang]) {
-        applyLanguage(urlLang);
-    } else if (urlLang && !translations[urlLang]) {
-        applyLanguage('pt');
-    } else {
-        const savedLang = localStorage.getItem('language');
-
-        if (savedLang && translations[savedLang]) {
-            applyLanguage(savedLang);
-        } else {
-            const browserLang = navigator.language.split('-')[0];
-            const lang = translations[browserLang] ? browserLang : 'pt';
-            applyLanguage(lang);
-        }
-    }
-}
-
 function applyLanguage(lang) {
-    if (!translations[lang]) {
-        console.error(`Idioma '${lang}' não suportado. Usando o padrão (pt).`);
-        lang = 'pt';
-    }
+    const dictionary = translations[lang];
 
-    localStorage.setItem('language', lang);
-    updateLanguageButtons(lang);
+    LangMenu.applyTranslations(dictionary);
 
-    // Atualiza o parâmetro 'lang' na URL, mantendo o parâmetro 'page'
-    updateURLWithLanguage(lang);
+    // O título é sempre o nome da empresa; a descrição acompanha o idioma.
+    document.querySelector('meta[name="description"]').setAttribute('content', dictionary.meta_description);
 
-    const elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach(element => {
-        const key = element.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-            element.textContent = translations[lang][key];
-        }
-    });
-
-    document.documentElement.lang = lang;
-    translateSpecificElements(lang);
-}
-
-/**
- * Atualiza a URL com o idioma selecionado, mantendo outros parâmetros
- * @param {string} lang - O código do idioma
- */
-function updateURLWithLanguage(lang) {
-    const url = new URL(window.location.href);
-    url.searchParams.set('lang', lang);
-
-    // Atualiza a URL sem recarregar a página
-    window.history.pushState({}, '', url.toString());
-}
-
-/**
- * Traduz elementos específicos que não usam o atributo data-i18n
- * @param {string} lang - O código do idioma
- */
-function translateSpecificElements(lang) {
-    document.querySelectorAll('#nav-menu a span').forEach(element => {
-        const section = element.parentElement.getAttribute('data-section');
-        if (section === 'about') element.textContent = translations[lang].nav_about;
-        if (section === 'projects') element.textContent = translations[lang].nav_projects;
-        if (section === 'contact') element.textContent = translations[lang].nav_contact;
-    });
-
-    document.querySelectorAll('.section-title').forEach(element => {
-        const section = element.closest('.section').id;
-        if (section === 'about') element.textContent = translations[lang].about;
-        if (section === 'projects') element.textContent = translations[lang].projects;
-        if (section === 'contact') element.textContent = translations[lang].contact;
-    });
-
-    const presentationTexts = document.querySelectorAll('.presentation-text');
-    if (presentationTexts.length >= 4) {
-        presentationTexts[0].textContent = translations[lang].presentation_text_1;
-        presentationTexts[1].textContent = translations[lang].presentation_text_2;
-        presentationTexts[2].textContent = translations[lang].presentation_text_3;
-        presentationTexts[3].textContent = translations[lang].presentation_text_4;
-    }
-
-    const skillsTitle = document.querySelector('.skills-section h3');
-    if (skillsTitle) skillsTitle.textContent = translations[lang].skills_title;
-
-    const profileTitle = document.querySelector('.profile-info h2');
-    if (profileTitle) profileTitle.textContent = translations[lang].profile_title;
-
-    document.querySelectorAll('.project-card').forEach(card => {
-        const title = card.querySelector('h3');
-        const description = card.querySelector('p');
-
-        if (!title || !description) return;
-
-        let projectId = title.textContent.trim().toLowerCase();
-
-        if (projectId === 'my finances') {
-            projectId = 'myfinances';
-        } else if (projectId === 'audiotext' || projectId === 'audiotexter') {
-            projectId = 'audiotexter';
-        } else {
-            projectId = projectId.replace(/\s+/g, '_');
-        }
-
-        const titleKey = `${projectId}_title`;
-        const descKey = `${projectId}_description`;
-
-        if (translations[lang][titleKey]) {
-            title.textContent = translations[lang][titleKey];
-        }
-
-        if (translations[lang][descKey]) {
-            description.textContent = translations[lang][descKey];
-        }
-
-        card.querySelectorAll('.project-link').forEach(link => {
-            const linkText = link.textContent.trim();
-            if (linkText.includes('Preview')) {
-                link.innerHTML = `<i class="fas fa-eye"></i> ${translations[lang].project_preview}`;
-            } else if (linkText.includes('Repositório') || linkText.includes('Repository')) {
-                link.innerHTML = `<i class="fab fa-github"></i> ${translations[lang].project_repository}`;
-            } else if (linkText.includes('Download')) {
-                link.innerHTML = `<i class="fas fa-download"></i> ${translations[lang].project_download}`;
-            } else if (linkText.includes('Android')) {
-                link.innerHTML = `<i class="fab fa-android"></i> ${translations[lang].project_android}`;
-            } else if (linkText.includes('iOS')) {
-                link.innerHTML = `<i class="fab fa-apple"></i> ${translations[lang].project_ios}`;
-            }
-        });
-    });
-
-    const contactSocial = document.querySelector('.contact-social-section h3');
-    if (contactSocial) contactSocial.textContent = translations[lang].contact_social;
-
-    const contactEmail = document.querySelector('.contact-form-section h3');
-    if (contactEmail) contactEmail.textContent = translations[lang].contact_email;
-
-    const subjectLabel = document.querySelector('label[for="subject"]');
-    if (subjectLabel) subjectLabel.textContent = translations[lang].subject;
-
-    const messageLabel = document.querySelector('label[for="message"]');
-    if (messageLabel) messageLabel.textContent = translations[lang].message;
-
-    const clearButton = document.querySelector('.btn-clear');
-    if (clearButton) clearButton.innerHTML = `<i class="fas fa-times"></i> ${translations[lang].clear_fields}`;
-
-    const sendButton = document.querySelector('.btn-send');
-    if (sendButton) sendButton.innerHTML = `<i class="fas fa-paper-plane"></i> ${translations[lang].send}`;
-
-    const backToTopBtn = document.getElementById('back-to-top-btn');
-    if (backToTopBtn) backToTopBtn.setAttribute('aria-label', translations[lang].back_to_top);
-
-    const copyright = document.querySelector('footer p.copyright');
-    const footerCompany = document.getElementById('footer-company');
-    if (copyright && footerCompany) {
-        const year = document.getElementById('current-year').textContent;
-        footerCompany.innerHTML = `${translations[lang].company_name}. ${translations[lang].copyright}<br>${translations[lang].company_cnpj}`;
-    }
-}
-
-function updateLanguageButtons(activeLang) {
-    document.querySelectorAll('.lang-btn').forEach(button => {
-        button.classList.toggle('active', button.getAttribute('data-lang') === activeLang);
+    // As páginas de projeto abrem no mesmo idioma.
+    document.querySelectorAll('a[data-project-page]').forEach(link => {
+        link.setAttribute('href', `${link.dataset.projectPage}?lang=${lang}`);
     });
 }
 
-function setupLanguageButtons() {
-    document.querySelectorAll('.lang-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            applyLanguage(button.getAttribute('data-lang'));
-        });
-    });
+function t(key) {
+    return translations[LangMenu.current || 'en'][key];
 }
