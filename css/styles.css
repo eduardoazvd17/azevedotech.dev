@@ -590,15 +590,14 @@ main > .section:last-child {
     color: var(--accent);
 }
 
-/* Projetos em que atuei: lista compacta, a linha inteira abre o site oficial */
+/* Projetos em que atuei: lista compacta */
 .client-list {
     border-top: 1px solid var(--border);
 }
 
 .client {
-    position: relative;
     display: grid;
-    grid-template-columns: 48px minmax(0, 1fr) auto;
+    grid-template-columns: 48px minmax(0, 1fr);
     align-items: center;
     gap: var(--spacing-md);
     padding: var(--spacing-md) 0;
@@ -627,28 +626,6 @@ main > .section:last-child {
 .client p {
     font-size: var(--font-size-sm);
     color: var(--text-secondary);
-}
-
-.client-link,
-.client-link:hover {
-    color: var(--text);
-}
-
-.client-link::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-}
-
-.client:hover .client-link,
-.client:hover .client-site {
-    color: var(--accent);
-}
-
-.client-site {
-    font-size: var(--font-size-sm);
-    color: var(--text-secondary);
-    white-space: nowrap;
 }
 
 /* Contato */
@@ -806,10 +783,6 @@ main > .section:last-child {
         width: 40px;
         height: 40px;
         padding: 6px;
-    }
-
-    .client-site {
-        display: none;
     }
 
     .project-card-icon {
