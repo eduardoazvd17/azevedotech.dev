@@ -272,8 +272,51 @@
         }
     }
 
+    // Recarregar sempre começa do topo: o navegador não restaura a rolagem e os
+    // links de seção (#sobre, #contato...) rolam até a seção sem ir para a URL.
+    // Um link com # ainda abre na seção certa, e o # sai da URL em seguida.
+    function setupScrolling() {
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+        const scrollToHash = (id, behavior) => {
+            const target = id && id !== 'top' ? document.getElementById(id) : null;
+            if (target) {
+                target.scrollIntoView({ block: 'start', behavior });
+            } else {
+                window.scrollTo({ top: 0, behavior });
+            }
+        };
+
+        const initialHash = window.location.hash.slice(1);
+        if (initialHash) {
+            window.history.replaceState(window.history.state, '', window.location.pathname + window.location.search);
+        }
+
+        // Alguns navegadores móveis ainda restauram a rolagem depois do load.
+        window.addEventListener('pageshow', () => scrollToHash(initialHash, 'instant'), { once: true });
+
+        document.addEventListener('click', (event) => {
+            const link = event.target.closest('a[href^="#"]');
+            if (!link || event.defaultPrevented) return;
+
+            event.preventDefault();
+            scrollToHash(link.getAttribute('href').slice(1), 'smooth');
+        });
+
+        // # digitado na URL com a página aberta: rola até a seção e limpa a URL também.
+        window.addEventListener('hashchange', () => {
+            const id = window.location.hash.slice(1);
+            window.history.replaceState(window.history.state, '', window.location.pathname + window.location.search);
+            scrollToHash(id, 'smooth');
+        });
+
+        // A rolagem inicial roda depois de traduzir a página, quando as alturas já são as finais.
+        return () => scrollToHash(initialHash, 'instant');
+    }
+
     function init({ fallback = 'en', onChange } = {}) {
         onChangeHandler = onChange;
+        const scrollToInitialPosition = setupScrolling();
 
         const params = new URLSearchParams(window.location.search);
         const initialLang = resolveInitialLanguage(params, fallback);
@@ -291,6 +334,7 @@
 
         setTheme(initialTheme);
         setLanguage(initialLang);
+        scrollToInitialPosition();
     }
 
     /**

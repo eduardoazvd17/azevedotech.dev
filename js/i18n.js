@@ -5,7 +5,7 @@ const translations = {
         'nav_label': 'Seções',
         'nav_about': 'Sobre',
         'nav_apps': 'Meus apps',
-        'nav_clients': 'Projetos',
+        'nav_clients': 'Experiências',
         'nav_contact': 'Contato',
 
         'intro_role': 'Engenheiro de software · Especialista em Flutter · Desenvolvedor full stack multiplataforma',
@@ -32,7 +32,8 @@ const translations = {
         'rocketrush_meta': 'Jogo casual',
         'rocketrush_description': 'Pilote um foguete, desvie dos obstáculos e junte moedas para trocar por novas naves. A melhor pontuação de cada piloto vai para um ranking global.',
 
-        'clients_title': 'Projetos em que atuei durante a minha carreira',
+        'clients_title': 'Empresas e produtos em que atuei durante minha carreira',
+        'clients_intro': 'Experiências profissionais em que trabalhei como contratado, diretamente ou por meio de consultorias. As marcas pertencem aos respectivos titulares e são utilizadas exclusivamente para identificar essas experiências, sem indicar parceria, vínculo comercial ou endosso.',
         'sicoob_meta': 'Cooperativa financeira',
         'master_meta': 'Banco',
         'talkprocess_meta': 'Plataforma de gestão de processos',
@@ -56,7 +57,7 @@ const translations = {
         'nav_label': 'Sections',
         'nav_about': 'About',
         'nav_apps': 'My apps',
-        'nav_clients': 'Projects',
+        'nav_clients': 'Experience',
         'nav_contact': 'Contact',
 
         'intro_role': 'Software engineer · Flutter specialist · Cross-platform full stack developer',
@@ -83,7 +84,8 @@ const translations = {
         'rocketrush_meta': 'Casual game',
         'rocketrush_description': 'Pilot a rocket, dodge obstacles and collect coins to trade for new ships. Each pilot\'s best score goes to a global leaderboard.',
 
-        'clients_title': 'Projects I have worked on throughout my career',
+        'clients_title': 'Companies and products I have worked on throughout my career',
+        'clients_intro': 'Professional experiences in which I worked as a hired professional, directly or through consulting firms. Trademarks belong to their respective owners and are used exclusively to identify these experiences, without implying partnership, commercial relationship or endorsement.',
         'sicoob_meta': 'Financial cooperative',
         'master_meta': 'Bank',
         'talkprocess_meta': 'Process management platform',
@@ -107,7 +109,7 @@ const translations = {
         'nav_label': 'Secciones',
         'nav_about': 'Sobre mí',
         'nav_apps': 'Mis apps',
-        'nav_clients': 'Proyectos',
+        'nav_clients': 'Experiencia',
         'nav_contact': 'Contacto',
 
         'intro_role': 'Ingeniero de software · Especialista en Flutter · Desarrollador full stack multiplataforma',
@@ -134,7 +136,8 @@ const translations = {
         'rocketrush_meta': 'Juego casual',
         'rocketrush_description': 'Pilota un cohete, esquiva obstáculos y junta monedas para cambiarlas por nuevas naves. La mejor puntuación de cada piloto va a un ranking global.',
 
-        'clients_title': 'Proyectos en los que trabajé a lo largo de mi carrera',
+        'clients_title': 'Empresas y productos en los que trabajé a lo largo de mi carrera',
+        'clients_intro': 'Experiencias profesionales en las que trabajé como profesional contratado, directamente o a través de consultoras. Las marcas pertenecen a sus respectivos titulares y se utilizan exclusivamente para identificar estas experiencias, sin implicar alianza, vínculo comercial ni respaldo.',
         'sicoob_meta': 'Cooperativa financiera',
         'master_meta': 'Banco',
         'talkprocess_meta': 'Plataforma de gestión de procesos',
