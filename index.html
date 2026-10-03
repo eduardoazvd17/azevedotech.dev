@@ -19,7 +19,7 @@
             } catch (e) { }
         })();
     </script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=20261003e">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,10 @@
 <body>
     <header class="site-header">
         <div class="container site-header-inner">
-            <a href="#top" class="site-name">Azevedo Tech Solutions</a>
+            <a href="#top" class="site-name">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 9.2 10 3l7 6.2V16a1 1 0 0 1-1 1h-3.5v-4.5h-5V17H4a1 1 0 0 1-1-1V9.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                <span class="site-name-text">Azevedo Tech Solutions</span>
+            </a>
             <nav class="site-nav" id="nav-menu" aria-label="Seções" data-i18n-aria="nav_label">
                 <a href="#about" data-section="about" data-i18n="nav_about">Sobre</a>
                 <a href="#apps" data-section="apps" data-i18n="nav_apps">Meus apps</a>
@@ -289,14 +292,14 @@
 
     <footer class="site-footer">
         <div class="container site-footer-inner">
-            <p>&copy; <span id="current-year"></span> Azevedo Tech Solutions · CNPJ 55.705.600/0001-47</p>
+            <p>&copy; <span id="current-year"></span> Azevedo Tech Solutions<span class="footer-sep"> · </span><span class="footer-cnpj">CNPJ 55.705.600/0001-47</span></p>
             <a href="#top" data-i18n="back_to_top">Voltar ao topo</a>
         </div>
     </footer>
 
-    <script src="js/preferences.js"></script>
-    <script src="js/i18n.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/preferences.js?v=20261003e"></script>
+    <script src="js/i18n.js?v=20261003e"></script>
+    <script src="js/main.js?v=20261003e"></script>
 </body>
 
 </html>

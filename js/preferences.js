@@ -266,7 +266,7 @@
 
         change();
 
-        if (anchor && anchor.isConnected && anchor.checkVisibility()) {
+        if (anchor && anchor.isConnected && anchor.getClientRects().length) {
             const delta = anchor.getBoundingClientRect().top - before;
             if (delta) window.scrollTo({ top: window.scrollY + delta, behavior: 'instant' });
         }

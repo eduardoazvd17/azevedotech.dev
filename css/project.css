@@ -130,7 +130,7 @@ body {
 }
 
 .project-block h2 {
-    font-size: var(--font-size-lg);
+    font-size: 1.25rem;
     font-weight: var(--font-weight-semibold);
     letter-spacing: -0.01em;
     position: sticky;

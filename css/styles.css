@@ -297,9 +297,19 @@ ul {
 
 .site-name,
 .site-name:hover {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    flex-shrink: 0;
     font-weight: var(--font-weight-semibold);
     color: var(--text);
     white-space: nowrap;
+}
+
+.site-name svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
 }
 
 .site-nav {
@@ -399,7 +409,7 @@ main > .section:last-child {
     position: sticky;
     top: calc(var(--nav-height) + var(--spacing-lg));
     align-self: start;
-    font-size: var(--font-size-lg);
+    font-size: 1.25rem;
     font-weight: var(--font-weight-semibold);
     letter-spacing: -0.01em;
 }
@@ -716,6 +726,10 @@ main > .section:last-child {
     gap: var(--spacing-md);
 }
 
+.footer-cnpj {
+    white-space: nowrap;
+}
+
 .site-footer a {
     color: var(--text-secondary);
 }
@@ -805,9 +819,30 @@ main > .section:last-child {
     }
 }
 
-@media screen and (max-width: 520px) {
-    .site-name {
+@media screen and (max-width: 640px) {
+    /* No celular fica só a casinha; o nome continua disponível para leitores de tela */
+    .site-name-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+
+    .site-footer-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: var(--spacing-sm);
+    }
+
+    .footer-sep {
         display: none;
+    }
+
+    .footer-cnpj {
+        display: block;
     }
 
     .site-nav {
