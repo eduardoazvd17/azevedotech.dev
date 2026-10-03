@@ -1,6 +1,7 @@
 const translations = {
     'pt': {
-        'meta_description': 'Eduardo Azevedo — Engenheiro de software, Flutter',
+        'meta_title': 'Desenvolvimento de Aplicativos e Sites | Azevedo Tech Solutions',
+        'meta_description': 'Desenvolvimento de aplicativos Android e iOS, sites e sistemas sob medida para empresas. Eduardo Azevedo, desenvolvedor Flutter com mais de 7 anos de experiência. Peça um orçamento.',
 
         'nav_label': 'Seções',
         'nav_about': 'Sobre',
@@ -52,7 +53,8 @@ const translations = {
     },
 
     'en': {
-        'meta_description': 'Eduardo Azevedo — Software engineer, Flutter',
+        'meta_title': 'App & Website Development | Azevedo Tech Solutions',
+        'meta_description': 'Custom Android and iOS app, website and software development for businesses. Eduardo Azevedo, Flutter developer with 7+ years of experience. Get a quote.',
 
         'nav_label': 'Sections',
         'nav_about': 'About',
@@ -104,7 +106,8 @@ const translations = {
     },
 
     'es': {
-        'meta_description': 'Eduardo Azevedo — Ingeniero de software, Flutter',
+        'meta_title': 'Desarrollo de Apps y Sitios Web | Azevedo Tech Solutions',
+        'meta_description': 'Desarrollo de aplicaciones Android e iOS, sitios web y sistemas a medida para empresas. Eduardo Azevedo, desarrollador Flutter con más de 7 años de experiencia. Pide un presupuesto.',
 
         'nav_label': 'Secciones',
         'nav_about': 'Sobre mí',
@@ -165,7 +168,7 @@ function applyLanguage(lang) {
 
     Preferences.applyTranslations(dictionary);
 
-    // O título é sempre o nome da empresa; a descrição acompanha o idioma.
+    document.title = dictionary.meta_title;
     document.querySelector('meta[name="description"]').setAttribute('content', dictionary.meta_description);
 }
 

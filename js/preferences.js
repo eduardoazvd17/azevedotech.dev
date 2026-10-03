@@ -11,6 +11,7 @@
 (function () {
     const LANG_KEY = 'language';
     const THEME_KEY = 'theme';
+    const SITE_ORIGIN = 'https://azevedotech.dev';
 
     // Bandeiras em SVG inline: emojis de bandeira não aparecem no Windows.
     const FLAGS = {
@@ -250,10 +251,25 @@
         currentLang = lang;
         writeStorage(LANG_KEY, lang);
         document.documentElement.lang = lang;
+        updateCanonical(lang);
         renderLanguage();
         renderTheme();
 
         if (onChangeHandler) keepScrollPosition(() => onChangeHandler(lang));
+    }
+
+    // Cada idioma tem a sua URL indexável (?lang=pt|en|es), listada nos
+    // <link rel="alternate" hreflang> de cada página. O canonical aponta para a
+    // versão do idioma exibido, para os buscadores não tratarem as três como
+    // duplicadas da mesma página.
+    function updateCanonical(lang) {
+        let canonical = document.querySelector('link[rel="canonical"]');
+        if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.rel = 'canonical';
+            document.head.appendChild(canonical);
+        }
+        canonical.href = `${SITE_ORIGIN}${window.location.pathname}?lang=${lang}`;
     }
 
     // Os textos mudam de tamanho entre idiomas e empurram o conteúdo. Guarda o
