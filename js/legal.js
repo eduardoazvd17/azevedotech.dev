@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const backLink = document.querySelector('.legal-back-link');
     const backLabels = backLink ? JSON.parse(backLink.dataset.backLabel) : {};
 
-    LangMenu.init({
+    Preferences.init({
         // Os apps abrem esta página sem ?lang: vale o idioma salvo, depois o do
         // dispositivo e, se nenhum for suportado, o inglês.
         fallback: 'en',
@@ -18,10 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            if (backLink) {
-                backLink.querySelector('span').textContent = backLabels[lang];
-                backLink.setAttribute('href', `../?lang=${lang}`);
-            }
+            if (backLink) backLink.querySelector('span').textContent = backLabels[lang];
         }
     });
 });

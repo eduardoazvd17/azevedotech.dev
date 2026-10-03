@@ -23,13 +23,13 @@ const translations = {
         'apps_intro': 'Aplicativos publicados e mantidos por mim.',
         'project_details': 'Ver detalhes',
         'project_play': 'Jogar no navegador',
-        'moverio_meta': 'Mobilidade urbana · Android e iOS',
+        'moverio_meta': 'Mobilidade urbana',
         'moverio_description': 'Linhas, itinerários e pontos de ônibus do Rio de Janeiro em um só app. Mostra qual ônibus pegar até o destino, acompanha a viagem com alerta de chegada e exibe os ônibus em tempo real.',
-        'economizze_meta': 'Finanças pessoais · Android',
+        'economizze_meta': 'Finanças pessoais',
         'economizze_description': 'Planejamento financeiro que mostra quanto você vai receber, quanto já está comprometido com contas e parcelas e quanto sobra para gastar em cada mês. Dá para dividir as finanças com a família em espaços compartilhados.',
-        'autohub_meta': 'Gestão veicular · Android e iOS',
+        'autohub_meta': 'Gestão veicular',
         'autohub_description': 'Manutenções, abastecimentos, lembretes e tabela FIPE para cuidar do carro, com um assistente de IA para tirar dúvidas. A quilometragem pode se atualizar sozinha pelo Bluetooth do carro.',
-        'rocketrush_meta': 'Jogo casual · Android e web',
+        'rocketrush_meta': 'Jogo casual',
         'rocketrush_description': 'Pilote um foguete, desvie dos obstáculos e junte moedas para trocar por novas naves. A melhor pontuação de cada piloto vai para um ranking global.',
 
         'clients_title': 'Projetos em que atuei durante a minha carreira',
@@ -74,13 +74,13 @@ const translations = {
         'apps_intro': 'Apps I have published and maintain.',
         'project_details': 'View details',
         'project_play': 'Play in the browser',
-        'moverio_meta': 'Urban mobility · Android and iOS',
+        'moverio_meta': 'Urban mobility',
         'moverio_description': 'Rio de Janeiro\'s bus lines, itineraries and stops in a single app. It shows which bus takes you to your destination, follows the trip with an arrival alert and displays buses in real time.',
-        'economizze_meta': 'Personal finance · Android',
+        'economizze_meta': 'Personal finance',
         'economizze_description': 'Finance planning that shows how much you will receive, how much is already committed to bills and installments, and how much is left to spend each month. You can share your finances with your family in shared spaces.',
-        'autohub_meta': 'Vehicle management · Android and iOS',
+        'autohub_meta': 'Vehicle management',
         'autohub_description': 'Maintenance, fill-ups, reminders and FIPE prices to take care of your car, with an AI assistant for questions. Mileage can update itself through the car\'s Bluetooth.',
-        'rocketrush_meta': 'Casual game · Android and web',
+        'rocketrush_meta': 'Casual game',
         'rocketrush_description': 'Pilot a rocket, dodge obstacles and collect coins to trade for new ships. Each pilot\'s best score goes to a global leaderboard.',
 
         'clients_title': 'Projects I have worked on throughout my career',
@@ -125,13 +125,13 @@ const translations = {
         'apps_intro': 'Aplicaciones publicadas y mantenidas por mí.',
         'project_details': 'Ver detalles',
         'project_play': 'Jugar en el navegador',
-        'moverio_meta': 'Movilidad urbana · Android e iOS',
+        'moverio_meta': 'Movilidad urbana',
         'moverio_description': 'Líneas, itinerarios y paradas de autobús de Río de Janeiro en una sola app. Muestra qué autobús tomar hasta tu destino, sigue el viaje con aviso de llegada y muestra los autobuses en tiempo real.',
-        'economizze_meta': 'Finanzas personales · Android',
+        'economizze_meta': 'Finanzas personales',
         'economizze_description': 'Planificación financiera que muestra cuánto vas a recibir, cuánto ya está comprometido con cuentas y cuotas y cuánto te queda para gastar cada mes. Puedes compartir tus finanzas con tu familia en espacios compartidos.',
-        'autohub_meta': 'Gestión vehicular · Android e iOS',
+        'autohub_meta': 'Gestión vehicular',
         'autohub_description': 'Mantenimientos, cargas de combustible, recordatorios y tabla FIPE para cuidar tu auto, con un asistente de IA para resolver dudas. El kilometraje puede actualizarse solo con el Bluetooth del auto.',
-        'rocketrush_meta': 'Juego casual · Android y web',
+        'rocketrush_meta': 'Juego casual',
         'rocketrush_description': 'Pilota un cohete, esquiva obstáculos y junta monedas para cambiarlas por nuevas naves. La mejor puntuación de cada piloto va a un ranking global.',
 
         'clients_title': 'Proyectos en los que trabajé a lo largo de mi carrera',
@@ -154,23 +154,18 @@ const translations = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    LangMenu.init({ fallback: 'en', onChange: applyLanguage });
+    Preferences.init({ fallback: 'en', onChange: applyLanguage });
 });
 
 function applyLanguage(lang) {
     const dictionary = translations[lang];
 
-    LangMenu.applyTranslations(dictionary);
+    Preferences.applyTranslations(dictionary);
 
     // O título é sempre o nome da empresa; a descrição acompanha o idioma.
     document.querySelector('meta[name="description"]').setAttribute('content', dictionary.meta_description);
-
-    // As páginas de projeto abrem no mesmo idioma.
-    document.querySelectorAll('a[data-project-page]').forEach(link => {
-        link.setAttribute('href', `${link.dataset.projectPage}?lang=${lang}`);
-    });
 }
 
 function t(key) {
-    return translations[LangMenu.current || 'en'][key];
+    return translations[Preferences.language || 'en'][key];
 }

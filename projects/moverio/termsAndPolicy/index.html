@@ -12,6 +12,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+	<script>
+		// Aplica o tema salvo (ou ?theme=) antes da primeira pintura, para a página não piscar.
+		(function () {
+			try {
+				var theme = new URLSearchParams(location.search).get('theme');
+				if (theme !== 'light' && theme !== 'dark') theme = localStorage.getItem('theme');
+				if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+			} catch (e) { }
+		})();
+	</script>
 	<link rel="stylesheet" href="../../../css/styles.css">
 	<link rel="stylesheet" href="../../../css/legal.css">
 </head>
@@ -19,7 +29,10 @@
 <body>
 	<div class="legal-topbar">
 		<a class="legal-back-link" href="../" data-back-label='{"pt": "MoveRio", "en": "MoveRio", "es": "MoveRio"}'>&larr; <span>MoveRio</span></a>
-		<div class="lang-menu" data-lang-menu></div>
+		<div class="site-prefs">
+			<div class="pref-menu" data-lang-menu></div>
+			<div class="pref-menu" data-theme-menu></div>
+		</div>
 	</div>
 
 	<main class="legal-content">
@@ -282,7 +295,7 @@
 		</article>
 	</main>
 
-	<script src="../../../js/lang-menu.js"></script>
+	<script src="../../../js/preferences.js"></script>
 	<script src="../../../js/legal.js"></script>
 </body>
 

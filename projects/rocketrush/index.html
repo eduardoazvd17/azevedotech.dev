@@ -9,6 +9,16 @@
     <title>Rocket Rush — jogo casual | Azevedo Tech Solutions</title>
     <link rel="icon" href="../../images/rocketrush.png" type="image/png">
     <link rel="apple-touch-icon" href="../../images/rocketrush.png" type="image/png">
+    <script>
+        // Aplica o tema salvo (ou ?theme=) antes da primeira pintura, para a página não piscar.
+        (function () {
+            try {
+                var theme = new URLSearchParams(location.search).get('theme');
+                if (theme !== 'light' && theme !== 'dark') theme = localStorage.getItem('theme');
+                if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+            } catch (e) { }
+        })();
+    </script>
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -20,10 +30,13 @@
 <body>
     <header class="project-topbar">
         <div class="container project-topbar-inner">
-            <a class="project-back" href="../../" data-keep-lang="../../">
+            <a class="project-back" href="../../">
                 <i class="fas fa-arrow-left"></i> <span data-i18n="ui_back">Início</span>
             </a>
-            <div class="lang-menu" data-lang-menu></div>
+            <div class="site-prefs">
+                <div class="pref-menu" data-lang-menu></div>
+                <div class="pref-menu" data-theme-menu></div>
+            </div>
         </div>
     </header>
 
@@ -42,7 +55,7 @@
                     <a class="store-button" href="https://rocketrush.web.app" target="_blank" rel="noopener">
                         <i class="fas fa-gamepad"></i> <span data-i18n="ui_web">Jogar no navegador</span>
                     </a>
-                    <a class="store-button store-button--ghost" href="termsAndPolicy/" data-keep-lang="termsAndPolicy/">
+                    <a class="store-button store-button--ghost" href="termsAndPolicy/">
                         <span data-i18n="ui_terms">Termos de Uso e Política de Privacidade</span>
                     </a>
                     </div>
@@ -124,7 +137,7 @@
                 <h2 data-i18n="ui_privacy">Privacidade</h2>
                 <div class="project-block-body">
                     <p data-i18n="privacy">No ranking, só o nome de piloto e a pontuação ficam públicos. O acelerômetro é lido no aparelho e nada é enviado. A conta, as moedas e a posição no ranking podem ser excluídas pelo próprio jogo.</p>
-                    <p><a class="text-link" href="termsAndPolicy/" data-keep-lang="termsAndPolicy/"><span data-i18n="ui_terms">Termos de Uso e Política de Privacidade</span><i class="fas fa-arrow-right"></i></a></p>
+                    <p><a class="text-link" href="termsAndPolicy/"><span data-i18n="ui_terms">Termos de Uso e Política de Privacidade</span><i class="fas fa-arrow-right"></i></a></p>
                 </div>
             </div>
         </section>
@@ -133,7 +146,7 @@
     <footer class="project-footer">
         <div class="container project-footer-inner">
             <span>&copy; <span id="current-year"></span> Azevedo Tech Solutions</span>
-            <a href="../../" data-keep-lang="../../"><span data-i18n="ui_footer_back">Voltar ao portfólio</span></a>
+            <a href="../../"><span data-i18n="ui_footer_back">Voltar ao portfólio</span></a>
         </div>
     </footer>
 
@@ -243,7 +256,7 @@
             }
         };
     </script>
-    <script src="../../js/lang-menu.js"></script>
+    <script src="../../js/preferences.js"></script>
     <script src="../../js/project.js"></script>
 </body>
 

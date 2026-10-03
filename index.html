@@ -9,6 +9,16 @@
         content="Azevedo Tech Solutions, Eduardo Azevedo, desenvolvimento de aplicativos, Flutter, Android, iOS, Engenheiro de Software, MoveRio, Economizze, AutoHub, Rocket Rush">
     <meta name="author" content="Eduardo Azevedo">
     <title>Azevedo Tech Solutions</title>
+    <script>
+        // Aplica o tema salvo (ou ?theme=) antes da primeira pintura, para a página não piscar.
+        (function () {
+            try {
+                var theme = new URLSearchParams(location.search).get('theme');
+                if (theme !== 'light' && theme !== 'dark') theme = localStorage.getItem('theme');
+                if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+            } catch (e) { }
+        })();
+    </script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +39,10 @@
                 <a href="#clients" data-section="clients" data-i18n="nav_clients">Projetos</a>
                 <a href="#contact" data-section="contact" data-i18n="nav_contact">Contato</a>
             </nav>
-            <div class="lang-menu" data-lang-menu></div>
+            <div class="site-prefs">
+                <div class="pref-menu" data-lang-menu></div>
+                <div class="pref-menu" data-theme-menu></div>
+            </div>
         </div>
     </header>
 
@@ -106,8 +119,8 @@
                         <article class="project-card">
                             <img class="project-card-icon" src="icons/moverio.png" alt="" loading="lazy">
                             <div class="project-card-body">
-                                <h3><a href="projects/moverio/" class="project-card-link" data-project-page="projects/moverio/">MoveRio</a></h3>
-                                <p class="project-card-meta" data-i18n="moverio_meta">Mobilidade urbana · Android e iOS</p>
+                                <h3><a href="projects/moverio/" class="project-card-link">MoveRio</a></h3>
+                                <p class="project-card-meta" data-i18n="moverio_meta">Mobilidade urbana</p>
                                 <p data-i18n="moverio_description">Linhas, itinerários e pontos de ônibus do Rio de
                                     Janeiro em um só app. Mostra qual ônibus pegar até o destino, acompanha a viagem
                                     com alerta de chegada e exibe os ônibus em tempo real.</p>
@@ -116,7 +129,7 @@
                                         <a href="https://play.google.com/store/apps/details?id=com.eduardoazevedo.moverio" class="project-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
                                         <a href="https://apps.apple.com/br/app/moverio-%C3%B4nibus-rj/id6758354578" class="project-link" target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
                                     </div>
-                                    <a href="projects/moverio/" class="project-more" data-project-page="projects/moverio/"><span data-i18n="project_details">Ver detalhes</span> <span aria-hidden="true">&rarr;</span></a>
+                                    <a href="projects/moverio/" class="project-more"><span data-i18n="project_details">Ver detalhes</span> <span aria-hidden="true">&rarr;</span></a>
                                 </div>
                             </div>
                         </article>
@@ -124,8 +137,8 @@
                         <article class="project-card">
                             <img class="project-card-icon" src="images/economizze.png" alt="" loading="lazy">
                             <div class="project-card-body">
-                                <h3><a href="projects/economizze/" class="project-card-link" data-project-page="projects/economizze/">Economizze</a></h3>
-                                <p class="project-card-meta" data-i18n="economizze_meta">Finanças pessoais · Android</p>
+                                <h3><a href="projects/economizze/" class="project-card-link">Economizze</a></h3>
+                                <p class="project-card-meta" data-i18n="economizze_meta">Finanças pessoais</p>
                                 <p data-i18n="economizze_description">Planejamento financeiro que mostra quanto você
                                     vai receber, quanto já está comprometido com contas e parcelas e quanto sobra para
                                     gastar em cada mês. Dá para dividir as finanças com a família em espaços
@@ -134,7 +147,7 @@
                                     <div class="project-links">
                                         <a href="https://play.google.com/store/apps/details?id=dev.azevedotech.economizze" class="project-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
                                     </div>
-                                    <a href="projects/economizze/" class="project-more" data-project-page="projects/economizze/"><span data-i18n="project_details">Ver detalhes</span> <span aria-hidden="true">&rarr;</span></a>
+                                    <a href="projects/economizze/" class="project-more"><span data-i18n="project_details">Ver detalhes</span> <span aria-hidden="true">&rarr;</span></a>
                                 </div>
                             </div>
                         </article>
@@ -142,8 +155,8 @@
                         <article class="project-card">
                             <img class="project-card-icon" src="images/autohub.png" alt="" loading="lazy">
                             <div class="project-card-body">
-                                <h3><a href="projects/autohub/" class="project-card-link" data-project-page="projects/autohub/">AutoHub</a></h3>
-                                <p class="project-card-meta" data-i18n="autohub_meta">Gestão veicular · Android e iOS</p>
+                                <h3><a href="projects/autohub/" class="project-card-link">AutoHub</a></h3>
+                                <p class="project-card-meta" data-i18n="autohub_meta">Gestão veicular</p>
                                 <p data-i18n="autohub_description">Manutenções, abastecimentos, lembretes e tabela FIPE
                                     para cuidar do carro, com um assistente de IA para tirar dúvidas. A quilometragem
                                     pode se atualizar sozinha pelo Bluetooth do carro.</p>
@@ -152,7 +165,7 @@
                                         <a href="https://play.google.com/store/apps/details?id=com.eduardoazevedo.autocarefy" class="project-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
                                         <a href="https://apps.apple.com/br/app/autohub-gest%C3%A3o-veicular/id6770298258" class="project-link" target="_blank" rel="noopener"><i class="fab fa-apple"></i> App Store</a>
                                     </div>
-                                    <a href="projects/autohub/" class="project-more" data-project-page="projects/autohub/"><span data-i18n="project_details">Ver detalhes</span> <span aria-hidden="true">&rarr;</span></a>
+                                    <a href="projects/autohub/" class="project-more"><span data-i18n="project_details">Ver detalhes</span> <span aria-hidden="true">&rarr;</span></a>
                                 </div>
                             </div>
                         </article>
@@ -160,8 +173,8 @@
                         <article class="project-card">
                             <img class="project-card-icon" src="images/rocketrush.png" alt="" loading="lazy">
                             <div class="project-card-body">
-                                <h3><a href="projects/rocketrush/" class="project-card-link" data-project-page="projects/rocketrush/">Rocket Rush</a></h3>
-                                <p class="project-card-meta" data-i18n="rocketrush_meta">Jogo casual · Android e web</p>
+                                <h3><a href="projects/rocketrush/" class="project-card-link">Rocket Rush</a></h3>
+                                <p class="project-card-meta" data-i18n="rocketrush_meta">Jogo casual</p>
                                 <p data-i18n="rocketrush_description">Pilote um foguete, desvie dos obstáculos e junte
                                     moedas para trocar por novas naves. A melhor pontuação de cada piloto vai para um
                                     ranking global.</p>
@@ -170,7 +183,7 @@
                                         <a href="https://play.google.com/store/apps/details?id=dev.azevedotech.rocketgame" class="project-link" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Google Play</a>
                                         <a href="https://rocketrush.web.app" class="project-link" target="_blank" rel="noopener"><i class="fas fa-gamepad"></i> <span data-i18n="project_play">Jogar no navegador</span></a>
                                     </div>
-                                    <a href="projects/rocketrush/" class="project-more" data-project-page="projects/rocketrush/"><span data-i18n="project_details">Ver detalhes</span> <span aria-hidden="true">&rarr;</span></a>
+                                    <a href="projects/rocketrush/" class="project-more"><span data-i18n="project_details">Ver detalhes</span> <span aria-hidden="true">&rarr;</span></a>
                                 </div>
                             </div>
                         </article>
@@ -281,7 +294,7 @@
         </div>
     </footer>
 
-    <script src="js/lang-menu.js"></script>
+    <script src="js/preferences.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>

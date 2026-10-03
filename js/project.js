@@ -6,20 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const year = document.getElementById('current-year');
     if (year) year.textContent = new Date().getFullYear();
 
-    LangMenu.init({
+    Preferences.init({
         fallback: 'en',
         onChange: (lang) => {
             const dictionary = dictionaries[lang];
-            LangMenu.applyTranslations(dictionary);
+            Preferences.applyTranslations(dictionary);
 
             document.title = dictionary.meta_title;
             document.querySelector('meta[name="description"]').setAttribute('content', dictionary.meta_description);
-
-            // Links internos (portfólio e termos) levam o idioma escolhido.
-            document.querySelectorAll('a[data-keep-lang]').forEach(link => {
-                const [path, hash] = link.dataset.keepLang.split('#');
-                link.setAttribute('href', `${path}?lang=${lang}${hash ? `#${hash}` : ''}`);
-            });
         }
     });
 });
