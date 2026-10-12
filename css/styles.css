@@ -478,8 +478,8 @@ ul {
 }
 
 .intro-photo {
-    width: 112px;
-    height: 112px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -594,6 +594,33 @@ main > .section:last-child {
     display: block;
 }
 
+/* Números do "Sobre": valor grande e legenda curta, separados por fio no topo */
+.facts {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.facts > div {
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border-strong);
+}
+
+.facts dt {
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+}
+
+.facts dd {
+    margin-top: var(--spacing-xs);
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}
+
 /* Carrossel de tecnologias: a lista vem duplicada no HTML e anda metade
    da largura, então o fim de uma volta encaixa no começo da próxima */
 .tech-marquee {
@@ -643,10 +670,25 @@ main > .section:last-child {
 .project-card {
     position: relative;
     display: grid;
-    grid-template-columns: 64px minmax(0, 1fr);
+    grid-template-columns: 64px minmax(0, 1fr) 112px;
     gap: var(--spacing-lg);
     padding: var(--spacing-xl) 0;
     border-bottom: 1px solid var(--border);
+}
+
+/* Captura da loja recortada no topo, como uma prévia da tela inicial */
+.project-card-shot {
+    width: 112px;
+    height: 168px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 0 0 1px var(--border);
+    transition: transform var(--transition-normal);
+}
+
+.project-card:hover .project-card-shot {
+    transform: translateY(-2px);
 }
 
 .project-card-icon {
@@ -749,9 +791,11 @@ main > .section:last-child {
     color: var(--accent);
 }
 
-/* Projetos em que atuei: lista compacta */
-.client-list {
-    border-top: 1px solid var(--border);
+/* Empresas em que atuei: grade de duas colunas */
+.client-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-md) var(--spacing-xl);
 }
 
 .client {
@@ -759,8 +803,7 @@ main > .section:last-child {
     grid-template-columns: 48px minmax(0, 1fr);
     align-items: center;
     gap: var(--spacing-md);
-    padding: var(--spacing-md) 0;
-    border-bottom: 1px solid var(--border);
+    padding: var(--spacing-sm) 0;
 }
 
 .client-logo {
@@ -787,38 +830,112 @@ main > .section:last-child {
     color: var(--text-secondary);
 }
 
-/* Contato */
-.contact-channels {
-    max-width: 520px;
-    border-top: 1px solid var(--border);
+/* Serviços: grade 2x2, cada item com fio no topo */
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-xl);
 }
 
-.contact-channels > div {
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
+.service-list li {
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border-strong);
 }
 
-.contact-channels dt {
+.service-list h3 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+}
+
+.service-list p {
+    margin-top: var(--spacing-xs);
+    color: var(--text-secondary);
+}
+
+/* Contato: um bloco por canal; o primeiro (e-mail) em destaque */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-md);
+}
+
+.contact-tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    min-width: 0;
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--border-radius-lg);
+    transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.contact-tile:hover {
+    border-color: var(--text);
+}
+
+.contact-tile-label {
     font-size: var(--font-size-xs);
     color: var(--text-secondary);
-    margin-bottom: 2px;
 }
 
-.contact-channels dd {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--spacing-sm);
-    font-size: var(--font-size-sm);
-}
-
-.contact-channels dd a {
+.contact-tile-link,
+.contact-tile-link:hover {
     color: var(--text);
+    font-weight: var(--font-weight-medium);
     overflow-wrap: anywhere;
 }
 
-.contact-channels dd a:hover {
-    color: var(--accent);
+/* O bloco inteiro abre o canal; o botão Copiar fica por cima */
+.contact-tile-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+.contact-tile-link:focus-visible {
+    outline: none;
+}
+
+.contact-tile:has(.contact-tile-link:focus-visible) {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.contact-tile .copy-button {
+    position: relative;
+    z-index: 1;
+    margin-top: var(--spacing-sm);
+}
+
+.contact-tile--primary {
+    background: var(--text);
+    border-color: var(--text);
+}
+
+.contact-tile--primary:hover {
+    background: color-mix(in srgb, var(--text) 88%, var(--bg));
+}
+
+.contact-tile--primary .contact-tile-label,
+.contact-tile--primary .contact-tile-link,
+.contact-tile--primary .copy-button {
+    color: var(--bg);
+}
+
+.contact-tile--primary .copy-button {
+    border-color: color-mix(in srgb, var(--bg) 40%, transparent);
+}
+
+.contact-tile--primary .copy-button:hover {
+    border-color: var(--bg);
+}
+
+.contact-tile--primary .contact-tile-label {
+    opacity: 0.75;
 }
 
 .copy-button {
@@ -847,6 +964,12 @@ main > .section:last-child {
 .copy-button.copied {
     color: var(--success);
     border-color: var(--success);
+}
+
+/* No bloco escuro do e-mail principal, o verde não tem contraste: o retorno fica no texto "Copiado" */
+.contact-tile--primary .copy-button.copied {
+    color: var(--bg);
+    border-color: var(--bg);
 }
 
 .site-footer {
@@ -913,8 +1036,8 @@ main > .section:last-child {
     }
 
     .intro-photo {
-        width: 88px;
-        height: 88px;
+        width: 96px;
+        height: 96px;
     }
 
     .intro-text {
@@ -937,6 +1060,25 @@ main > .section:last-child {
 
     .client {
         grid-template-columns: 40px minmax(0, 1fr);
+    }
+
+    /* No celular a captura sai do card e as grades viram uma coluna */
+    .project-card-shot {
+        display: none;
+    }
+
+    .client-grid,
+    .service-list,
+    .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .facts {
+        gap: var(--spacing-md);
+    }
+
+    .facts dt {
+        font-size: var(--font-size-xl);
     }
 
     .client-logo {

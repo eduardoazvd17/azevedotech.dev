@@ -376,8 +376,8 @@
     }
 
     /**
-     * Aplica um dicionário { chave: texto } aos elementos com data-i18n e
-     * data-i18n-aria (aria-label).
+     * Aplica um dicionário { chave: texto } aos elementos com data-i18n,
+     * data-i18n-aria (aria-label) e data-i18n-alt (alt de imagens).
      */
     function applyTranslations(dictionary) {
         document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -388,6 +388,11 @@
         document.querySelectorAll('[data-i18n-aria]').forEach(element => {
             const value = dictionary[element.dataset.i18nAria];
             if (value !== undefined) element.setAttribute('aria-label', value);
+        });
+
+        document.querySelectorAll('[data-i18n-alt]').forEach(element => {
+            const value = dictionary[element.dataset.i18nAlt];
+            if (value !== undefined) element.setAttribute('alt', value);
         });
     }
 

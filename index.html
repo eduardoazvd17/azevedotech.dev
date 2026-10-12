@@ -141,7 +141,7 @@
             } catch (e) { }
         })();
     </script>
-    <link rel="stylesheet" href="css/styles.css?v=20261012c">
+    <link rel="stylesheet" href="css/styles.css?v=20261012e">
     <link rel="icon" href="icons/icon.png" type="image/png">
     <link rel="apple-touch-icon" href="icons/icon.png" type="image/png">
 </head>
@@ -161,6 +161,7 @@
                 <a href="#about" data-section="about" data-i18n="nav_about">Sobre</a>
                 <a href="#apps" data-section="apps" data-i18n="nav_apps">Meus apps</a>
                 <a href="#clients" data-section="clients" data-i18n="nav_clients">Experiências</a>
+                <a href="#services" data-section="services" data-i18n="nav_services">Serviços</a>
                 <a href="#contact" data-section="contact" data-i18n="nav_contact">Contato</a>
             </nav>
             <div class="site-prefs">
@@ -173,15 +174,13 @@
     <main id="content" tabindex="-1">
         <section class="intro">
             <div class="container intro-inner">
-                <img class="intro-photo" src="images/thumbs/profile.jpg" width="112" height="112" fetchpriority="high"
+                <img class="intro-photo" src="images/thumbs/profile.jpg" width="160" height="160" fetchpriority="high"
                     alt="Eduardo Azevedo">
                 <div>
                     <h1 translate="no">Eduardo Azevedo</h1>
-                    <p class="intro-role" data-i18n="intro_role">Engenheiro de software · Especialista em Flutter ·
-                        Desenvolvedor full stack multiplataforma</p>
-                    <p class="intro-text" data-i18n="intro_text">Desenvolvo soluções de software há mais de 7 anos, da
-                        ideia à entrega. Pela Azevedo Tech Solutions, crio soluções sob medida para empresas e publico
-                        meus próprios apps.</p>
+                    <p class="intro-role" data-i18n="intro_role">Engenheiro de software especialista em Flutter</p>
+                    <p class="intro-text" data-i18n="intro_text">Há mais de 7 anos desenvolvo apps Android e iOS, do primeiro protótipo
+                        à publicação nas lojas, para bancos, cooperativas e empresas de tecnologia.</p>
                     <ul class="intro-links">
                         <li><a href="#contact" class="button" data-i18n="intro_contact">Fale comigo</a></li>
                         <li><a href="https://www.linkedin.com/in/eduardoazvd17/" target="_blank"
@@ -196,26 +195,30 @@
             <div class="container">
                 <h2 class="section-title" data-i18n="about_title">Sobre</h2>
                 <div class="section-body">
-                    <p data-i18n="about_1">Sou um engenheiro de software com 7 anos de experiência profissional,
-                        especializado no desenvolvimento de soluções mobile multiplataforma com o framework Flutter. Ao
-                        longo da minha carreira, liderei projetos mobile de forma independente, desenvolvi soluções para
-                        instituições financeiras e implementei melhorias significativas que otimizaram a performance de
-                        aplicativos. Meu foco está na criação de soluções performáticas, inovadoras e escaláveis, sempre
-                        priorizando alta qualidade e melhoria contínua da experiência do usuário.</p>
-                    <p data-i18n="about_2">Possuo ampla experiência em diversas áreas do Flutter, incluindo
-                        internacionalização, modularização, gerenciamento de estados e rotas, criação de widgets
-                        personalizados, desenvolvimento de packages reutilizáveis, automação de pipelines CI/CD com
-                        Codemagic, publicação de aplicativos nas lojas e realização de testes unitários e de widgets.
-                        Sigo práticas rigorosas de gerenciamento eficiente de memória para evitar memory leaks, e adoto
-                        os princípios SOLID e Clean Code para garantir um código limpo, bem estruturado e de fácil
-                        manutenção.</p>
-                    <p data-i18n="about_3">Valorizo a comunicação clara e o trabalho colaborativo em equipe, sempre
-                        buscando contribuir de forma eficiente e construtiva para garantir entregas de alta qualidade e
-                        alinhamento entre os times. Acredito que a sinergia entre profissionais é fundamental para o
-                        sucesso de qualquer projeto.</p>
-                    <p data-i18n="about_4">Além da minha expertise em Flutter, possuo conhecimento sólido em linguagens
-                        como Java, C#, Kotlin e Swift, o que me permite atuar com versatilidade em diferentes
-                        tecnologias e stacks, atendendo a diversas demandas no desenvolvimento de software.</p>
+                    <p data-i18n="about_1">Sou especialista em Flutter e já liderei projetos mobile de ponta a ponta,
+                        inclusive em instituições financeiras, onde melhorei a performance e a experiência de uso dos
+                        aplicativos. Gosto de trabalhar em equipe, com comunicação clara e foco em entregas de
+                        qualidade.</p>
+                    <p data-i18n="about_2">No dia a dia trabalho com arquitetura modular, gerenciamento de estado e
+                        rotas, internacionalização, packages reutilizáveis, testes unitários e de widget, CI/CD com
+                        Codemagic e publicação nas lojas, sempre com SOLID e Clean Code. Também programo em Kotlin,
+                        Swift, Java e C#, o que ajuda em integrações nativas e em outras stacks.</p>
+
+                    <!-- Números reais: anos citados no texto, apps da seção "Meus apps" e empresas de "Experiências" -->
+                    <dl class="facts">
+                        <div>
+                            <dt>7+</dt>
+                            <dd data-i18n="fact_years">anos de experiência profissional</dd>
+                        </div>
+                        <div>
+                            <dt>4</dt>
+                            <dd data-i18n="fact_apps">apps publicados e mantidos por mim</dd>
+                        </div>
+                        <div>
+                            <dt>6</dt>
+                            <dd data-i18n="fact_clients">empresas e produtos em que atuei</dd>
+                        </div>
+                    </dl>
 
                     <div class="subsection-head">
                         <h3 class="subsection-title" data-i18n="skills_title">Linguagens e tecnologias</h3>
@@ -295,6 +298,8 @@
                                             aria-hidden="true">&rarr;</span></a>
                                 </div>
                             </div>
+                            <img class="project-card-shot" src="images/screens/moverio/1.jpg" width="460" height="996" alt=""
+                                loading="lazy">
                         </article>
 
                         <article class="project-card">
@@ -318,6 +323,8 @@
                                             aria-hidden="true">&rarr;</span></a>
                                 </div>
                             </div>
+                            <img class="project-card-shot" src="images/screens/economizze/1.jpg" width="460" height="996" alt=""
+                                loading="lazy">
                         </article>
 
                         <article class="project-card">
@@ -340,6 +347,8 @@
                                             aria-hidden="true">&rarr;</span></a>
                                 </div>
                             </div>
+                            <img class="project-card-shot" src="images/screens/autohub/1.jpg" width="460" height="996" alt=""
+                                loading="lazy">
                         </article>
 
                         <article class="project-card">
@@ -362,6 +371,8 @@
                                             aria-hidden="true">&rarr;</span></a>
                                 </div>
                             </div>
+                            <img class="project-card-shot" src="images/screens/rocketrush/1.jpg" width="460" height="996" alt=""
+                                loading="lazy">
                         </article>
                     </div>
                 </div>
@@ -378,7 +389,7 @@
                         titulares e são utilizadas exclusivamente para identificar essas experiências, sem indicar
                         parceria, vínculo comercial ou endosso.</p>
 
-                    <ul class="client-list">
+                    <ul class="client-grid">
                         <li class="client">
                             <img class="client-logo" src="images/clients/sicoob.png" alt="" width="48" height="48" loading="lazy">
                             <div>
@@ -426,43 +437,73 @@
             </div>
         </section>
 
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="services_title">Serviços</h2>
+                <div class="section-body">
+                    <p class="section-lede" data-i18n="services_intro">Pela Azevedo Tech Solutions, também desenvolvo
+                        projetos sob medida para empresas.</p>
+                    <ul class="service-list">
+                        <li>
+                            <h3 data-i18n="service_apps_title">Apps Android e iOS</h3>
+                            <p data-i18n="service_apps_text">Apps multiplataforma em Flutter, da ideia à publicação na
+                                Google Play e na App Store.</p>
+                        </li>
+                        <li>
+                            <h3 data-i18n="service_web_title">Sites e sistemas web</h3>
+                            <p data-i18n="service_web_text">Sites institucionais, landing pages e sistemas web sob medida.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 data-i18n="service_backend_title">Backend e integrações</h3>
+                            <p data-i18n="service_backend_text">APIs, Firebase, bancos de dados e integração com serviços
+                                de terceiros.</p>
+                        </li>
+                        <li>
+                            <h3 data-i18n="service_consulting_title">Consultoria em Flutter</h3>
+                            <p data-i18n="service_consulting_text">Arquitetura, performance, CI/CD e boas práticas em
+                                projetos que já existem.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="section">
             <div class="container">
                 <h2 class="section-title" data-i18n="contact_title">Contato</h2>
                 <div class="section-body">
-                    <p class="section-lede"><span data-i18n="contact_intro_1">Tem um projeto em mente ou quer conversar
-                            sobre uma vaga?</span><br>
-                        <span data-i18n="contact_intro_2">Fale comigo por um destes canais.</span>
+                    <p class="section-lede"><span data-i18n="contact_intro_1">Quer conversar sobre uma vaga ou tem
+                            um projeto em mente?</span><br>
+                        <span data-i18n="contact_intro_2">Respondo por qualquer um destes canais.</span>
                     </p>
 
-                    <dl class="contact-channels">
-                        <div>
-                            <dt data-i18n="channel_email">E-mail</dt>
-                            <dd>
-                                <a href="mailto:eduardoazvd17@gmail.com">eduardoazvd17@gmail.com</a>
-                                <button type="button" class="copy-button" data-copy="eduardoazvd17@gmail.com"
-                                    data-i18n="copy">Copiar</button>
-                            </dd>
-                        </div>
-                        <div>
-                            <dt>Azevedo Tech Solutions</dt>
-                            <dd>
-                                <a href="mailto:azevedotechsolutions@gmail.com">azevedotechsolutions@gmail.com</a>
-                                <button type="button" class="copy-button" data-copy="azevedotechsolutions@gmail.com"
-                                    data-i18n="copy">Copiar</button>
-                            </dd>
-                        </div>
-                        <div>
-                            <dt>WhatsApp</dt>
-                            <dd><a href="https://wa.me/5521988542950" target="_blank" rel="noopener">+55 21
-                                    98854-2950</a></dd>
-                        </div>
-                        <div>
-                            <dt>LinkedIn</dt>
-                            <dd><a href="https://www.linkedin.com/in/eduardoazvd17/" target="_blank"
-                                    rel="noopener">in/eduardoazvd17</a></dd>
-                        </div>
-                    </dl>
+                    <!-- Cada canal é um bloco clicável; o e-mail pessoal vem primeiro e em destaque -->
+                    <ul class="contact-grid">
+                        <li class="contact-tile contact-tile--primary">
+                            <span class="contact-tile-label" data-i18n="channel_email">E-mail</span>
+                            <a class="contact-tile-link" href="mailto:eduardoazvd17@gmail.com">eduardoazvd17@gmail.com</a>
+                            <button type="button" class="copy-button" data-copy="eduardoazvd17@gmail.com"
+                                data-i18n="copy">Copiar</button>
+                        </li>
+                        <li class="contact-tile">
+                            <span class="contact-tile-label">LinkedIn</span>
+                            <a class="contact-tile-link" href="https://www.linkedin.com/in/eduardoazvd17/" target="_blank"
+                                rel="noopener">in/eduardoazvd17</a>
+                        </li>
+                        <li class="contact-tile">
+                            <span class="contact-tile-label">WhatsApp</span>
+                            <a class="contact-tile-link" href="https://wa.me/5521988542950" target="_blank"
+                                rel="noopener">+55&nbsp;21&nbsp;98854-2950</a>
+                        </li>
+                        <li class="contact-tile">
+                            <span class="contact-tile-label" data-i18n="channel_company">E-mail da empresa</span>
+                            <a class="contact-tile-link"
+                                href="mailto:azevedotechsolutions@gmail.com">azevedotechsolutions@gmail.com</a>
+                            <button type="button" class="copy-button" data-copy="azevedotechsolutions@gmail.com"
+                                data-i18n="copy">Copiar</button>
+                        </li>
+                    </ul>
                     <p class="visually-hidden" id="copy-status" aria-live="polite"></p>
                 </div>
             </div>
@@ -477,8 +518,8 @@
         </div>
     </footer>
 
-    <script src="js/preferences.js?v=20261012a"></script>
-    <script src="js/i18n.js?v=20261012a"></script>
+    <script src="js/preferences.js?v=20261012d"></script>
+    <script src="js/i18n.js?v=20261012d"></script>
     <script src="js/main.js?v=20261012a"></script>
 </body>
 
