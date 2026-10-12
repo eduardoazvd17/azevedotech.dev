@@ -128,6 +128,142 @@ a:hover {
     color: var(--accent-hover);
 }
 
+/* Toque: sem atraso de duplo toque e sem o flash cinza do iOS (o foco tem anel próprio) */
+a,
+button {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Anel de foco padrão para teclado; componentes com outline próprio sobrescrevem */
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* O <main> recebe foco pelo link "Pular para o conteúdo"; o anel no bloco inteiro só atrapalha */
+main:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3 {
+    text-wrap: balance;
+}
+
+p,
+li,
+dd {
+    text-wrap: pretty;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+/* Fica fora da tela até receber foco pelo teclado */
+.skip-link {
+    position: fixed;
+    top: var(--spacing-sm);
+    left: var(--spacing-sm);
+    z-index: 1200;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    background: var(--text);
+    color: var(--bg);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    transform: translateY(calc(-100% - var(--spacing-md)));
+}
+
+.skip-link:focus-visible {
+    transform: none;
+    color: var(--bg);
+}
+
+/* Ícones SVG inline (desenhos em icons/ui.svg): herdam a cor e o tamanho do texto */
+.icon {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    fill: currentColor;
+}
+
+/* Botão principal (CTA da home e lojas nas páginas de projeto). O hover escurece
+   o próprio fundo em vez de trocar para o azul, que no tema escuro não tem
+   contraste suficiente com texto branco. */
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: 10px 16px;
+    border-radius: var(--border-radius-md);
+    background: var(--text);
+    color: var(--bg);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    white-space: nowrap;
+    border: 1px solid var(--text);
+    transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.button:hover {
+    color: var(--bg);
+    background: color-mix(in srgb, var(--text) 82%, var(--bg));
+    border-color: color-mix(in srgb, var(--text) 82%, var(--bg));
+}
+
+.button--ghost {
+    background: transparent;
+    color: var(--text);
+    border-color: var(--border-strong);
+}
+
+.button--ghost:hover {
+    background: var(--bg-muted);
+    color: var(--text);
+    border-color: var(--text);
+}
+
+.button .icon {
+    font-size: 1.1em;
+}
+
+/* Retorno tátil ao pressionar */
+.button:active,
+.project-link:active,
+.copy-button:active,
+.icon-button:active,
+.pref-menu-toggle:active {
+    transform: scale(0.97);
+}
+
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--border-radius-sm);
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 10px;
+    cursor: pointer;
+    transition: color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.icon-button:hover {
+    color: var(--text);
+    border-color: var(--text);
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -172,7 +308,7 @@ ul {
     font-weight: var(--font-weight-semibold);
     letter-spacing: 0.3px;
     cursor: pointer;
-    transition: border-color var(--transition-fast), background var(--transition-fast);
+    transition: border-color var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast);
 }
 
 .pref-menu-toggle:hover,
@@ -370,11 +506,12 @@ ul {
 .intro-links {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-lg);
+    align-items: center;
+    gap: var(--spacing-md) var(--spacing-lg);
     margin-top: var(--spacing-xl);
 }
 
-.intro-links a {
+.intro-links a:not(.button) {
     font-weight: var(--font-weight-medium);
     color: var(--text);
     text-decoration: underline;
@@ -382,7 +519,7 @@ ul {
     text-underline-offset: 4px;
 }
 
-.intro-links a:hover {
+.intro-links a:not(.button):hover {
     color: var(--accent);
     text-decoration-color: currentColor;
 }
@@ -436,6 +573,27 @@ main > .section:last-child {
     font-weight: var(--font-weight-semibold);
 }
 
+.subsection-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    margin: var(--spacing-xxl) 0 var(--spacing-md);
+}
+
+.subsection-head .subsection-title {
+    margin: 0;
+}
+
+.tech-toggle .icon-play,
+.tech-toggle.paused .icon-pause {
+    display: none;
+}
+
+.tech-toggle.paused .icon-play {
+    display: block;
+}
+
 /* Carrossel de tecnologias: a lista vem duplicada no HTML e anda metade
    da largura, então o fim de uma volta encaixa no começo da próxima */
 .tech-marquee {
@@ -451,7 +609,8 @@ main > .section:last-child {
     animation: tech-scroll 40s linear infinite;
 }
 
-.tech-marquee:hover .tech-track {
+.tech-marquee:hover .tech-track,
+.tech-marquee.paused .tech-track {
     animation-play-state: paused;
 }
 
@@ -664,6 +823,7 @@ main > .section:last-child {
 
 .copy-button {
     flex-shrink: 0;
+    transition: color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
     padding: 2px 8px;
     border: 1px solid var(--border-strong);
     border-radius: var(--border-radius-sm);
@@ -860,7 +1020,8 @@ main > .section:last-child {
         width: auto;
     }
 
-    .tech-track li[aria-hidden="true"] {
+    .tech-track li[aria-hidden="true"],
+    .tech-toggle {
         display: none;
     }
 

@@ -4,6 +4,7 @@ const translations = {
         'meta_description': 'Desenvolvimento de aplicativos Android e iOS, sites e sistemas sob medida para empresas. Eduardo Azevedo, desenvolvedor Flutter com mais de 7 anos de experiência. Peça um orçamento.',
 
         'nav_label': 'Seções',
+        'skip_link': 'Pular para o conteúdo',
         'nav_about': 'Sobre',
         'nav_apps': 'Meus apps',
         'nav_clients': 'Experiências',
@@ -19,6 +20,8 @@ const translations = {
         'about_3': 'Valorizo a comunicação clara e o trabalho colaborativo em equipe, sempre buscando contribuir de forma eficiente e construtiva para garantir entregas de alta qualidade e alinhamento entre os times. Acredito que a sinergia entre profissionais é fundamental para o sucesso de qualquer projeto.',
         'about_4': 'Além da minha expertise em Flutter, possuo conhecimento sólido em linguagens como Java, C#, Kotlin e Swift, o que me permite atuar com versatilidade em diferentes tecnologias e stacks, atendendo a diversas demandas no desenvolvimento de software.',
         'skills_title': 'Linguagens e tecnologias',
+        'tech_pause': 'Pausar animação',
+        'tech_play': 'Retomar animação',
 
         'apps_title': 'Meus apps',
         'apps_intro': 'Aplicativos publicados e mantidos por mim.',
@@ -47,6 +50,7 @@ const translations = {
         'channel_email': 'E-mail',
         'copy': 'Copiar',
         'copied': 'Copiado',
+        'copied_status': 'E-mail copiado',
 
         'back_to_top': 'Voltar ao topo',
     },
@@ -56,6 +60,7 @@ const translations = {
         'meta_description': 'Custom Android and iOS app, website and software development for businesses. Eduardo Azevedo, Flutter developer with 7+ years of experience. Get a quote.',
 
         'nav_label': 'Sections',
+        'skip_link': 'Skip to content',
         'nav_about': 'About',
         'nav_apps': 'My apps',
         'nav_clients': 'Experience',
@@ -71,6 +76,8 @@ const translations = {
         'about_3': 'I value clear communication and collaborative teamwork, always seeking to contribute efficiently and constructively to ensure high-quality deliveries and alignment between teams. I believe that synergy between professionals is fundamental to the success of any project.',
         'about_4': 'Beyond my expertise in Flutter, I have solid knowledge in languages such as Java, C#, Kotlin, and Swift, which allows me to work with versatility across different technologies and stacks, meeting various demands in software development.',
         'skills_title': 'Languages and technologies',
+        'tech_pause': 'Pause animation',
+        'tech_play': 'Resume animation',
 
         'apps_title': 'My apps',
         'apps_intro': 'Apps I have published and maintain.',
@@ -99,6 +106,7 @@ const translations = {
         'channel_email': 'Email',
         'copy': 'Copy',
         'copied': 'Copied',
+        'copied_status': 'Email copied',
 
         'back_to_top': 'Back to top',
     },
@@ -108,6 +116,7 @@ const translations = {
         'meta_description': 'Desarrollo de aplicaciones Android e iOS, sitios web y sistemas a medida para empresas. Eduardo Azevedo, desarrollador Flutter con más de 7 años de experiencia. Pide un presupuesto.',
 
         'nav_label': 'Secciones',
+        'skip_link': 'Saltar al contenido',
         'nav_about': 'Sobre mí',
         'nav_apps': 'Mis apps',
         'nav_clients': 'Experiencia',
@@ -123,6 +132,8 @@ const translations = {
         'about_3': 'Valoro la comunicación clara y el trabajo colaborativo en equipo, buscando siempre contribuir de forma eficiente y constructiva para garantizar entregas de alta calidad y alineación entre los equipos. Creo que la sinergia entre profesionales es fundamental para el éxito de cualquier proyecto.',
         'about_4': 'Además de mi experiencia en Flutter, tengo conocimientos sólidos en lenguajes como Java, C#, Kotlin y Swift, lo que me permite trabajar con versatilidad en distintas tecnologías y stacks, atendiendo diversas demandas del desarrollo de software.',
         'skills_title': 'Lenguajes y tecnologías',
+        'tech_pause': 'Pausar animación',
+        'tech_play': 'Reanudar animación',
 
         'apps_title': 'Mis apps',
         'apps_intro': 'Aplicaciones publicadas y mantenidas por mí.',
@@ -151,6 +162,7 @@ const translations = {
         'channel_email': 'Correo',
         'copy': 'Copiar',
         'copied': 'Copiado',
+        'copied_status': 'Correo copiado',
 
         'back_to_top': 'Volver arriba',
     }

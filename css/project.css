@@ -81,42 +81,6 @@ body {
     gap: var(--spacing-sm);
 }
 
-.store-button {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    padding: 10px 16px;
-    border-radius: var(--border-radius-md);
-    background: var(--text);
-    color: var(--bg);
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-semibold);
-    border: 1px solid var(--text);
-    transition: background var(--transition-fast), border-color var(--transition-fast);
-}
-
-.store-button:hover {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
-}
-
-.store-button i {
-    font-size: 1.1em;
-}
-
-.store-button--ghost {
-    background: transparent;
-    color: var(--text);
-    border-color: var(--border-strong);
-}
-
-.store-button--ghost:hover {
-    background: transparent;
-    color: var(--text);
-    border-color: var(--text);
-}
-
 /* Blocos de conteúdo: título à esquerda, texto à direita */
 .project-block {
     border-top: 1px solid var(--border);
@@ -229,9 +193,10 @@ body {
     font-weight: var(--font-weight-medium);
 }
 
-.text-link i {
+.text-link .icon {
     font-size: 0.8em;
-    margin-left: 4px;
+    margin-left: 6px;
+    vertical-align: -0.05em;
 }
 
 .project-footer {
@@ -254,6 +219,19 @@ body {
 
 .project-footer a:hover {
     color: var(--text);
+}
+
+/* Página 404: mesmo cabeçalho das páginas de projeto, ocupando a altura da tela */
+.not-found {
+    min-height: calc(100svh - var(--nav-height) - 72px);
+    padding: var(--spacing-xxxl) 0;
+}
+
+.not-found h1 {
+    font-size: var(--font-size-xxxl);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: var(--spacing-md);
 }
 
 @media screen and (max-width: 767px) {

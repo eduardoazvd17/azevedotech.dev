@@ -128,6 +128,7 @@
 
         items.forEach(value => {
             const item = document.createElement('li');
+            item.setAttribute('role', 'none');
             const option = document.createElement('button');
             option.type = 'button';
             option.className = 'pref-menu-option';
@@ -167,6 +168,12 @@
                 close(container);
                 toggle.focus({ preventScroll: true });
             }
+        });
+
+        // Tab para fora do menu aberto fecha a lista. Sem relatedTarget (clique no
+        // Safari, que não foca botões) o fechamento fica com o clique fora.
+        container.addEventListener('focusout', (event) => {
+            if (event.relatedTarget && !container.contains(event.relatedTarget)) close(container);
         });
 
         container.appendChild(toggle);
@@ -242,7 +249,19 @@
             writeStorage(THEME_KEY, currentTheme);
         }
 
+        updateThemeColor();
         if (currentLang) renderTheme();
+    }
+
+    // A barra do navegador no celular usa <meta name="theme-color">, que segue só o
+    // sistema. Com tema forçado, as duas metas recebem o fundo do tema escolhido.
+    function updateThemeColor() {
+        const background = getComputedStyle(document.documentElement).getPropertyValue('--bg').trim();
+
+        document.querySelectorAll('meta[name="theme-color"]').forEach(meta => {
+            if (!meta.dataset.systemColor) meta.dataset.systemColor = meta.content;
+            meta.content = currentTheme === 'system' ? meta.dataset.systemColor : background;
+        });
     }
 
     function setLanguage(lang) {
@@ -298,6 +317,9 @@
             const target = id && id !== 'top' ? document.getElementById(id) : null;
             if (target) {
                 target.scrollIntoView({ block: 'start', behavior });
+                // Destinos com tabindex (o <main> do link "Pular para o conteúdo") recebem o
+                // foco, para o próximo Tab continuar dali e não do topo da página.
+                if (target.hasAttribute('tabindex')) target.focus({ preventScroll: true });
             } else {
                 window.scrollTo({ top: 0, behavior });
             }

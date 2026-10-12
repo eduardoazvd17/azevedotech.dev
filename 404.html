@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- O GitHub Pages serve esta página em qualquer caminho inexistente (/projects/x/y), então os
+         endereços relativos partem da raiz do site. O <base> fica no HTML para o navegador já
+         pré-carregar o CSS do lugar certo; aberto direto do disco (file://), aponta para a pasta deste arquivo. -->
+    <base href="/">
+    <script>
+        if (location.protocol === 'file:') document.querySelector('base').href = location.href.replace(/[^/]*([?#].*)?$/, '');
+    </script>
+    <title>Página não encontrada | Azevedo Tech Solutions</title>
+    <meta name="description" content="A página que você procurou não existe ou mudou de endereço.">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f0f11" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="icons/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="icons/icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <script>
+        // Aplica o tema salvo (ou ?theme=) antes da primeira pintura, para a página não piscar.
+        (function () {
+            try {
+                var theme = new URLSearchParams(location.search).get('theme');
+                if (theme !== 'light' && theme !== 'dark') theme = localStorage.getItem('theme');
+                if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+            } catch (e) { }
+        })();
+    </script>
+    <link rel="stylesheet" href="css/styles.css?v=20261012c">
+    <link rel="stylesheet" href="css/project.css?v=20261012a">
+</head>
+
+<body>
+    <header class="project-topbar">
+        <div class="container project-topbar-inner">
+            <a class="project-back" href="./">
+                <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg> <span data-i18n="ui_back">Início</span>
+            </a>
+            <div class="site-prefs">
+                <div class="pref-menu" data-lang-menu></div>
+                <div class="pref-menu" data-theme-menu></div>
+            </div>
+        </div>
+    </header>
+
+    <main id="content" class="not-found">
+        <div class="container">
+            <p class="project-kicker">404</p>
+            <h1 data-i18n="title">Página não encontrada</h1>
+            <p class="project-lede" data-i18n="text">O endereço que você abriu não existe ou mudou de lugar.</p>
+            <div class="project-actions">
+                <a class="button" href="./" data-i18n="ui_home">Ir para o início</a>
+                <a class="button button--ghost" href="./#apps" data-i18n="ui_apps">Ver meus apps</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="project-footer">
+        <div class="container project-footer-inner">
+            <span>&copy; <span id="current-year">2026</span> <span translate="no">Azevedo Tech Solutions</span></span>
+        </div>
+    </footer>
+
+    <script>
+        window.PROJECT_I18N = {
+            "pt": {
+                "meta_title": "Página não encontrada | Azevedo Tech Solutions",
+                "meta_description": "A página que você procurou não existe ou mudou de endereço.",
+                "ui_back": "Início",
+                "title": "Página não encontrada",
+                "text": "O endereço que você abriu não existe ou mudou de lugar.",
+                "ui_home": "Ir para o início",
+                "ui_apps": "Ver meus apps"
+            },
+            "en": {
+                "meta_title": "Page not found | Azevedo Tech Solutions",
+                "meta_description": "The page you were looking for does not exist or has moved.",
+                "ui_back": "Home",
+                "title": "Page not found",
+                "text": "The address you opened does not exist or has moved.",
+                "ui_home": "Go to the home page",
+                "ui_apps": "See my apps"
+            },
+            "es": {
+                "meta_title": "Página no encontrada | Azevedo Tech Solutions",
+                "meta_description": "La página que buscabas no existe o cambió de dirección.",
+                "ui_back": "Inicio",
+                "title": "Página no encontrada",
+                "text": "La dirección que abriste no existe o cambió de lugar.",
+                "ui_home": "Ir al inicio",
+                "ui_apps": "Ver mis apps"
+            }
+        };
+    </script>
+    <script src="js/preferences.js?v=20261012a"></script>
+    <script src="js/project.js?v=20261012a"></script>
+</body>
+
+</html>

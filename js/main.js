@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupFooterHeight();
     setupScrollSpy();
     setupCopyButtons();
+    setupTechToggle();
 });
 
 // Expõe a altura do rodapé para o CSS da última seção (ver styles.css).
@@ -63,10 +64,32 @@ function setupCopyButtons() {
             button.textContent = t('copied');
             button.classList.add('copied');
 
+            // A troca do texto do botão não é anunciada; a região aria-live avisa o leitor de tela.
+            const status = document.getElementById('copy-status');
+            if (status) {
+                status.textContent = '';
+                setTimeout(() => { status.textContent = t('copied_status'); }, 50);
+            }
+
             setTimeout(() => {
                 button.textContent = t('copy');
                 button.classList.remove('copied');
             }, 2000);
         });
+    });
+}
+
+// Pausa e retoma o carrossel de tecnologias. O rótulo acessível segue o estado
+// pela chave data-i18n-aria, então também acompanha a troca de idioma.
+function setupTechToggle() {
+    const button = document.querySelector('.tech-toggle');
+    const marquee = document.querySelector('.tech-marquee');
+    if (!button || !marquee) return;
+
+    button.addEventListener('click', () => {
+        const paused = marquee.classList.toggle('paused');
+        button.classList.toggle('paused', paused);
+        button.dataset.i18nAria = paused ? 'tech_play' : 'tech_pause';
+        button.setAttribute('aria-label', t(button.dataset.i18nAria));
     });
 }
