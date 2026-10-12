@@ -939,6 +939,9 @@ main > .section:last-child {
 }
 
 .copy-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     flex-shrink: 0;
     transition: color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
     padding: 2px 8px;
@@ -964,6 +967,19 @@ main > .section:last-child {
 .copy-button.copied {
     color: var(--success);
     border-color: var(--success);
+}
+
+.copy-button .icon {
+    font-size: 0.95em;
+}
+
+.copy-button .icon-check,
+.copy-button.copied .icon-copy {
+    display: none;
+}
+
+.copy-button.copied .icon-check {
+    display: block;
 }
 
 /* No bloco escuro do e-mail principal, o verde não tem contraste: o retorno fica no texto "Copiado" */

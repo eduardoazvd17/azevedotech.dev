@@ -61,7 +61,10 @@ function setupCopyButtons() {
                 return;
             }
 
-            button.textContent = t('copied');
+            // Só o texto muda; os ícones de copiar/confirmado alternam pelo CSS da classe .copied.
+            const label = button.querySelector('[data-i18n]');
+            label.dataset.i18n = 'copied';
+            label.textContent = t('copied');
             button.classList.add('copied');
 
             // A troca do texto do botão não é anunciada; a região aria-live avisa o leitor de tela.
@@ -72,7 +75,8 @@ function setupCopyButtons() {
             }
 
             setTimeout(() => {
-                button.textContent = t('copy');
+                label.dataset.i18n = 'copy';
+                label.textContent = t('copy');
                 button.classList.remove('copied');
             }, 2000);
         });
