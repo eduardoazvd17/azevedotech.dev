@@ -63,10 +63,11 @@
 				<li><strong>Histórico FIPE:</strong> os veículos que você consultou na tabela FIPE.</li>
 				<li><strong>Conversas com o assistente de IA:</strong> as perguntas enviadas e as respostas recebidas, salvas na sua conta para consulta posterior.</li>
 				<li><strong>Status da assinatura:</strong> se você tem um plano Pro ativo. Os dados de pagamento são tratados somente pela Apple ou pelo Google; nunca recebemos as informações do seu cartão.</li>
+				<li><strong>Dados de uso:</strong> quais telas e recursos você usa (por exemplo, cadastrar um veículo, registrar uma manutenção ou usar o assistente de IA), o método de login, o tipo de plano, informações técnicas do aparelho e do app (modelo, sistema, versão, idioma e região aproximada) e o seu identificador de usuário. Os dados de uso nunca incluem placas, valores, quilometragem, descrições, localização ou o conteúdo das suas perguntas à IA. Eles são coletados pelo Google Analytics for Firebase enquanto a opção Configurações › Compartilhar dados de uso estiver ativada, o que acontece por padrão; ao desativá-la, o app para de enviá-los e apaga os que ainda não tinham sido enviados.</li>
 			</ul>
-			<p>Esses dados são armazenados no Google Firebase (Cloud Firestore), em servidores localizados em São Paulo, Brasil, vinculados à sua conta, para que fiquem disponíveis em qualquer dispositivo. Seu e-mail também é usado para encontrar sua conta quando alguém transfere um veículo para você. Usamos essas informações apenas para oferecer os recursos do app e não as vendemos.</p>
-			<p><strong>Bases legais (LGPD):</strong> conta, veículos, registros, lembretes, assistente de IA e assinatura são tratados para executar o contrato com você, ou seja, para oferecer o app (art. 7º, V). Os anúncios do plano gratuito se baseiam no legítimo interesse (art. 7º, IX).</p>
-			<p><strong>Transferência internacional:</strong> os dados de login (Firebase Authentication), o conteúdo enviado ao assistente de IA (OpenAI) e os dados tratados pelo Google AdMob são processados em servidores fora do Brasil, principalmente nos Estados Unidos, conforme o art. 33 da LGPD e as garantias contratuais de proteção de dados oferecidas por esses provedores.</p>
+			<p>Os dados de conta, veículos, registros, conversas e assinatura são armazenados no Google Firebase (Cloud Firestore), em servidores localizados em São Paulo, Brasil, vinculados à sua conta, para que fiquem disponíveis em qualquer dispositivo. Seu e-mail também é usado para encontrar sua conta quando alguém transfere um veículo para você. Usamos essas informações apenas para oferecer os recursos do app e não as vendemos.</p>
+			<p><strong>Bases legais (LGPD):</strong> conta, veículos, registros, lembretes, assistente de IA e assinatura são tratados para executar o contrato com você, ou seja, para oferecer o app (art. 7º, V). Os anúncios do plano gratuito e os dados de uso, usados para entender como o app é usado e melhorá-lo, se baseiam no legítimo interesse (art. 7º, IX). Você pode desativar o envio dos dados de uso a qualquer momento em Configurações › Compartilhar dados de uso.</p>
+			<p><strong>Transferência internacional:</strong> os dados de login (Firebase Authentication), os dados de uso (Google Analytics for Firebase), o conteúdo enviado ao assistente de IA (OpenAI) e os dados tratados pelo Google AdMob são processados em servidores fora do Brasil, principalmente nos Estados Unidos, conforme o art. 33 da LGPD e as garantias contratuais de proteção de dados oferecidas por esses provedores.</p>
 
 			<h2>4. Assistente de IA</h2>
 			<p>Ao usar o assistente de IA, sua pergunta, os dados do veículo (como marca, modelo, ano e quilometragem) e, quando relevante, o histórico de manutenções são enviados à OpenAI para gerar a resposta. A OpenAI trata esses dados conforme seus termos de API e sua política de privacidade, que preveem que dados enviados pela API não são usados para treinar modelos. Não inclua informações pessoais ou sensíveis nas perguntas.</p>
@@ -113,6 +114,7 @@
 				<li>Login com Google e Iniciar sessão com a Apple — métodos de login opcionais;</li>
 				<li>OpenAI — respostas do assistente de IA;</li>
 				<li>API pública da tabela FIPE — consulta de preços de veículos;</li>
+				<li>Google Analytics for Firebase — estatísticas de uso do app (opcional, pode ser desativado em Configurações);</li>
 				<li>Google AdMob — anúncios no plano gratuito;</li>
 				<li>Apple App Store e Google Play — download, atualizações e pagamento de assinaturas.</li>
 			</ul>
@@ -121,7 +123,7 @@
 			<p>Adotamos medidas técnicas e organizacionais, incluindo conexões criptografadas e regras de acesso que restringem os dados de cada usuário à própria conta, para proteger suas informações contra acesso não autorizado, uso indevido ou divulgação.</p>
 
 			<h2>14. Retenção e Exclusão de Dados</h2>
-			<p>Mantemos seus dados enquanto sua conta existir. Você pode editar ou apagar qualquer veículo, registro, consulta FIPE ou conversa com a IA no app. Também pode excluir sua conta em Configurações: isso remove permanentemente a conta e todos os dados associados do nosso banco de dados. Essa ação não pode ser desfeita. Se precisar de ajuda, fale conosco pelo e-mail abaixo.</p>
+			<p>Mantemos seus dados enquanto sua conta existir. Você pode editar ou apagar qualquer veículo, registro, consulta FIPE ou conversa com a IA no app. Também pode excluir sua conta em Configurações: isso remove permanentemente a conta e todos os dados associados do nosso banco de dados. Essa ação não pode ser desfeita. Os dados de uso já enviados não ficam vinculados a nenhum outro dado seu depois da exclusão e são apagados automaticamente ao fim do prazo de retenção do Google Analytics (no máximo 14 meses). Se precisar de ajuda, fale conosco pelo e-mail abaixo.</p>
 
 			<h2>15. Seus Direitos</h2>
 			<p>Nos termos da Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018) e demais leis aplicáveis, você pode solicitar a confirmação de que tratamos seus dados, o acesso a eles, a correção de dados incompletos ou desatualizados, a exclusão, a portabilidade, informações sobre com quem os compartilhamos, opor-se a tratamentos baseados em legítimo interesse e revogar seu consentimento a qualquer momento. Para exercer esses direitos, escreva para o e-mail no final desta página; respondemos em até 15 dias. Você também pode apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD).</p>
@@ -165,10 +167,11 @@
 				<li><strong>FIPE history:</strong> the vehicles you looked up in the FIPE table.</li>
 				<li><strong>AI assistant conversations:</strong> the questions you send and the answers received, saved to your account so you can review them later.</li>
 				<li><strong>Subscription status:</strong> whether you have an active Pro plan. Payment details are handled only by Apple or Google; we never receive your card information.</li>
+				<li><strong>Usage data:</strong> which screens and features you use (for example, adding a vehicle, logging a maintenance or using the AI assistant), your sign-in method, your plan type, technical device and app information (model, operating system, version, language and approximate region) and your user identifier. Usage data never includes license plates, values, mileage, descriptions, location or the content of your AI questions. It is collected by Google Analytics for Firebase while Settings › Share usage data is turned on, which it is by default; turning it off stops the app from sending it and deletes whatever had not been sent yet.</li>
 			</ul>
-			<p>This data is stored in Google Firebase (Cloud Firestore), on servers located in São Paulo, Brazil, linked to your account, so it stays available across devices. Your email is also used to find your account when someone transfers a vehicle to you. We use it only to provide the app's features and we do not sell it.</p>
-			<p><strong>Legal bases (LGPD):</strong> your account, vehicles, records, reminders, AI assistant and subscription are processed to perform our contract with you, that is, to provide the app (art. 7, V). Ads on the free plan rely on legitimate interest (art. 7, IX).</p>
-			<p><strong>International transfers:</strong> sign-in data (Firebase Authentication), content sent to the AI assistant (OpenAI) and data handled by Google AdMob are processed on servers outside Brazil, mainly in the United States, under article 33 of the LGPD and the contractual data protection safeguards these providers offer.</p>
+			<p>Account, vehicle, record, conversation and subscription data is stored in Google Firebase (Cloud Firestore), on servers located in São Paulo, Brazil, linked to your account, so it stays available across devices. Your email is also used to find your account when someone transfers a vehicle to you. We use it only to provide the app's features and we do not sell it.</p>
+			<p><strong>Legal bases (LGPD):</strong> your account, vehicles, records, reminders, AI assistant and subscription are processed to perform our contract with you, that is, to provide the app (art. 7, V). Ads on the free plan and usage data, used to understand how the app is used and improve it, rely on legitimate interest (art. 7, IX). You can turn off sending usage data at any time in Settings › Share usage data.</p>
+			<p><strong>International transfers:</strong> sign-in data (Firebase Authentication), usage data (Google Analytics for Firebase), content sent to the AI assistant (OpenAI) and data handled by Google AdMob are processed on servers outside Brazil, mainly in the United States, under article 33 of the LGPD and the contractual data protection safeguards these providers offer.</p>
 
 			<h2>4. AI Assistant</h2>
 			<p>When you use the AI assistant, your question, the vehicle's details (such as brand, model, year and mileage) and, when relevant, its maintenance history are sent to OpenAI to generate the answer. OpenAI processes this data under its API terms and privacy policy, which state that data sent through the API is not used to train its models. Please do not include personal or sensitive information in your questions.</p>
@@ -215,6 +218,7 @@
 				<li>Google Sign-In and Sign in with Apple — optional sign-in methods;</li>
 				<li>OpenAI — AI assistant answers;</li>
 				<li>FIPE table public API — vehicle price lookups;</li>
+				<li>Google Analytics for Firebase — app usage statistics (optional, can be turned off in Settings);</li>
 				<li>Google AdMob — advertising on the free plan;</li>
 				<li>Apple App Store and Google Play — downloads, updates and subscription payments.</li>
 			</ul>
@@ -223,7 +227,7 @@
 			<p>We use technical and organizational measures, including encrypted connections and access rules that restrict each user's data to their own account, to protect your information against unauthorized access, misuse or disclosure.</p>
 
 			<h2>14. Data Retention and Deletion</h2>
-			<p>We keep your data while your account exists. You can edit or delete any vehicle, record, FIPE query or AI conversation in the app. You can also delete your account in Settings: this permanently removes your account and all associated data from our database. This action cannot be undone. If you need help, contact us at the email below.</p>
+			<p>We keep your data while your account exists. You can edit or delete any vehicle, record, FIPE query or AI conversation in the app. You can also delete your account in Settings: this permanently removes your account and all associated data from our database. This action cannot be undone. Usage data already sent is no longer linked to any other data of yours after deletion and is erased automatically at the end of the Google Analytics retention period (14 months at most). If you need help, contact us at the email below.</p>
 
 			<h2>15. Your Rights</h2>
 			<p>Under Brazil's General Data Protection Law (LGPD, Law No. 13,709/2018) and other applicable laws, you may request confirmation that we process your data, access to it, correction of incomplete or inaccurate data, deletion, portability, information about who we share it with, object to processing based on legitimate interest, and withdraw your consent at any time. To exercise these rights, write to the email at the end of this page; we reply within 15 days. You can also file a complaint with Brazil's National Data Protection Authority (ANPD).</p>
@@ -267,10 +271,11 @@
 				<li><strong>Historial FIPE:</strong> los vehículos que consultaste en la tabla FIPE.</li>
 				<li><strong>Conversaciones con el asistente de IA:</strong> las preguntas enviadas y las respuestas recibidas, guardadas en tu cuenta para que puedas revisarlas después.</li>
 				<li><strong>Estado de la suscripción:</strong> si tienes un plan Pro activo. Los datos de pago los gestionan solo Apple o Google; nunca recibimos la información de tu tarjeta.</li>
+				<li><strong>Datos de uso:</strong> qué pantallas y funciones usas (por ejemplo, registrar un vehículo, anotar un mantenimiento o usar el asistente de IA), el método de inicio de sesión, el tipo de plan, información técnica del dispositivo y de la app (modelo, sistema, versión, idioma y región aproximada) y tu identificador de usuario. Los datos de uso nunca incluyen matrículas, valores, kilometraje, descripciones, ubicación ni el contenido de tus preguntas a la IA. Los recopila Google Analytics for Firebase mientras la opción Ajustes › Compartir datos de uso esté activada, lo que ocurre por defecto; al desactivarla, la app deja de enviarlos y borra los que aún no se habían enviado.</li>
 			</ul>
-			<p>Estos datos se almacenan en Google Firebase (Cloud Firestore), en servidores ubicados en São Paulo, Brasil, vinculados a tu cuenta, para que estén disponibles en cualquier dispositivo. Tu correo también se usa para encontrar tu cuenta cuando alguien te transfiere un vehículo. Los usamos solo para ofrecer las funciones de la app y no los vendemos.</p>
-			<p><strong>Bases legales (LGPD):</strong> la cuenta, los vehículos, los registros, los recordatorios, el asistente de IA y la suscripción se tratan para ejecutar el contrato contigo, es decir, para ofrecer la app (art. 7, V). Los anuncios del plan gratuito se basan en el interés legítimo (art. 7, IX).</p>
-			<p><strong>Transferencia internacional:</strong> los datos de inicio de sesión (Firebase Authentication), el contenido enviado al asistente de IA (OpenAI) y los datos que trata Google AdMob se procesan en servidores fuera de Brasil, principalmente en Estados Unidos, conforme al artículo 33 de la LGPD y las garantías contractuales de protección de datos que ofrecen estos proveedores.</p>
+			<p>Los datos de la cuenta, los vehículos, los registros, las conversaciones y la suscripción se almacenan en Google Firebase (Cloud Firestore), en servidores ubicados en São Paulo, Brasil, vinculados a tu cuenta, para que estén disponibles en cualquier dispositivo. Tu correo también se usa para encontrar tu cuenta cuando alguien te transfiere un vehículo. Los usamos solo para ofrecer las funciones de la app y no los vendemos.</p>
+			<p><strong>Bases legales (LGPD):</strong> la cuenta, los vehículos, los registros, los recordatorios, el asistente de IA y la suscripción se tratan para ejecutar el contrato contigo, es decir, para ofrecer la app (art. 7, V). Los anuncios del plan gratuito y los datos de uso, usados para entender cómo se usa la app y mejorarla, se basan en el interés legítimo (art. 7, IX). Puedes desactivar el envío de los datos de uso en cualquier momento en Ajustes › Compartir datos de uso.</p>
+			<p><strong>Transferencia internacional:</strong> los datos de inicio de sesión (Firebase Authentication), los datos de uso (Google Analytics for Firebase), el contenido enviado al asistente de IA (OpenAI) y los datos que trata Google AdMob se procesan en servidores fuera de Brasil, principalmente en Estados Unidos, conforme al artículo 33 de la LGPD y las garantías contractuales de protección de datos que ofrecen estos proveedores.</p>
 
 			<h2>4. Asistente de IA</h2>
 			<p>Al usar el asistente de IA, tu pregunta, los datos del vehículo (como marca, modelo, año y kilometraje) y, cuando corresponde, su historial de mantenimientos se envían a OpenAI para generar la respuesta. OpenAI trata estos datos según sus términos de API y su política de privacidad, que establecen que los datos enviados por la API no se usan para entrenar sus modelos. No incluyas información personal o sensible en tus preguntas.</p>
@@ -317,6 +322,7 @@
 				<li>Inicio de sesión con Google e Iniciar sesión con Apple — métodos de acceso opcionales;</li>
 				<li>OpenAI — respuestas del asistente de IA;</li>
 				<li>API pública de la tabla FIPE — consulta de precios de vehículos;</li>
+				<li>Google Analytics for Firebase — estadísticas de uso de la app (opcional, se puede desactivar en Ajustes);</li>
 				<li>Google AdMob — anuncios en el plan gratuito;</li>
 				<li>Apple App Store y Google Play — descargas, actualizaciones y pago de suscripciones.</li>
 			</ul>
@@ -325,7 +331,7 @@
 			<p>Aplicamos medidas técnicas y organizativas, incluidas conexiones cifradas y reglas de acceso que limitan los datos de cada usuario a su propia cuenta, para proteger tu información contra accesos no autorizados, uso indebido o divulgación.</p>
 
 			<h2>14. Conservación y Eliminación de Datos</h2>
-			<p>Conservamos tus datos mientras tu cuenta exista. Puedes editar o borrar cualquier vehículo, registro, consulta FIPE o conversación con la IA en la app. También puedes eliminar tu cuenta en Ajustes: esto borra de forma permanente la cuenta y todos los datos asociados de nuestra base de datos. Esta acción no se puede deshacer. Si necesitas ayuda, escríbenos al correo indicado abajo.</p>
+			<p>Conservamos tus datos mientras tu cuenta exista. Puedes editar o borrar cualquier vehículo, registro, consulta FIPE o conversación con la IA en la app. También puedes eliminar tu cuenta en Ajustes: esto borra de forma permanente la cuenta y todos los datos asociados de nuestra base de datos. Esta acción no se puede deshacer. Los datos de uso ya enviados dejan de estar vinculados a cualquier otro dato tuyo tras la eliminación y se borran automáticamente al final del plazo de retención de Google Analytics (14 meses como máximo). Si necesitas ayuda, escríbenos al correo indicado abajo.</p>
 
 			<h2>15. Tus Derechos</h2>
 			<p>De acuerdo con la Ley General de Protección de Datos de Brasil (LGPD, Ley n.º 13.709/2018) y demás leyes aplicables, puedes solicitar la confirmación de que tratamos tus datos, el acceso a ellos, la corrección de datos incompletos o inexactos, la eliminación, la portabilidad, información sobre con quién los compartimos, oponerte a tratamientos basados en interés legítimo y retirar tu consentimiento en cualquier momento. Para ejercer estos derechos, escribe al correo indicado al final de esta página; respondemos en un plazo de 15 días. También puedes presentar una reclamación ante la Autoridad Nacional de Protección de Datos de Brasil (ANPD).</p>

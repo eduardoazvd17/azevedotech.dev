@@ -63,11 +63,11 @@
 				<li><strong>Busca de endereços e rotas a pé:</strong> ao buscar um endereço, o texto digitado (e, se disponível, sua posição aproximada para priorizar resultados próximos) é enviado ao Mapbox. Ao solicitar a rota a pé até um ponto, as coordenadas de origem e destino são enviadas ao Mapbox para calcular o trajeto. Para mostrar o endereço de onde você está (por exemplo, como ponto de partida no Melhor ônibus), sua posição é enviada ao Mapbox para obter o endereço correspondente. O próprio mapa do Mapbox também pode coletar dados técnicos e de uso do mapa, conforme a política de privacidade do Mapbox; você pode desativar essa coleta tocando no ícone "i" no canto do mapa.</li>
 				<li><strong>Posição dos ônibus em tempo real:</strong> ao ver os ônibus no mapa, o app consulta nosso servidor pelas posições da linha e do itinerário escolhidos. Essas consultas contêm apenas a linha e o itinerário, não a sua localização.</li>
 				<li><strong>Favoritos, viagens recentes e preferências:</strong> lugares salvos, histórico de viagens, idioma, tema e configurações do mapa ficam apenas no seu dispositivo e são apagados se você limpar os dados do app ou desinstalá-lo.</li>
-				<li><strong>Estatísticas de uso e relatórios de falha:</strong> usamos o Firebase Analytics para entender quais recursos são usados (por exemplo, telas abertas, viagens iniciadas e preferências como idioma e tema) e o Firebase Crashlytics para receber relatórios de falhas (modelo do aparelho, versão do sistema e detalhes técnicos do erro). Esses dados ficam associados a um identificador aleatório gerado pelo app, e não ao seu nome ou contato.</li>
+				<li><strong>Estatísticas de uso e relatórios de falha:</strong> usamos o Firebase Analytics para entender quais recursos são usados (por exemplo, telas abertas, viagens iniciadas e preferências como idioma e tema) e o Firebase Crashlytics para receber relatórios de falhas (modelo do aparelho, versão do sistema e detalhes técnicos do erro). Esses dados ficam associados a um identificador aleatório gerado pelo app, e não ao seu nome ou contato. Eles são coletados enquanto a opção Configurações › Compartilhar dados de uso estiver ativada, o que acontece por padrão; ao desativá-la, o app para de enviá-los e apaga os que ainda não tinham sido enviados.</li>
 				<li><strong>Publicidade:</strong> no plano gratuito, os anúncios são fornecidos pelo Google AdMob, que pode coletar o identificador de publicidade do aparelho, o endereço IP e as interações com os anúncios para exibi-los e medi-los, conforme as políticas do Google e as opções de privacidade do seu dispositivo.</li>
 			</ul>
 			<p>Não vendemos seus dados pessoais.</p>
-			<p><strong>Bases legais (LGPD):</strong> localização, buscas e rotas são tratadas para oferecer os recursos que você pede (art. 7º, V). Estatísticas de uso, relatórios de falha e anúncios se baseiam no legítimo interesse (art. 7º, IX) de manter o app funcionando, melhorá-lo e mantê-lo gratuito.</p>
+			<p><strong>Bases legais (LGPD):</strong> localização, buscas e rotas são tratadas para oferecer os recursos que você pede (art. 7º, V). Estatísticas de uso, relatórios de falha e anúncios se baseiam no legítimo interesse (art. 7º, IX) de manter o app funcionando, melhorá-lo e mantê-lo gratuito. Você pode se opor ao envio de estatísticas de uso e relatórios de falha a qualquer momento em Configurações › Compartilhar dados de uso.</p>
 			<p><strong>Transferência internacional:</strong> Firebase Analytics, Firebase Crashlytics, Google AdMob e Mapbox processam dados em servidores fora do Brasil, principalmente nos Estados Unidos, conforme o art. 33 da LGPD e as garantias contratuais de proteção de dados oferecidas por esses provedores.</p>
 
 			<h2>4. Permissões do Dispositivo</h2>
@@ -82,7 +82,7 @@
 			<p>O MoveRio utiliza os seguintes provedores, cada um com sua própria política de privacidade:</p>
 			<ul>
 				<li>Mapbox — mapas, busca de endereços e rotas a pé;</li>
-				<li>Google Firebase (Analytics e Crashlytics) — estatísticas de uso e relatórios de falhas;</li>
+				<li>Google Firebase (Analytics e Crashlytics) — estatísticas de uso e relatórios de falhas (opcional, pode ser desativado em Configurações);</li>
 				<li>Google AdMob — anúncios no plano gratuito;</li>
 				<li>Apple App Store e Google Play — download, atualizações e pagamento de assinaturas;</li>
 				<li>Apps de mapas instalados no seu dispositivo — quando você escolhe abrir uma rota neles.</li>
@@ -151,11 +151,11 @@
 				<li><strong>Address searches and walking routes:</strong> when you search for an address, the typed text (and, if available, your approximate position to rank nearby results) is sent to Mapbox. When you request a walking route to a stop, the start and end coordinates are sent to Mapbox to calculate the route. To show the address of where you are (for example, as the starting point in Best bus), your position is sent to Mapbox to look up the matching address. The Mapbox map itself may also collect technical and map usage data under Mapbox's privacy policy; you can turn this off by tapping the "i" icon in the corner of the map.</li>
 				<li><strong>Live bus positions:</strong> when you view buses on the map, the app asks our server for the positions of the selected line and itinerary. These requests contain only the line and itinerary, not your location.</li>
 				<li><strong>Favorites, recent trips and preferences:</strong> saved places, trip history, language, theme and map settings are stored only on your device and are removed if you clear the app's data or uninstall it.</li>
-				<li><strong>Usage statistics and crash reports:</strong> we use Firebase Analytics to understand which features are used (for example, screens opened, trips started and preferences such as language and theme) and Firebase Crashlytics to receive crash reports (device model, operating system version and technical error details). This data is associated with a random identifier generated by the app, not with your name or contact details.</li>
+				<li><strong>Usage statistics and crash reports:</strong> we use Firebase Analytics to understand which features are used (for example, screens opened, trips started and preferences such as language and theme) and Firebase Crashlytics to receive crash reports (device model, operating system version and technical error details). This data is associated with a random identifier generated by the app, not with your name or contact details. It is collected while Settings › Share usage data is turned on, which it is by default; turning it off stops the app from sending it and deletes whatever had not been sent yet.</li>
 				<li><strong>Advertising:</strong> on the free plan, ads are served by Google AdMob, which may collect your device's advertising identifier, IP address and interactions with ads to deliver and measure them, according to Google's policies and the privacy choices on your device.</li>
 			</ul>
 			<p>We do not sell your personal data.</p>
-			<p><strong>Legal bases (LGPD):</strong> location, searches and routes are processed to provide the features you ask for (art. 7, V). Usage statistics, crash reports and ads rely on our legitimate interest (art. 7, IX) in keeping the app working, improving it and keeping it free.</p>
+			<p><strong>Legal bases (LGPD):</strong> location, searches and routes are processed to provide the features you ask for (art. 7, V). Usage statistics, crash reports and ads rely on our legitimate interest (art. 7, IX) in keeping the app working, improving it and keeping it free. You can object to sending usage statistics and crash reports at any time in Settings › Share usage data.</p>
 			<p><strong>International transfers:</strong> Firebase Analytics, Firebase Crashlytics, Google AdMob and Mapbox process data on servers outside Brazil, mainly in the United States, under article 33 of the LGPD and the contractual data protection safeguards these providers offer.</p>
 
 			<h2>4. Device Permissions</h2>
@@ -170,7 +170,7 @@
 			<p>MoveRio relies on the following providers, each with its own privacy policy:</p>
 			<ul>
 				<li>Mapbox — maps, address search and walking routes;</li>
-				<li>Google Firebase (Analytics and Crashlytics) — usage statistics and crash reports;</li>
+				<li>Google Firebase (Analytics and Crashlytics) — usage statistics and crash reports (optional, can be turned off in Settings);</li>
 				<li>Google AdMob — advertising on the free plan;</li>
 				<li>Apple App Store and Google Play — downloads, updates and subscription payments;</li>
 				<li>Map apps installed on your device — when you choose to open a route in them.</li>
@@ -239,11 +239,11 @@
 				<li><strong>Búsqueda de direcciones y rutas a pie:</strong> al buscar una dirección, el texto escrito (y, si está disponible, tu posición aproximada para priorizar resultados cercanos) se envía a Mapbox. Al pedir la ruta a pie hasta una parada, las coordenadas de origen y destino se envían a Mapbox para calcular el trayecto. Para mostrar la dirección de donde estás (por ejemplo, como punto de partida en Mejor autobús), tu posición se envía a Mapbox para obtener la dirección correspondiente. El propio mapa de Mapbox también puede recopilar datos técnicos y de uso del mapa, según la política de privacidad de Mapbox; puedes desactivarlo tocando el icono "i" en la esquina del mapa.</li>
 				<li><strong>Posición de los autobuses en tiempo real:</strong> al ver los autobuses en el mapa, la app consulta a nuestro servidor las posiciones de la línea y el itinerario elegidos. Estas consultas contienen solo la línea y el itinerario, no tu ubicación.</li>
 				<li><strong>Favoritos, viajes recientes y preferencias:</strong> lugares guardados, historial de viajes, idioma, tema y ajustes del mapa se guardan solo en tu dispositivo y se borran si limpias los datos de la app o la desinstalas.</li>
-				<li><strong>Estadísticas de uso e informes de fallos:</strong> usamos Firebase Analytics para entender qué funciones se usan (por ejemplo, pantallas abiertas, viajes iniciados y preferencias como idioma y tema) y Firebase Crashlytics para recibir informes de fallos (modelo del dispositivo, versión del sistema y detalles técnicos del error). Estos datos se asocian a un identificador aleatorio generado por la app, no a tu nombre ni a tus datos de contacto.</li>
+				<li><strong>Estadísticas de uso e informes de fallos:</strong> usamos Firebase Analytics para entender qué funciones se usan (por ejemplo, pantallas abiertas, viajes iniciados y preferencias como idioma y tema) y Firebase Crashlytics para recibir informes de fallos (modelo del dispositivo, versión del sistema y detalles técnicos del error). Estos datos se asocian a un identificador aleatorio generado por la app, no a tu nombre ni a tus datos de contacto. Se recopilan mientras la opción Ajustes › Compartir datos de uso esté activada, lo que ocurre por defecto; al desactivarla, la app deja de enviarlos y borra los que aún no se habían enviado.</li>
 				<li><strong>Publicidad:</strong> en el plan gratuito, los anuncios los proporciona Google AdMob, que puede recopilar el identificador de publicidad del dispositivo, la dirección IP y las interacciones con los anuncios para mostrarlos y medirlos, según las políticas de Google y las opciones de privacidad de tu dispositivo.</li>
 			</ul>
 			<p>No vendemos tus datos personales.</p>
-			<p><strong>Bases legales (LGPD):</strong> la ubicación, las búsquedas y las rutas se tratan para ofrecer las funciones que pides (art. 7, V). Las estadísticas de uso, los informes de fallos y los anuncios se basan en nuestro interés legítimo (art. 7, IX) en mantener la app funcionando, mejorarla y mantenerla gratuita.</p>
+			<p><strong>Bases legales (LGPD):</strong> la ubicación, las búsquedas y las rutas se tratan para ofrecer las funciones que pides (art. 7, V). Las estadísticas de uso, los informes de fallos y los anuncios se basan en nuestro interés legítimo (art. 7, IX) en mantener la app funcionando, mejorarla y mantenerla gratuita. Puedes oponerte al envío de estadísticas de uso e informes de fallos en cualquier momento en Ajustes › Compartir datos de uso.</p>
 			<p><strong>Transferencia internacional:</strong> Firebase Analytics, Firebase Crashlytics, Google AdMob y Mapbox procesan datos en servidores fuera de Brasil, principalmente en Estados Unidos, conforme al artículo 33 de la LGPD y las garantías contractuales de protección de datos que ofrecen estos proveedores.</p>
 
 			<h2>4. Permisos del Dispositivo</h2>
@@ -258,7 +258,7 @@
 			<p>MoveRio utiliza los siguientes proveedores, cada uno con su propia política de privacidad:</p>
 			<ul>
 				<li>Mapbox — mapas, búsqueda de direcciones y rutas a pie;</li>
-				<li>Google Firebase (Analytics y Crashlytics) — estadísticas de uso e informes de fallos;</li>
+				<li>Google Firebase (Analytics y Crashlytics) — estadísticas de uso e informes de fallos (opcional, se puede desactivar en Ajustes);</li>
 				<li>Google AdMob — anuncios en el plan gratuito;</li>
 				<li>Apple App Store y Google Play — descargas, actualizaciones y pago de suscripciones;</li>
 				<li>Apps de mapas instaladas en tu dispositivo — cuando eliges abrir una ruta en ellas.</li>
