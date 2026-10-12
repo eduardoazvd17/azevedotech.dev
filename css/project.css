@@ -232,28 +232,6 @@ body {
     vertical-align: -0.05em;
 }
 
-.project-footer {
-    border-top: 1px solid var(--border);
-    padding: var(--spacing-xl) 0;
-    font-size: var(--font-size-sm);
-    color: var(--text-secondary);
-}
-
-.project-footer-inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: var(--spacing-md);
-}
-
-.project-footer a {
-    color: var(--text-secondary);
-}
-
-.project-footer a:hover {
-    color: var(--text);
-}
-
 /* Página 404: mesmo cabeçalho das páginas de projeto, ocupando a altura da tela */
 .not-found {
     min-height: calc(100svh - var(--nav-height) - 72px);

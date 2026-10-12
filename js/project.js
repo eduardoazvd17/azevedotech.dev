@@ -6,6 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const year = document.getElementById('current-year');
     if (year) year.textContent = new Date().getFullYear();
 
+    // "Voltar ao topo" rola a página em JS: no 404 o <base href="/"> faria o #top abrir a home.
+    document.querySelectorAll('[data-scroll-top]').forEach((link) => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.scrollTo({ top: 0 });
+        });
+    });
+
     Preferences.init({
         fallback: 'en',
         onChange: (lang) => {
