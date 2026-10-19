@@ -377,7 +377,9 @@
 
     /**
      * Aplica um dicionário { chave: texto } aos elementos com data-i18n,
-     * data-i18n-aria (aria-label) e data-i18n-alt (alt de imagens).
+     * data-i18n-aria (aria-label) e data-i18n-alt (alt de imagens). Imagens com
+     * data-i18n-src trocam o {lang} do caminho pela pasta do idioma: as artes das
+     * lojas só existem em pt e en, então o espanhol usa as em inglês.
      */
     function applyTranslations(dictionary) {
         document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -393,6 +395,12 @@
         document.querySelectorAll('[data-i18n-alt]').forEach(element => {
             const value = dictionary[element.dataset.i18nAlt];
             if (value !== undefined) element.setAttribute('alt', value);
+        });
+
+        const assetLang = currentLang === 'pt' ? 'pt' : 'en';
+        document.querySelectorAll('[data-i18n-src]').forEach(element => {
+            const src = element.dataset.i18nSrc.replace('{lang}', assetLang);
+            if (element.getAttribute('src') !== src) element.setAttribute('src', src);
         });
     }
 
