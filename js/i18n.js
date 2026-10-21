@@ -67,6 +67,7 @@ const translations = {
         'copied_status': 'E-mail copiado',
 
         'back_to_top': 'Voltar ao topo',
+        'footer_privacy': 'Este site não usa cookies, analytics nem rastreadores. O idioma e o tema que você escolhe ficam salvos apenas no seu navegador.',
     },
 
     'en': {
@@ -137,6 +138,7 @@ const translations = {
         'copied_status': 'Email copied',
 
         'back_to_top': 'Back to top',
+        'footer_privacy': 'This site uses no cookies, analytics or trackers. The language and theme you choose are saved only in your browser.',
     },
 
     'es': {
@@ -207,6 +209,7 @@ const translations = {
         'copied_status': 'Correo copiado',
 
         'back_to_top': 'Volver arriba',
+        'footer_privacy': 'Este sitio no usa cookies, analítica ni rastreadores. El idioma y el tema que eliges se guardan solo en tu navegador.',
     }
 };
 

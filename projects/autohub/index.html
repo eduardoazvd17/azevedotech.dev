@@ -70,9 +70,6 @@
     </script>
     <link rel="icon" href="../../images/autohub.png" type="image/png">
     <link rel="apple-touch-icon" href="../../images/autohub.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <script>
         // Aplica o tema salvo (ou ?theme=) antes da primeira pintura, para a página não piscar.
         (function () {
@@ -83,7 +80,7 @@
             } catch (e) { }
         })();
     </script>
-    <link rel="stylesheet" href="../../css/styles.css?v=20261012f">
+    <link rel="stylesheet" href="../../css/styles.css?v=20261021a">
     <link rel="stylesheet" href="../../css/project.css?v=20261012e">
 </head>
 
@@ -185,7 +182,7 @@
                         </div>
                         <div>
                             <dt data-i18n="feature_5_title">Assistente de IA</dt>
-                            <dd data-i18n="feature_5_text">Diagnósticos e dúvidas sobre o carro, com base no modelo e no histórico.</dd>
+                            <dd data-i18n="feature_5_text">Orientações e dúvidas sobre o carro, com base no modelo e no histórico. Não substitui um mecânico.</dd>
                         </div>
                         <div>
                             <dt data-i18n="feature_6_title">Relatório em PDF</dt>
@@ -254,7 +251,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <p class="plans-note" data-i18n="plans_note">O Pro tem plano mensal e anual; o anual tem 7 dias grátis e sai com 2 meses de desconto.</p>
+                    <p class="plans-note" data-i18n="plans_note">O Pro tem plano mensal e anual, e o anual tem 7 dias grátis. Preços e condições aparecem no app antes da compra.</p>
                 </div>
             </div>
         </section>
@@ -296,6 +293,7 @@
     <footer class="site-footer">
         <div class="container site-footer-inner">
             <p>&copy; <span id="current-year">2026</span> <span translate="no">Azevedo Tech Solutions</span><span class="footer-sep"> · </span><span
+                    class="footer-cnpj" translate="no">Azevedo Soluções Tecnológicas Ltda.</span><span class="footer-sep"> · </span><span
                     class="footer-cnpj">CNPJ 55.705.600/0001-47</span></p>
             <a href="#top" data-i18n="back_to_top" data-scroll-top>Voltar ao topo</a>
         </div>
@@ -331,7 +329,7 @@
                 "feature_4_title": "Tabela FIPE",
                 "feature_4_text": "Preço de referência do veículo e histórico das consultas.",
                 "feature_5_title": "Assistente de IA",
-                "feature_5_text": "Diagnósticos e dúvidas sobre o carro, com base no modelo e no histórico.",
+                "feature_5_text": "Orientações e dúvidas sobre o carro, com base no modelo e no histórico. Não substitui um mecânico.",
                 "feature_6_title": "Relatório em PDF",
                 "feature_6_text": "O histórico de manutenções pronto para guardar ou compartilhar.",
                 "feature_7_title": "Transferência de veículo",
@@ -354,7 +352,7 @@
                 "ui_plan_feature": "Recurso",
                 "ui_plan_free": "Grátis",
                 "ui_plan_pro": "Pro",
-                "plans_note": "O Pro tem plano mensal e anual; o anual tem 7 dias grátis e sai com 2 meses de desconto.",
+                "plans_note": "O Pro tem plano mensal e anual, e o anual tem 7 dias grátis. Preços e condições aparecem no app antes da compra.",
                 "build_0": "Feito em Flutter com Firebase Authentication e Cloud Firestore, com login por e-mail, Google ou Apple. A quilometragem automática combina um serviço em segundo plano, a detecção da conexão Bluetooth e o GPS do aparelho; no iOS, o trajeto em andamento aparece em uma Live Activity.",
                 "build_1": "O assistente usa a API da OpenAI com o contexto do veículo e das manutenções registradas, com limite de uso por plano e filtros na entrada. Os preços vêm de uma API pública da tabela FIPE, e os relatórios são gerados em PDF no próprio aparelho.",
                 "ui_back": "Início",
@@ -395,7 +393,7 @@
                 "feature_4_title": "FIPE table",
                 "feature_4_text": "The vehicle's reference price and a history of lookups.",
                 "feature_5_title": "AI assistant",
-                "feature_5_text": "Diagnostics and questions about the car, based on the model and history.",
+                "feature_5_text": "Guidance and answers about the car, based on the model and history. Not a substitute for a mechanic.",
                 "feature_6_title": "PDF report",
                 "feature_6_text": "The maintenance history ready to keep or share.",
                 "feature_7_title": "Vehicle transfer",
@@ -418,7 +416,7 @@
                 "ui_plan_feature": "Feature",
                 "ui_plan_free": "Free",
                 "ui_plan_pro": "Pro",
-                "plans_note": "Pro comes in monthly and annual plans; the annual plan has a 7-day free trial and 2 months off.",
+                "plans_note": "Pro comes in monthly and annual plans, and the annual plan has a 7-day free trial. Prices and terms are shown in the app before purchase.",
                 "build_0": "Built in Flutter with Firebase Authentication and Cloud Firestore, with sign-in by email, Google or Apple. Automatic mileage combines a background service, Bluetooth connection detection and the phone's GPS; on iOS, the trip in progress shows up as a Live Activity.",
                 "build_1": "The assistant uses the OpenAI API with the context of the vehicle and its recorded maintenance, with per-plan usage limits and input filters. Prices come from a public FIPE table API, and reports are generated as PDF on the device.",
                 "ui_back": "Home",
@@ -459,7 +457,7 @@
                 "feature_4_title": "Tabla FIPE",
                 "feature_4_text": "Precio de referencia del vehículo e historial de consultas.",
                 "feature_5_title": "Asistente de IA",
-                "feature_5_text": "Diagnósticos y dudas sobre el auto, según el modelo y el historial.",
+                "feature_5_text": "Orientación y dudas sobre el auto, según el modelo y el historial. No reemplaza a un mecánico.",
                 "feature_6_title": "Informe en PDF",
                 "feature_6_text": "El historial de mantenimientos listo para guardar o compartir.",
                 "feature_7_title": "Transferencia de vehículo",
@@ -482,7 +480,7 @@
                 "ui_plan_feature": "Función",
                 "ui_plan_free": "Gratis",
                 "ui_plan_pro": "Pro",
-                "plans_note": "Pro tiene plan mensual y anual; el anual tiene 7 días gratis e incluye 2 meses de descuento.",
+                "plans_note": "Pro tiene plan mensual y anual, y el anual tiene 7 días gratis. Los precios y las condiciones aparecen en la app antes de la compra.",
                 "build_0": "Hecho en Flutter con Firebase Authentication y Cloud Firestore, con inicio de sesión por correo, Google o Apple. El kilometraje automático combina un servicio en segundo plano, la detección de la conexión Bluetooth y el GPS del dispositivo; en iOS, el trayecto en curso aparece en una Live Activity.",
                 "build_1": "El asistente usa la API de OpenAI con el contexto del vehículo y de los mantenimientos registrados, con límite de uso por plan y filtros de entrada. Los precios vienen de una API pública de la tabla FIPE y los informes se generan en PDF en el propio dispositivo.",
                 "ui_back": "Inicio",
