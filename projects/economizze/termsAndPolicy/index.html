@@ -64,7 +64,7 @@
 				<li><strong>Status da assinatura:</strong> se você tem um plano Pro ativo. Os dados de pagamento são tratados somente pela Apple ou pelo Google; nunca recebemos as informações do seu cartão.</li>
 				<li><strong>Dados de uso:</strong> quais telas e recursos você usa (por exemplo, abrir a tela de assinatura ou adicionar um gasto), o tipo de plano, informações técnicas do aparelho e do app (modelo, sistema, versão, idioma e região aproximada) e o seu identificador de usuário. Os dados de uso nunca incluem valores, descrições, nomes de categorias ou de espaços. Eles são coletados pelo Google Analytics for Firebase enquanto a opção Configurações › Compartilhar dados de uso estiver ativada, o que acontece por padrão; ao desativá-la, o app para de enviá-los e apaga os que ainda não tinham sido enviados.</li>
 			</ul>
-			<p>Os dados financeiros e de espaços são armazenados no Google Firebase (Cloud Firestore), em servidores localizados em São Paulo, Brasil, vinculados à sua conta e aos espaços dos quais você participa, para que fiquem disponíveis em qualquer dispositivo. Preferências como idioma, tema, o bloqueio por biometria e a opção de compartilhar dados de uso, assim como as análises com IA e o consentimento para esse recurso, ficam salvos no seu dispositivo.</p>
+			<p>Os dados financeiros e de espaços são armazenados no Google Firebase (Cloud Firestore), em servidores localizados em São Paulo, Brasil, vinculados à sua conta e aos espaços dos quais você participa, para que fiquem disponíveis em qualquer dispositivo. Preferências como idioma, tema, o bloqueio por biometria e a opção de compartilhar dados de uso, assim como as análises com IA e o registro de que você foi informado sobre esse recurso, ficam salvos no seu dispositivo.</p>
 			<p>Usamos seus dados para as seguintes finalidades, com as respectivas bases legais da LGPD:</p>
 			<ul>
 				<li><strong>Oferecer o app</strong> (conta, login, dados financeiros, espaços compartilhados, lembretes e assinatura): execução do contrato com você (art. 7º, V).</li>
@@ -103,7 +103,7 @@
 				<li>os limites de orçamento.</li>
 			</ul>
 			<p>Antes do envio, o app remove ou mascara automaticamente nas descrições números longos (como CPF, cartão, telefone ou conta), e-mails e links. Não enviamos seu nome, seu e-mail nem documentos. A requisição pede à OpenAI que não armazene a conversa para consulta posterior e identifica a conta apenas por um código anônimo (hash), usado para prevenção de abuso. O tratamento desses dados pela OpenAI segue as políticas da própria OpenAI.</p>
-			<p><strong>Onde ficam as análises:</strong> as análises geradas ficam salvas apenas no aparelho em que foram geradas, e não nos nossos servidores. Ao excluir sua conta, elas são apagadas desse aparelho junto com o consentimento e os registros de uso do recurso (veja a seção 13).</p>
+			<p><strong>Onde ficam as análises:</strong> as análises geradas ficam salvas apenas no aparelho em que foram geradas, e não nos nossos servidores. Ao excluir sua conta, elas são apagadas desse aparelho junto com o registro de que você foi informado e os registros de uso do recurso (veja a seção 13).</p>
 			<p><strong>Limitações:</strong> o conteúdo é gerado automaticamente por inteligência artificial, pode conter imprecisões e tem caráter apenas informativo. Ele não substitui a orientação de um profissional e não constitui recomendação de investimento ou de produtos financeiros, nem aconselhamento jurídico ou tributário. Cabe a você decidir o que fazer com as sugestões e, na medida permitida pela lei, não nos responsabilizamos por decisões tomadas com base nelas. O recurso pode ficar temporariamente indisponível (por falha de rede, limite ou instabilidade do provedor), e sua disponibilidade e seus limites de uso podem mudar; as condições vigentes são exibidas no app.</p>
 
 			<h2>9. Assinatura Economizze Pro</h2>
@@ -123,6 +123,7 @@
 			<p>O Economizze utiliza os seguintes provedores, cada um com sua própria política de privacidade:</p>
 			<ul>
 				<li>Google Firebase (Authentication e Cloud Firestore) — contas e armazenamento de dados;</li>
+				<li>Firebase App Check — confirma que os acessos aos nossos servidores vêm do app original, usando o Play Integrity no Android e o App Attest/DeviceCheck no iOS;</li>
 				<li>Google Analytics for Firebase — estatísticas de uso do app (opcional, pode ser desativado em Configurações);</li>
 				<li>Login com Google e Iniciar sessão com a Apple — métodos de login opcionais;</li>
 				<li>OpenAI (API) — geração da Análise com IA, apenas para assinantes Pro que a usarem;</li>
@@ -134,7 +135,7 @@
 			<p>Adotamos medidas técnicas e organizacionais, incluindo conexões criptografadas e regras de acesso que só permitem que membros verificados de um espaço leiam ou alterem seus dados, para proteger suas informações contra acesso não autorizado, uso indevido ou divulgação.</p>
 
 			<h2>13. Retenção e Exclusão de Dados</h2>
-			<p>Mantemos seus dados enquanto sua conta existir. Você pode editar ou apagar qualquer lançamento e sair de qualquer espaço compartilhado diretamente no app. Também pode excluir sua conta em Configurações. Ao fazer isso: os espaços dos quais você é proprietário são apagados permanentemente, inclusive para os outros membros; você é removido dos espaços de outras pessoas, cujos dados continuam com elas; e seu perfil, seu status de assinatura, seu e-mail de busca para convites e sua conta são excluídos. As análises com IA, o consentimento e os registros de uso desse recurso são apagados do aparelho em que você faz a exclusão; análises salvas em outro aparelho ficam nele até você desinstalar o app. Essa ação não pode ser desfeita.</p>
+			<p>Mantemos seus dados enquanto sua conta existir. Você pode editar ou apagar qualquer lançamento e sair de qualquer espaço compartilhado diretamente no app. Também pode excluir sua conta em Configurações. Ao fazer isso: os espaços dos quais você é proprietário são apagados permanentemente, inclusive para os outros membros; você é removido dos espaços de outras pessoas, cujos dados continuam com elas; e seu perfil, seu status de assinatura, seu e-mail de busca para convites e sua conta são excluídos. As análises com IA, o registro de que você foi informado e os registros de uso desse recurso são apagados do aparelho em que você faz a exclusão; análises salvas em outro aparelho ficam nele até você desinstalar o app. Essa ação não pode ser desfeita.</p>
 			<p>Os dados de uso já enviados não ficam vinculados a nenhum outro dado seu e são apagados automaticamente ao fim do prazo de retenção do Google Analytics (no máximo 14 meses). Cópias residuais nos sistemas do Google são eliminadas nos prazos do provedor. Só mantemos dados depois da exclusão quando a lei exigir. Se precisar de ajuda, fale conosco pelo e-mail abaixo.</p>
 
 			<h2>14. Seus Direitos</h2>
@@ -184,7 +185,7 @@
 				<li><strong>Subscription status:</strong> whether you have an active Pro plan. Payment details are handled only by Apple or Google; we never receive your card information.</li>
 				<li><strong>Usage data:</strong> which screens and features you use (for example, opening the subscription screen or adding an expense), your plan type, technical information about your device and the app (model, operating system, version, language and approximate region) and your user ID. Usage data never includes amounts, descriptions, or category or space names. It is collected by Google Analytics for Firebase while Settings › Share usage data is turned on, which it is by default; turning it off stops the app from sending it and deletes whatever had not been sent yet.</li>
 			</ul>
-			<p>Financial and space data is stored in Google Firebase (Cloud Firestore), on servers located in São Paulo, Brazil, linked to your account and to the spaces you belong to, so it stays available across devices. App preferences such as language, theme, the biometric lock and the usage data sharing setting, as well as AI analyses and your consent to that feature, are stored on your device.</p>
+			<p>Financial and space data is stored in Google Firebase (Cloud Firestore), on servers located in São Paulo, Brazil, linked to your account and to the spaces you belong to, so it stays available across devices. App preferences such as language, theme, the biometric lock and the usage data sharing setting, as well as AI analyses and the record that you were informed about that feature, are stored on your device.</p>
 			<p>We use your data for the following purposes, under these legal bases of the LGPD:</p>
 			<ul>
 				<li><strong>Providing the app</strong> (account, sign-in, financial data, shared spaces, reminders and subscription): performance of our contract with you (art. 7, V).</li>
@@ -223,7 +224,7 @@
 				<li>budget limits.</li>
 			</ul>
 			<p>Before sending, the app automatically removes or masks long numbers (such as tax IDs, card, phone or account numbers), emails and links in descriptions. We do not send your name, email or documents. The request asks OpenAI not to store the conversation for later retrieval and identifies the account only by an anonymous code (hash), used for abuse prevention. OpenAI's handling of this data is governed by OpenAI's own policies.</p>
-			<p><strong>Where analyses are kept:</strong> generated analyses are saved only on the device where they were generated, not on our servers. When you delete your account, they are erased from that device along with your consent and the feature's usage records (see section 13).</p>
+			<p><strong>Where analyses are kept:</strong> generated analyses are saved only on the device where they were generated, not on our servers. When you delete your account, they are erased from that device along with the record that you were informed and the feature's usage records (see section 13).</p>
 			<p><strong>Limitations:</strong> the content is generated automatically by artificial intelligence, may contain inaccuracies and is for information only. It does not replace advice from a professional and is not a recommendation of investments or financial products, nor legal or tax advice. It is up to you to decide what to do with the suggestions and, to the extent permitted by law, we are not responsible for decisions made based on them. The feature may be temporarily unavailable (due to network failure, limits or provider instability), and its availability and usage limits may change; the current conditions are shown in the app.</p>
 
 			<h2>9. Economizze Pro Subscription</h2>
@@ -243,6 +244,7 @@
 			<p>Economizze relies on the following providers, each with its own privacy policy:</p>
 			<ul>
 				<li>Google Firebase (Authentication and Cloud Firestore) — accounts and data storage;</li>
+				<li>Firebase App Check — confirms that requests to our servers come from the genuine app, using Play Integrity on Android and App Attest/DeviceCheck on iOS;</li>
 				<li>Google Analytics for Firebase — app usage statistics (optional, can be turned off in Settings);</li>
 				<li>Google Sign-In and Sign in with Apple — optional sign-in methods;</li>
 				<li>OpenAI (API) — generating AI Analysis, only for Pro subscribers who use it;</li>
@@ -254,7 +256,7 @@
 			<p>We use technical and organizational measures, including encrypted connections and access rules that only allow verified members of a space to read or change its data, to protect your information against unauthorized access, misuse or disclosure.</p>
 
 			<h2>13. Data Retention and Deletion</h2>
-			<p>We keep your data while your account exists. You can edit or delete any entry and leave any shared space directly in the app. You can also delete your account in Settings. When you do: spaces you own are permanently deleted, including for the other members; you are removed from spaces owned by other people, whose data remains with them; and your profile, subscription status, invitation lookup email and account are deleted. AI analyses, your consent and the feature's usage records are erased from the device where you delete the account; analyses saved on another device stay there until you uninstall the app. This action cannot be undone.</p>
+			<p>We keep your data while your account exists. You can edit or delete any entry and leave any shared space directly in the app. You can also delete your account in Settings. When you do: spaces you own are permanently deleted, including for the other members; you are removed from spaces owned by other people, whose data remains with them; and your profile, subscription status, invitation lookup email and account are deleted. AI analyses, the record that you were informed and the feature's usage records are erased from the device where you delete the account; analyses saved on another device stay there until you uninstall the app. This action cannot be undone.</p>
 			<p>Usage data already sent is not linked to any of your other data and is automatically deleted at the end of the Google Analytics retention period (at most 14 months). Residual copies in Google's systems are erased within the provider's timeframes. We only keep data after deletion when the law requires it. If you need help, contact us at the email below.</p>
 
 			<h2>14. Your Rights</h2>
@@ -304,11 +306,11 @@
 				<li><strong>Estado de la suscripción:</strong> si tienes un plan Pro activo. Los datos de pago los gestionan solo Apple o Google; nunca recibimos la información de tu tarjeta.</li>
 				<li><strong>Datos de uso:</strong> qué pantallas y funciones usas (por ejemplo, abrir la pantalla de suscripción o añadir un gasto), el tipo de plan, información técnica del dispositivo y de la app (modelo, sistema, versión, idioma y región aproximada) y tu identificador de usuario. Los datos de uso nunca incluyen importes, descripciones ni nombres de categorías o espacios. Los recopila Google Analytics for Firebase mientras la opción Ajustes › Compartir datos de uso esté activada, lo que ocurre por defecto; al desactivarla, la app deja de enviarlos y borra los que aún no se habían enviado.</li>
 			</ul>
-			<p>Los datos financieros y de espacios se almacenan en Google Firebase (Cloud Firestore), en servidores ubicados en São Paulo, Brasil, vinculados a tu cuenta y a los espacios de los que formas parte, para que estén disponibles en cualquier dispositivo. Preferencias como idioma, tema, el bloqueo biométrico y la opción de compartir datos de uso, así como los análisis con IA y el consentimiento para esa función, se guardan en tu dispositivo.</p>
+			<p>Los datos financieros y de espacios se almacenan en Google Firebase (Cloud Firestore), en servidores ubicados en São Paulo, Brasil, vinculados a tu cuenta y a los espacios de los que formas parte, para que estén disponibles en cualquier dispositivo. Preferencias como idioma, tema, el bloqueo biométrico y la opción de compartir datos de uso, así como los análisis con IA y el registro de que fuiste informado sobre esa función, se guardan en tu dispositivo.</p>
 			<p>Usamos tus datos para las siguientes finalidades, con estas bases legales de la LGPD:</p>
 			<ul>
 				<li><strong>Ofrecer la app</strong> (cuenta, inicio de sesión, datos financieros, espacios compartidos, recordatorios y suscripción): ejecución del contrato contigo (art. 7, V).</li>
-				<li><strong>Generar análisis con IA</strong> (resumen financiero enviado a OpenAI, descrito en la sección 8): consentimiento (art. 7, I), dado la primera vez que abres la función. No se envía nada si no pides un análisis, y puedes retirar tu consentimiento en cualquier momento simplemente dejando de generarlos.</li>
+				<li><strong>Generar análisis con IA</strong> (resumen financiero enviado a OpenAI, descrito en la sección 8): consentimiento (art. 7, I), dado al solicitar un análisis, después de que la app te informe qué se envía. No se envía nada si no pides un análisis, y puedes retirar tu consentimiento en cualquier momento simplemente dejando de generarlos.</li>
 				<li><strong>Entender cómo se usa la app y mejorarla</strong> (datos de uso): interés legítimo (art. 7, IX). Puedes desactivar el envío en cualquier momento en Ajustes › Compartir datos de uso.</li>
 				<li><strong>Cumplir obligaciones legales</strong> y ejercer derechos en procesos, cuando sea necesario (art. 7, II y VI).</li>
 			</ul>
@@ -328,7 +330,7 @@
 			<p>Los suscriptores Pro pueden exportar un informe mensual en PDF. El archivo se genera en tu dispositivo y se comparte solo donde tú elijas. Una vez compartido, su contenido queda fuera de nuestro control.</p>
 
 			<h2>8. Análisis con IA (Pro, Opcional)</h2>
-			<p>El Análisis con IA es una función exclusiva de Economizze Pro que genera, mediante inteligencia artificial y a partir de tus registros, una nota de 0 a 100 para tu salud financiera, puntos destacados y consejos para ahorrar, con un ahorro estimado. Solo se usa si tú quieres: la primera vez que la abres, la app explica qué se envía y debes tocar el botón para aceptar y continuar; si lo rechazas, sales de la función y no se envía nada. El consentimiento queda registrado en tu dispositivo, para tu cuenta. Los usuarios del plan gratuito solo ven una vista previa ilustrativa, sin datos reales y sin ningún envío.</p>
+			<p>El Análisis con IA es una función exclusiva de Economizze Pro que genera, mediante inteligencia artificial y a partir de tus registros, una nota de 0 a 100 para tu salud financiera, puntos destacados y consejos para ahorrar, con un ahorro estimado. Solo se usa si tú quieres: la primera vez que la abres, la app explica cómo funciona y qué se envía, y esa explicación está disponible en cualquier momento en el botón de información de la pantalla. No se envía nada hasta que tocas el botón para generar un nuevo análisis; al hacerlo, consientes el envío descrito abajo. El registro de que fuiste informado se guarda en tu dispositivo, para tu cuenta. Los usuarios del plan gratuito solo ven una vista previa ilustrativa, sin datos reales y sin ningún envío.</p>
 			<p>Hay dos tipos de análisis, cada uno con límites de uso:</p>
 			<ul>
 				<li><strong>Mensual:</strong> un análisis anticipado del mes actual (1 vez) y un análisis de cada mes cerrado, disponible a partir del día 1 del mes siguiente (1 vez para cada uno de los últimos 3 meses cerrados);</li>
@@ -343,7 +345,7 @@
 				<li>los límites de presupuesto.</li>
 			</ul>
 			<p>Antes del envío, la app elimina o enmascara automáticamente en las descripciones los números largos (como documentos de identidad, tarjeta, teléfono o cuenta), correos electrónicos y enlaces. No enviamos tu nombre, tu correo ni documentos. La solicitud pide a OpenAI que no almacene la conversación para consultarla después e identifica la cuenta solo con un código anónimo (hash), usado para prevenir abusos. El tratamiento de estos datos por parte de OpenAI se rige por las políticas de la propia OpenAI.</p>
-			<p><strong>Dónde se guardan los análisis:</strong> los análisis generados se guardan solo en el dispositivo en que se generaron, y no en nuestros servidores. Al eliminar tu cuenta, se borran de ese dispositivo junto con el consentimiento y los registros de uso de la función (consulta la sección 13).</p>
+			<p><strong>Dónde se guardan los análisis:</strong> los análisis generados se guardan solo en el dispositivo en que se generaron, y no en nuestros servidores. Al eliminar tu cuenta, se borran de ese dispositivo junto con el registro de que fuiste informado y los registros de uso de la función (consulta la sección 13).</p>
 			<p><strong>Limitaciones:</strong> el contenido lo genera automáticamente una inteligencia artificial, puede contener imprecisiones y tiene carácter solo informativo. No sustituye la orientación de un profesional y no constituye una recomendación de inversión ni de productos financieros, ni asesoramiento jurídico o tributario. Tú decides qué hacer con las sugerencias y, en la medida permitida por la ley, no somos responsables de las decisiones tomadas con base en ellas. La función puede no estar disponible temporalmente (por fallos de red, límites o inestabilidad del proveedor), y su disponibilidad y sus límites de uso pueden cambiar; las condiciones vigentes se muestran en la app.</p>
 
 			<h2>9. Suscripción Economizze Pro</h2>
@@ -363,6 +365,7 @@
 			<p>Economizze utiliza los siguientes proveedores, cada uno con su propia política de privacidad:</p>
 			<ul>
 				<li>Google Firebase (Authentication y Cloud Firestore) — cuentas y almacenamiento de datos;</li>
+				<li>Firebase App Check — confirma que los accesos a nuestros servidores provienen de la app original, usando Play Integrity en Android y App Attest/DeviceCheck en iOS;</li>
 				<li>Google Analytics for Firebase — estadísticas de uso de la app (opcional, se puede desactivar en Ajustes);</li>
 				<li>Inicio de sesión con Google e Iniciar sesión con Apple — métodos de acceso opcionales;</li>
 				<li>OpenAI (API) — generación del Análisis con IA, solo para suscriptores Pro que lo usen;</li>
@@ -374,7 +377,7 @@
 			<p>Aplicamos medidas técnicas y organizativas, incluidas conexiones cifradas y reglas de acceso que solo permiten a los miembros verificados de un espacio leer o modificar sus datos, para proteger tu información contra accesos no autorizados, uso indebido o divulgación.</p>
 
 			<h2>13. Conservación y Eliminación de Datos</h2>
-			<p>Conservamos tus datos mientras tu cuenta exista. Puedes editar o borrar cualquier registro y salir de cualquier espacio compartido directamente en la app. También puedes eliminar tu cuenta en Ajustes. Al hacerlo: los espacios de los que eres propietario se borran de forma permanente, también para los demás miembros; se te quita de los espacios de otras personas, cuyos datos siguen con ellas; y se eliminan tu perfil, tu estado de suscripción, tu correo de búsqueda para invitaciones y tu cuenta. Los análisis con IA, el consentimiento y los registros de uso de esa función se borran del dispositivo en el que eliminas la cuenta; los análisis guardados en otro dispositivo permanecen en él hasta que desinstales la app. Esta acción no se puede deshacer.</p>
+			<p>Conservamos tus datos mientras tu cuenta exista. Puedes editar o borrar cualquier registro y salir de cualquier espacio compartido directamente en la app. También puedes eliminar tu cuenta en Ajustes. Al hacerlo: los espacios de los que eres propietario se borran de forma permanente, también para los demás miembros; se te quita de los espacios de otras personas, cuyos datos siguen con ellas; y se eliminan tu perfil, tu estado de suscripción, tu correo de búsqueda para invitaciones y tu cuenta. Los análisis con IA, el registro de que fuiste informado y los registros de uso de esa función se borran del dispositivo en el que eliminas la cuenta; los análisis guardados en otro dispositivo permanecen en él hasta que desinstales la app. Esta acción no se puede deshacer.</p>
 			<p>Los datos de uso ya enviados no quedan vinculados a ningún otro dato tuyo y se borran automáticamente al final del plazo de conservación de Google Analytics (como máximo 14 meses). Las copias residuales en los sistemas de Google se eliminan en los plazos del proveedor. Solo conservamos datos después de la eliminación cuando la ley lo exige. Si necesitas ayuda, escríbenos al correo indicado abajo.</p>
 
 			<h2>14. Tus Derechos</h2>
