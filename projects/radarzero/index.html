@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eduardo Azevedo">
+    <title>RadarZero: alerta de radar e limite de velocidade</title>
+    <meta name="description" content="Alerta de radar com som e voz, limite de velocidade da via e rotas que mostram quantos radares há no caminho. Para Android e iOS.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f0f11" media="(prefers-color-scheme: dark)">
+
+    <link rel="alternate" hreflang="pt" href="https://azevedotech.dev/projects/radarzero/?lang=pt">
+    <link rel="alternate" hreflang="en" href="https://azevedotech.dev/projects/radarzero/?lang=en">
+    <link rel="alternate" hreflang="es" href="https://azevedotech.dev/projects/radarzero/?lang=es">
+    <link rel="alternate" hreflang="x-default" href="https://azevedotech.dev/projects/radarzero/?lang=en">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Azevedo Tech Solutions">
+    <meta property="og:url" content="https://azevedotech.dev/projects/radarzero/">
+    <meta property="og:title" content="RadarZero: alerta de radar e limite de velocidade">
+    <meta property="og:description" content="Alerta de radar com som e voz, limite de velocidade da via e rotas que mostram quantos radares há no caminho. Para Android e iOS.">
+    <meta property="og:image" content="https://azevedotech.dev/images/og/radarzero.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="RadarZero | Azevedo Tech Solutions">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "RadarZero",
+        "url": "https://azevedotech.dev/projects/radarzero/",
+        "description": "Alerta de radar com som e voz, limite de velocidade da via e rotas que mostram quantos radares há no caminho. Para Android e iOS.",
+        "image": "https://azevedotech.dev/icons/radarzero.png",
+        "operatingSystem": "Android, iOS",
+        "applicationCategory": "NavigationApplication",
+        "inLanguage": [
+            "pt-BR",
+            "en",
+            "es"
+        ],
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "BRL"
+        },
+        "author": {
+            "@type": "Person",
+            "@id": "https://azevedotech.dev/#eduardo",
+            "name": "Eduardo Azevedo",
+            "url": "https://azevedotech.dev/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "@id": "https://azevedotech.dev/#organization",
+            "name": "Azevedo Tech Solutions",
+            "url": "https://azevedotech.dev/"
+        }
+    }
+    </script>
+    <link rel="icon" href="../../icons/radarzero.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../icons/radarzero.png" type="image/png">
+    <script>
+        // Aplica o tema salvo (ou ?theme=) antes da primeira pintura, para a página não piscar.
+        (function () {
+            try {
+                var theme = new URLSearchParams(location.search).get('theme');
+                if (theme !== 'light' && theme !== 'dark') theme = localStorage.getItem('theme');
+                if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+            } catch (e) { }
+        })();
+    </script>
+    <link rel="stylesheet" href="../../css/styles.css?v=20261021a">
+    <link rel="stylesheet" href="../../css/project.css?v=20261012e">
+</head>
+
+<body>
+    <a class="skip-link" href="#content" data-i18n="ui_skip">Pular para o conteúdo</a>
+    <header class="project-topbar">
+        <div class="container project-topbar-inner">
+            <a class="project-back" href="../../">
+                <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg> <span data-i18n="ui_back">Início</span>
+            </a>
+            <div class="site-prefs">
+                <div class="pref-menu" data-lang-menu></div>
+                <div class="pref-menu" data-theme-menu></div>
+            </div>
+        </div>
+    </header>
+
+    <main id="content" tabindex="-1">
+        <section class="project-header">
+            <div class="container project-header-inner">
+                <img class="project-header-icon" src="../../images/thumbs/radarzero.png" width="120" height="120" fetchpriority="high" alt="RadarZero">
+                <div>
+                    <p class="project-kicker" data-i18n="kicker">App mobile · Android e iOS · Em breve nas lojas</p>
+                    <h1 translate="no">RadarZero</h1>
+                    <p class="project-lede" data-i18n="tagline">Radares de velocidade no mapa, alerta por som e voz antes de cada um e o limite da via sempre à vista.</p>
+                    <div class="project-actions">
+                    <a class="button button--ghost" href="termsAndPolicy/">
+                        <span data-i18n="ui_terms">Termos de Uso e Política de Privacidade</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_screens">Telas</h2>
+                <!-- Imagens de divulgação da App Store; a faixa rola na horizontal e aceita teclado (tabindex) -->
+                <div class="project-block-body">
+                    <ul class="screens" tabindex="0" aria-label="Capturas de tela do app" data-i18n-aria="ui_screens_label">
+                        <li><img src="../../images/screens/radarzero/pt/1.jpg" data-i18n-src="../../images/screens/radarzero/{lang}/1.jpg"
+                                width="460" height="996" loading="lazy" alt="Mapa com radares e limite de velocidade" data-i18n-alt="screen_0"></li>
+                        <li><img src="../../images/screens/radarzero/pt/2.jpg" data-i18n-src="../../images/screens/radarzero/{lang}/2.jpg"
+                                width="460" height="996" loading="lazy" alt="Rotas com a contagem de radares" data-i18n-alt="screen_1"></li>
+                        <li><img src="../../images/screens/radarzero/pt/3.jpg" data-i18n-src="../../images/screens/radarzero/{lang}/3.jpg"
+                                width="460" height="996" loading="lazy" alt="Navegação com aviso de radar" data-i18n-alt="screen_2"></li>
+                        <li><img src="../../images/screens/radarzero/pt/4.jpg" data-i18n-src="../../images/screens/radarzero/{lang}/4.jpg"
+                                width="460" height="996" loading="lazy" alt="Mapa no tema claro" data-i18n-alt="screen_3"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_about">Sobre</h2>
+                <div class="project-block-body">
+                    <p data-i18n="about_0">O RadarZero mostra os radares de velocidade e as câmeras de avanço de sinal no mapa e avisa, com bipe e voz, quando você se aproxima de um radar à frente no seu sentido. O aviso chega mais cedo quanto maior a velocidade e fica em silêncio com o carro parado.</p>
+                    <p data-i18n="about_1">O app identifica a rua em que você está e mostra o limite de velocidade dela ao lado da sua velocidade atual. Com o Premium, você busca o destino, compara rotas pela quantidade de radares e segue a navegação por voz.</p>
+                    <p data-i18n="about_2">Não é preciso criar conta. Os dados de radares e vias vêm do OpenStreetMap. O RadarZero não é um detector de radar e não tem vínculo com órgãos de trânsito.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_features">Recursos</h2>
+                <div class="project-block-body">
+                    <dl class="feature-list">
+                        <div>
+                            <dt data-i18n="feature_0_title">Alerta de radar</dt>
+                            <dd data-i18n="feature_0_text">Bipe e voz antes de cada radar, ajustados à sua velocidade e ao sentido da via.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_1_title">Limite de velocidade</dt>
+                            <dd data-i18n="feature_1_text">O limite da rua em que você está, ao lado da sua velocidade atual.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_2_title">Rotas com radares</dt>
+                            <dd data-i18n="feature_2_text">Compare rotas pela quantidade de radares antes de sair.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_3_title">Navegação por voz</dt>
+                            <dd data-i18n="feature_3_text">Instruções de cada curva e aviso de cada radar no caminho.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_4_title">Trechos fiscalizados</dt>
+                            <dd data-i18n="feature_4_text">Radares de trecho contados do início ao fim do percurso.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="feature_5_title">Mapa para dirigir</dt>
+                            <dd data-i18n="feature_5_text">Mapa escuro que gira com o carro, com opção de tema claro e uso em paisagem.</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_plans">Planos</h2>
+                <div class="project-block-body">
+                    <table class="plans-table">
+                        <thead>
+                            <tr>
+                                <th scope="col" data-i18n="ui_plan_feature">Recurso</th>
+                                <th scope="col" data-i18n="ui_plan_free">Grátis</th>
+                                <th scope="col" data-i18n="ui_plan_pro">Premium</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row" data-i18n="plan_0">Mapa de radares e alertas por som</th>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_1">Limite de velocidade da via</th>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_2">Busca de endereços e rotas com radares</th>
+                            <td data-i18n="ui_no">Não incluído</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_3">Navegação por voz</th>
+                            <td data-i18n="ui_no">Não incluído</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" data-i18n="plan_4">Sem anúncios</th>
+                            <td data-i18n="ui_no">Não incluído</td>
+                            <td class="yes" data-i18n="ui_yes">Incluído</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p class="plans-note" data-i18n="plans_note">O Premium tem plano mensal e anual. Preços, período de teste e condições aparecem no app antes da compra.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_build">Como foi feito</h2>
+                <div class="project-block-body">
+                    <p data-i18n="build_0">Desenvolvi o app em Flutter, com uma arquitetura organizada por feature. Os radares de cada região são desenhados por uma camada nativa do Mapbox, montada em isolates do Dart, e a posição do GPS é casada com a via pelo sentido de direção para escolher o limite certo e só alertar sobre radares à frente.</p>
+                    <p data-i18n="build_1">Os dados vêm de uma API própria em Go, que importa radares e vias do OpenStreetMap todo mês, guarda tudo em SQLite e entrega por quadrantes do mapa. O app guarda os quadrantes no aparelho e só busca de novo quando ficam antigos. Busca de endereços e rotas usam o Mapbox.</p>
+                    <ul class="stack-list">
+                        <li>Flutter</li>
+                        <li>Dart</li>
+                        <li>Dart Isolates</li>
+                        <li>GetX</li>
+                        <li>Mapbox</li>
+                        <li>OpenStreetMap</li>
+                        <li>Go</li>
+                        <li>SQLite</li>
+                        <li>Docker</li>
+                        <li>Firebase Analytics</li>
+                        <li>Crashlytics</li>
+                        <li>AdMob</li>
+                        <li>In-App Purchase</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-block">
+            <div class="container project-block-inner">
+                <h2 data-i18n="ui_privacy">Privacidade</h2>
+                <div class="project-block-body">
+                    <p data-i18n="privacy">Sem conta e sem cadastro. A localização é usada no aparelho para os alertas e a navegação, e a localização exata não vai para o servidor. O app usa o Firebase para estatísticas de uso e relatórios de falha e exibe anúncios no plano gratuito.</p>
+                    <p><a class="text-link" href="termsAndPolicy/"><span data-i18n="ui_terms">Termos de Uso e Política de Privacidade</span><svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer-inner">
+            <p>&copy; <span id="current-year">2026</span> <span translate="no">Azevedo Tech Solutions</span><span class="footer-sep"> · </span><span
+                    class="footer-cnpj" translate="no">Azevedo Soluções Tecnológicas Ltda.</span><span class="footer-sep"> · </span><span
+                    class="footer-cnpj">CNPJ 55.705.600/0001-47</span></p>
+            <a href="#top" data-i18n="back_to_top" data-scroll-top>Voltar ao topo</a>
+        </div>
+    </footer>
+
+        <script>
+        window.PROJECT_I18N = {
+            "pt": {
+                "meta_title": "RadarZero: alerta de radar e limite de velocidade",
+                "meta_description": "Alerta de radar com som e voz, limite de velocidade da via e rotas que mostram quantos radares há no caminho. Para Android e iOS.",
+                "ui_skip": "Pular para o conteúdo",
+                "ui_back": "Início",
+                "kicker": "App mobile · Android e iOS · Em breve nas lojas",
+                "tagline": "Radares de velocidade no mapa, alerta por som e voz antes de cada um e o limite da via sempre à vista.",
+                "ui_terms": "Termos de Uso e Política de Privacidade",
+                "ui_screens": "Telas",
+                "ui_screens_label": "Capturas de tela do app",
+                "screen_0": "Mapa com radares e limite de velocidade",
+                "screen_1": "Rotas com a contagem de radares",
+                "screen_2": "Navegação com aviso de radar",
+                "screen_3": "Mapa no tema claro",
+                "ui_about": "Sobre",
+                "about_0": "O RadarZero mostra os radares de velocidade e as câmeras de avanço de sinal no mapa e avisa, com bipe e voz, quando você se aproxima de um radar à frente no seu sentido. O aviso chega mais cedo quanto maior a velocidade e fica em silêncio com o carro parado.",
+                "about_1": "O app identifica a rua em que você está e mostra o limite de velocidade dela ao lado da sua velocidade atual. Com o Premium, você busca o destino, compara rotas pela quantidade de radares e segue a navegação por voz.",
+                "about_2": "Não é preciso criar conta. Os dados de radares e vias vêm do OpenStreetMap. O RadarZero não é um detector de radar e não tem vínculo com órgãos de trânsito.",
+                "ui_features": "Recursos",
+                "feature_0_title": "Alerta de radar",
+                "feature_0_text": "Bipe e voz antes de cada radar, ajustados à sua velocidade e ao sentido da via.",
+                "feature_1_title": "Limite de velocidade",
+                "feature_1_text": "O limite da rua em que você está, ao lado da sua velocidade atual.",
+                "feature_2_title": "Rotas com radares",
+                "feature_2_text": "Compare rotas pela quantidade de radares antes de sair.",
+                "feature_3_title": "Navegação por voz",
+                "feature_3_text": "Instruções de cada curva e aviso de cada radar no caminho.",
+                "feature_4_title": "Trechos fiscalizados",
+                "feature_4_text": "Radares de trecho contados do início ao fim do percurso.",
+                "feature_5_title": "Mapa para dirigir",
+                "feature_5_text": "Mapa escuro que gira com o carro, com opção de tema claro e uso em paisagem.",
+                "ui_plans": "Planos",
+                "ui_plan_feature": "Recurso",
+                "ui_plan_free": "Grátis",
+                "ui_plan_pro": "Premium",
+                "ui_yes": "Incluído",
+                "ui_no": "Não incluído",
+                "plan_0": "Mapa de radares e alertas por som",
+                "plan_1": "Limite de velocidade da via",
+                "plan_2": "Busca de endereços e rotas com radares",
+                "plan_3": "Navegação por voz",
+                "plan_4": "Sem anúncios",
+                "plans_note": "O Premium tem plano mensal e anual. Preços, período de teste e condições aparecem no app antes da compra.",
+                "ui_build": "Como foi feito",
+                "build_0": "Desenvolvi o app em Flutter, com uma arquitetura organizada por feature. Os radares de cada região são desenhados por uma camada nativa do Mapbox, montada em isolates do Dart, e a posição do GPS é casada com a via pelo sentido de direção para escolher o limite certo e só alertar sobre radares à frente.",
+                "build_1": "Os dados vêm de uma API própria em Go, que importa radares e vias do OpenStreetMap todo mês, guarda tudo em SQLite e entrega por quadrantes do mapa. O app guarda os quadrantes no aparelho e só busca de novo quando ficam antigos. Busca de endereços e rotas usam o Mapbox.",
+                "ui_privacy": "Privacidade",
+                "privacy": "Sem conta e sem cadastro. A localização é usada no aparelho para os alertas e a navegação, e a localização exata não vai para o servidor. O app usa o Firebase para estatísticas de uso e relatórios de falha e exibe anúncios no plano gratuito.",
+                "back_to_top": "Voltar ao topo"
+            },
+            "en": {
+                "meta_title": "RadarZero: speed camera alerts and speed limits",
+                "meta_description": "Speed camera alerts with sound and voice, the road's speed limit and routes that show how many cameras are on the way. For Android and iOS.",
+                "ui_skip": "Skip to content",
+                "ui_back": "Home",
+                "kicker": "Mobile app · Android and iOS · Coming soon to the stores",
+                "tagline": "Speed cameras on the map, sound and voice alerts before each one and the road's limit always in view.",
+                "ui_terms": "Terms of Use and Privacy Policy",
+                "ui_screens": "Screens",
+                "ui_screens_label": "App screenshots",
+                "screen_0": "Map with cameras and the speed limit",
+                "screen_1": "Routes with camera counts",
+                "screen_2": "Navigation with camera alerts",
+                "screen_3": "Map in the light theme",
+                "ui_about": "About",
+                "about_0": "RadarZero shows speed cameras and red-light cameras on the map and warns you, with a beep and voice, when you approach a camera ahead in your direction. The faster you go, the earlier the warning comes, and it stays silent while the car is stopped.",
+                "about_1": "The app identifies the street you are on and shows its speed limit next to your current speed. With Premium, you search for a destination, compare routes by the number of cameras and follow voice navigation.",
+                "about_2": "No account is needed. Camera and road data come from OpenStreetMap. RadarZero is not a radar detector and is not affiliated with any traffic authority.",
+                "ui_features": "Features",
+                "feature_0_title": "Camera alerts",
+                "feature_0_text": "A beep and voice before each camera, tuned to your speed and the road's direction.",
+                "feature_1_title": "Speed limit",
+                "feature_1_text": "The limit of the street you are on, next to your current speed.",
+                "feature_2_title": "Routes with cameras",
+                "feature_2_text": "Compare routes by the number of cameras before you leave.",
+                "feature_3_title": "Voice navigation",
+                "feature_3_text": "Turn-by-turn directions and a warning for each camera on the way.",
+                "feature_4_title": "Average-speed sections",
+                "feature_4_text": "Section cameras followed from the start to the end of the stretch.",
+                "feature_5_title": "Map made for driving",
+                "feature_5_text": "A dark map that turns with the car, with a light theme and landscape mode.",
+                "ui_plans": "Plans",
+                "ui_plan_feature": "Feature",
+                "ui_plan_free": "Free",
+                "ui_plan_pro": "Premium",
+                "ui_yes": "Included",
+                "ui_no": "Not included",
+                "plan_0": "Camera map and sound alerts",
+                "plan_1": "Road speed limit",
+                "plan_2": "Address search and routes with cameras",
+                "plan_3": "Voice navigation",
+                "plan_4": "No ads",
+                "plans_note": "Premium comes in monthly and annual plans. Prices, trial period and terms are shown in the app before purchase.",
+                "ui_build": "How it was built",
+                "build_0": "I built the app in Flutter, with a feature-based architecture. Each area's cameras are drawn by a native Mapbox layer built in Dart isolates, and the GPS fix is matched to the road by direction of travel to pick the right limit and only alert about cameras ahead.",
+                "build_1": "The data comes from a Go API of my own, which imports cameras and roads from OpenStreetMap every month, stores them in SQLite and serves them by map tile. The app keeps tiles on the device and only fetches them again when they get old. Address search and routes use Mapbox.",
+                "ui_privacy": "Privacy",
+                "privacy": "No account and no sign-up. Location is used on the device for alerts and navigation, and your exact location does not go to the server. The app uses Firebase for usage statistics and crash reports and shows ads on the free plan.",
+                "back_to_top": "Back to top"
+            },
+            "es": {
+                "meta_title": "RadarZero: aviso de radares y límite de velocidad",
+                "meta_description": "Aviso de radares con sonido y voz, límite de velocidad de la vía y rutas que muestran cuántos radares hay en el camino. Para Android e iOS.",
+                "ui_skip": "Saltar al contenido",
+                "ui_back": "Inicio",
+                "kicker": "App móvil · Android y iOS · Próximamente en las tiendas",
+                "tagline": "Radares de velocidad en el mapa, aviso con sonido y voz antes de cada uno y el límite de la vía siempre a la vista.",
+                "ui_terms": "Términos de Uso y Política de Privacidad",
+                "ui_screens": "Pantallas",
+                "ui_screens_label": "Capturas de pantalla de la app",
+                "screen_0": "Mapa con radares y límite de velocidad",
+                "screen_1": "Rutas con el conteo de radares",
+                "screen_2": "Navegación con aviso de radar",
+                "screen_3": "Mapa en tema claro",
+                "ui_about": "Acerca de",
+                "about_0": "RadarZero muestra los radares de velocidad y las cámaras de semáforo en el mapa y te avisa, con un pitido y voz, cuando te acercas a un radar por delante en tu sentido. Cuanto mayor es la velocidad, antes llega el aviso, y se queda en silencio con el coche detenido.",
+                "about_1": "La app identifica la calle en la que estás y muestra su límite de velocidad junto a tu velocidad actual. Con Premium, buscas el destino, comparas rutas según la cantidad de radares y sigues la navegación por voz.",
+                "about_2": "No hace falta crear una cuenta. Los datos de radares y vías provienen de OpenStreetMap. RadarZero no es un detector de radares y no tiene vínculo con ninguna autoridad de tránsito.",
+                "ui_features": "Funciones",
+                "feature_0_title": "Aviso de radares",
+                "feature_0_text": "Pitido y voz antes de cada radar, ajustados a tu velocidad y al sentido de la vía.",
+                "feature_1_title": "Límite de velocidad",
+                "feature_1_text": "El límite de la calle en la que estás, junto a tu velocidad actual.",
+                "feature_2_title": "Rutas con radares",
+                "feature_2_text": "Compara rutas según la cantidad de radares antes de salir.",
+                "feature_3_title": "Navegación por voz",
+                "feature_3_text": "Indicaciones en cada giro y aviso de cada radar en el camino.",
+                "feature_4_title": "Tramos controlados",
+                "feature_4_text": "Radares de tramo seguidos desde el inicio hasta el final del recorrido.",
+                "feature_5_title": "Mapa para conducir",
+                "feature_5_text": "Mapa oscuro que gira con el coche, con tema claro y modo horizontal.",
+                "ui_plans": "Planes",
+                "ui_plan_feature": "Función",
+                "ui_plan_free": "Gratis",
+                "ui_plan_pro": "Premium",
+                "ui_yes": "Incluido",
+                "ui_no": "No incluido",
+                "plan_0": "Mapa de radares y avisos con sonido",
+                "plan_1": "Límite de velocidad de la vía",
+                "plan_2": "Búsqueda de direcciones y rutas con radares",
+                "plan_3": "Navegación por voz",
+                "plan_4": "Sin anuncios",
+                "plans_note": "Premium tiene plan mensual y anual. Los precios, el período de prueba y las condiciones aparecen en la app antes de la compra.",
+                "ui_build": "Cómo se hizo",
+                "build_0": "Desarrollé la app en Flutter, con una arquitectura organizada por funcionalidad. Los radares de cada zona los dibuja una capa nativa de Mapbox, construida en isolates de Dart, y la posición del GPS se asocia a la vía según el sentido de circulación para elegir el límite correcto y avisar solo de los radares que están por delante.",
+                "build_1": "Los datos vienen de una API propia en Go, que importa radares y vías de OpenStreetMap cada mes, los guarda en SQLite y los entrega por cuadrantes del mapa. La app guarda los cuadrantes en el dispositivo y solo los vuelve a pedir cuando quedan antiguos. La búsqueda de direcciones y las rutas usan Mapbox.",
+                "ui_privacy": "Privacidad",
+                "privacy": "Sin cuenta y sin registro. La ubicación se usa en el dispositivo para los avisos y la navegación, y tu ubicación exacta no va al servidor. La app usa Firebase para estadísticas de uso e informes de fallos y muestra anuncios en el plan gratuito.",
+                "back_to_top": "Volver arriba"
+            }
+        };
+    </script>
+    <script src="../../js/preferences.js?v=20261019a"></script>
+    <script src="../../js/project.js?v=20261012b"></script>
+</body>
+
+</html>
