@@ -38,7 +38,7 @@ const translations = {
         'autohub_meta': 'Gestão veicular',
         'autohub_description': 'Manutenções, abastecimentos, lembretes e tabela FIPE para cuidar do carro, com um assistente de IA para tirar dúvidas. A quilometragem pode se atualizar sozinha pelo Bluetooth do carro.',
         'rocketrush_meta': 'Jogo casual',
-        'rocketrush_description': 'Pilote um foguete, desvie dos obstáculos e junte moedas para trocar por novas naves. A melhor pontuação de cada piloto vai para um ranking global.',
+        'rocketrush_description': 'Pilote um foguete, desvie dos obstáculos e junte moedas para trocar por novas naves. Os 10 melhores pilotos de cada mês entram no ranking.',
 
         'clients_title': 'Empresas e produtos em que atuei durante minha carreira',
         'clients_intro': 'Experiências profissionais em que trabalhei como contratado, diretamente ou por meio de consultorias. As marcas pertencem aos respectivos titulares e são utilizadas exclusivamente para identificar essas experiências, sem indicar parceria, vínculo comercial ou endosso.',
@@ -112,7 +112,7 @@ const translations = {
         'autohub_meta': 'Vehicle management',
         'autohub_description': 'Maintenance, fill-ups, reminders and FIPE prices to take care of your car, with an AI assistant for questions. Mileage can update itself through the car\'s Bluetooth.',
         'rocketrush_meta': 'Casual game',
-        'rocketrush_description': 'Pilot a rocket, dodge obstacles and collect coins to trade for new ships. Each pilot\'s best score goes to a global leaderboard.',
+        'rocketrush_description': 'Pilot a rocket, dodge obstacles and collect coins to trade for new ships. The 10 best pilots of each month make the leaderboard.',
 
         'clients_title': 'Companies and products I have worked on throughout my career',
         'clients_intro': 'Professional experiences in which I worked as a hired professional, directly or through consulting firms. Trademarks belong to their respective owners and are used exclusively to identify these experiences, without implying partnership, commercial relationship or endorsement.',
@@ -186,7 +186,7 @@ const translations = {
         'autohub_meta': 'Gestión vehicular',
         'autohub_description': 'Mantenimientos, cargas de combustible, recordatorios y tabla FIPE para cuidar tu auto, con un asistente de IA para resolver dudas. El kilometraje puede actualizarse solo con el Bluetooth del auto.',
         'rocketrush_meta': 'Juego casual',
-        'rocketrush_description': 'Pilota un cohete, esquiva obstáculos y junta monedas para cambiarlas por nuevas naves. La mejor puntuación de cada piloto va a un ranking global.',
+        'rocketrush_description': 'Pilota un cohete, esquiva obstáculos y junta monedas para cambiarlas por nuevas naves. Los 10 mejores pilotos de cada mes entran en el ranking.',
 
         'clients_title': 'Empresas y productos en los que trabajé a lo largo de mi carrera',
         'clients_intro': 'Experiencias profesionales en las que trabajé como profesional contratado, directamente o a través de consultoras. Las marcas pertenecen a sus respectivos titulares y se utilizan exclusivamente para identificar estas experiencias, sin implicar alianza, vínculo comercial ni respaldo.',
